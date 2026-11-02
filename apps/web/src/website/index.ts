@@ -1,0 +1,197 @@
+import '../styles/website.css';
+
+type PublicPath = '/' | '/product' | '/features' | '/offline-data' | '/support' | '/contact';
+type Page = { title: string; description: string; content: () => string };
+
+const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>';
+const check = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>';
+const icons: Record<string, string> = {
+  moon: '<path d="M20 14a8.5 8.5 0 0 1-10-10A8.5 8.5 0 1 0 20 14Z"/>',
+  search: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M8 10.5h5m-2.5-2.5v5"/>',
+  document: '<path d="M7 3h7l4 4v14H6V3h1Zm7 0v5h4M9 12h6m-6 4h6"/>',
+  list: '<path d="M9 6h11M9 12h11M9 18h11M3 6h1m-1 6h1m-1 6h1"/>',
+  package: '<path d="m3 7 9-5 9 5v10l-9 5-9-5V7Zm0 0 9 5 9-5m-9 5v10M7.5 4.5l9 5"/>',
+  history: '<path d="M3 11a9 9 0 1 1 2 7M3 4v7h7m2-5v7l4 2"/>',
+  offline: '<path d="M8 17H6a4 4 0 0 1-.6-7.9 7 7 0 0 1 13.4 0A4 4 0 0 1 18 17h-2m-4-5v10m-4-4 4 4 4-4"/>',
+  shield: '<path d="m12 2 8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5l8-3Z"/><path d="m8 12 3 3 5-6"/>',
+  guide: '<path d="M12 5c-3-2-6-2-10-1v15c4-1 7-1 10 1m0-15c3-2 6-2 10-1v15c-4-1-7-1-10 1V5Z"/>',
+};
+
+function symbol(name: string): string {
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[name] ?? icons.document}</svg>`;
+}
+
+function action(href: string, text: string, primary = false): string {
+  return `<a class="site-button${primary ? ' site-button-primary' : ''}" href="${href}">${text}${arrow}</a>`;
+}
+
+function intro(eyebrow: string, title: string, description: string): string {
+  return `<section class="site-page-intro site-container"><p class="site-eyebrow">${eyebrow}</p><h1>${title}</h1><p class="site-lead">${description}</p></section>`;
+}
+
+function sectionHeading(eyebrow: string, title: string, description = ''): string {
+  return `<div class="site-section-heading"><p class="site-eyebrow">${eyebrow}</p><h2>${title}</h2>${description ? `<p>${description}</p>` : ''}</div>`;
+}
+
+function cta(title = 'از پیدا کردن قطعه، تا آماده کردن پیشنهاد.', copy = 'محیط کاری پارت‌آور را باز کنید و کار را از جست‌وجوی قطعه شروع کنید.'): string {
+  return `<section class="site-cta site-container"><div><p class="site-eyebrow">محیط کار پارت‌آور</p><h2>${title}</h2><p>${copy}</p></div>${action('/app', 'ورود به برنامه', true)}</section>`;
+}
+
+const workflowCards = [
+  { icon: 'search', title: 'قطعه را دقیق پیدا کنید', copy: 'با نام قطعه و زمینهٔ خودرو جست‌وجو کنید، یا کد فنی و لجستیکی را مستقیماً بررسی کنید.', href: '/features#search', link: 'جست‌وجو و شناسایی' },
+  { icon: 'document', title: 'پیشنهاد را آماده کنید', copy: 'قیمت انتخابی، تعداد و مبلغ هر ردیف را در فاکتور مرور و ویرایش کنید.', href: '/features#invoices', link: 'فاکتور و قیمت‌گذاری' },
+  { icon: 'package', title: 'خرید را منظم پیش ببرید', copy: 'فهرست خرید و بستهٔ قطعات را با حفظ کد، زمینهٔ خودرو و قیمت انتخابی بسازید.', href: '/features#packages', link: 'خرید و بسته‌ها' },
+];
+
+function workflowGrid(): string {
+  return `<div class="site-card-grid">${workflowCards.map(card => `<article class="site-card"><div class="site-feature-icon">${symbol(card.icon)}</div><h3>${card.title}</h3><p>${card.copy}</p><a class="site-text-link" href="${card.href}">${card.link}${arrow}</a></article>`).join('')}</div>`;
+}
+
+function home(): string {
+  return `<section class="site-hero site-container">
+    <div class="site-hero-copy"><p class="site-eyebrow">برای فروش و تأمین قطعات خودرو</p><h1>از کد قطعه،<br>تا تصمیم دقیق‌تر.</h1><p class="site-lead">جست‌وجوی قطعات، قیمت‌گذاری، فاکتور و فهرست خرید در یک محیط کاری فارسی؛ با هویت دقیق هر ردیف کاتالوگ.</p><div class="site-action-row">${action('/app', 'ورود به برنامه', true)}${action('/product', 'آشنایی با پارت‌آور')}</div><p class="site-hero-note">کاتالوگ قطعات · محیط کاری فارسی · جست‌وجوی آفلاین پس از نصب کامل</p></div>
+    <aside class="site-hero-principles" aria-label="اصول کار پارت‌آور"><div class="site-principles-head"><span class="site-tiny-rule"></span><span>جزئیات، قابل بررسی</span></div><ol><li><span class="site-step-number">۰۱</span><div><h2>کد درست</h2><p>کد فنی و کد لجستیکی، هرکدام با هویت مستقل.</p></div></li><li><span class="site-step-number">۰۲</span><div><h2>زمینهٔ درست</h2><p>سازگاری خودرو برای همان ردیف قطعه.</p></div></li><li><span class="site-step-number">۰۳</span><div><h2>قیمت روشن</h2><p>قیمت پایه، میانی و نهایی با برچسب مشخص.</p></div></li></ol><a class="site-text-link" href="/offline-data">دربارهٔ دقت و نگهداری داده${arrow}</a></aside>
+  </section>
+  <section class="site-preview-section site-container" aria-labelledby="site-preview-title"><div class="site-preview-heading"><h2 id="site-preview-title">یک محیط برای کارهای به‌هم‌پیوسته</h2><a class="site-text-link" href="/app">باز کردن برنامه${arrow}</a></div><figure class="site-preview"><div class="site-preview-bar"><span class="site-preview-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>پارت‌آور / محیط کاری</span></div><div class="site-preview-media"><img id="site-app-preview" src="/website/app-preview.webp" alt="صفحهٔ واقعی پارت‌آور با جست‌وجوی قطعه و انتخاب خودرو، بدون نمایش اطلاعات خصوصی کاتالوگ" width="1440" height="1000" decoding="async" fetchpriority="high" hidden><div id="site-preview-fallback" class="site-preview-fallback">${symbol('search')}<h3>محیط جست‌وجوی پارت‌آور</h3><p>تصویر محیط کاری در دسترس نیست. برنامه را برای مشاهدهٔ رابط واقعی باز کنید.</p>${action('/app', 'مشاهدهٔ برنامه')}</div></div><figcaption>تصویر از رابط واقعی برنامه، بدون نمایش ردیف‌ها و قیمت‌های کاتالوگ.</figcaption></figure></section>
+  <section class="site-section site-container">${sectionHeading('جریان کار', 'کار روزانه، با مسیر روشن.', 'از پیدا کردن قطعه تا آماده کردن فاکتور و فهرست خرید، اطلاعات همان ردیف همراه کار می‌ماند.')}${workflowGrid()}</section>
+  <section class="site-band"><div class="site-container site-split"><div>${sectionHeading('دقت در جست‌وجو', 'شباهت کدها، به معنی یکسان بودن قطعات نیست.', 'پارت‌آور کد فنی، کد لجستیکی، قیمت و سازگاری خودرو را در جای خود نگه می‌دارد؛ تا جزئیات هر ردیف قابل بررسی باشد.')}<a class="site-text-link" href="/product#identity">هویت قطعه چگونه نمایش داده می‌شود؟${arrow}</a></div><ul class="site-check-list"><li>${check}<span>جست‌وجو با نام، کد و زمینهٔ خودرو</span></li><li>${check}<span>بررسی سازگاری همان ردیف لجستیکی</span></li><li>${check}<span>کپی دقیق کدها، با حفظ صفرهای ابتدایی</span></li><li>${check}<span>نمایش صریح اطلاعات ثبت‌نشده</span></li></ul></div></section>
+  <section class="site-section site-container site-two-features"><article><div class="site-feature-icon">${symbol('history')}</div><p class="site-eyebrow">سابقهٔ قیمت</p><h2>روند را کنار قیمت امروز ببینید.</h2><p>سوابق قیمت، در صورت ورود دادهٔ معتبر، به بررسی تغییرات کمک می‌کنند. سابقهٔ ناکافی هم با وضعیت خنثی مشخص می‌شود؛ بدون ساختن نتیجه از دادهٔ ناقص.</p><a class="site-text-link" href="/features#price-history">دربارهٔ تحلیل قیمت${arrow}</a></article><article><div class="site-feature-icon">${symbol('offline')}</div><p class="site-eyebrow">ادامهٔ کار هنگام قطع اینترنت</p><h2>آفلاین، وقتی واقعاً آماده است.</h2><p>پس از نصب و تأیید کامل کاتالوگ روی همین مرورگر، جست‌وجوی محلی در دسترس است. وضعیت نصب و به‌روزرسانی در برنامه نمایش داده می‌شود.</p><a class="site-text-link" href="/offline-data">آمادگی آفلاین و نگهداری داده${arrow}</a></article></section>
+  <section class="site-trust-strip site-container">${symbol('shield')}<div><h2>دادهٔ دقیق، پایهٔ کار قابل اتکا.</h2><p>کدهای خام حفظ می‌شوند، ردیف‌های مستقل ادغام نمی‌شوند و سابقهٔ قیمت جای قیمت جاری را نمی‌گیرد.</p></div><a class="site-text-link" href="/offline-data#integrity">اصول نگهداری داده${arrow}</a></section>${cta()}`;
+}
+
+function product(): string {
+  return `${intro('معرفی محصول', 'پارت‌آور، برای کار با جزئیات قطعه.', 'یک محیط کاری برای تیم‌های فروش، تأمین و فنی که باید قطعه را پیدا کنند، مشخصاتش را بررسی کنند و پیشنهاد یا خرید را با اطلاعات روشن پیش ببرند.')}
+    <section class="site-section site-container site-section-first">${sectionHeading('از جست‌وجو تا سند', 'اطلاعات قطعه، در طول کار همراه شماست.')}<ol class="site-process-list"><li><span class="site-step-number">۰۱</span><div><h3>پیدا کردن</h3><p>خودرو و نام قطعه را انتخاب کنید یا مستقیم با کد فنی، کد لجستیکی و نام قطعه جست‌وجو کنید.</p></div></li><li><span class="site-step-number">۰۲</span><div><h3>بررسی کردن</h3><p>کدها، سازگاری خودرو، قیمت و اطلاعات تکمیلی همان ردیف را کنار هم بخوانید.</p></div></li><li><span class="site-step-number">۰۳</span><div><h3>آماده کردن</h3><p>قطعهٔ انتخابی را به فاکتور، فهرست خرید یا بسته منتقل کنید و تعداد و قیمت را متناسب با کار تنظیم کنید.</p></div></li></ol></section>
+    <section id="identity" class="site-band"><div class="site-container site-split"><div>${sectionHeading('هویت قطعه', 'هر ردیف، اطلاعات خودش را دارد.', 'وجود کد فنی مشترک، دلیل یکسان بودن قیمت یا سازگاری خودرو نیست. ردیف‌های لجستیکی مستقل در پارت‌آور مستقل می‌مانند.')}<a class="site-text-link" href="/offline-data#integrity">اصول دقت داده${arrow}</a></div><dl class="site-definition-list"><div><dt>کد فنی</dt><dd>شناسهٔ فنی قطعه، با مقدار دقیق منبع.</dd></div><div><dt>کد لجستیکی</dt><dd>هویت ردیفی که قیمت و ارتباط خودرو به آن تعلق دارد.</dd></div><div><dt>سازگاری خودرو</dt><dd>ارتباط ثبت‌شدهٔ همان ردیف؛ نبود داده به معنی سازگاری عمومی نیست.</dd></div><div><dt>سابقهٔ قیمت</dt><dd>مشاهدات تاریخی جدا از قیمت جاری کاتالوگ.</dd></div></dl></div></section>
+    <section class="site-section site-container">${sectionHeading('ابزارهای به‌هم‌پیوسته', 'برای پیدا کردن، پیشنهاد دادن و خریدن.')}${workflowGrid()}</section>
+    <section class="site-note site-container"><div class="site-feature-icon">${symbol('guide')}</div><div><h2>از همان کاری که دارید شروع کنید.</h2><p>جست‌وجو نقطهٔ شروع محیط کاری است. اگر دربارهٔ نصب، دریافت کاتالوگ یا نگهداری اطلاعات پرسشی دارید، راهنمای شروع در دسترس است.</p><a class="site-text-link" href="/support#getting-started">راهنمای شروع${arrow}</a></div></section>${cta()}`;
+}
+
+const features = [
+  { id: 'search', icon: 'search', label: 'جست‌وجو', title: 'قطعه را با زمینهٔ درست پیدا کنید.', copy: 'دو مسیر جست‌وجو برای دو نوع کار: خودرو همراه نام قطعه، یا جست‌وجوی سراسری با کد و نام.', items: ['انتخاب و جست‌وجوی مدل خودرو', 'بررسی جداگانهٔ کد فنی و لجستیکی', 'جزئیات سازگاری و کپی دقیق کدها'] },
+  { id: 'invoices', icon: 'document', label: 'فاکتور', title: 'قیمت و تعداد را پیش از خروجی مرور کنید.', copy: 'قطعهٔ انتخابی را به فاکتور ببرید، سطح قیمت را انتخاب کنید و در صورت نیاز قیمت واحد را دستی تنظیم کنید.', items: ['قیمت پایه، میانی و نهایی با برچسب مشخص', 'ویرایش قیمت واحد و تعداد', 'ذخیره و بازگشایی سند، با قیمت انتخابی هر ردیف'] },
+  { id: 'purchases', icon: 'list', label: 'فهرست خرید', title: 'نیازهای خرید را کنار هم نگه دارید.', copy: 'فهرست خرید با نام قطعه، کد و زمینهٔ خودرو به منظم کردن بررسی و پیگیری قطعات کمک می‌کند.', items: ['افزودن از نتیجهٔ جست‌وجو', 'حفظ هویت قطعه و زمینهٔ خودرو', 'ذخیره، بازگشایی و خروجی فهرست'] },
+  { id: 'packages', icon: 'package', label: 'بستهٔ قطعات', title: 'قطعات مرتبط را با انتخاب روشن جمع کنید.', copy: 'پیشنهاد قطعات مرتبط بر اساس قواعد و رکوردهای واقعی کاتالوگ است. انتخاب نهایی قطعه و قیمت با شماست.', items: ['بررسی قطعات مرتبط با زمینهٔ خودرو', 'انتخاب صریح ردیف در موارد چندگزینه‌ای', 'انتقال بسته به فاکتور با حفظ قیمت انتخابی'] },
+  { id: 'price-history', icon: 'history', label: 'تحلیل قیمت', title: 'دربارهٔ تغییر قیمت، با سابقه تصمیم بگیرید.', copy: 'اگر سوابق معتبر وارد شده باشند، تغییرات هر ردیف قابل بررسی است. این نمایش نشانهٔ حرکت تاریخی قیمت است و سود آینده را تضمین نمی‌کند.', items: ['سابقهٔ هر ردیف، جدا از قیمت جاری', 'نمایش سطح تغییر همراه با توضیح متنی', 'وضعیت خنثی برای سابقهٔ ناکافی'] },
+  { id: 'offline', icon: 'offline', label: 'کاتالوگ آفلاین', title: 'پس از نصب کامل، جست‌وجو را ادامه دهید.', copy: 'کاتالوگ تأییدشده در مرورگر نگهداری می‌شود. اولین نصب و دریافت نسخهٔ جدید به اتصال نیاز دارد.', items: ['وضعیت صریح آمادگی آفلاین', 'بررسی کامل نسخه پیش از فعال‌سازی', 'حفظ نسخهٔ معتبر قبلی در به‌روزرسانی ناقص'] },
+];
+
+function featurePage(): string {
+  return `${intro('قابلیت‌ها و جریان کار', 'ابزار هر مرحله، در دسترس.', 'پارت‌آور مسیر بررسی قطعه، آماده کردن پیشنهاد و برنامه‌ریزی خرید را به هم متصل می‌کند؛ با حفظ جزئیات همان ردیف کاتالوگ.')}
+    <nav class="site-anchor-nav site-container" aria-label="قابلیت‌های این صفحه">${features.map(feature => `<a href="#${feature.id}">${feature.label}</a>`).join('')}</nav>
+    <div class="site-container site-feature-list">${features.map((feature, index) => `<section id="${feature.id}" class="site-feature-row"><div class="site-feature-label"><div class="site-feature-icon">${symbol(feature.icon)}</div><span class="site-eyebrow">${String(index + 1).replace(/\d/g, digit => '۰۱۲۳۴۵۶۷۸۹'[Number(digit)] ?? digit)} / ${feature.label}</span></div><div class="site-feature-description"><h2>${feature.title}</h2><p>${feature.copy}</p><ul class="site-check-list">${feature.items.map(item => `<li>${check}<span>${item}</span></li>`).join('')}</ul>${feature.id === 'offline' ? '<a class="site-text-link" href="/offline-data">دربارهٔ نصب و نگهداری داده' + arrow + '</a>' : ''}</div></section>`).join('')}</div>
+    <section class="site-note site-container"><div class="site-feature-icon">${symbol('guide')}</div><div><h2>برای استفاده از قابلیت‌ها</h2><p>ورود دادهٔ تاریخی و انتشار نسخهٔ کاتالوگ از وظایف مسئول نصب است. نبود سابقه یا آماده نبودن کاتالوگ در برنامه صریح نمایش داده می‌شود.</p><a class="site-text-link" href="/support">راهنمای استفاده و نگهداری${arrow}</a></div></section>${cta()}`;
+}
+
+function offline(): string {
+  return `${intro('آفلاین و دقت داده', 'نسخهٔ کامل. وضعیت روشن.', 'آمادگی آفلاین زمانی اعلام می‌شود که کاتالوگ روی همان دستگاه دریافت، بررسی و فعال شده باشد. باز بودن سایت به‌تنهایی به معنی نصب کاتالوگ نیست.')}
+    <section class="site-section site-container site-section-first">${sectionHeading('آماده‌سازی کاتالوگ', 'پیش از قطع اتصال، یک بار کامل آماده شوید.')}<ol class="site-process-list"><li><span class="site-step-number">۰۱</span><div><h3>دریافت با اتصال</h3><p>برنامه را در اتصال پایدار باز کنید و وضعیت کاتالوگ و فضای ذخیرهٔ مرورگر را بررسی کنید.</p></div></li><li><span class="site-step-number">۰۲</span><div><h3>بررسی و فعال‌سازی</h3><p>پایان دریافت کافی نیست؛ بخش‌های نسخه بررسی می‌شوند و فقط نسخهٔ کامل فعال می‌شود.</p></div></li><li><span class="site-step-number">۰۳</span><div><h3>آزمایش روی همین دستگاه</h3><p>پس از نمایش وضعیت آماده، اتصال را قطع و یک جست‌وجوی شناخته‌شده را بررسی کنید.</p></div></li></ol></section>
+    <section class="site-band"><div class="site-container site-split"><div>${sectionHeading('به‌روزرسانی قابل پیگیری', 'دریافت ناقص، جای نسخهٔ معتبر را نمی‌گیرد.', 'نسخهٔ تازه پیش از فعال شدن بررسی می‌شود. اگر دریافت قطع شود یا بررسی موفق نباشد، برنامه وضعیت را نشان می‌دهد و نسخهٔ معتبر قبلی حفظ می‌شود.')}<a class="site-text-link" href="/support#offline">راهنمای قطع اتصال و بازیابی${arrow}</a></div><div class="site-callout"><h3>آنچه باید در نظر بگیرید</h3><ul class="site-plain-list"><li>نصب اول و دریافت نسخهٔ تازه به اتصال نیاز دارد.</li><li>دادهٔ آفلاین به همین مرورگر و دستگاه وابسته است.</li><li>پاک‌کردن دادهٔ سایت می‌تواند کاتالوگ محلی را حذف کند.</li><li>آخرین نسخهٔ دریافت‌شده، الزاماً تازه‌ترین نسخهٔ سرور نیست.</li></ul></div></div></section>
+    <section id="integrity" class="site-section site-container">${sectionHeading('اصول دقت داده', 'اطلاعات منبع، با معنی خودش حفظ می‌شود.')}<div class="site-card-grid"><article class="site-card"><div class="site-feature-icon">${symbol('shield')}</div><h3>شناسه‌های مستقل</h3><p>کد خام و صفرهای ابتدایی حفظ می‌شوند. ردیف‌های لجستیکی با قیمت یا سازگاری متفاوت، در هم ادغام نمی‌شوند.</p></article><article class="site-card"><div class="site-feature-icon">${symbol('search')}</div><h3>سازگاری صریح</h3><p>سازگاری به همان ردیف قطعه تعلق دارد. نبود اطلاعات خودرو با سازگاری عمومی برابر نیست.</p></article><article class="site-card"><div class="site-feature-icon">${symbol('history')}</div><h3>سابقهٔ جداگانه</h3><p>مشاهدات تاریخی قیمت جدا نگهداری می‌شوند و قیمت جاری کاتالوگ را بازنویسی نمی‌کنند.</p></article></div></section>
+    <section class="site-note site-container"><div class="site-feature-icon">${symbol('document')}</div><div><h2>کاتالوگ محلی، جای نسخهٔ پشتیبان را نمی‌گیرد.</h2><p>مسئول نصب باید پشتیبان معتبر و آزموده از پایگاه داده و منابع نگه دارد. پیش از پاک‌کردن مرورگر یا تعویض دستگاه، اسناد کاری و روش نگهداری آن‌ها را بررسی کنید.</p><a class="site-text-link" href="/support#backup">راهنمای پشتیبان و بازیابی${arrow}</a></div></section>${cta('آمادگی همین دستگاه را بررسی کنید.', 'وضعیت واقعی نصب کاتالوگ و به‌روزرسانی را در محیط برنامه ببینید.')}`;
+}
+
+function support(): string {
+  return `${intro('راهنما و پشتیبانی', 'برای شروع و ادامهٔ کار.', 'راهنمای استفاده از محیط کاری، آماده‌سازی آفلاین و نگهداری داده. وضعیت نسخه و خطای نمایش‌داده‌شده در برنامه، نقطهٔ شروع بررسی مشکل است.')}
+    <nav class="site-anchor-nav site-container" aria-label="بخش‌های راهنما"><a href="#getting-started">شروع استفاده</a><a href="#search-help">جست‌وجوی قطعه</a><a href="#offline">کار آفلاین</a><a href="#backup">پشتیبان و بازیابی</a><a href="#report">گزارش مشکل</a></nav>
+    <div class="site-container site-support-layout"><aside class="site-support-aside"><p class="site-eyebrow">پیش از شروع</p><h2>همان دستگاه، همان مرورگر</h2><p>کاتالوگ آفلاین و داده‌های ذخیره‌شدهٔ مرورگر به محیط فعلی وابسته‌اند. پیش از پاک‌کردن داده یا جابه‌جایی، روش نگهداری اسناد خود را بررسی کنید.</p>${action('/app', 'باز کردن برنامه')}</aside><div class="site-support-content">
+    <section id="getting-started"><h2>شروع استفاده</h2><ol class="site-guide-steps"><li>برنامه را از «ورود به برنامه» باز کنید. این سایت صفحهٔ ورود یا حساب کاربری ساختگی ندارد؛ دسترسی را مسئول نصب شما مشخص می‌کند.</li><li>در اتصال اولیه، وضعیت کاتالوگ را بررسی کنید. نبود نسخهٔ فعال را با مسئول نصب در میان بگذارید.</li><li>برای کار روزانه از جست‌وجو شروع کنید. قطعهٔ انتخابی را پس از بررسی کد و سازگاری، به سند مورد نیاز ببرید.</li></ol></section>
+    <section id="search-help"><h2>جست‌وجوی قطعه</h2><p>اگر خودرو مشخص است، «خودرو + نام قطعه» را انتخاب کنید. برای کد فنی، کد لجستیکی یا نام بدون زمینهٔ خودرو از جست‌وجوی سراسری استفاده کنید.</p><p>پیش از انتخاب، ردیف لجستیکی و سازگاری آن را بررسی کنید. کد مشابه یا کد فنی مشترک، به معنی قیمت و سازگاری یکسان نیست.</p><details class="site-faq"><summary>چرا برای یک کد چند ردیف دیده می‌شود؟<span aria-hidden="true">+</span></summary><div><p>یک کد فنی می‌تواند ردیف‌های لجستیکی مستقل داشته باشد. هر ردیف ممکن است قیمت یا ارتباط خودروی متفاوتی داشته باشد؛ همان ردیف مورد نظر را انتخاب کنید.</p></div></details><details class="site-faq"><summary>وقتی خودرو یا سابقهٔ قیمت ثبت نشده است چه کنم؟<span aria-hidden="true">+</span></summary><div><p>نبود داده نتیجهٔ مثبت ایجاد نمی‌کند. سازگاری ثبت‌نشده را عمومی در نظر نگیرید و از سابقهٔ ناکافی، روند قطعی قیمت استنباط نکنید. اطلاعات منبع باید توسط مسئول داده بررسی شود.</p></div></details></section>
+    <section id="offline"><h2>آماده‌سازی و کار آفلاین</h2><ol class="site-guide-steps"><li>در حالت متصل، بخش وضعیت کاتالوگ را باز کنید و دریافت یا به‌روزرسانی را آغاز کنید.</li><li>تا پایان بررسی و نمایش آمادگی آفلاین صبر کنید. دریافت ناقص یا فقط باز شدن رابط کافی نیست.</li><li>روی همان مرورگر اتصال را قطع کنید و جست‌وجوی یک قطعهٔ شناخته‌شده را امتحان کنید.</li></ol><details class="site-faq"><summary>دریافت قطع شد یا فضای کافی ندارم.<span aria-hidden="true">+</span></summary><div><p>اتصال و فضای ذخیره را بررسی و دریافت را دوباره آغاز کنید. نسخهٔ معتبر قبلی تا تأیید نسخهٔ تازه حفظ می‌شود. برای رفع خطا، ابتدا متن وضعیت را ثبت کنید؛ دادهٔ سایت را بدون بررسی اسناد کاری پاک نکنید.</p></div></details><details class="site-faq"><summary>بعد از پاک کردن مرورگر، آفلاین کار نمی‌کند.<span aria-hidden="true">+</span></summary><div><p>پاک کردن دادهٔ سایت یا تغییر مرورگر می‌تواند نسخهٔ محلی را حذف کند. با اتصال، کاتالوگ را روی همین مرورگر دوباره نصب کنید و پیش از استفادهٔ آفلاین، آماده بودن آن را بررسی کنید.</p></div></details><a class="site-text-link" href="/offline-data">جزئیات آمادگی و دقت داده${arrow}</a></section>
+    <section id="backup"><h2>پشتیبان و بازیابی</h2><p>نسخهٔ محلی مرورگر، پشتیبان مدیریتی نیست. مسئول نصب باید از پایگاه داده، نسخه‌های منتشرشده و منابع ورودی، نسخهٔ پشتیبان داشته باشد و بازیابی را پیش از نیاز واقعی در محیط جداگانه بررسی کند.</p><p>برای جابه‌جایی یا بازیابی سرور، راهنمای عملیات همراه نصب را دنبال کنید. ابتدا نسخه و سلامت پشتیبان بررسی می‌شود؛ جایگزینی پایگاه فعال نیازمند هماهنگی مسئول نصب و توقف امن سرویس است.</p><p>برای فاکتور، بسته و فهرست خرید، پیش از پاک‌کردن دادهٔ سایت، ذخیره و خروجی مورد نیاز را از محیط کاری تهیه کنید. نگهداری کاتالوگ آفلاین را با نگهداری اسناد کاری یکسان فرض نکنید.</p></section>
+    <section id="report"><h2>گزارش مشکل به مسئول نصب</h2><p>این اطلاعات به پیگیری کمک می‌کند؛ آن‌ها را از مسیر ارتباطی مورد تأیید مجموعهٔ خود ارسال کنید:</p><ul class="site-plain-list"><li>مرحلهٔ انجام کار و متن دقیق خطا</li><li>وضعیت اتصال و نسخهٔ کاتالوگ نمایش‌داده‌شده</li><li>نام مرورگر و نوع دستگاه</li><li>تصویر خطا پس از پوشاندن قیمت‌ها و اطلاعات محرمانه</li></ul><a class="site-text-link" href="/contact">اطلاعات مسیر ارتباط${arrow}</a></section>
+    </div></div>${cta('راهنما را خواندید؛ به کار برگردید.', 'برنامه را باز کنید و وضعیت کاتالوگ یا سند کاری خود را بررسی کنید.')}`;
+}
+
+function contact(): string {
+  return `${intro('تماس و راه‌اندازی', 'مسیر ارتباط، متناسب با نصب شما.', 'پارت‌آور در این نسخه اطلاعات تماس عمومیِ تأییدشده ندارد. برای دسترسی، راه‌اندازی و پیگیری داده، با مسئول نصب یا مسئول سامانه در مجموعهٔ خود هماهنگ کنید.')}
+    <section class="site-container site-contact-grid"><article class="site-card"><div class="site-feature-icon">${symbol('guide')}</div><h2>پرسش دربارهٔ استفاده</h2><p>راهنمای شروع، جست‌وجو، کاتالوگ آفلاین و پشتیبان‌گیری را از صفحهٔ پشتیبانی دنبال کنید.</p><a class="site-text-link" href="/support">رفتن به راهنما${arrow}</a></article><article class="site-card"><div class="site-feature-icon">${symbol('offline')}</div><h2>راه‌اندازی یا مشکل نصب</h2><p>نوع دستگاه، مرورگر، نسخهٔ کاتالوگ و متن خطا را آماده کنید و از مسیر ارتباطی داخلی مجموعه به مسئول نصب برسانید.</p><a class="site-text-link" href="/support#report">چه اطلاعاتی آماده کنم؟${arrow}</a></article></section>
+    <section class="site-note site-container"><div class="site-feature-icon">${symbol('shield')}</div><div><h2>پیش از ارسال تصویر یا فایل</h2><p>قیمت‌های داخلی، اسناد مشتری و فایل‌های منبع را فقط از مسیر تأییدشدهٔ مجموعه به اشتراک بگذارید. برای گزارش رابط، نمایش متن خطا و وضعیت نسخه معمولاً شروع مناسب‌تری است.</p></div></section>${cta('برای کار با قطعات وارد شوید.', 'ورود به محیط کاری از همین نصب انجام می‌شود. سطح دسترسی را مسئول سامانهٔ شما تعیین می‌کند.')}`;
+}
+
+const pages: Record<PublicPath, Page> = {
+  '/': { title: 'پارت‌آور | جست‌وجوی قطعات، فاکتور و خرید', description: 'پارت‌آور، محیط کاری فارسی برای جست‌وجوی دقیق قطعات خودرو، فاکتور، فهرست خرید، بستهٔ قطعات و بررسی سابقهٔ قیمت.', content: home },
+  '/product': { title: 'معرفی پارت‌آور | از جست‌وجوی قطعه تا سند', description: 'آشنایی با پارت‌آور و مسیر بررسی قطعات، هویت مستقل کد فنی و لجستیکی، قیمت‌گذاری و آماده کردن فاکتور و خرید.', content: product },
+  '/features': { title: 'قابلیت‌های پارت‌آور | جست‌وجو، فاکتور و بسته', description: 'جریان‌های کاری پارت‌آور: جست‌وجوی قطعه، فاکتور، فهرست خرید، بسته‌های مرتبط، سابقهٔ قیمت و کاتالوگ آفلاین.', content: featurePage },
+  '/offline-data': { title: 'آفلاین و دقت داده | پارت‌آور', description: 'آماده‌سازی کاتالوگ آفلاین پارت‌آور، بررسی نسخه پیش از فعال‌سازی، حفظ شناسه‌های قطعه و اصول نگهداری و پشتیبان داده.', content: offline },
+  '/support': { title: 'راهنما و پشتیبانی | پارت‌آور', description: 'راهنمای شروع کار با پارت‌آور، جست‌وجوی قطعه، نصب کاتالوگ آفلاین، بررسی خطا، پشتیبان و بازیابی.', content: support },
+  '/contact': { title: 'تماس و راه‌اندازی | پارت‌آور', description: 'راهنمای ارتباط با مسئول نصب پارت‌آور برای دسترسی، راه‌اندازی، نگهداری و گزارش مشکل؛ همراه با مسیر پشتیبانی.', content: contact },
+};
+
+const navigation: { path: PublicPath; label: string }[] = [
+  { path: '/product', label: 'محصول' }, { path: '/features', label: 'قابلیت‌ها' }, { path: '/offline-data', label: 'آفلاین و داده' }, { path: '/support', label: 'راهنما' }, { path: '/contact', label: 'تماس' },
+];
+
+function brand(): string {
+  return '<span class="site-wordmark"><b lang="en" dir="ltr">PartAvar<span aria-hidden="true">.</span></b><span>پارت‌آور</span></span>';
+}
+
+function header(path: string): string {
+  return `<a class="site-skip-link" href="#site-main">رفتن به محتوای اصلی</a><header class="site-header site-container" data-menu-open="false"><a class="site-brand" href="/" aria-label="PartAvar. پارت‌آور، صفحهٔ اصلی">${brand()}</a><nav id="site-navigation" class="site-nav" aria-label="ناوبری اصلی">${navigation.map(item => `<a href="${item.path}"${path === item.path ? ' aria-current="page"' : ''}>${item.label}</a>`).join('')}</nav><div class="site-header-actions"><button type="button" id="themeToggle" class="site-icon-button" aria-label="تغییر رنگ محیط">${symbol('moon')}</button><a class="site-button site-button-primary site-header-cta" href="/app">ورود به برنامه${arrow}</a><button class="site-menu-toggle site-icon-button" id="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="باز کردن فهرست ناوبری"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span>فهرست</span></button></div></header>`;
+}
+
+function footer(): string {
+  return `<footer class="site-footer"><div class="site-container"><div class="site-footer-top"><div><a class="site-brand" href="/" aria-label="PartAvar. پارت‌آور، صفحهٔ اصلی">${brand()}</a><p>محیط کاری قطعات خودرو.<br>دقیق در جزئیات، روشن در مسیر کار.</p></div><nav aria-label="ناوبری پاورقی"><div><h2>محصول</h2><a href="/product">معرفی پارت‌آور</a><a href="/features">قابلیت‌ها</a><a href="/offline-data">آفلاین و دقت داده</a></div><div><h2>راهنما</h2><a href="/support">راهنمای استفاده</a><a href="/support#backup">پشتیبان و بازیابی</a><a href="/contact">تماس و راه‌اندازی</a></div></nav></div><div class="site-footer-bottom"><span>پارت‌آور <span lang="en" dir="ltr">/ PartAvar</span></span><a href="/app">ورود به محیط کاری${arrow}</a></div></div></footer>`;
+}
+
+function missing(): string {
+  return `${intro('صفحه پیدا نشد / ۴۰۴', 'این نشانی در سایت وجود ندارد.', 'ممکن است نشانی تغییر کرده باشد یا درست وارد نشده باشد. از صفحهٔ اصلی ادامه دهید یا راهنمای استفاده را باز کنید.')}<div class="site-container site-missing-actions">${action('/', 'بازگشت به صفحهٔ اصلی', true)}${action('/support', 'راهنمای استفاده')}</div>`;
+}
+
+function setMetadata(page: Page, notFound: boolean): void {
+  document.title = page.title;
+  document.documentElement.lang = 'fa';
+  document.documentElement.dir = 'rtl';
+  const entries: { attribute: 'name' | 'property'; key: string; value: string }[] = [
+    { attribute: 'name', key: 'description', value: page.description },
+    { attribute: 'name', key: 'robots', value: notFound ? 'noindex, follow' : 'index, follow' },
+    { attribute: 'property', key: 'og:title', value: page.title },
+    { attribute: 'property', key: 'og:description', value: page.description },
+    { attribute: 'property', key: 'og:type', value: 'website' },
+    { attribute: 'property', key: 'og:site_name', value: 'PartAvar / پارت‌آور' },
+    { attribute: 'property', key: 'og:locale', value: 'fa_IR' },
+  ];
+  for (const entry of entries) {
+    let meta = document.head.querySelector<HTMLMetaElement>(`meta[${entry.attribute}="${entry.key}"]`);
+    if (!meta) { meta = document.createElement('meta'); meta.setAttribute(entry.attribute, entry.key); document.head.append(meta); }
+    meta.content = entry.value;
+  }
+}
+
+/** Render the public site only. The entry point owns shared theme initialization. */
+export function renderWebsite(root: HTMLElement): void {
+  const path = window.location.pathname.replace(/\/+$/, '') || '/';
+  const page = pages[path as PublicPath];
+  const notFound = !page;
+  const selected = page ?? { title: 'صفحه پیدا نشد | پارت‌آور', description: 'این نشانی در سایت پارت‌آور وجود ندارد. از صفحهٔ اصلی یا راهنمای استفاده ادامه دهید.', content: missing };
+  setMetadata(selected, notFound);
+  root.classList.add('public-website');
+  root.innerHTML = `${header(path)}<main id="site-main" tabindex="-1" data-site-page="${notFound ? 'not-found' : path}">${selected.content()}</main>${footer()}`;
+
+  const menu = root.querySelector<HTMLButtonElement>('#site-menu-toggle');
+  const siteHeader = root.querySelector<HTMLElement>('.site-header');
+  const setMenu = (open: boolean) => {
+    siteHeader?.setAttribute('data-menu-open', String(open));
+    menu?.setAttribute('aria-expanded', String(open));
+    menu?.setAttribute('aria-label', open ? 'بستن فهرست ناوبری' : 'باز کردن فهرست ناوبری');
+  };
+  menu?.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') !== 'true'));
+  root.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && menu?.getAttribute('aria-expanded') === 'true') { setMenu(false); menu.focus(); }
+  });
+
+  const preview = root.querySelector<HTMLImageElement>('#site-app-preview');
+  const fallback = root.querySelector<HTMLElement>('#site-preview-fallback');
+  const showPreview = () => { if (preview && preview.naturalWidth > 0) { preview.hidden = false; if (fallback) fallback.hidden = true; } };
+  preview?.addEventListener('load', showPreview);
+  preview?.addEventListener('error', () => { if (preview) preview.hidden = true; if (fallback) fallback.hidden = false; });
+  if (preview?.complete) showPreview();
+
+  // A full-page route link can include a help anchor. Honor it after rendering.
+  if (window.location.hash) {
+    let id: string;
+    try { id = decodeURIComponent(window.location.hash.slice(1)); } catch { return; }
+    const target = document.getElementById(id);
+    if (target && root.contains(target)) requestAnimationFrame(() => target.scrollIntoView());
+  }
+}

@@ -1,0 +1,10 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ✓ tests/unit/documents.test.ts (5 tests) 4ms
+
+ Test Files  1 passed (1)
+      Tests  5 passed (5)
+   Start at  11:43:47
+   Duration  72ms (transform 55%, tests 20%, import 19%, worker 6%)
+

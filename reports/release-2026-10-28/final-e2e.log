@@ -1,0 +1,46 @@
+
+Running 25 tests using 1 worker
+
+(node:10165) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/25] [chromium] › tests/e2e/offline-faults.spec.ts:243:1 › a corrupt snapshot chunk fails hash verification and leaves the old catalogue active
+[2/25] [chromium] › tests/e2e/offline-faults.spec.ts:277:1 › two tabs share one update lease while the existing version stays searchable
+[3/25] [chromium] › tests/e2e/offline-faults.spec.ts:325:1 › browser close during staging relaunches from the same profile and recovers the update
+[4/25] [chromium] › tests/e2e/offline-faults.spec.ts:417:1 › low browser quota blocks an update before staging and keeps the old offline version
+[5/25] [chromium] › tests/e2e/offline-workflows.spec.ts:96:1 › preserves original workflows, installs the full catalogue, and searches after offline relaunch
+[chromium] › tests/e2e/offline-workflows.spec.ts:96:1 › preserves original workflows, installs the full catalogue, and searches after offline relaunch
+OFFLINE_DIAGNOSTICS {"online":false,"controller":true,"serviceWorkers":["activated"],"stylesheetLinks":["http://127.0.0.1:4173/assets/index-BhVhxGnm.css","http://127.0.0.1:4173/assets/app-bootstrap-CCCwb77U.css"],"loadedStylesheets":2,"bodyFont":"Tahoma, \"Segoe UI\", Arial, sans-serif","resources":[{"name":"http://127.0.0.1:4173/assets/index-Cn94n4k4.js","duration":1.099999999627471,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/index-BhVhxGnm.css","duration":1.2000000001862645,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/app-shell-CrojkZxx.js","duration":0.599999999627471,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/theme-mhmZZqUX.js","duration":0.7999999998137355,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/app-bootstrap-CpZm4uWq.js","duration":0.7000000001862645,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/app-bootstrap-CCCwb77U.css","duration":0.8999999994412065,"transferSize":0}],"status":"در حال بررسی کاتالوگ…"}
+
+[6/25] [chromium] › tests/e2e/offline-workflows.spec.ts:297:1 › cancels a staged update at a chunk boundary and keeps the prior offline catalogue active
+[7/25] [chromium] › tests/e2e/partavar-workflows.spec.ts:5:1 › PartAvar application separates public site and supports custom mobile part suggestions
+[8/25] [chromium] › tests/e2e/partavar-workflows.spec.ts:27:1 › package edits keep exact logistics and manual price through saved history, invoice, XLSX and A4 print
+[9/25] [chromium] › tests/e2e/price-history.spec.ts:207:1 › real catalogue entries keep independent historical evidence in the browser UI
+[chromium] › tests/e2e/price-history.spec.ts:207:1 › real catalogue entries keep independent historical evidence in the browser UI
+(node:10165) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[10/25] [chromium] › tests/e2e/production-runtime.spec.ts:27:1 › production serves anonymous website but denies app and catalogue without credentials
+[chromium] › tests/e2e/production-runtime.spec.ts:27:1 › production serves anonymous website but denies app and catalogue without credentials
+(node:10165) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[11/25] [chromium] › tests/e2e/production-runtime.spec.ts:37:1 › authenticated same-origin app runs Worker search, documents and shell under production CSP
+[12/25] [chromium] › tests/e2e/production-runtime.spec.ts:63:1 › browser installation fetch reads the credentialed manifest and correctly sized brand icons
+[13/25] [chromium] › tests/e2e/production-runtime.spec.ts:90:1 › authenticated snapshots install completely and relaunch without network under CSP
+[14/25] [chromium] › tests/e2e/redesign.spec.ts:3:1 › compact RTL redesign uses bounded online search and explicit vehicle selection
+[15/25] [chromium] › tests/e2e/redesign.spec.ts:61:1 › discarded requests cannot restore cleared or other-mode results
+[16/25] [chromium] › tests/e2e/redesign.spec.ts:85:1 › copy reports success only on actual writes; themes, keyboard and enlarged layout remain usable
+[17/25] [chromium] › tests/e2e/redesign.spec.ts:122:1 › vehicle search, normalized digits, empty results and large values retain their real identities
+[18/25] [chromium] › tests/e2e/redesign.spec.ts:149:1 › simulated quota exhaustion explains recovery without activating a partial catalogue
+[19/25] [chromium] › tests/e2e/redesign.spec.ts:169:1 › lazy logistics navigation follows actual API cursors and preserves entry prices
+[20/25] [chromium] › tests/e2e/release-lease-race.spec.ts:6:1 › expired living installer cannot downgrade the version activated by another tab
+[21/25] [chromium] › tests/e2e/website.spec.ts:7:1 › public routes have distinct metadata, real internal links and no catalogue requests
+[22/25] [chromium] › tests/e2e/website.spec.ts:45:1 › responsive navigation supports keyboard, Escape, route links and app entry
+[23/25] [chromium] › tests/e2e/website.spec.ts:70:1 › themes, public page layouts, touch targets and text enlargement stay usable
+[24/25] [chromium] › tests/e2e/website.spec.ts:101:1 › real preview loads and a failed image keeps useful app access
+[25/25] [chromium] › tests/e2e/website.spec.ts:115:1 › help links resolve to sections and contact does not invent a submission channel
+  25 passed (2.0m)

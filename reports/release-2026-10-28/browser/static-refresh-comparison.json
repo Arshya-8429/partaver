@@ -1,0 +1,45 @@
+{
+  "scope": "Vite content-hashed JS/CSS files observed before the manifest/icons/robots-only rebuild remain present after its emptyOutDir rebuild",
+  "files": [
+    {
+      "path": "/assets/index-C970vbRj.js",
+      "unchangedContentHashFilePresent": true
+    },
+    {
+      "path": "/assets/index-BhVhxGnm.css",
+      "unchangedContentHashFilePresent": true
+    },
+    {
+      "path": "/assets/app-shell-CrojkZxx.js",
+      "unchangedContentHashFilePresent": true
+    },
+    {
+      "path": "/assets/app-bootstrap-BQgAro2n.js",
+      "unchangedContentHashFilePresent": true
+    },
+    {
+      "path": "/assets/theme-mhmZZqUX.js",
+      "unchangedContentHashFilePresent": true
+    },
+    {
+      "path": "/assets/app-bootstrap-CCCwb77U.css",
+      "unchangedContentHashFilePresent": true
+    },
+    {
+      "path": "/assets/catalogue.worker-Cmifh3cz.js",
+      "unchangedContentHashFilePresent": true
+    },
+    {
+      "path": "/assets/website-aFGBNYFj.js",
+      "unchangedContentHashFilePresent": true
+    },
+    {
+      "path": "/assets/website-C_-i1UU3.css",
+      "unchangedContentHashFilePresent": true
+    },
+    {
+      "path": "/assets/theme-Dubfbby_.js",
+      "unchangedContentHashFilePresent": true
+    }
+  ]
+}

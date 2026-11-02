@@ -1,0 +1,14 @@
+{
+  "command": "/usr/bin/safaridriver --version",
+  "versionOutput": "Included with Safari 18.3 (20620.2.4.11.5)",
+  "webdriverAttempt": "POST a fresh browserName=safari WebDriver session to a locally started safaridriver on port9515",
+  "result": {
+    "error": "session not created",
+    "message": "Could not create a session: You must enable 'Allow remote automation' in the Developer section of Safari Settings to control Safari via WebDriver."
+  },
+  "settingsChanged": false,
+  "remoteAutomationEnabled": false,
+  "browserSessionCreated": false,
+  "driverStoppedAfterCheck": true,
+  "actualSafariStatus": "blocked by existing Safari automation setting; Safari functional compatibility remains untested"
+}

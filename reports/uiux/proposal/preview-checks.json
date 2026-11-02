@@ -1,0 +1,118 @@
+{
+  "stage": "design-proposal-only",
+  "checks": [
+    {
+      "theme": "light",
+      "width": 320,
+      "scrollWidth": 320,
+      "cardHeight": 449.28125,
+      "overflowElements": []
+    },
+    {
+      "theme": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "cardHeight": 449.28125,
+      "overflowElements": []
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "scrollWidth": 390,
+      "cardHeight": 449.28125,
+      "overflowElements": []
+    },
+    {
+      "theme": "light",
+      "width": 430,
+      "scrollWidth": 430,
+      "cardHeight": 449.28125,
+      "overflowElements": []
+    },
+    {
+      "theme": "light",
+      "width": 650,
+      "scrollWidth": 650,
+      "cardHeight": 298.546875,
+      "overflowElements": []
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "cardHeight": 283.265625,
+      "overflowElements": []
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "cardHeight": 283.265625,
+      "overflowElements": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "cardHeight": 203.28125,
+      "overflowElements": []
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "scrollWidth": 320,
+      "cardHeight": 449.28125,
+      "overflowElements": []
+    },
+    {
+      "theme": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "cardHeight": 449.28125,
+      "overflowElements": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "scrollWidth": 390,
+      "cardHeight": 449.28125,
+      "overflowElements": []
+    },
+    {
+      "theme": "dark",
+      "width": 430,
+      "scrollWidth": 430,
+      "cardHeight": 449.28125,
+      "overflowElements": []
+    },
+    {
+      "theme": "dark",
+      "width": 650,
+      "scrollWidth": 650,
+      "cardHeight": 298.546875,
+      "overflowElements": []
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "cardHeight": 283.265625,
+      "overflowElements": []
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "cardHeight": 283.265625,
+      "overflowElements": []
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "cardHeight": 203.28125,
+      "overflowElements": []
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,39 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ❯ tests/integration/backup-restore.test.ts (3 tests | 1 failed) 37ms
+   ❯ recoverable database and snapshot backups (3)
+     ✓ does not include transient SQLite journal sidecars in the backup directory 1ms
+     × backs up the database, published snapshot, and immutable source archive with checksums 6ms
+     ✓ refuses a backup whose artifact checksum no longer matches 1ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/backup-restore.test.ts > recoverable database and snapshot backups > backs up the database, published snapshot, and immutable source archive with checksums
+AssertionError: expected [ 'catalogue.db-shm', …(1) ] to deeply equal []
+
+- Expected
++ Received
+
+- []
++ [
++   "catalogue.db-shm",
++   "catalogue.db-wal",
++ ]
+
+ ❯ tests/integration/backup-restore.test.ts:46:101
+     44|     });
+     45|     const namesAfterVerification = await readdir(backupPath);
+     46|     expect(namesAfterVerification.filter((name) => name.endsWith('-wal…
+       |                                                                                                     ^
+     47|   });
+     48|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 2 passed (3)
+   Start at  15:45:55
+   Duration  117ms (tests 52%, import 25%, transform 21%, worker 2%)
+

@@ -1,0 +1,201 @@
+{
+  "baseArchive": "/Users/barmana/Documents/E/behrad/deliverables/PartAvar-Master-Implementation-2026-10-27.zip",
+  "baseSha256": "2072d8b33ce1f81017c6564e968e3251073cd8646e0a01dec313cc725f60c27b",
+  "sourceFilesChanged": [
+    {
+      "path": ".gitignore",
+      "beforeSha256": "73abb36346d30129f8ead6b4a029aa8b52e37f0daba5e0a1e35be0463754603a",
+      "afterSha256": "13b7c2a7a6b5146a67679dc14264081d49d0c4aabbee1ced01d0d91dcff032a2"
+    },
+    {
+      "path": "apps/api/package.json",
+      "beforeSha256": "94329df761704286f159c148642a2e786a360bff700368591cc7e84b901380bd",
+      "afterSha256": "9692e297b971fb89152a2b23c51d82596185196f50395d44b3df8d054380f677"
+    },
+    {
+      "path": "apps/api/src/access.ts",
+      "beforeSha256": null,
+      "afterSha256": "655c777319ab538eb0edaf2d400684a65668c7b9579ac70494497e02abd9334c"
+    },
+    {
+      "path": "apps/api/src/server.ts",
+      "beforeSha256": "4fdb26d4edc97d1410841bc5bcebd82ceac4bdc7e4419f9d9bca282dd75471b7",
+      "afterSha256": "12179a27e877266cd11b1269a19632aca92a754231f5134b68e8d6714b59f1de"
+    },
+    {
+      "path": "apps/api/src/web.ts",
+      "beforeSha256": null,
+      "afterSha256": "081b8fe39d54157ba4893ab958003f3ab86947c1d4a232339064f68e9031899e"
+    },
+    {
+      "path": "apps/web/index.html",
+      "beforeSha256": "8b613631a3f4152612ba79ccfd8b3f330c28f12944de9f994e128085eca74653",
+      "afterSha256": "163bbdb33927f18be86478de1c7db59f8f85309139949ede1afcb1e112ab7ffa"
+    },
+    {
+      "path": "apps/web/src/app-shell.ts",
+      "beforeSha256": "7dd57a6148f6480ae2f78d80e08b7b958f385f3e10e9e0cd8d2b4582ac679030",
+      "afterSha256": "23282e7cb387dc072466c56814b76b00f76bcb518565a767a564d0b038691ea3"
+    },
+    {
+      "path": "apps/web/src/offline/installer.ts",
+      "beforeSha256": "5b8c47c128e6351903d202aa7ce18a9cec1bdbb1534531cce9aa0b15060956a1",
+      "afterSha256": "f9ab7802a9c647eaaecdfb2ba9723ad7d78056544b47f43b364fe77a30be070e"
+    },
+    {
+      "path": "apps/web/src/price-intelligence/workspace.ts",
+      "beforeSha256": "a0788bb0185c892214eee55cad6bd9cab5a95e33c3bb80680af8d13a894a64a0",
+      "afterSha256": "3cbee1bf59bcc28904544934ffd75522d1b7115de8197fe4d03b89713ed4978a"
+    },
+    {
+      "path": "apps/web/src/styles/app.css",
+      "beforeSha256": "dd3f8d106123aa38016f9ac857789bf4c8fa9977b644da03320dcef1d6516059",
+      "afterSha256": "b79abf71f13a3ef0509c5f6dbb15d1138a371ca27596a2ef1218467369ea2a34"
+    },
+    {
+      "path": "apps/web/src/ui/catalogue-status.ts",
+      "beforeSha256": "5e56a1606237665c46394162b004d07d4b6b690ab1f886c9c575463207fc1928",
+      "afterSha256": "9bfa98aa48da04cdefbc233f8aebba4dbeb1481724035ab6507bfa6829e47142"
+    },
+    {
+      "path": "apps/web/src/ui/details.ts",
+      "beforeSha256": "b020dd75d3a4e9accce11b7cbd5038ac7e1e30fbcc66f09f8b6c3691f37edd99",
+      "afterSha256": "3213ba23efa3cbe2133a1f807e8f04a48c03fb8c7da1efac22991a5c9b9245c1"
+    },
+    {
+      "path": "apps/web/src/ui/entry.ts",
+      "beforeSha256": "ca5c8647fb75ec154a930339edf1557e1f9e68bd2ede464cdb80a1be50981063",
+      "afterSha256": "10044315210745acdd0ead03a29a90748926507ca4263400ab24aaab79b42a02"
+    },
+    {
+      "path": "apps/web/src/ui/search.ts",
+      "beforeSha256": "ec6fd49a7af00c748d0cc90e50e758f2069b6b24bff7f3e871133f96bb2b1170",
+      "afterSha256": "c6ca640801cdcb0b9a5faeae94dcae98999ffc40bfbe3579d91c09d51ff34086"
+    },
+    {
+      "path": "apps/web/src/website/index.ts",
+      "beforeSha256": "87e3c1950795f1f72b7b243f7df1c151ffea6c50a927a68e81395419e0030c79",
+      "afterSha256": "98fc130b8a68d0ee0eee7b405653857e08d556026d71081ad49ad897acc720f0"
+    },
+    {
+      "path": "deploy/Caddyfile",
+      "beforeSha256": null,
+      "afterSha256": "ca16e8de747702fda22ca9ddf1225975f77bd8663becf322fac91417e78500f5"
+    },
+    {
+      "path": "deploy/partavar.env.example",
+      "beforeSha256": null,
+      "afterSha256": "ffd461642dd27d71b11036f738f1608df78895bf7c6249530921c12599438c70"
+    },
+    {
+      "path": "deploy/partavar.service",
+      "beforeSha256": null,
+      "afterSha256": "dd89d2732d675bb6d2d938453c04a7520cfdfb53455e14c91e3e05faf59ba052"
+    },
+    {
+      "path": "package.json",
+      "beforeSha256": "4663001aab9ec80fa4649dd5a9d4b4690ad2822193af58f6aa05624f8b0fbb01",
+      "afterSha256": "c2f35434bf045651388fa438ef5d40b9addf3a5df0c13b02a3ca915bdf24c7a9"
+    },
+    {
+      "path": "packages/importer/src/operations.ts",
+      "beforeSha256": "b2e89265bf927c683ce060fe3b175437da282f7c6b216ceadb4287ef0a54fd6e",
+      "afterSha256": "976e01e601d3d29d1d1df6ec85b85982243898ed7793b46ce82e30e450a6ece6"
+    },
+    {
+      "path": "playwright.release.config.ts",
+      "beforeSha256": null,
+      "afterSha256": "6ca359c6448d63ba0f9b52fd08aa78fdddc2eb31c17e5eaa07f0612b29f6e55f"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "beforeSha256": "107b0bb2e9082b06cba8d5bf7c3170a360be58c26ca26091b9b7d912739054fb",
+      "afterSha256": "c2dbcf6a76e620479e4bf78d94e96ada799c8441777a02f3a9dce698b71c5cd1"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "beforeSha256": "175419e0e188c48576a0253952b541048d43c2bb9a382d4f2705b4c59f707f2a",
+      "afterSha256": "ae2defce4dc04c41b1e86ca4de170f3adee945b6606c1e838e34a6499371259d"
+    },
+    {
+      "path": "scripts/check-bundle.ts",
+      "beforeSha256": "6599a0ae8e3d25152dd759f1b4b816cbfbcdf0ac7ee2ee4e40dac129dab14c7b",
+      "afterSha256": "603430840d49f1783f5bd6ce7c84c026be678b7bd5af75d5ba61f3c82dda91a0"
+    },
+    {
+      "path": "scripts/operator-credentials.ts",
+      "beforeSha256": null,
+      "afterSha256": "8a06379d877cf00e26946e90e3f14f8a0601827fa3b3d22baba55bf460797233"
+    },
+    {
+      "path": "scripts/release/archive.py",
+      "beforeSha256": null,
+      "afterSha256": "733b5a26b49233f60dfaa981ff2508328312cb062bf4154f00ac53203ddf39ef"
+    },
+    {
+      "path": "scripts/release/common.ts",
+      "beforeSha256": null,
+      "afterSha256": "62da212004e7709a5818f1bc3df5d8d0c8aa535ee2173133387cdbbf637807eb"
+    },
+    {
+      "path": "scripts/release/package.ts",
+      "beforeSha256": null,
+      "afterSha256": "de5e8433ed45263d2689df5fe30b5ef2c07b15bd16df2e89081227de2a8a4532"
+    },
+    {
+      "path": "scripts/release/verify-source.ts",
+      "beforeSha256": null,
+      "afterSha256": "56aa7fb4065bf037bd63420c429589b858184b162f62c8c19ac3399a94e64207"
+    },
+    {
+      "path": "scripts/release/verify.ts",
+      "beforeSha256": null,
+      "afterSha256": "07fd6ed23544f0ac3b76480aab1c6ebd4588bc9cd095be6c205704236bcac9cf"
+    },
+    {
+      "path": "tests/e2e/production-runtime.spec.ts",
+      "beforeSha256": null,
+      "afterSha256": "9b738030fb39f5ff590bdcd7f031f2e315a0a14bd5218cb0527250c6ef19d8aa"
+    },
+    {
+      "path": "tests/e2e/release-lease-race.spec.ts",
+      "beforeSha256": null,
+      "afterSha256": "36425aa909682258660d4d056905a799cc55cb5c937b7b55bbe2659945dc995e"
+    },
+    {
+      "path": "tests/integration/backup-relocation.test.ts",
+      "beforeSha256": null,
+      "afterSha256": "7b87227b9c8f9c738aa9c49ba7413292df0cdb9e64f82bd4c3b9617cc1d737d8"
+    },
+    {
+      "path": "tests/integration/operator-credentials.test.ts",
+      "beforeSha256": null,
+      "afterSha256": "bb084d0b3a9aaf0a4fe3b664299a71a3f7532233b8aecfbe351e9527df9785f8"
+    },
+    {
+      "path": "tests/integration/production-runtime.test.ts",
+      "beforeSha256": null,
+      "afterSha256": "0d214e470d04b3563b639448e4081f263fd6aff07ad7355b1865c99ba8ab6fe7"
+    },
+    {
+      "path": "tests/integration/release-packaging.test.ts",
+      "beforeSha256": null,
+      "afterSha256": "1e4ac83590f62800ab75fe20c23a0a121202ef85f54e1dda7661427c3ec9f6ba"
+    },
+    {
+      "path": "tests/release/browser.spec.ts",
+      "beforeSha256": null,
+      "afterSha256": "ba81449600430c85de61262d467b0a729a84981fc588e4b18ab59a9550cc3fa1"
+    },
+    {
+      "path": "tests/release/cross-tab.spec.ts",
+      "beforeSha256": null,
+      "afterSha256": "a0f80ecdbcede1add40185478cb6559c7ad47cfe8fe2bf6abfd229c0d37ec609"
+    },
+    {
+      "path": "tests/release/history-version.spec.ts",
+      "beforeSha256": null,
+      "afterSha256": "9bddf4447c925bc1e90a2f2365c0871d3b73b5d66943ea5de752fcc8d1f98170"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ❯ tests/integration/price-history.test.ts (6 tests | 1 failed) 277ms
+   ❯ historical XLSX import and bounded reads (6)
+     ✓ stages immutable XLSX evidence, reports ambiguity, commits explicitly and never writes catalogue 113ms
+     ✓ audits supersede and rollback, ranks growth and restores a verified backup to a new target 52ms
+     ✓ rejects legacy XLS, formula cells, unsafe numeric prices, invalid dates and unbounded reads 28ms
+     × refuses to activate source archives changed after staging and canonicalizes equivalent column mappings 22ms
+     ✓ keeps retained catalogue versions isolated and invalidates timeline cursors after audited transitions 33ms
+     ✓ preserves conflicting same-day evidence, rejects database aliases and verifies backup tampering 28ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/price-history.test.ts > historical XLSX import and bounded reads > refuses to activate source archives changed after staging and canonicalizes equivalent column mappings
+Error: This source was already staged with different mapping; explicit supersede is required.
+ ❯ stagePriceHistory packages/importer/src/price-history/index.ts:151:84
+    149|     if (duplicate) { const previous = batch(db, duplicate.id); return …
+    150|     const previousMapping = db.prepare('SELECT id FROM ph_batches WHER…
+    151|     if (previousMapping && options.supersedesBatchId !== previousMappi…
+       |                                                                                    ^
+    152|     if (options.supersedesBatchId) {
+    153|       const prior = batch(db, options.supersedesBatchId);
+ ❯ stagePriceHistory tests/integration/price-history.test.ts:23:18
+ ❯ tests/integration/price-history.test.ts:156:13
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 5 passed (6)
+   Start at  11:53:19
+   Duration  587ms (tests 52%, import 42%, transform 5%)
+

@@ -1,0 +1,24 @@
+[WebServer] (node:2113) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ tsx src/server.ts
+[WebServer] (node:2128) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:2134) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:2134) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:2143) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ vite preview --host 127.0.0.1 -- --port 4173
+[WebServer] (node:2159) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:2165) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+OFFLINE_DIAGNOSTICS {"online":false,"controller":true,"serviceWorkers":["activated"],"stylesheetLinks":["http://127.0.0.1:4173/assets/index-Bgk0z1dg.css","http://127.0.0.1:4173/assets/app-bootstrap-CCCwb77U.css"],"loadedStylesheets":2,"bodyFont":"Tahoma, \"Segoe UI\", Arial, sans-serif","resources":[{"name":"http://127.0.0.1:4173/assets/index-BaHI0EiP.js","duration":1,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/index-Bgk0z1dg.css","duration":0.8999999999650754,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/app-shell-B8iglXNN.js","duration":0.7000000000116415,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/theme-mhmZZqUX.js","duration":1.2000000000116415,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/app-bootstrap-DQeHGM6g.js","duration":1,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/app-bootstrap-CCCwb77U.css","duration":0.9000000000232831,"transferSize":0}],"status":"در حال بررسی کاتالوگ…"}
+  ✓  1 [chromium] › tests/e2e/offline-workflows.spec.ts:96:1 › preserves original workflows, installs the full catalogue, and searches after offline relaunch (32.9s)
+  ✓  2 [chromium] › tests/e2e/offline-workflows.spec.ts:297:1 › cancels a staged update at a chunk boundary and keeps the prior offline catalogue active (483ms)
+
+  2 passed (39.7s)

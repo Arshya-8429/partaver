@@ -1,0 +1,1214 @@
+{
+  "config": {
+    "argv": [
+      "/Users/barmana/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/Users/barmana/Documents/E/behrad/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      "playwright.release.config.ts",
+      "--grep",
+      "online catalogue|app keyboard|automated WCAG",
+      "--reporter=list,json",
+      "--output",
+      "reports/release-2026-10-28/browser/final-code-artifacts"
+    ],
+    "configFile": "/Users/barmana/Documents/E/behrad/playwright.release.config.ts",
+    "rootDir": "/Users/barmana/Documents/E/behrad/tests/release",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "snapshotDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "serviceWorkers": "allow",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "launchOptions": {
+            "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "snapshotDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "serviceWorkers": "allow",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit",
+        "testDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "snapshotDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "serviceWorkers": "allow",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1792,
+            "height": 1120
+          },
+          "deviceScaleFactor": 2,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "browser.spec.ts",
+      "file": "browser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "online catalogue, keyboard selection, details and documents preserve exact identities",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1764,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T08:23:14.029Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "invoice-print-preview",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-online-catalogue-k-71220-s-preserve-exact-identities-chromium/attachments/invoice-print-preview-5ca4b4126fd7d65f53d843a2c96e556859072ae4.png"
+                    },
+                    {
+                      "name": "online-smoke",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-online-catalogue-k-71220-s-preserve-exact-identities-chromium/attachments/online-smoke-109dacd02717b5bf514dca1377b9888768c72afc.json"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-1532f87aa0bcba8242e8",
+          "file": "browser.spec.ts",
+          "line": 95,
+          "column": 1
+        },
+        {
+          "title": "automated WCAG accessibility audit covers app workspaces, dialogs and public pages in both themes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5675,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T08:23:16.114Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-site-home-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-site-home-light-f1bfc29d558719663856ad4c7361691d9eba6c53.json"
+                    },
+                    {
+                      "name": "axe-site-product-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-site-product-light-b7767589c1685d96c6ed30151b4a72311730b41d.json"
+                    },
+                    {
+                      "name": "axe-site-features-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-site-features-light-5682c8276302236a11f02538359a70336ac0ca12.json"
+                    },
+                    {
+                      "name": "axe-site-offline-data-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-site-offline-data-light-e8bda57e18c89cfb7a4deb20977d11f8399c3f5a.json"
+                    },
+                    {
+                      "name": "axe-site-support-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-site-support-light-81170972dc0aeae6090348c3f71936c2c32781e2.json"
+                    },
+                    {
+                      "name": "axe-site-contact-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-site-contact-light-b71d37bca4bdfe286aebdd82df1082fbe96e6c33.json"
+                    },
+                    {
+                      "name": "axe-app-search-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-app-search-light-e16e8bbce46dc6660eeabdb6b0b6215e01b8e164.json"
+                    },
+                    {
+                      "name": "axe-vehicle-combobox-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-vehicle-combobox-light-f395934ed45b6000e638b92da4c0e7ddcfdb4e45.json"
+                    },
+                    {
+                      "name": "axe-part-combobox-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-part-combobox-light-c138119bde74e2a92086f83464c9a5a5b5a791ec.json"
+                    },
+                    {
+                      "name": "axe-app-results-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-app-results-light-a39394f7fe0dc352b29949080b687ee4b6ab2dbb.json"
+                    },
+                    {
+                      "name": "axe-entry-dialog-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-entry-dialog-light-d4e08e305452003344fc7c85ca703efd877e316f.json"
+                    },
+                    {
+                      "name": "axe-invoice-price-dialog-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-invoice-price-dialog-light-ba6d05862ea5e4e8e23d44c8a5cf1124fb24383a.json"
+                    },
+                    {
+                      "name": "axe-app-purchase-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-app-purchase-light-7f7295c20433991cbd20c8dbdb69f1a690713433.json"
+                    },
+                    {
+                      "name": "axe-app-packages-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-app-packages-light-d594d225d326e359594c2c65dc17373c8b0a8045.json"
+                    },
+                    {
+                      "name": "axe-app-invoices-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-app-invoices-light-84afb73b502eacce60acff76d927a23c8ecee484.json"
+                    },
+                    {
+                      "name": "axe-app-prices-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-app-prices-light-0c1a2f79c82d5268d98d245629b772516cd26963.json"
+                    },
+                    {
+                      "name": "axe-app-settings-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-app-settings-light-847daf2fcbf7af92e54e162f0644c9ba607e0626.json"
+                    },
+                    {
+                      "name": "axe-backup-import-dialog-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-backup-import-dialog-light-3c139167a1c4e09aa7c65378604c6be3cd8a8c4b.json"
+                    },
+                    {
+                      "name": "axe-site-home-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-site-home-dark-75fdd4cefe2a4014cd63004820d54099dacb59da.json"
+                    },
+                    {
+                      "name": "axe-site-product-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-site-product-dark-5f26bd6df5537bea66345268b3f81eac879872de.json"
+                    },
+                    {
+                      "name": "axe-site-features-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-site-features-dark-14670c579f8096b74300d1cc43021f7ae0914a59.json"
+                    },
+                    {
+                      "name": "axe-site-offline-data-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-site-offline-data-dark-b618ed641f4a0b8e2b15af6fc1997e2e47eb25b3.json"
+                    },
+                    {
+                      "name": "axe-site-support-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-site-support-dark-2a302658fad9349d871cee9d6ed9c17792eada44.json"
+                    },
+                    {
+                      "name": "axe-site-contact-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-site-contact-dark-0477f6c17d8f2980562357deb783ef593cb8678e.json"
+                    },
+                    {
+                      "name": "axe-app-search-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-app-search-dark-d7760a2b30d745e46a1bb61604d8e15a2a3a1dd3.json"
+                    },
+                    {
+                      "name": "axe-vehicle-combobox-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-vehicle-combobox-dark-fcf2090b7099745893772a160112de1a3de3f07c.json"
+                    },
+                    {
+                      "name": "axe-part-combobox-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-part-combobox-dark-a88103413edb0c88afab2ac74b202185ee581d23.json"
+                    },
+                    {
+                      "name": "axe-app-results-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-app-results-dark-55d8f2a9effae0900b40f58161a54ee1190c6e01.json"
+                    },
+                    {
+                      "name": "axe-entry-dialog-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-entry-dialog-dark-af01737346c80e5161ef9ae48b9f068942d52ec0.json"
+                    },
+                    {
+                      "name": "axe-invoice-price-dialog-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-invoice-price-dialog-dark-7e13192756ce2665a74e540249419d7d30616638.json"
+                    },
+                    {
+                      "name": "axe-app-purchase-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-app-purchase-dark-40b05ea55c026014afd0a3d2480d2435b997b2a5.json"
+                    },
+                    {
+                      "name": "axe-app-packages-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-app-packages-dark-40d84c5c9cc45dc75c664a8e5e1ef03146b678ca.json"
+                    },
+                    {
+                      "name": "axe-app-invoices-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-app-invoices-dark-4061ad06dcbbab61d947b87484c6813b4faf2f0a.json"
+                    },
+                    {
+                      "name": "axe-app-prices-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-app-prices-dark-f16a96e9d09a255cba27d59cba9e0888374bc7e9.json"
+                    },
+                    {
+                      "name": "axe-app-settings-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-app-settings-dark-5c10c4fecd146238c59eceeb314db39801ecf23c.json"
+                    },
+                    {
+                      "name": "axe-backup-import-dialog-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-backup-import-dialog-dark-15208fea729ee5f6a2e9fc74047953d96e078990.json"
+                    },
+                    {
+                      "name": "axe-summary",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-summary-a2172755a80e9b6213d0ef2c4bf0558c503898fe.json"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-38a2ee50f5a80416275d",
+          "file": "browser.spec.ts",
+          "line": 224,
+          "column": 1
+        },
+        {
+          "title": "app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1527,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T08:23:21.799Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "app-results-light-390",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/attachments/app-results-light-390-62be902b29fec5d73e4492f73dd9824338688c60.png"
+                    },
+                    {
+                      "name": "app-results-dark-390",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/attachments/app-results-dark-390-22482f7b481448456cc517d8d9cd259c7a2517dc.png"
+                    },
+                    {
+                      "name": "app-zoom-200-percent",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/attachments/app-zoom-200-percent-1fc9cb4272388f211dd265fd98e3099a52f8b0cd.png"
+                    },
+                    {
+                      "name": "settings-text-200-percent",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/attachments/settings-text-200-percent-12ad9f5c0a1718376776d1394594db59d0e92918.png"
+                    },
+                    {
+                      "name": "app-layout",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/attachments/app-layout-65e988626ab575885b56e411cac836dde3983f8a.json"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-04f4909f20647d7f6f57",
+          "file": "browser.spec.ts",
+          "line": 284,
+          "column": 1
+        },
+        {
+          "title": "online catalogue, keyboard selection, details and documents preserve exact identities",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2890,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T08:23:23.670Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "invoice-print-preview",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-online-catalogue-k-71220-s-preserve-exact-identities-firefox/attachments/invoice-print-preview-4d692b30e29992133b5461d712ce0cf45a5c4ded.png"
+                    },
+                    {
+                      "name": "online-smoke",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-online-catalogue-k-71220-s-preserve-exact-identities-firefox/attachments/online-smoke-f32870c96cdf2f6e28702d1f2bc518796e1e86b5.json"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-f0526dcb0faccbf6f5ad",
+          "file": "browser.spec.ts",
+          "line": 95,
+          "column": 1
+        },
+        {
+          "title": "automated WCAG accessibility audit covers app workspaces, dialogs and public pages in both themes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6451,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T08:23:27.065Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-site-home-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-site-home-light-0d13a66315a48a55d627b7d0a68a6744122b8c71.json"
+                    },
+                    {
+                      "name": "axe-site-product-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-site-product-light-1155212ed03ee31a63fea52bf8e5c0c4968386b1.json"
+                    },
+                    {
+                      "name": "axe-site-features-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-site-features-light-05a6f207c3308bc6c6a5310dbcb621405af75904.json"
+                    },
+                    {
+                      "name": "axe-site-offline-data-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-site-offline-data-light-5e358638d0fe3fdf3dcaec0d57f3c09db160bd5e.json"
+                    },
+                    {
+                      "name": "axe-site-support-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-site-support-light-ed2c5e1aae9b531aa5d832e6efa2b5b00fabe86d.json"
+                    },
+                    {
+                      "name": "axe-site-contact-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-site-contact-light-5a78fe0079c2b5f6eb35ad9b618e1da9665d4fbd.json"
+                    },
+                    {
+                      "name": "axe-app-search-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-app-search-light-bd9aabe41a997b31b92cdb8e3d3b16117dc6875b.json"
+                    },
+                    {
+                      "name": "axe-vehicle-combobox-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-vehicle-combobox-light-1ed0199eb748cd280ef6effa3834bddccfc6ebcf.json"
+                    },
+                    {
+                      "name": "axe-part-combobox-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-part-combobox-light-aa0dc951037565716e4c04a298a0d7f2c5c6fa1f.json"
+                    },
+                    {
+                      "name": "axe-app-results-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-app-results-light-c4e3d10486ec9397d1a0fef649822971d6707c4b.json"
+                    },
+                    {
+                      "name": "axe-entry-dialog-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-entry-dialog-light-e98a545a69b5b3f12cf31c40b425c9fb8eb337d4.json"
+                    },
+                    {
+                      "name": "axe-invoice-price-dialog-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-invoice-price-dialog-light-f5781fd97b50020ed78bfbd24491c5a4ebcd552a.json"
+                    },
+                    {
+                      "name": "axe-app-purchase-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-app-purchase-light-9eae548782d9f8cb4f3b9e79d8e6081841ba822f.json"
+                    },
+                    {
+                      "name": "axe-app-packages-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-app-packages-light-65597ac7349fb16769bab9abe15230c8757d8714.json"
+                    },
+                    {
+                      "name": "axe-app-invoices-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-app-invoices-light-9fae3f6c51af0aaefa51430bb429fd1113460dde.json"
+                    },
+                    {
+                      "name": "axe-app-prices-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-app-prices-light-b1f552ee3e728b28db05229c1a2f3f43b316af59.json"
+                    },
+                    {
+                      "name": "axe-app-settings-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-app-settings-light-0192a576d23ae1ab84462dce93b5a3d0f5cb8c15.json"
+                    },
+                    {
+                      "name": "axe-backup-import-dialog-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-backup-import-dialog-light-187c1de8fe1cdf94e82470a3d6547a05d6f4aad8.json"
+                    },
+                    {
+                      "name": "axe-site-home-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-site-home-dark-37470fc08bc5e95398c228d3e2c1ad59eea0409e.json"
+                    },
+                    {
+                      "name": "axe-site-product-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-site-product-dark-d3a176061739271ad9c4f203e5fa406e6ac08736.json"
+                    },
+                    {
+                      "name": "axe-site-features-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-site-features-dark-ed922b030b3cde3a00e9a67b70cdb29420cc86c1.json"
+                    },
+                    {
+                      "name": "axe-site-offline-data-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-site-offline-data-dark-a994ad78b40201a19ede3789a2ce07955ac35583.json"
+                    },
+                    {
+                      "name": "axe-site-support-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-site-support-dark-c7bb82659d8797b3c3c5fbacacea51e1a268b942.json"
+                    },
+                    {
+                      "name": "axe-site-contact-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-site-contact-dark-2b5d5e4a2f7e0922ebbbea58aa13d7142447ba45.json"
+                    },
+                    {
+                      "name": "axe-app-search-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-app-search-dark-4f41b7c9a6911e33cbeab42071a7588d43484016.json"
+                    },
+                    {
+                      "name": "axe-vehicle-combobox-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-vehicle-combobox-dark-4373d40f7284b4bf8ccc23c77b63de298e3da8d6.json"
+                    },
+                    {
+                      "name": "axe-part-combobox-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-part-combobox-dark-cae716da7d9e50ea261b55470575b64ca40f3ac2.json"
+                    },
+                    {
+                      "name": "axe-app-results-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-app-results-dark-b74f8f8107126425a17c056b85f11338ca2978f5.json"
+                    },
+                    {
+                      "name": "axe-entry-dialog-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-entry-dialog-dark-727713180890838be6da83ee53d61b6d57af97c2.json"
+                    },
+                    {
+                      "name": "axe-invoice-price-dialog-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-invoice-price-dialog-dark-a57fd1c0c35e138cf9fb293fa558741ce6ae61c0.json"
+                    },
+                    {
+                      "name": "axe-app-purchase-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-app-purchase-dark-b2368be0696230ad5e10acd946914b9aeb063cd0.json"
+                    },
+                    {
+                      "name": "axe-app-packages-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-app-packages-dark-edd27763b198aa3b0d67f254ee4255909ae3c38a.json"
+                    },
+                    {
+                      "name": "axe-app-invoices-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-app-invoices-dark-489cdae0e8a88aac255ae63ced9879d8a120890c.json"
+                    },
+                    {
+                      "name": "axe-app-prices-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-app-prices-dark-9402b6a31178c5f7d5c2251752e4d5ff73031d57.json"
+                    },
+                    {
+                      "name": "axe-app-settings-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-app-settings-dark-535196b123ae757a1ddc2a9ed25f07cb107ac921.json"
+                    },
+                    {
+                      "name": "axe-backup-import-dialog-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-backup-import-dialog-dark-57a9385b99e71d728ddf4bdb7da96cb61554341a.json"
+                    },
+                    {
+                      "name": "axe-summary",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-firefox/attachments/axe-summary-4d8c4c2ca5c685d11c5f168b003a03282c5ce3d6.json"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-cff4ac9f5ca913f0b33f",
+          "file": "browser.spec.ts",
+          "line": 224,
+          "column": 1
+        },
+        {
+          "title": "app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1491,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T08:23:33.521Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "app-results-light-390",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/attachments/app-results-light-390-0a271d81f0e646b5420c06e60a1e342353a4c5ea.png"
+                    },
+                    {
+                      "name": "app-results-dark-390",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/attachments/app-results-dark-390-fc0efd83a1cc99c690aab14094a06e9fdbea9cf4.png"
+                    },
+                    {
+                      "name": "app-zoom-200-percent",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/attachments/app-zoom-200-percent-6f60797d9a3ae00156097ced0558fbae572ea9fd.png"
+                    },
+                    {
+                      "name": "settings-text-200-percent",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/attachments/settings-text-200-percent-b910a4e4ed9e5e124af92876377efde373fe00e8.png"
+                    },
+                    {
+                      "name": "app-layout",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/attachments/app-layout-645b38c3bf17136d1870da2439fade85ca63dccb.json"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-5c02f36e90bf6e9a0c93",
+          "file": "browser.spec.ts",
+          "line": 284,
+          "column": 1
+        },
+        {
+          "title": "online catalogue, keyboard selection, details and documents preserve exact identities",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1778,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T08:23:35.461Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "invoice-print-preview",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-online-catalogue-k-71220-s-preserve-exact-identities-webkit/attachments/invoice-print-preview-9f41a29647d628db4d62299784c6becaf873f82f.png"
+                    },
+                    {
+                      "name": "online-smoke",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-online-catalogue-k-71220-s-preserve-exact-identities-webkit/attachments/online-smoke-d3c19cb98d518602b2c93b5d2ff180df99ffd9eb.json"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-c0d964f49e279ed157c4",
+          "file": "browser.spec.ts",
+          "line": 95,
+          "column": 1
+        },
+        {
+          "title": "automated WCAG accessibility audit covers app workspaces, dialogs and public pages in both themes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5753,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T08:23:37.412Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-site-home-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-site-home-light-5a9e0be4253247896f74d7a1e12904e7d3049698.json"
+                    },
+                    {
+                      "name": "axe-site-product-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-site-product-light-44f8b11cabfe86e74cd8cb76bf38cb232411aa47.json"
+                    },
+                    {
+                      "name": "axe-site-features-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-site-features-light-091271d5a517cbc00c90d4eb1b36f65ac696bc0d.json"
+                    },
+                    {
+                      "name": "axe-site-offline-data-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-site-offline-data-light-f5c1e770fc51c33eb6330269a057f05b9d66e895.json"
+                    },
+                    {
+                      "name": "axe-site-support-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-site-support-light-aca2f9d1e70eca3f1483d0f0b31199cd7bbd8912.json"
+                    },
+                    {
+                      "name": "axe-site-contact-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-site-contact-light-0658e1696f07a529389036b0cce98e9bf8eea427.json"
+                    },
+                    {
+                      "name": "axe-app-search-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-app-search-light-f5f0a50e272593f7d20408ab7ee6630a13ca056e.json"
+                    },
+                    {
+                      "name": "axe-vehicle-combobox-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-vehicle-combobox-light-52e56bceb28419c2f537b460ea354accb84d3361.json"
+                    },
+                    {
+                      "name": "axe-part-combobox-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-part-combobox-light-45771f63226f845e681b45fb09838ae835971d1f.json"
+                    },
+                    {
+                      "name": "axe-app-results-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-app-results-light-33c46d96a24afd9956509232831dbda01fa1bd29.json"
+                    },
+                    {
+                      "name": "axe-entry-dialog-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-entry-dialog-light-5fb10f493b59736f73ae64ce3eb373748a08e0b6.json"
+                    },
+                    {
+                      "name": "axe-invoice-price-dialog-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-invoice-price-dialog-light-23c80c86bc705f1f1741e26e21c8b324cf2e9ea2.json"
+                    },
+                    {
+                      "name": "axe-app-purchase-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-app-purchase-light-08c664837dd38315cd03d7e2481fbff02a98f1d9.json"
+                    },
+                    {
+                      "name": "axe-app-packages-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-app-packages-light-38b1ebb7d6392d8f66e4cf4a6a1925b66f8a9789.json"
+                    },
+                    {
+                      "name": "axe-app-invoices-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-app-invoices-light-d9a8956f1fd6825f47a3f234199d1c225aaca447.json"
+                    },
+                    {
+                      "name": "axe-app-prices-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-app-prices-light-6cc123510da0ff59baa1f655b49051e623bbd9a7.json"
+                    },
+                    {
+                      "name": "axe-app-settings-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-app-settings-light-490ed97d7159c39a5397ddf0279241b183d73f70.json"
+                    },
+                    {
+                      "name": "axe-backup-import-dialog-light",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-backup-import-dialog-light-7c60a3c421da6f0473ee067a4f5076d2c654b97b.json"
+                    },
+                    {
+                      "name": "axe-site-home-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-site-home-dark-646dc968661e9b63530c9cf02b8a9f6e438e0721.json"
+                    },
+                    {
+                      "name": "axe-site-product-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-site-product-dark-74f3142f235699ff3e51ac7d67b22f1d50d8651b.json"
+                    },
+                    {
+                      "name": "axe-site-features-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-site-features-dark-d514b4cbb5da64076d600ec9017a0c768386f171.json"
+                    },
+                    {
+                      "name": "axe-site-offline-data-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-site-offline-data-dark-8267ec863c68a230fa4cd054200ffabbbed8b5c1.json"
+                    },
+                    {
+                      "name": "axe-site-support-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-site-support-dark-12e1f0e6bb00aa7386227a2ba777e95e53db11d7.json"
+                    },
+                    {
+                      "name": "axe-site-contact-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-site-contact-dark-973dbaa084522de1eba591de4fc4df93717ff509.json"
+                    },
+                    {
+                      "name": "axe-app-search-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-app-search-dark-d824c467e269c8f0b005f164cc5aa6c81e7a144d.json"
+                    },
+                    {
+                      "name": "axe-vehicle-combobox-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-vehicle-combobox-dark-512abe765795a018e1193c568edfd8db94fbf1e1.json"
+                    },
+                    {
+                      "name": "axe-part-combobox-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-part-combobox-dark-93c35940a2b9eed386d10b024b49f79215001675.json"
+                    },
+                    {
+                      "name": "axe-app-results-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-app-results-dark-5e4b2e3fd6201848557910f036feb085d9b0e0cf.json"
+                    },
+                    {
+                      "name": "axe-entry-dialog-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-entry-dialog-dark-79b474e672a4b6dacf7e0cf83715e0bcb62b0904.json"
+                    },
+                    {
+                      "name": "axe-invoice-price-dialog-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-invoice-price-dialog-dark-0521efb4871820756099ac6d9b702d33080d716d.json"
+                    },
+                    {
+                      "name": "axe-app-purchase-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-app-purchase-dark-1eaa7d800d1054a7c98cd26ea329a1e3a7575e86.json"
+                    },
+                    {
+                      "name": "axe-app-packages-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-app-packages-dark-9544814455201e42f38aac4ee81a542f3e9f04d5.json"
+                    },
+                    {
+                      "name": "axe-app-invoices-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-app-invoices-dark-9602b891bab08ce4e1e89e6d3e2e4c21f1c76c1c.json"
+                    },
+                    {
+                      "name": "axe-app-prices-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-app-prices-dark-7b2a532be27d6e51486fee7a3f1b49a92ffbc46e.json"
+                    },
+                    {
+                      "name": "axe-app-settings-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-app-settings-dark-2dbff24762e33ab74723c2ef52f9a3d56123728d.json"
+                    },
+                    {
+                      "name": "axe-backup-import-dialog-dark",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-backup-import-dialog-dark-55a399af18c6dd56d34671359663b7dc20173d1a.json"
+                    },
+                    {
+                      "name": "axe-summary",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-webkit/attachments/axe-summary-865c425428e081395ff7cb2d9f8e3cbf82e5a3da.json"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-8ecec208a0896b44246b",
+          "file": "browser.spec.ts",
+          "line": 224,
+          "column": 1
+        },
+        {
+          "title": "app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1991,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T08:23:43.169Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "app-results-light-390",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-webkit/attachments/app-results-light-390-661aa6469759f141003cac08320c67147a72a5e0.png"
+                    },
+                    {
+                      "name": "app-results-dark-390",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-webkit/attachments/app-results-dark-390-0e95f6f4b16228b94f1eba0ecd4cbfe2b1bfe647.png"
+                    },
+                    {
+                      "name": "app-zoom-200-percent",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-webkit/attachments/app-zoom-200-percent-e917086f3fa3c8d37bf47694eeac2993274a20bb.png"
+                    },
+                    {
+                      "name": "settings-text-200-percent",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-webkit/attachments/settings-text-200-percent-e3d34437c636716e898d8b4823fb08551775d09c.png"
+                    },
+                    {
+                      "name": "app-layout",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/final-code-artifacts/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-webkit/attachments/app-layout-1f7cfd7408f004fb77d6ed72aa21a528ff61533a.json"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-2b327016fbb59b27a120",
+          "file": "browser.spec.ts",
+          "line": 284,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T08:23:13.592Z",
+    "duration": 31610.260000000002,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

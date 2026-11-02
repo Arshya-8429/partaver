@@ -1,0 +1,49 @@
+
+Running 1 test using 1 worker
+
+(node:8537) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › tests/e2e/partavar-workflows.spec.ts:3:1 › PartAvar application separates public site and supports custom mobile part suggestions (5.3s)
+
+
+  1) [chromium] › tests/e2e/partavar-workflows.spec.ts:3:1 › PartAvar application separates public site and supports custom mobile part suggestions 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('h1')
+    Expected substring: "PartAvar"
+    Received string:    "PartsFinder."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" locator('h1') with timeout 5000ms
+      - waiting for locator('h1')
+        14 × locator resolved to <h1 dir="ltr">…</h1>
+           - unexpected value "PartsFinder."
+
+
+      3 | test('PartAvar application separates public site and supports custom mobile part suggestions', async ({ page }) => {
+      4 |   await page.goto('/app');
+    > 5 |   await expect(page.locator('h1')).toContainText('PartAvar');
+        |                                    ^
+      6 |   await expect(page.locator('[data-area="invoices"]')).toBeVisible();
+      7 |   await expect(page.locator('#catalogueStatusText')).toHaveAttribute('data-state','online');
+      8 |   await page.setViewportSize({width:390,height:844});
+        at /Users/barmana/Documents/E/behrad/tests/e2e/partavar-workflows.spec.ts:5:36
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/partavar-workflows-PartAva-1af06-tom-mobile-part-suggestions-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/partavar-workflows-PartAva-1af06-tom-mobile-part-suggestions-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/partavar-workflows-PartAva-1af06-tom-mobile-part-suggestions-chromium/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/partavar-workflows-PartAva-1af06-tom-mobile-part-suggestions-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › tests/e2e/partavar-workflows.spec.ts:3:1 › PartAvar application separates public site and supports custom mobile part suggestions 

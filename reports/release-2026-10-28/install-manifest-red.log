@@ -1,0 +1,71 @@
+[WebServer] (node:7046) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] $ tsx src/server.ts
+
+[WebServer] (node:7058) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] (node:7064) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] (node:7064) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] (node:7065) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] $ vite preview --host 127.0.0.1 -- --port 4173
+
+[WebServer] (node:7077) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+
+Running 1 test using 1 worker
+
+(node:7083) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/1] [chromium] › tests/e2e/production-runtime.spec.ts:63:1 › browser installation fetch reads the credentialed manifest and correctly sized brand icons
+[chromium] › tests/e2e/production-runtime.spec.ts:63:1 › browser installation fetch reads the credentialed manifest and correctly sized brand icons
+(node:7083) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+  1) [chromium] › tests/e2e/production-runtime.spec.ts:63:1 › browser installation fetch reads the credentialed manifest and correctly sized brand icons 
+
+    Error: The native browser manifest fetch must authenticate and return the manifest.
+
+    expect(received).toBeTruthy()
+
+    Received: ""
+
+      67 |     const result = await session.send('Page.getAppManifest');
+      68 |     expect(result.errors).toEqual([]);
+    > 69 |     expect(result.data, 'The native browser manifest fetch must authenticate and return the manifest.').toBeTruthy();
+         |                                                                                                         ^
+      70 |     const manifest = JSON.parse(result.data!) as { start_url: string; icons: Array<{ src: string; sizes: string }> };
+      71 |     expect(manifest.start_url).toBe('/app/');
+      72 |     for (const size of [192, 512]) {
+        at /Users/barmana/Documents/E/behrad/tests/e2e/production-runtime.spec.ts:69:105
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/production-runtime-browser-ec684-correctly-sized-brand-icons-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/production-runtime-browser-ec684-correctly-sized-brand-icons-chromium/error-context.md
+
+    Error Context: test-results/production-runtime-browser-ec684-correctly-sized-brand-icons-chromium/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/production-runtime-browser-ec684-correctly-sized-brand-icons-chromium/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/production-runtime-browser-ec684-correctly-sized-brand-icons-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+  1 failed
+    [chromium] › tests/e2e/production-runtime.spec.ts:63:1 › browser installation fetch reads the credentialed manifest and correctly sized brand icons 

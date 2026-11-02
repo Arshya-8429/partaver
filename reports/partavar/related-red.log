@@ -1,0 +1,24 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ❯ tests/unit/related-parts.test.ts (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/unit/related-parts.test.ts [ tests/unit/related-parts.test.ts ]
+Error: Cannot find module '../../packages/domain/src/related-parts.js' imported from /Users/barmana/Documents/E/behrad/tests/unit/related-parts.test.ts
+ ❯ tests/unit/related-parts.test.ts:2:1
+      1| import { describe, expect, it } from 'vitest';
+      2| import { relatedRule, targetApplies, directionAllowed } from '../../pa…
+       | ^
+      3| import { findRelatedParts } from '../../apps/web/src/application/relat…
+      4| import type { EntrySummary, SearchPage, SearchRequest } from '@partsfi…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  11:47:10
+   Duration  68ms (worker 96%, environment 4%)
+

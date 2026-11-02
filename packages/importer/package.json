@@ -1,0 +1,14 @@
+{
+  "name": "@partsfinder/importer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@partsfinder/contracts": "workspace:*",
+    "@partsfinder/domain": "workspace:*",
+    "acorn": "8.19.0",
+    "better-sqlite3": "13.0.3",
+    "exceljs": "4.4.0",
+    "parse5": "8.0.1"
+  }
+}

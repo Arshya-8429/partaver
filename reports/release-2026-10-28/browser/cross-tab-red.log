@@ -1,0 +1,67 @@
+[WebServer] (node:5022) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ tsx src/server.ts
+[WebServer] (node:5037) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:5043) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:5043) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:5045) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ vite preview --host 127.0.0.1 -- --port 4173
+[WebServer] (node:5060) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:5066) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › tests/release/cross-tab.spec.ts:67:3 › another tab activation refreshes the local version via broadcast and clears stale catalogue rows (20.9s)
+
+
+  1) [chromium] › tests/release/cross-tab.spec.ts:67:3 › another tab activation refreshes the local version via broadcast and clears stale catalogue rows 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('#catalogueVersion')
+    Expected substring: "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd-s1-n1-r1"
+    Received string:    "نسخه cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc-s1-n1-r1"
+    Timeout: 20000ms
+
+    Call log:
+      - Expect "toContainText" locator('#catalogueVersion') with timeout 20000ms
+      - waiting for locator('#catalogueVersion')
+        44 × locator resolved to <span id="catalogueVersion" class="catalogueStatusVersion">نسخه cccccccccccccccccccccccccccccccccccccccccccc…</span>
+           - unexpected value "نسخه cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc-s1-n1-r1"
+
+
+      88 |       await first.evaluate(() => { Object.defineProperty(document, 'visibilityState', { value: 'visible' }); document.dispatchEvent(new Event('visibilitychange')); });
+      89 |     }
+    > 90 |     await expect(first.locator('#catalogueVersion')).toContainText(newVersion);
+         |                                                      ^
+      91 |     await expect(first.locator('#cards .resultCard')).toHaveCount(0);
+      92 |     await expect(first.locator('#codeQuery')).toHaveValue('RELEASE-CODE');
+      93 |     await first.locator('#codeQuery').press('Enter');
+        at /Users/barmana/Documents/E/behrad/tests/release/cross-tab.spec.ts:90:54
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/cross-tab-another-tab-acti-34103-clears-stale-catalogue-rows-chromium/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/cross-tab-another-tab-acti-34103-clears-stale-catalogue-rows-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/release-2026-10-28/browser/test-results/cross-tab-another-tab-acti-34103-clears-stale-catalogue-rows-chromium/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/cross-tab-another-tab-acti-34103-clears-stale-catalogue-rows-chromium/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace reports/release-2026-10-28/browser/test-results/cross-tab-another-tab-acti-34103-clears-stale-catalogue-rows-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › tests/release/cross-tab.spec.ts:67:3 › another tab activation refreshes the local version via broadcast and clears stale catalogue rows 

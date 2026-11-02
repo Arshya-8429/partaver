@@ -1,0 +1,614 @@
+{
+  "capturedAt": "2026-10-20T13:17:47.941Z",
+  "stage": "before-redesign",
+  "datasetVersion": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+  "environment": {
+    "node": "v24.19.0",
+    "os": "24.3.0",
+    "platform": "darwin",
+    "architecture": "arm64",
+    "cpu": "Apple M4",
+    "browserVersion": "155.0.8059.85",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "cpuThrottling": "none",
+    "network": "loopback; no throttling",
+    "deviceScaleFactor": 1
+  },
+  "method": {
+    "startup": "navigation to DOMContentLoaded, then installed row-count/search-enabled state; first run includes automatic catalogue install",
+    "query": "UI click until expected result count and bounded card count; first query then 5 warm repeated queries, Worker cache retained",
+    "screenshots": "same real exact-code query, 11 source entries, 1440x1000 and 390x844, both themes, top and results views",
+    "longTasks": "PerformanceObserver on first load including initial installation; observation only, no attribution claim"
+  },
+  "firstDomReadyMs": 24.347624999999994,
+  "firstLoadToCatalogueReadyMs": 18392.914458,
+  "warmStartupMs": [
+    64.86229099999764,
+    49.817957999999635,
+    49.3194590000021,
+    48.04033399999753,
+    47.32395799999722
+  ],
+  "installChunkRequests": 1103,
+  "warmLaunchChunkRequests": 0,
+  "initialLongTasks": [],
+  "storage": {
+    "quota": 12029746676,
+    "usage": 1292328436,
+    "usageDetails": {
+      "caches": 534145,
+      "indexedDB": 1291792384,
+      "serviceWorkerRegistrations": 1907
+    }
+  },
+  "timings": [
+    {
+      "input": "0CF25BE-1500011BA",
+      "count": 11,
+      "firstMs": 836.5622919999987,
+      "warmMs": [
+        78.1318339999998,
+        49.4986659999995,
+        56.449916000001394,
+        61.71399999999994,
+        62.18016599999828
+      ]
+    },
+    {
+      "input": "گیربکس اتوماتیک",
+      "count": 56,
+      "firstMs": 1825.4978749999973,
+      "warmMs": [
+        66.21345800000199,
+        52.45695799999885,
+        55.76362499999959,
+        58.6115409999984,
+        57.86216699999932
+      ]
+    }
+  ],
+  "overflow": [
+    {
+      "viewport": 320,
+      "documentWidth": 320,
+      "firstCardHeight": 741,
+      "renderedCards": 11
+    },
+    {
+      "viewport": 360,
+      "documentWidth": 360,
+      "firstCardHeight": 607,
+      "renderedCards": 11
+    },
+    {
+      "viewport": 390,
+      "documentWidth": 390,
+      "firstCardHeight": 560,
+      "renderedCards": 11
+    },
+    {
+      "viewport": 430,
+      "documentWidth": 430,
+      "firstCardHeight": 536,
+      "renderedCards": 11
+    },
+    {
+      "viewport": 768,
+      "documentWidth": 768,
+      "firstCardHeight": 536,
+      "renderedCards": 11
+    },
+    {
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "firstCardHeight": 512,
+      "renderedCards": 11
+    },
+    {
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "firstCardHeight": 512,
+      "renderedCards": 11
+    }
+  ],
+  "visibleVehicleOptions": [
+    "X33 Cross CVTاصلی",
+    "X33 Cross MTاصلی",
+    "X33 Cross Liدیگر"
+  ],
+  "ambiguousEnterWithoutActiveOption": {
+    "input": "X33 Cross CVT",
+    "expanded": "false"
+  },
+  "inspect": {
+    "title": "PartsFinder v2.5 Interaction Glow - Android",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "controls": [
+      {
+        "name": "تغییر به حالت تیره",
+        "width": 40,
+        "height": 40,
+        "fontSize": "20px"
+      },
+      {
+        "name": "دریافت / بررسی به‌روزرسانی",
+        "width": 131,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "نام قطعه + مدل خودرو",
+        "width": 156,
+        "height": 40,
+        "fontSize": "13.3333px"
+      },
+      {
+        "name": "جستجو با کد فنی",
+        "width": 156,
+        "height": 40,
+        "fontSize": "13.3333px"
+      },
+      {
+        "name": "vehicle",
+        "width": 332,
+        "height": 48,
+        "fontSize": "15px"
+      },
+      {
+        "name": "X33 Cross CVTاصلی",
+        "width": 318,
+        "height": 37,
+        "fontSize": "12px"
+      },
+      {
+        "name": "X33 Cross MTاصلی",
+        "width": 318,
+        "height": 37,
+        "fontSize": "12px"
+      },
+      {
+        "name": "X33 Cross Liدیگر",
+        "width": 318,
+        "height": 37,
+        "fontSize": "12px"
+      },
+      {
+        "name": "partQuery",
+        "width": 332,
+        "height": 48,
+        "fontSize": "15px"
+      },
+      {
+        "name": "X33 Cross▼",
+        "width": 95,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "X55 Pro▼",
+        "width": 82,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "X22 Pro▼",
+        "width": 81,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "Tiggo 7▼",
+        "width": 78,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "Tiggo 8▼",
+        "width": 79,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "Arrizo 5▼",
+        "width": 82,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "Arrizo 6▼",
+        "width": 82,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "Arrizo 8▼",
+        "width": 82,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "FX▼",
+        "width": 51,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "بستن تیپ‌ها",
+        "width": 32,
+        "height": 28,
+        "fontSize": "13.3333px"
+      },
+      {
+        "name": "جستجو",
+        "width": 249,
+        "height": 48,
+        "fontSize": "13.3333px"
+      },
+      {
+        "name": "پاک کردن",
+        "width": 75,
+        "height": 48,
+        "fontSize": "13.3333px"
+      },
+      {
+        "name": "کد فنی: 0CF25BE-1500011BA، کپی",
+        "width": 204,
+        "height": 25,
+        "fontSize": "14.4px"
+      },
+      {
+        "name": "کد لجستیکی: 0CF25BE-1500011BA-01، کپی",
+        "width": 204,
+        "height": 24,
+        "fontSize": "13.6px"
+      },
+      {
+        "name": "خانوادهٔ احتمالی 0CF25BE-1500011 (BA)",
+        "width": 215,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "نمایش جزئیات، خودروها و نام‌های جایگزین",
+        "width": 183,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "کد فنی: 0CF25BE-1500011BA، کپی",
+        "width": 204,
+        "height": 25,
+        "fontSize": "14.4px"
+      },
+      {
+        "name": "کد لجستیکی: 0CF25BE-1500011BA-04، کپی",
+        "width": 204,
+        "height": 24,
+        "fontSize": "13.6px"
+      },
+      {
+        "name": "خانوادهٔ احتمالی 0CF25BE-1500011 (BA)",
+        "width": 215,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "نمایش جزئیات، خودروها و نام‌های جایگزین",
+        "width": 183,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "کد فنی: 0CF25BE-1500011BA، کپی",
+        "width": 204,
+        "height": 25,
+        "fontSize": "14.4px"
+      },
+      {
+        "name": "کد لجستیکی: 0CF25BE-1500011BA-02، کپی",
+        "width": 204,
+        "height": 24,
+        "fontSize": "13.6px"
+      },
+      {
+        "name": "خانوادهٔ احتمالی 0CF25BE-1500011 (BA)",
+        "width": 215,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "نمایش جزئیات، خودروها و نام‌های جایگزین",
+        "width": 183,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "کد فنی: 0CF25BE-1500011BA، کپی",
+        "width": 204,
+        "height": 25,
+        "fontSize": "14.4px"
+      },
+      {
+        "name": "کد لجستیکی: 0CF25BE-1500011BA-03، کپی",
+        "width": 204,
+        "height": 24,
+        "fontSize": "13.6px"
+      },
+      {
+        "name": "خانوادهٔ احتمالی 0CF25BE-1500011 (BA)",
+        "width": 215,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "نمایش جزئیات، خودروها و نام‌های جایگزین",
+        "width": 183,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "کد فنی: 0CF25BE-1500011BA، کپی",
+        "width": 204,
+        "height": 25,
+        "fontSize": "14.4px"
+      },
+      {
+        "name": "کد لجستیکی: 0CF25BE-1500011BA-05، کپی",
+        "width": 204,
+        "height": 24,
+        "fontSize": "13.6px"
+      },
+      {
+        "name": "خانوادهٔ احتمالی 0CF25BE-1500011 (BA)",
+        "width": 215,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "نمایش جزئیات، خودروها و نام‌های جایگزین",
+        "width": 183,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "کد فنی: 025CHC-1500010BK، کپی",
+        "width": 204,
+        "height": 25,
+        "fontSize": "14.4px"
+      },
+      {
+        "name": "کد لجستیکی: 025CHC-1500010BK-01، کپی",
+        "width": 204,
+        "height": 24,
+        "fontSize": "13.6px"
+      },
+      {
+        "name": "خانوادهٔ احتمالی 025CHC-1500010 (BK)",
+        "width": 213,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "نمایش جزئیات، خودروها و نام‌های جایگزین",
+        "width": 183,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "کد فنی: 025CHC-1500010BK، کپی",
+        "width": 204,
+        "height": 25,
+        "fontSize": "14.4px"
+      },
+      {
+        "name": "کد لجستیکی: 025CHC-1500010BK-02، کپی",
+        "width": 204,
+        "height": 24,
+        "fontSize": "13.6px"
+      },
+      {
+        "name": "خانوادهٔ احتمالی 025CHC-1500010 (BK)",
+        "width": 213,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "نمایش جزئیات، خودروها و نام‌های جایگزین",
+        "width": 183,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "کد فنی: 0CF25BE-1500011BA-GAN، کپی",
+        "width": 204,
+        "height": 25,
+        "fontSize": "14.4px"
+      },
+      {
+        "name": "کد لجستیکی: 0CF25BE-1500011BA-GAN-01، کپی",
+        "width": 204,
+        "height": 48,
+        "fontSize": "13.6px"
+      },
+      {
+        "name": "خانوادهٔ احتمالی 0CF25BE-1500011 (BA-GAN)",
+        "width": 245,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "نمایش جزئیات، خودروها و نام‌های جایگزین",
+        "width": 183,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "کد فنی: 0CF25BE-1500011BA-GB1، کپی",
+        "width": 204,
+        "height": 25,
+        "fontSize": "14.4px"
+      },
+      {
+        "name": "کد لجستیکی: 0CF25BE-1500011BA-GB1-01، کپی",
+        "width": 204,
+        "height": 48,
+        "fontSize": "13.6px"
+      },
+      {
+        "name": "خانوادهٔ احتمالی 0CF25BE-1500011 (BA-GB1)",
+        "width": 242,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "نمایش جزئیات، خودروها و نام‌های جایگزین",
+        "width": 183,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "کد فنی: 0CF25BE-1500011BA-GKH، کپی",
+        "width": 204,
+        "height": 25,
+        "fontSize": "14.4px"
+      },
+      {
+        "name": "کد لجستیکی: 0CF25BE-1500011BA-GKH-01، کپی",
+        "width": 204,
+        "height": 48,
+        "fontSize": "13.6px"
+      },
+      {
+        "name": "خانوادهٔ احتمالی 0CF25BE-1500011 (BA-GKH)",
+        "width": 245,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "نمایش جزئیات، خودروها و نام‌های جایگزین",
+        "width": 183,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "کد فنی: 0CF25BE-1500011BA-GMS، کپی",
+        "width": 204,
+        "height": 25,
+        "fontSize": "14.4px"
+      },
+      {
+        "name": "کد لجستیکی: 0CF25BE-1500011BA-GMS-01، کپی",
+        "width": 204,
+        "height": 48,
+        "fontSize": "13.6px"
+      },
+      {
+        "name": "خانوادهٔ احتمالی 0CF25BE-1500011 (BA-GMS)",
+        "width": 246,
+        "height": 36,
+        "fontSize": "11px"
+      },
+      {
+        "name": "نمایش جزئیات، خودروها و نام‌های جایگزین",
+        "width": 183,
+        "height": 36,
+        "fontSize": "11px"
+      }
+    ],
+    "progress": {
+      "hiddenAttribute": true,
+      "computedDisplay": "block"
+    },
+    "statusDotColor": "rgb(245, 158, 11)",
+    "status": "کاتالوگ آفلاین به‌روز است.",
+    "footer": "desing by behrad",
+    "cssJsResourceTiming": [
+      {
+        "name": "index-D9IQr2Mz.css",
+        "durationMs": 0.6999999992549419,
+        "decodedBodySize": 26696,
+        "encodedBodySize": 26696
+      },
+      {
+        "name": "index-B7Duq5hF.js",
+        "durationMs": 0.599999999627471,
+        "decodedBodySize": 28689,
+        "encodedBodySize": 28689
+      }
+    ],
+    "smallText": [
+      {
+        "name": "catalogueStatusMeta",
+        "fontSize": "10px",
+        "color": "rgb(100, 116, 139)"
+      },
+      {
+        "name": "hint",
+        "fontSize": "11px",
+        "color": "rgb(100, 116, 139)"
+      },
+      {
+        "name": "hint",
+        "fontSize": "11px",
+        "color": "rgb(100, 116, 139)"
+      },
+      {
+        "name": "hint",
+        "fontSize": "11px",
+        "color": "rgb(100, 116, 139)"
+      },
+      {
+        "name": "designer",
+        "fontSize": "10px",
+        "color": "rgb(148, 163, 184)"
+      }
+    ]
+  },
+  "screenshots": [
+    "desktop-light-overview.png",
+    "desktop-light-results.png",
+    "desktop-dark-overview.png",
+    "desktop-dark-results.png",
+    "mobile-light-overview.png",
+    "mobile-light-results.png",
+    "mobile-dark-overview.png",
+    "mobile-dark-results.png",
+    "mobile-light-vehicle-picker.png"
+  ],
+  "sourceHashes": {
+    "apps/web/index.html": "2721975b566d95be763d85019e111cdc1b29a16c4457bd0f89331db73761392e",
+    "apps/web/src/ui/search.ts": "7d0f55e3d4b56240ed3edaf72aa92e9cd3848a949cfb5f38c040826f65534b81",
+    "apps/web/src/ui/vehicle-picker.ts": "64bb77973d2c2d9b290086bfde8ca5233a113bd6ab50e88ce843072b50ebb642",
+    "apps/web/src/ui/catalogue-status.ts": "a9b111e71171bb9e7cf50b847f1e0d786f46578a475c89fcc5884d9ef97808db",
+    "apps/web/src/ui/presets.ts": "d14ca585a1ac4ae5b80bf8d9b213772270f83089d55d657546f95177723852a8",
+    "apps/web/src/styles/components.css": "265f337fd34872e6b822005cc842d647d4aa3c122be481b97d9563301f827a53",
+    "apps/web/src/styles/dark.css": "34e19dfd71443be147ed034dab110baf96626ec229be8236427c4284f29ad0c7",
+    "PartsFinder_Android-28 (1) (1).html": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480"
+  },
+  "errors": [],
+  "failedRequests": [
+    {
+      "url": "http://127.0.0.1:4173/api/v1/catalog/manifest",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:4173/api/v1/catalog/manifest",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:4173/api/v1/catalog/manifest",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:4173/api/v1/catalog/manifest",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:4173/api/v1/catalog/manifest",
+      "error": "net::ERR_ABORTED"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ❯ tests/unit/price-history.test.ts (5 tests | 1 failed) 12ms
+   ❯ historical price domain (5)
+     ✓ orders explicit dates and calculates exact changes beyond safe-number money 7ms
+     ✓ uses direct threshold settings and keeps zero/negative growth low 0ms
+     × stays neutral for undated, ambiguous, unknown-currency, zero-baseline and date conflicts 4ms
+     ✓ computes deterministic tied percentile ranks without converting huge growth to floating point 1ms
+     ✓ parses explicit Persian/grouped integer prices and rejects unsafe or negative money 0ms
+ ❯ tests/integration/price-history.test.ts (7 tests | 1 failed) 298ms
+   ❯ historical XLSX import and bounded reads (7)
+     ✓ stages immutable XLSX evidence, reports ambiguity, commits explicitly and never writes catalogue 122ms
+     × audits supersede and rollback, ranks growth and restores a verified backup to a new target 33ms
+     ✓ rejects legacy XLS, formula cells, unsafe numeric prices, invalid dates and unbounded reads 32ms
+     ✓ refuses to activate source archives changed after staging and canonicalizes equivalent column mappings 23ms
+     ✓ keeps retained catalogue versions isolated and invalidates timeline cursors after audited transitions 35ms
+     ✓ preserves conflicting same-day evidence, rejects database aliases and verifies backup tampering 28ms
+     ✓ verifies predecessor evidence before rollback reinstates a superseded batch 23ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/price-history.test.ts > historical XLSX import and bounded reads > audits supersede and rollback, ranks growth and restores a verified backup to a new target
+AssertionError: expected { entryId: 1, …(21) } to match object { Object (entryId, techRaw, ...) }
+(16 matching properties omitted from actual)
+
+- Expected
++ Received
+
+@@ -1,7 +1,6 @@
+  {
+-   "basePrice": "100",
+    "cumulativeChangeBps": "2000",
+    "entryId": 1,
+    "logRaw": "00001",
+    "partNameRaw": "Brake",
+    "percentileBps": 10000,
+
+ ❯ tests/integration/price-history.test.ts:114:32
+    112|     const app = await server();
+    113|     const firstList = (await app.inject(`/api/v1/price-history/entries…
+    114|     expect(firstList.items[0]).toMatchObject({ entryId, techRaw: '001T…
+       |                                ^
+    115|     const two = await workbook('test-corrected.xlsx', [['001TECH', '00…
+    116|     const second = await stagePriceHistory({ sourcePath: two, catalogu…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/unit/price-history.test.ts > historical price domain > stays neutral for undated, ambiguous, unknown-currency, zero-baseline and date conflicts
+AssertionError: expected { earliestPrice: null, …(16) } to match object { …(3) }
+(14 matching properties omitted from actual)
+
+- Expected
++ Received
+
+  {
+-   "maxPrice": null,
+-   "minPrice": null,
++   "maxPrice": "200",
++   "minPrice": "100",
+    "neutralReason": "mixed_currency",
+  }
+
+ ❯ tests/unit/price-history.test.ts:23:104
+     21|     expect(calculateHistoryMetrics([point('100', '2025-01-01'), point(…
+     22|     expect(calculateHistoryMetrics([point('100', '2025-01-01', 'UNKNOW…
+     23|     expect(calculateHistoryMetrics([point('100', '2025-01-01'), point(…
+       |                                                                                                        ^
+     24|     expect(calculateHistoryMetrics([point('100', '2025-01-01'), point(…
+     25|     expect(calculateHistoryMetrics([point('100', '2025-01-01'), point(…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  2 failed (2)
+      Tests  2 failed | 10 passed (12)
+   Start at  12:01:00
+   Duration  637ms (tests 50%, import 42%, transform 7%, worker 1%)
+

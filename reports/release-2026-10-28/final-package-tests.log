@@ -1,0 +1,10 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ✓ tests/integration/release-packaging.test.ts (6 tests) 858ms
+
+ Test Files  1 passed (1)
+      Tests  6 passed (6)
+   Start at  12:05:49
+   Duration  961ms (tests 94%, import 3%, transform 3%)
+

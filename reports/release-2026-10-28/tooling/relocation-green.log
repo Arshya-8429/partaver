@@ -1,0 +1,12 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ✓ tests/integration/backup-restore.test.ts (3 tests) 44ms
+ ✓ tests/integration/backup-relocation.test.ts (3 tests) 50ms
+ ✓ tests/integration/release-packaging.test.ts (6 tests) 848ms
+
+ Test Files  3 passed (3)
+      Tests  12 passed (12)
+   Start at  11:02:54
+   Duration  940ms (tests 89%, import 6%, transform 4%)
+

@@ -1,0 +1,63 @@
+[WebServer] (node:4282) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ tsx src/server.ts
+[WebServer] (node:4297) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:4303) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:4303) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:4305) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ vite preview --host 127.0.0.1 -- --port 4173
+[WebServer] (node:4320) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:4326) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › tests/release/history-version.spec.ts:8:1 › retained document history cannot recolor a current catalogue entry with the same numeric ID (20.7s)
+
+
+  1) [chromium] › tests/release/history-version.spec.ts:8:1 › retained document history cannot recolor a current catalogue entry with the same numeric ID 
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('#cards .resultCard').first().locator('.historyBadge')
+    Expected pattern: /\bneutral\b/
+    Received string:  "historyBadge high"
+    Timeout: 20000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('#cards .resultCard').first().locator('.historyBadge') with timeout 20000ms
+      - waiting for locator('#cards .resultCard').first().locator('.historyBadge')
+        43 × locator resolved to <button type="button" data-history-entry="111" class="historyBadge high" title="رشد بالا · تغییر +۱۰۰.00٪ · 2 تاریخ" aria-label="رشد بالا · تغییر +۱۰۰.00٪ · 2 تاریخ؛ نمایش جزئیات">رشد بالا</button>
+           - unexpected value "historyBadge high"
+
+
+      71 |   await page.locator('[data-area="search"]').click();
+      72 |   await expect(card).toBeVisible();
+    > 73 |   await expect(currentBadge).toHaveClass(/\bneutral\b/);
+         |                              ^
+      74 |   await expect(currentBadge).toHaveAttribute('data-history-version', currentVersion);
+      75 |
+      76 |   // Lazy family cards use the same renderer and must carry the page's exact catalogue version.
+        at /Users/barmana/Documents/E/behrad/tests/release/history-version.spec.ts:73:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/history-version-retained-d-da5af-ry-with-the-same-numeric-ID-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/release-2026-10-28/browser/test-results/history-version-retained-d-da5af-ry-with-the-same-numeric-ID-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/history-version-retained-d-da5af-ry-with-the-same-numeric-ID-chromium/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace reports/release-2026-10-28/browser/test-results/history-version-retained-d-da5af-ry-with-the-same-numeric-ID-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › tests/release/history-version.spec.ts:8:1 › retained document history cannot recolor a current catalogue entry with the same numeric ID 

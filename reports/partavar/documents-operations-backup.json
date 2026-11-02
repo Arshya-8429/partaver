@@ -1,0 +1,344 @@
+{
+  "schema": "partavar.operations",
+  "schemaVersion": 1,
+  "exportedAt": "2026-10-27T08:35:28.778Z",
+  "origin": "http://127.0.0.1:5173",
+  "documents": [
+    {
+      "id": "draft-invoice",
+      "kind": "invoice",
+      "status": "draft",
+      "sourceDocumentId": "invoice-4224e9b0-1486-4dc5-9de3-1c7a0f17c202",
+      "name": "پیش‌فاکتور آزمون",
+      "documentNumber": "INV-00001",
+      "date": "2026-10-27",
+      "customer": {
+        "name": "",
+        "phone": "",
+        "reference": ""
+      },
+      "notes": "یادداشت چاپ آزمون؛ کدهای خام باید کامل بمانند.",
+      "createdAt": "2026-10-27T08:35:27.745Z",
+      "updatedAt": "2026-10-27T08:35:28.329Z",
+      "sourceVersions": [
+        "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1"
+      ],
+      "lines": [
+        {
+          "lineId": "line-efbf2bdd-f0a4-4284-b364-18a9ee756286",
+          "catalogueVersion": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+          "entryId": 17502,
+          "identityStatus": "exact",
+          "partName": "فیلتر روغن",
+          "technicalCode": "F4J16-1012030",
+          "logisticsCode": "F4J16-1012030-01",
+          "vehicle": null,
+          "compatibleModelCount": 1,
+          "basePrice": "14811493",
+          "currencyUnit": "UNKNOWN",
+          "priceMode": "manual",
+          "customBps": null,
+          "unitPrice": "12345678901234567890",
+          "quantity": "3"
+        },
+        {
+          "lineId": "line-bf54e1ce-ff7c-4446-97da-f74c3a01fce7",
+          "catalogueVersion": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+          "entryId": 17502,
+          "identityStatus": "exact",
+          "partName": "فیلتر روغن",
+          "technicalCode": "F4J16-1012030",
+          "logisticsCode": "F4J16-1012030-01",
+          "vehicle": null,
+          "compatibleModelCount": 1,
+          "basePrice": "14811493",
+          "currencyUnit": "UNKNOWN",
+          "priceMode": "custom",
+          "customBps": 1250,
+          "unitPrice": "16662930",
+          "quantity": "2"
+        }
+      ],
+      "total": "37037036703737029530"
+    },
+    {
+      "id": "draft-package",
+      "kind": "package",
+      "status": "draft",
+      "sourceDocumentId": "package-eff14dee-b14e-431a-a931-f0d29491ec13",
+      "name": "پکیج سرویس آزمون (رونوشت)",
+      "documentNumber": "",
+      "date": "2026-10-27",
+      "customer": {
+        "name": "",
+        "phone": "",
+        "reference": ""
+      },
+      "notes": "",
+      "createdAt": "2026-10-27T08:35:27.495Z",
+      "updatedAt": "2026-10-27T08:35:28.637Z",
+      "sourceVersions": [
+        "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1"
+      ],
+      "lines": [
+        {
+          "lineId": "line-4c2e944f-af3a-4727-9ceb-7e97f58f35de",
+          "catalogueVersion": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+          "entryId": 17502,
+          "identityStatus": "exact",
+          "partName": "فیلتر روغن",
+          "technicalCode": "F4J16-1012030",
+          "logisticsCode": "F4J16-1012030-01",
+          "vehicle": null,
+          "compatibleModelCount": 1,
+          "basePrice": "14811493",
+          "currencyUnit": "UNKNOWN",
+          "priceMode": "manual",
+          "customBps": null,
+          "unitPrice": "12345678901234567890",
+          "quantity": "3"
+        },
+        {
+          "lineId": "line-878ee75c-015b-40e4-a8f9-0dc4fc9a6cd1",
+          "catalogueVersion": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+          "entryId": 17502,
+          "identityStatus": "exact",
+          "partName": "فیلتر روغن",
+          "technicalCode": "F4J16-1012030",
+          "logisticsCode": "F4J16-1012030-01",
+          "vehicle": null,
+          "compatibleModelCount": 1,
+          "basePrice": "14811493",
+          "currencyUnit": "UNKNOWN",
+          "priceMode": "base",
+          "customBps": null,
+          "unitPrice": "14811493",
+          "quantity": "2"
+        }
+      ],
+      "total": "37037036703733326656"
+    },
+    {
+      "id": "draft-purchase",
+      "kind": "purchase",
+      "status": "draft",
+      "sourceDocumentId": "purchase-4d22bca3-ef4d-467d-b5c5-f2578df58a4f",
+      "name": "خرید آزمون",
+      "documentNumber": "",
+      "date": "2026-10-27",
+      "customer": {
+        "name": "",
+        "phone": "",
+        "reference": ""
+      },
+      "notes": "",
+      "createdAt": "2026-10-27T08:35:28.378Z",
+      "updatedAt": "2026-10-27T08:35:28.578Z",
+      "sourceVersions": [
+        "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1"
+      ],
+      "lines": [
+        {
+          "lineId": "line-12846b16-b4ef-4c8b-9cd2-88c3a8cd1a13",
+          "catalogueVersion": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+          "entryId": 17502,
+          "identityStatus": "exact",
+          "partName": "فیلتر روغن",
+          "technicalCode": "F4J16-1012030",
+          "logisticsCode": "F4J16-1012030-01",
+          "vehicle": null,
+          "compatibleModelCount": 1,
+          "basePrice": "14811493",
+          "currencyUnit": "UNKNOWN",
+          "priceMode": "base",
+          "customBps": null,
+          "unitPrice": "14811493",
+          "quantity": "2"
+        }
+      ],
+      "total": "29622986"
+    },
+    {
+      "id": "invoice-4224e9b0-1486-4dc5-9de3-1c7a0f17c202",
+      "kind": "invoice",
+      "status": "saved",
+      "sourceDocumentId": null,
+      "name": "پیش‌فاکتور آزمون",
+      "documentNumber": "INV-00001",
+      "date": "2026-10-27",
+      "customer": {
+        "name": "",
+        "phone": "",
+        "reference": ""
+      },
+      "notes": "یادداشت چاپ آزمون؛ کدهای خام باید کامل بمانند.",
+      "createdAt": "2026-10-27T08:35:27.745Z",
+      "updatedAt": "2026-10-27T08:35:27.796Z",
+      "sourceVersions": [
+        "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1"
+      ],
+      "lines": [
+        {
+          "lineId": "line-efbf2bdd-f0a4-4284-b364-18a9ee756286",
+          "catalogueVersion": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+          "entryId": 17502,
+          "identityStatus": "exact",
+          "partName": "فیلتر روغن",
+          "technicalCode": "F4J16-1012030",
+          "logisticsCode": "F4J16-1012030-01",
+          "vehicle": null,
+          "compatibleModelCount": 1,
+          "basePrice": "14811493",
+          "currencyUnit": "UNKNOWN",
+          "priceMode": "manual",
+          "customBps": null,
+          "unitPrice": "12345678901234567890",
+          "quantity": "3"
+        }
+      ],
+      "total": "37037036703703703670"
+    },
+    {
+      "id": "package-4fc8155e-04ba-41a4-b484-3bcaf681c49b",
+      "kind": "package",
+      "status": "saved",
+      "sourceDocumentId": null,
+      "name": "پکیج سرویس آزمون",
+      "documentNumber": "",
+      "date": "2026-10-27",
+      "customer": {
+        "name": "",
+        "phone": "",
+        "reference": ""
+      },
+      "notes": "",
+      "createdAt": "2026-10-27T08:35:27.170Z",
+      "updatedAt": "2026-10-27T08:35:27.330Z",
+      "sourceVersions": [
+        "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1"
+      ],
+      "lines": [
+        {
+          "lineId": "line-4c2e944f-af3a-4727-9ceb-7e97f58f35de",
+          "catalogueVersion": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+          "entryId": 17502,
+          "identityStatus": "exact",
+          "partName": "فیلتر روغن",
+          "technicalCode": "F4J16-1012030",
+          "logisticsCode": "F4J16-1012030-01",
+          "vehicle": null,
+          "compatibleModelCount": 1,
+          "basePrice": "14811493",
+          "currencyUnit": "UNKNOWN",
+          "priceMode": "manual",
+          "customBps": null,
+          "unitPrice": "12345678901234567890",
+          "quantity": "3"
+        }
+      ],
+      "total": "37037036703703703670"
+    },
+    {
+      "id": "package-eff14dee-b14e-431a-a931-f0d29491ec13",
+      "kind": "package",
+      "status": "saved",
+      "sourceDocumentId": null,
+      "name": "پکیج سرویس آزمون (رونوشت)",
+      "documentNumber": "",
+      "date": "2026-10-27",
+      "customer": {
+        "name": "",
+        "phone": "",
+        "reference": ""
+      },
+      "notes": "",
+      "createdAt": "2026-10-27T08:35:27.495Z",
+      "updatedAt": "2026-10-27T08:35:27.529Z",
+      "sourceVersions": [
+        "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1"
+      ],
+      "lines": [
+        {
+          "lineId": "line-4c2e944f-af3a-4727-9ceb-7e97f58f35de",
+          "catalogueVersion": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+          "entryId": 17502,
+          "identityStatus": "exact",
+          "partName": "فیلتر روغن",
+          "technicalCode": "F4J16-1012030",
+          "logisticsCode": "F4J16-1012030-01",
+          "vehicle": null,
+          "compatibleModelCount": 1,
+          "basePrice": "14811493",
+          "currencyUnit": "UNKNOWN",
+          "priceMode": "manual",
+          "customBps": null,
+          "unitPrice": "12345678901234567890",
+          "quantity": "3"
+        }
+      ],
+      "total": "37037036703703703670"
+    },
+    {
+      "id": "purchase-4d22bca3-ef4d-467d-b5c5-f2578df58a4f",
+      "kind": "purchase",
+      "status": "saved",
+      "sourceDocumentId": null,
+      "name": "خرید آزمون",
+      "documentNumber": "",
+      "date": "2026-10-27",
+      "customer": {
+        "name": "",
+        "phone": "",
+        "reference": ""
+      },
+      "notes": "",
+      "createdAt": "2026-10-27T08:35:28.378Z",
+      "updatedAt": "2026-10-27T08:35:28.463Z",
+      "sourceVersions": [
+        "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1"
+      ],
+      "lines": [
+        {
+          "lineId": "line-12846b16-b4ef-4c8b-9cd2-88c3a8cd1a13",
+          "catalogueVersion": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+          "entryId": 17502,
+          "identityStatus": "exact",
+          "partName": "فیلتر روغن",
+          "technicalCode": "F4J16-1012030",
+          "logisticsCode": "F4J16-1012030-01",
+          "vehicle": null,
+          "compatibleModelCount": 1,
+          "basePrice": "14811493",
+          "currencyUnit": "UNKNOWN",
+          "priceMode": "base",
+          "customBps": null,
+          "unitPrice": "14811493",
+          "quantity": "2"
+        }
+      ],
+      "total": "29622986"
+    }
+  ],
+  "preferences": {
+    "defaultPackageTier": "final",
+    "priceClassification": {
+      "strategy": "threshold",
+      "mediumBps": 1000,
+      "highBps": 3000,
+      "mediumPercentileBps": 3333,
+      "highPercentileBps": 6667,
+      "minimumObservations": 2
+    },
+    "printTemplate": {
+      "companyName": "پارت‌آور",
+      "documentTitle": "فاکتور قطعات",
+      "footer": "",
+      "showDocumentNumber": true,
+      "showDate": true,
+      "showCustomer": true,
+      "showNotes": true,
+      "showLogisticsCode": true,
+      "showVehicle": true
+    }
+  }
+}

@@ -1,0 +1,500 @@
+{"id":39501,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"FLYWHEEL FIXTURE","normalizedValue":"flywheel fixture"}
+{"id":39502,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20014","normalizedValue":"ch-20014"}
+{"id":39503,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20014-02","normalizedValue":"ch-20014-02"}
+{"id":39504,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20014-01","normalizedValue":"ch-20014-01"}
+{"id":39505,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزارمخصوص بازکردن پیچ پولی میل لنگ","normalizedValue":"ابزارمخصوص بازکردن پیچ پولی میل لنگ"}
+{"id":39506,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20015","normalizedValue":"ch-20015"}
+{"id":39507,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20015-01","normalizedValue":"ch-20015-01"}
+{"id":39508,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزارمخصوص نصب خار ساق سوپاپ","normalizedValue":"ابزارمخصوص نصب خار ساق سوپاپ"}
+{"id":39509,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20017-A","normalizedValue":"ch-20017-a"}
+{"id":39510,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20017-A-01","normalizedValue":"ch-20017-a-01"}
+{"id":39511,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزار مخصوص پیاده و سوار کردن فنر سوپاپ","normalizedValue":"ابزار مخصوص پیاده و سوار کردن فنر سوپاپ"}
+{"id":39512,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20018","normalizedValue":"ch-20018"}
+{"id":39513,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20018-02","normalizedValue":"ch-20018-02"}
+{"id":39514,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CH-20018-1","normalizedValue":"ch-20018-1"}
+{"id":39515,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20018-1","normalizedValue":"ch-20018-1"}
+{"id":39516,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20018-1-01","normalizedValue":"ch-20018-1-01"}
+{"id":39517,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CH-20018","normalizedValue":"ch-20018"}
+{"id":39518,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20018-1-02","normalizedValue":"ch-20018-1-02"}
+{"id":39519,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزارمخصوص فنرجمع کن سوپاپ","normalizedValue":"ابزارمخصوص فنرجمع کن سوپاپ"}
+{"id":39520,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20018-B","normalizedValue":"ch-20018-b"}
+{"id":39521,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20018-B-03","normalizedValue":"ch-20018-b-03"}
+{"id":39522,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"ZJP-GJ1000040","normalizedValue":"zjp-gj1000040"}
+{"id":39523,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20018-B-01","normalizedValue":"ch-20018-b-01"}
+{"id":39524,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزارمخصوص نصب پولی میل لنگ","normalizedValue":"ابزارمخصوص نصب پولی میل لنگ"}
+{"id":39525,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20019","normalizedValue":"ch-20019"}
+{"id":39526,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20019-01","normalizedValue":"ch-20019-01"}
+{"id":39527,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"ZJP-GJ1000041","normalizedValue":"zjp-gj1000041"}
+{"id":39528,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزار مخصوص پیاده و سوار کردن خار سوپاپ","normalizedValue":"ابزار مخصوص پیاده و سوار کردن خار سوپاپ"}
+{"id":39529,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20041","normalizedValue":"ch-20041"}
+{"id":39530,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20041-02","normalizedValue":"ch-20041-02"}
+{"id":39531,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CH-20041-1","normalizedValue":"ch-20041-1"}
+{"id":39532,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20041-1","normalizedValue":"ch-20041-1"}
+{"id":39533,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20041-1-01","normalizedValue":"ch-20041-1-01"}
+{"id":39534,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CH-20041","normalizedValue":"ch-20041"}
+{"id":39535,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20041-1-02","normalizedValue":"ch-20041-1-02"}
+{"id":39536,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزار مخصوص جهت سوار کردن کاسه نمد میل سوپاپ","normalizedValue":"ابزار مخصوص جهت سوار کردن کاسه نمد میل سوپاپ"}
+{"id":39537,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20044","normalizedValue":"ch-20044"}
+{"id":39538,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20044-02","normalizedValue":"ch-20044-02"}
+{"id":39539,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CH-20044-1","normalizedValue":"ch-20044-1"}
+{"id":39540,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20044-1","normalizedValue":"ch-20044-1"}
+{"id":39541,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20044-1-01","normalizedValue":"ch-20044-1-01"}
+{"id":39542,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CH-20044","normalizedValue":"ch-20044"}
+{"id":39543,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20044-1-02","normalizedValue":"ch-20044-1-02"}
+{"id":39544,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزار مخصوص سوار کردن کاسه نمد جلوی میل لنگ","normalizedValue":"ابزار مخصوص سوار کردن کاسه نمد جلوی میل لنگ"}
+{"id":39545,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20045","normalizedValue":"ch-20045"}
+{"id":39546,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20045-02","normalizedValue":"ch-20045-02"}
+{"id":39547,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CH-20045-1","normalizedValue":"ch-20045-1"}
+{"id":39548,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20045-1","normalizedValue":"ch-20045-1"}
+{"id":39549,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20045-1-01","normalizedValue":"ch-20045-1-01"}
+{"id":39550,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CH-20045","normalizedValue":"ch-20045"}
+{"id":39551,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20045-1-02","normalizedValue":"ch-20045-1-02"}
+{"id":39552,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزار مخصوص بازکردن غربیلک فرمان","normalizedValue":"ابزار مخصوص بازکردن غربیلک فرمان"}
+{"id":39553,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20047","normalizedValue":"ch-20047"}
+{"id":39554,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20047-02","normalizedValue":"ch-20047-02"}
+{"id":39555,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CH-20047-1","normalizedValue":"ch-20047-1"}
+{"id":39556,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20047-1","normalizedValue":"ch-20047-1"}
+{"id":39557,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20047-1-02","normalizedValue":"ch-20047-1-02"}
+{"id":39558,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CH-20047","normalizedValue":"ch-20047"}
+{"id":39559,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20047-1-01","normalizedValue":"ch-20047-1-01"}
+{"id":39560,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزار مخصوص پیاده کردن سیت سوپاپ","normalizedValue":"ابزار مخصوص پیاده کردن سیت سوپاپ"}
+{"id":39561,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20051","normalizedValue":"ch-20051"}
+{"id":39562,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20051-02","normalizedValue":"ch-20051-02"}
+{"id":39563,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CH-20051-1","normalizedValue":"ch-20051-1"}
+{"id":39564,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20051-1","normalizedValue":"ch-20051-1"}
+{"id":39565,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20051-1-01","normalizedValue":"ch-20051-1-01"}
+{"id":39566,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CH-20051","normalizedValue":"ch-20051"}
+{"id":39567,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20051-1-02","normalizedValue":"ch-20051-1-02"}
+{"id":39568,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزارمخصوص نگهدارنده موتور","normalizedValue":"ابزارمخصوص نگهدارنده موتور"}
+{"id":39569,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20056","normalizedValue":"ch-20056"}
+{"id":39570,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20056-01","normalizedValue":"ch-20056-01"}
+{"id":39571,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزار قفل کننده میل لنگ","normalizedValue":"ابزار قفل کننده میل لنگ"}
+{"id":39572,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-20089","normalizedValue":"ch-20089"}
+{"id":39573,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-20089-01","normalizedValue":"ch-20089-01"}
+{"id":39574,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"ZJP-GJ1000045","normalizedValue":"zjp-gj1000045"}
+{"id":39575,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزار مخصوص سوار کردن کاسه نمد دیفرانسیل","normalizedValue":"ابزار مخصوص سوار کردن کاسه نمد دیفرانسیل"}
+{"id":39576,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30002","normalizedValue":"ch-30002"}
+{"id":39577,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30002-01","normalizedValue":"ch-30002-01"}
+{"id":39578,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CH-30002-1","normalizedValue":"ch-30002-1"}
+{"id":39579,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30002-02","normalizedValue":"ch-30002-02"}
+{"id":39580,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30002-1","normalizedValue":"ch-30002-1"}
+{"id":39581,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30002-1-01","normalizedValue":"ch-30002-1-01"}
+{"id":39582,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CH-30002","normalizedValue":"ch-30002"}
+{"id":39583,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30002-1-02","normalizedValue":"ch-30002-1-02"}
+{"id":39584,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزار مخصوص در آوردن دنده های گیربگس","normalizedValue":"ابزار مخصوص در آوردن دنده های گیربگس"}
+{"id":39585,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30003","normalizedValue":"ch-30003"}
+{"id":39586,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30003-02","normalizedValue":"ch-30003-02"}
+{"id":39587,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CH-30003-1","normalizedValue":"ch-30003-1"}
+{"id":39588,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30003-1","normalizedValue":"ch-30003-1"}
+{"id":39589,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30003-1-01","normalizedValue":"ch-30003-1-01"}
+{"id":39590,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CH-30003","normalizedValue":"ch-30003"}
+{"id":39591,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30003-1-02","normalizedValue":"ch-30003-1-02"}
+{"id":39592,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزارمخصوص بازکننده غربیلک فرمان","normalizedValue":"ابزارمخصوص بازکننده غربیلک فرمان"}
+{"id":39593,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30003-A","normalizedValue":"ch-30003-a"}
+{"id":39594,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30003-A-01","normalizedValue":"ch-30003-a-01"}
+{"id":39595,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"ZJP-GJ1000048","normalizedValue":"zjp-gj1000048"}
+{"id":39596,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزارمخصوص نصب کاسه نمد شفت ورودی گیربکس","normalizedValue":"ابزارمخصوص نصب کاسه نمد شفت ورودی گیربکس"}
+{"id":39597,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30041","normalizedValue":"ch-30041"}
+{"id":39598,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30041-01","normalizedValue":"ch-30041-01"}
+{"id":39599,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"ZJP-GJ1000050","normalizedValue":"zjp-gj1000050"}
+{"id":39600,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30041-03","normalizedValue":"ch-30041-03"}
+{"id":39601,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزار خارج کننده کنس بلبرینگ دیفرانسیل","normalizedValue":"ابزار خارج کننده کنس بلبرینگ دیفرانسیل"}
+{"id":39602,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30042","normalizedValue":"ch-30042"}
+{"id":39603,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30042-01","normalizedValue":"ch-30042-01"}
+{"id":39604,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"ZJP-GJ1000051","normalizedValue":"zjp-gj1000051"}
+{"id":39605,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30042-02","normalizedValue":"ch-30042-02"}
+{"id":39606,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزارمخصوص نصب بلبرینگ شفت خروجی گیربکس","normalizedValue":"ابزارمخصوص نصب بلبرینگ شفت خروجی گیربکس"}
+{"id":39607,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30043","normalizedValue":"ch-30043"}
+{"id":39608,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30043-01","normalizedValue":"ch-30043-01"}
+{"id":39609,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"ZJP-GJ1000052","normalizedValue":"zjp-gj1000052"}
+{"id":39610,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30043-02","normalizedValue":"ch-30043-02"}
+{"id":39611,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزارمخصوص قفل کن شفت ورودی گیربکس","normalizedValue":"ابزارمخصوص قفل کن شفت ورودی گیربکس"}
+{"id":39612,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30044","normalizedValue":"ch-30044"}
+{"id":39613,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30044-01","normalizedValue":"ch-30044-01"}
+{"id":39614,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزارمخصوص بیرون کش متعلقات شفت خروجی گیربکس","normalizedValue":"ابزارمخصوص بیرون کش متعلقات شفت خروجی گیربکس"}
+{"id":39615,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30047","normalizedValue":"ch-30047"}
+{"id":39616,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30047-01","normalizedValue":"ch-30047-01"}
+{"id":39617,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"ZJP-GJ1000055","normalizedValue":"zjp-gj1000055"}
+{"id":39618,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30047-03","normalizedValue":"ch-30047-03"}
+{"id":39619,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزارمخصوص نصب بلبرینگ سمت چپ شفت ورودی گیربکس","normalizedValue":"ابزارمخصوص نصب بلبرینگ سمت چپ شفت ورودی گیربکس"}
+{"id":39620,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30048","normalizedValue":"ch-30048"}
+{"id":39621,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30048-01","normalizedValue":"ch-30048-01"}
+{"id":39622,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"ZJP-GJ1000056","normalizedValue":"zjp-gj1000056"}
+{"id":39623,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30048-02","normalizedValue":"ch-30048-02"}
+{"id":39624,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30052","normalizedValue":"ch-30052"}
+{"id":39625,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30052-01","normalizedValue":"ch-30052-01"}
+{"id":39626,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"ZJP-GJ1000057","normalizedValue":"zjp-gj1000057"}
+{"id":39627,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30052-02","normalizedValue":"ch-30052-02"}
+{"id":39628,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزارمخصوص بیرون متعلقات شفت","normalizedValue":"ابزارمخصوص بیرون متعلقات شفت"}
+{"id":39629,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30057","normalizedValue":"ch-30057"}
+{"id":39630,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30057-01","normalizedValue":"ch-30057-01"}
+{"id":39631,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"ZJP-GJ1000058","normalizedValue":"zjp-gj1000058"}
+{"id":39632,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30057-02","normalizedValue":"ch-30057-02"}
+{"id":39633,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزارمخصوص نصب متعلقات گیربکس","normalizedValue":"ابزارمخصوص نصب متعلقات گیربکس"}
+{"id":39634,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30058","normalizedValue":"ch-30058"}
+{"id":39635,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30058-01","normalizedValue":"ch-30058-01"}
+{"id":39636,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"ZJP-GJ1000059","normalizedValue":"zjp-gj1000059"}
+{"id":39637,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30058-02","normalizedValue":"ch-30058-02"}
+{"id":39638,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30059","normalizedValue":"ch-30059"}
+{"id":39639,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30059-01","normalizedValue":"ch-30059-01"}
+{"id":39640,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"ZJP-GJ1000060","normalizedValue":"zjp-gj1000060"}
+{"id":39641,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30059-02","normalizedValue":"ch-30059-02"}
+{"id":39642,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30061","normalizedValue":"ch-30061"}
+{"id":39643,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30061-01","normalizedValue":"ch-30061-01"}
+{"id":39644,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"ZJP-GJ1000062","normalizedValue":"zjp-gj1000062"}
+{"id":39645,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30061-02","normalizedValue":"ch-30061-02"}
+{"id":39646,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30062","normalizedValue":"ch-30062"}
+{"id":39647,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30062-01","normalizedValue":"ch-30062-01"}
+{"id":39648,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"ZJP-GJ1000063","normalizedValue":"zjp-gj1000063"}
+{"id":39649,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30062-02","normalizedValue":"ch-30062-02"}
+{"id":39650,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30065","normalizedValue":"ch-30065"}
+{"id":39651,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30065-01","normalizedValue":"ch-30065-01"}
+{"id":39652,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"ZJP-GJ1000064","normalizedValue":"zjp-gj1000064"}
+{"id":39653,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30065-02","normalizedValue":"ch-30065-02"}
+{"id":39654,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30066","normalizedValue":"ch-30066"}
+{"id":39655,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30066-01","normalizedValue":"ch-30066-01"}
+{"id":39656,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"ZJP-GJ1000065","normalizedValue":"zjp-gj1000065"}
+{"id":39657,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30066-02","normalizedValue":"ch-30066-02"}
+{"id":39658,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ابزار مخصوص باز کردن پمپ بنزین مربوط به خودروی X55","normalizedValue":"ابزار مخصوص باز کردن پمپ بنزین مربوط به خودروی x55"}
+{"id":39659,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-30090","normalizedValue":"ch-30090"}
+{"id":39660,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-30090-01","normalizedValue":"ch-30090-01"}
+{"id":39661,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"ECH-0006","normalizedValue":"ech-0006"}
+{"id":39662,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"دستگاه آناليز چهار گاز","normalizedValue":"دستگاه آنالیز چهار گاز"}
+{"id":39663,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CH-60023","normalizedValue":"ch-60023"}
+{"id":39664,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CH-60023-01","normalizedValue":"ch-60023-01"}
+{"id":39665,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"رکاب اسپرت سمت چپ","normalizedValue":"رکاب اسپرت سمت چپ"}
+{"id":39666,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CJP-21010","normalizedValue":"cjp-21010"}
+{"id":39667,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CJP-21010-01","normalizedValue":"cjp-21010-01"}
+{"id":39668,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CJP-21010-02","normalizedValue":"cjp-21010-02"}
+{"id":39669,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CJP-21010-03","normalizedValue":"cjp-21010-03"}
+{"id":39670,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"رکاب اسپرت سمت راست","normalizedValue":"رکاب اسپرت سمت راست"}
+{"id":39671,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CJP-21020","normalizedValue":"cjp-21020"}
+{"id":39672,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CJP-21020-01","normalizedValue":"cjp-21020-01"}
+{"id":39673,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CJP-21020-02","normalizedValue":"cjp-21020-02"}
+{"id":39674,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CJP-21020-03","normalizedValue":"cjp-21020-03"}
+{"id":39675,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"فلاپ اسپرت سپر جلو","normalizedValue":"فلاپ اسپرت سپر جلو"}
+{"id":39676,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CJP-21030","normalizedValue":"cjp-21030"}
+{"id":39677,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CJP-21030-02","normalizedValue":"cjp-21030-02"}
+{"id":39678,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CJP-21030-03","normalizedValue":"cjp-21030-03"}
+{"id":39679,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"فلاپ اسپرت سپر عقب","normalizedValue":"فلاپ اسپرت سپر عقب"}
+{"id":39680,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CJP-21040","normalizedValue":"cjp-21040"}
+{"id":39681,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CJP-21040-01","normalizedValue":"cjp-21040-01"}
+{"id":39682,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CJP-21040-02","normalizedValue":"cjp-21040-02"}
+{"id":39683,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"جلوپنجره اسپرت","normalizedValue":"جلوپنجره اسپرت"}
+{"id":39684,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CJP-21050","normalizedValue":"cjp-21050"}
+{"id":39685,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CJP-21050-02","normalizedValue":"cjp-21050-02"}
+{"id":39686,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"شستشوي انژکتور","normalizedValue":"شستشوی انژکتور"}
+{"id":39687,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CNC601","normalizedValue":"cnc601"}
+{"id":39688,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CNC601-01","normalizedValue":"cnc601-01"}
+{"id":39689,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ1420612","normalizedValue":"cq1420612"}
+{"id":39690,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ1420612-01","normalizedValue":"cq1420612-01"}
+{"id":39691,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ1500616","normalizedValue":"cq1500616"}
+{"id":39692,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ1500616-01","normalizedValue":"cq1500616-01"}
+{"id":39693,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"Q150B0616F36","normalizedValue":"q150b0616f36"}
+{"id":39694,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پیچ جعبه فرمان","normalizedValue":"پیچ جعبه فرمان"}
+{"id":39695,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ1600825","normalizedValue":"cq1600825"}
+{"id":39696,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ1600825-01","normalizedValue":"cq1600825-01"}
+{"id":39697,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ1600835","normalizedValue":"cq1600835"}
+{"id":39698,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ1600835-01","normalizedValue":"cq1600835-01"}
+{"id":39699,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"A11-3404011","normalizedValue":"a11-3404011"}
+{"id":39700,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ1601010","normalizedValue":"cq1601010"}
+{"id":39701,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ1601010-01","normalizedValue":"cq1601010-01"}
+{"id":39702,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"FQ1841015T1F31E","normalizedValue":"fq1841015t1f31e"}
+{"id":39703,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ1611035","normalizedValue":"cq1611035"}
+{"id":39704,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ1611035-01","normalizedValue":"cq1611035-01"}
+{"id":39705,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پیچ پمپ هیدرولیک","normalizedValue":"پیچ پمپ هیدرولیک"}
+{"id":39706,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ21810110","normalizedValue":"cq21810110"}
+{"id":39707,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ21810110-01","normalizedValue":"cq21810110-01"}
+{"id":39708,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ32608","normalizedValue":"cq32608"}
+{"id":39709,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ32608-01","normalizedValue":"cq32608-01"}
+{"id":39710,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CQ32608T13","normalizedValue":"cq32608t13"}
+{"id":39711,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ32608T13","normalizedValue":"cq32608t13"}
+{"id":39712,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ32608T13-01","normalizedValue":"cq32608t13-01"}
+{"id":39713,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CQ32608","normalizedValue":"cq32608"}
+{"id":39714,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ326C10","normalizedValue":"cq326c10"}
+{"id":39715,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ326C10-01","normalizedValue":"cq326c10-01"}
+{"id":39716,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ34008","normalizedValue":"cq34008"}
+{"id":39717,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ34008-01","normalizedValue":"cq34008-01"}
+{"id":39718,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"Q340B08F36","normalizedValue":"q340b08f36"}
+{"id":39719,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ39606","normalizedValue":"cq39606"}
+{"id":39720,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ39606-01","normalizedValue":"cq39606-01"}
+{"id":39721,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"Q32006F31","normalizedValue":"q32006f31"}
+{"id":39722,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"Q32006F36","normalizedValue":"q32006f36"}
+{"id":39723,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ39610","normalizedValue":"cq39610"}
+{"id":39724,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ39610-01","normalizedValue":"cq39610-01"}
+{"id":39725,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"Q32010F36","normalizedValue":"q32010f36"}
+{"id":39726,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"بست پیچی شیلنگ","normalizedValue":"بست پیچی شیلنگ"}
+{"id":39727,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ67625","normalizedValue":"cq67625"}
+{"id":39728,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ67625-01","normalizedValue":"cq67625-01"}
+{"id":39729,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ67639","normalizedValue":"cq67639"}
+{"id":39730,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ67639-01","normalizedValue":"cq67639-01"}
+{"id":39731,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CQ67650","normalizedValue":"cq67650"}
+{"id":39732,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ67645","normalizedValue":"cq67645"}
+{"id":39733,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ67645-01","normalizedValue":"cq67645-01"}
+{"id":39734,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"FQ67645T73","normalizedValue":"fq67645t73"}
+{"id":39735,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ67650","normalizedValue":"cq67650"}
+{"id":39736,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ67650-01","normalizedValue":"cq67650-01"}
+{"id":39737,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CQ67639","normalizedValue":"cq67639"}
+{"id":39738,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CQ67645","normalizedValue":"cq67645"}
+{"id":39739,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ67660","normalizedValue":"cq67660"}
+{"id":39740,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ67660-01","normalizedValue":"cq67660-01"}
+{"id":39741,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"Q67657","normalizedValue":"q67657"}
+{"id":39742,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"بست لوله خرطومي هواکش","normalizedValue":"بست لوله خرطومی هواکش"}
+{"id":39743,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ67670","normalizedValue":"cq67670"}
+{"id":39744,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ67670-01","normalizedValue":"cq67670-01"}
+{"id":39745,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ67676","normalizedValue":"cq67676"}
+{"id":39746,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ67676-01","normalizedValue":"cq67676-01"}
+{"id":39747,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CQ67680","normalizedValue":"cq67680"}
+{"id":39748,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"CQ67680","normalizedValue":"cq67680"}
+{"id":39749,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"CQ67680-01","normalizedValue":"cq67680-01"}
+{"id":39750,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"CQ67676","normalizedValue":"cq67676"}
+{"id":39751,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4D20-1003060","normalizedValue":"d4d20-1003060"}
+{"id":39752,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4D20-1003060-01","normalizedValue":"d4d20-1003060-01"}
+{"id":39753,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"بلوک سیلندر","normalizedValue":"بلوک سیلندر"}
+{"id":39754,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15-1002010","normalizedValue":"d4g15-1002010"}
+{"id":39755,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15-1002010-01","normalizedValue":"d4g15-1002010-01"}
+{"id":39756,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"صفحه بالائی سوپاپ EGR","normalizedValue":"صفحه بالائی سوپاپ egr"}
+{"id":39757,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15-1003016","normalizedValue":"d4g15-1003016"}
+{"id":39758,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15-1003016-01","normalizedValue":"d4g15-1003016-01"}
+{"id":39759,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"واشر صفحه پائینی سوپاپ EGR","normalizedValue":"واشر صفحه پائینی سوپاپ egr"}
+{"id":39760,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15-1003017","normalizedValue":"d4g15-1003017"}
+{"id":39761,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15-1003017-01","normalizedValue":"d4g15-1003017-01"}
+{"id":39762,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"واشر صفحه بالائی سوپاپ EGR","normalizedValue":"واشر صفحه بالائی سوپاپ egr"}
+{"id":39763,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15-1003018","normalizedValue":"d4g15-1003018"}
+{"id":39764,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15-1003018-01","normalizedValue":"d4g15-1003018-01"}
+{"id":39765,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"صفحه پائینی سوپاپ EGR","normalizedValue":"صفحه پائینی سوپاپ egr"}
+{"id":39766,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15-1003019","normalizedValue":"d4g15-1003019"}
+{"id":39767,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15-1003019-01","normalizedValue":"d4g15-1003019-01"}
+{"id":39768,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15-1005110","normalizedValue":"d4g15-1005110"}
+{"id":39769,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15-1005110-01","normalizedValue":"d4g15-1005110-01"}
+{"id":39770,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15-1005110AC","normalizedValue":"d4g15-1005110ac"}
+{"id":39771,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15-1005110AC-01","normalizedValue":"d4g15-1005110ac-01"}
+{"id":39772,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15-1005110AD","normalizedValue":"d4g15-1005110ad"}
+{"id":39773,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15-1005110AD-01","normalizedValue":"d4g15-1005110ad-01"}
+{"id":39774,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15-1009010","normalizedValue":"d4g15-1009010"}
+{"id":39775,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15-1009010-01","normalizedValue":"d4g15-1009010-01"}
+{"id":39776,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15-1009031","normalizedValue":"d4g15-1009031"}
+{"id":39777,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15-1009031-01","normalizedValue":"d4g15-1009031-01"}
+{"id":39778,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سوپاپ EGR","normalizedValue":"سوپاپ egr"}
+{"id":39779,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15-1207010","normalizedValue":"d4g15-1207010"}
+{"id":39780,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15-1207010-01","normalizedValue":"d4g15-1207010-01"}
+{"id":39781,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"واشر سوپاپ EGR","normalizedValue":"واشر سوپاپ egr"}
+{"id":39782,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15-1207012","normalizedValue":"d4g15-1207012"}
+{"id":39783,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15-1207012-01","normalizedValue":"d4g15-1207012-01"}
+{"id":39784,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15-3708010","normalizedValue":"d4g15-3708010"}
+{"id":39785,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15-3708010-02","normalizedValue":"d4g15-3708010-02"}
+{"id":39786,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15-3708010-01","normalizedValue":"d4g15-3708010-01"}
+{"id":39787,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"واشر استارت","normalizedValue":"واشر استارت"}
+{"id":39788,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15-3708018","normalizedValue":"d4g15-3708018"}
+{"id":39789,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15-3708018-01","normalizedValue":"d4g15-3708018-01"}
+{"id":39790,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1002010","normalizedValue":"d4g15b-1002010"}
+{"id":39791,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1002010-01","normalizedValue":"d4g15b-1002010-01"}
+{"id":39792,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"نازل روغن کاری سیلندر","normalizedValue":"نازل روغن کاری سیلندر"}
+{"id":39793,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1002050","normalizedValue":"d4g15b-1002050"}
+{"id":39794,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1002050-01","normalizedValue":"d4g15b-1002050-01"}
+{"id":39795,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1003010","normalizedValue":"d4g15b-1003010"}
+{"id":39796,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1003010-01","normalizedValue":"d4g15b-1003010-01"}
+{"id":39797,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1003030","normalizedValue":"d4g15b-1003030"}
+{"id":39798,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1003030-01","normalizedValue":"d4g15b-1003030-01"}
+{"id":39799,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1003042","normalizedValue":"d4g15b-1003042"}
+{"id":39800,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1003042-02","normalizedValue":"d4g15b-1003042-02"}
+{"id":39801,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1003042-01","normalizedValue":"d4g15b-1003042-01"}
+{"id":39802,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1003080","normalizedValue":"d4g15b-1003080"}
+{"id":39803,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1003080-02","normalizedValue":"d4g15b-1003080-02"}
+{"id":39804,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1003080-01","normalizedValue":"d4g15b-1003080-01"}
+{"id":39805,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1003082","normalizedValue":"d4g15b-1003082"}
+{"id":39806,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1003082-02","normalizedValue":"d4g15b-1003082-02"}
+{"id":39807,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1003082-01","normalizedValue":"d4g15b-1003082-01"}
+{"id":39808,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1003085","normalizedValue":"d4g15b-1003085"}
+{"id":39809,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1003085-01","normalizedValue":"d4g15b-1003085-01"}
+{"id":39810,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1003086","normalizedValue":"d4g15b-1003086"}
+{"id":39811,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1003086-01","normalizedValue":"d4g15b-1003086-01"}
+{"id":39812,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1004015","normalizedValue":"d4g15b-1004015"}
+{"id":39813,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1004015-01","normalizedValue":"d4g15b-1004015-01"}
+{"id":39814,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1005011","normalizedValue":"d4g15b-1005011"}
+{"id":39815,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1005011-01","normalizedValue":"d4g15b-1005011-01"}
+{"id":39816,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1005070","normalizedValue":"d4g15b-1005070"}
+{"id":39817,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1005070-01","normalizedValue":"d4g15b-1005070-01"}
+{"id":39818,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1006020","normalizedValue":"d4g15b-1006020"}
+{"id":39819,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1006020-02","normalizedValue":"d4g15b-1006020-02"}
+{"id":39820,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1006020-01","normalizedValue":"d4g15b-1006020-01"}
+{"id":39821,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1006060","normalizedValue":"d4g15b-1006060"}
+{"id":39822,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1006060-02","normalizedValue":"d4g15b-1006060-02"}
+{"id":39823,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1006060-03","normalizedValue":"d4g15b-1006060-03"}
+{"id":39824,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1006060-01","normalizedValue":"d4g15b-1006060-01"}
+{"id":39825,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"منیفولد دود و کاتالیست کانورتور اولیه","normalizedValue":"منیفولد دود و کاتالیست کانورتور اولیه"}
+{"id":39826,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1008110","normalizedValue":"d4g15b-1008110"}
+{"id":39827,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1008110-01","normalizedValue":"d4g15b-1008110-01"}
+{"id":39828,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1008130","normalizedValue":"d4g15b-1008130"}
+{"id":39829,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1008130-02","normalizedValue":"d4g15b-1008130-02"}
+{"id":39830,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1008130-01","normalizedValue":"d4g15b-1008130-01"}
+{"id":39831,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1008141","normalizedValue":"d4g15b-1008141"}
+{"id":39832,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1008141-01","normalizedValue":"d4g15b-1008141-01"}
+{"id":39833,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کاور حرارتی کاتالیست کانورتور اولیه","normalizedValue":"کاور حرارتی کاتالیست کانورتور اولیه"}
+{"id":39834,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1008142","normalizedValue":"d4g15b-1008142"}
+{"id":39835,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1008142-01","normalizedValue":"d4g15b-1008142-01"}
+{"id":39836,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1009031","normalizedValue":"d4g15b-1009031"}
+{"id":39837,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1009031-01","normalizedValue":"d4g15b-1009031-01"}
+{"id":39838,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1009032AB","normalizedValue":"d4g15b-1009032ab"}
+{"id":39839,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1009032AB-01","normalizedValue":"d4g15b-1009032ab-01"}
+{"id":39840,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"شیلنگ بخار روغن  منیفولد هوا","normalizedValue":"شیلنگ بخار روغن منیفولد هوا"}
+{"id":39841,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1014014","normalizedValue":"d4g15b-1014014"}
+{"id":39842,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1014014-01","normalizedValue":"d4g15b-1014014-01"}
+{"id":39843,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1021021","normalizedValue":"d4g15b-1021021"}
+{"id":39844,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1021021-01","normalizedValue":"d4g15b-1021021-01"}
+{"id":39845,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"477F-1007073","normalizedValue":"477f-1007073"}
+{"id":39846,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1021060","normalizedValue":"d4g15b-1021060"}
+{"id":39847,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1021060-02","normalizedValue":"d4g15b-1021060-02"}
+{"id":39848,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1021060-01","normalizedValue":"d4g15b-1021060-01"}
+{"id":39849,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"هرزگرد تسمه تایم","normalizedValue":"هرزگرد تسمه تایم"}
+{"id":39850,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1021070","normalizedValue":"d4g15b-1021070"}
+{"id":39851,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1021070-02","normalizedValue":"d4g15b-1021070-02"}
+{"id":39852,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1021070-01","normalizedValue":"d4g15b-1021070-01"}
+{"id":39853,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1021080AB","normalizedValue":"d4g15b-1021080ab"}
+{"id":39854,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1021080AB-01","normalizedValue":"d4g15b-1021080ab-01"}
+{"id":39855,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1021090","normalizedValue":"d4g15b-1021090"}
+{"id":39856,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1021090-01","normalizedValue":"d4g15b-1021090-01"}
+{"id":39857,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1025012","normalizedValue":"d4g15b-1025012"}
+{"id":39858,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1025012-01","normalizedValue":"d4g15b-1025012-01"}
+{"id":39859,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه دینام","normalizedValue":"پایه دینام"}
+{"id":39860,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1025013AB","normalizedValue":"d4g15b-1025013ab"}
+{"id":39861,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1025013AB-01","normalizedValue":"d4g15b-1025013ab-01"}
+{"id":39862,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"تسمه پمپ هیدرولیک","normalizedValue":"تسمه پمپ هیدرولیک"}
+{"id":39863,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1025051","normalizedValue":"d4g15b-1025051"}
+{"id":39864,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1025051-02","normalizedValue":"d4g15b-1025051-02"}
+{"id":39865,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1025051-01","normalizedValue":"d4g15b-1025051-01"}
+{"id":39866,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"هرزگرد کولر","normalizedValue":"هرزگرد کولر"}
+{"id":39867,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1025070","normalizedValue":"d4g15b-1025070"}
+{"id":39868,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1025070-02","normalizedValue":"d4g15b-1025070-02"}
+{"id":39869,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1025070-01","normalizedValue":"d4g15b-1025070-01"}
+{"id":39870,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1130015","normalizedValue":"d4g15b-1130015"}
+{"id":39871,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1130015-01","normalizedValue":"d4g15b-1130015-01"}
+{"id":39872,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1303010","normalizedValue":"d4g15b-1303010"}
+{"id":39873,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1303010-02","normalizedValue":"d4g15b-1303010-02"}
+{"id":39874,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1303010-01","normalizedValue":"d4g15b-1303010-01"}
+{"id":39875,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1303032","normalizedValue":"d4g15b-1303032"}
+{"id":39876,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1303032-01","normalizedValue":"d4g15b-1303032-01"}
+{"id":39877,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1306030","normalizedValue":"d4g15b-1306030"}
+{"id":39878,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1306030-01","normalizedValue":"d4g15b-1306030-01"}
+{"id":39879,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1306110","normalizedValue":"d4g15b-1306110"}
+{"id":39880,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1306110-01","normalizedValue":"d4g15b-1306110-01"}
+{"id":39881,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1307010","normalizedValue":"d4g15b-1307010"}
+{"id":39882,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1307010-01","normalizedValue":"d4g15b-1307010-01"}
+{"id":39883,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-1307041","normalizedValue":"d4g15b-1307041"}
+{"id":39884,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1307041-02","normalizedValue":"d4g15b-1307041-02"}
+{"id":39885,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-1307041-01","normalizedValue":"d4g15b-1307041-01"}
+{"id":39886,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-3611011","normalizedValue":"d4g15b-3611011"}
+{"id":39887,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-3611011-02","normalizedValue":"d4g15b-3611011-02"}
+{"id":39888,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-3611011-01","normalizedValue":"d4g15b-3611011-01"}
+{"id":39889,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور دما و فشار هوای ورودی","normalizedValue":"سنسور دما و فشار هوای ورودی"}
+{"id":39890,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-3611015","normalizedValue":"d4g15b-3611015"}
+{"id":39891,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-3611015-01","normalizedValue":"d4g15b-3611015-01"}
+{"id":39892,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه کانکتور سنسور ضربه","normalizedValue":"پایه کانکتور سنسور ضربه"}
+{"id":39893,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-3611033","normalizedValue":"d4g15b-3611033"}
+{"id":39894,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-3611033-01","normalizedValue":"d4g15b-3611033-01"}
+{"id":39895,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور دمای آب موتور(روی هوزینگ ترموستات)","normalizedValue":"سنسور دمای آب موتور(روی هوزینگ ترموستات)"}
+{"id":39896,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-3611043","normalizedValue":"d4g15b-3611043"}
+{"id":39897,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-3611043-02","normalizedValue":"d4g15b-3611043-02"}
+{"id":39898,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-3611043-01","normalizedValue":"d4g15b-3611043-01"}
+{"id":39899,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-3701010AB","normalizedValue":"d4g15b-3701010ab"}
+{"id":39900,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-3701010AB-01","normalizedValue":"d4g15b-3701010ab-01"}
+{"id":39901,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-3705110","normalizedValue":"d4g15b-3705110"}
+{"id":39902,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-3705110-02","normalizedValue":"d4g15b-3705110-02"}
+{"id":39903,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-3705110-01","normalizedValue":"d4g15b-3705110-01"}
+{"id":39904,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G15B-BJ1004030","normalizedValue":"d4g15b-bj1004030"}
+{"id":39905,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G15B-BJ1004030-01","normalizedValue":"d4g15b-bj1004030-01"}
+{"id":39906,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G20-1002038","normalizedValue":"d4g20-1002038"}
+{"id":39907,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G20-1002038-01","normalizedValue":"d4g20-1002038-01"}
+{"id":39908,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G20-1003010","normalizedValue":"d4g20-1003010"}
+{"id":39909,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G20-1003010-01","normalizedValue":"d4g20-1003010-01"}
+{"id":39910,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"484H-1003010BB","normalizedValue":"484h-1003010bb"}
+{"id":39911,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سوپاپ یک طرفه سرسیلندر","normalizedValue":"سوپاپ یک طرفه سرسیلندر"}
+{"id":39912,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G20-1003024","normalizedValue":"d4g20-1003024"}
+{"id":39913,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G20-1003024-01","normalizedValue":"d4g20-1003024-01"}
+{"id":39914,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"میل سوپاپ بنزین","normalizedValue":"میل سوپاپ بنزین"}
+{"id":39915,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G20-1006010","normalizedValue":"d4g20-1006010"}
+{"id":39916,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G20-1006010-01","normalizedValue":"d4g20-1006010-01"}
+{"id":39917,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G20-1007014","normalizedValue":"d4g20-1007014"}
+{"id":39918,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G20-1007014-01","normalizedValue":"d4g20-1007014-01"}
+{"id":39919,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"شیلنگ خلاء منیفولد","normalizedValue":"شیلنگ خلاء منیفولد"}
+{"id":39920,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G20-1008051","normalizedValue":"d4g20-1008051"}
+{"id":39921,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G20-1008051-01","normalizedValue":"d4g20-1008051-01"}
+{"id":39922,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله خنک کن","normalizedValue":"لوله خنک کن"}
+{"id":39923,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G20-1008053","normalizedValue":"d4g20-1008053"}
+{"id":39924,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G20-1008053-01","normalizedValue":"d4g20-1008053-01"}
+{"id":39925,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه نگهدارنده شیر مغناطیسی","normalizedValue":"پایه نگهدارنده شیر مغناطیسی"}
+{"id":39926,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G20-1130015","normalizedValue":"d4g20-1130015"}
+{"id":39927,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G20-1130015-01","normalizedValue":"d4g20-1130015-01"}
+{"id":39928,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"شیلنگ آب","normalizedValue":"شیلنگ آب"}
+{"id":39929,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G20-1303031","normalizedValue":"d4g20-1303031"}
+{"id":39930,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G20-1303031-02","normalizedValue":"d4g20-1303031-02"}
+{"id":39931,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G20-1303031-01","normalizedValue":"d4g20-1303031-01"}
+{"id":39932,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"محفظه ترموستات(هوزینگ)","normalizedValue":"محفظه ترموستات(هوزینگ)"}
+{"id":39933,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G20-1306030","normalizedValue":"d4g20-1306030"}
+{"id":39934,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G20-1306030-01","normalizedValue":"d4g20-1306030-01"}
+{"id":39935,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G20-3611033","normalizedValue":"d4g20-3611033"}
+{"id":39936,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G20-3611033-01","normalizedValue":"d4g20-3611033-01"}
+{"id":39937,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G20-3765010","normalizedValue":"d4g20-3765010"}
+{"id":39938,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G20-3765010-01","normalizedValue":"d4g20-3765010-01"}
+{"id":39939,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"E4G15B-3765010","normalizedValue":"e4g15b-3765010"}
+{"id":39940,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"مجموعه سر سيلندر کامل","normalizedValue":"مجموعه سر سیلندر کامل"}
+{"id":39941,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4G20-BJ1003001AA","normalizedValue":"d4g20-bj1003001aa"}
+{"id":39942,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4G20-BJ1003001AA-01","normalizedValue":"d4g20-bj1003001aa-01"}
+{"id":39943,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"484H-BJ1003001AB","normalizedValue":"484h-bj1003001ab"}
+{"id":39944,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-0000E03AA","normalizedValue":"d4t20-0000e03aa"}
+{"id":39945,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-0000E03AA-01","normalizedValue":"d4t20-0000e03aa-01"}
+{"id":39946,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1002010","normalizedValue":"d4t20-1002010"}
+{"id":39947,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1002010-01","normalizedValue":"d4t20-1002010-01"}
+{"id":39948,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1003030","normalizedValue":"d4t20-1003030"}
+{"id":39949,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1003030-01","normalizedValue":"d4t20-1003030-01"}
+{"id":39950,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1004015","normalizedValue":"d4t20-1004015"}
+{"id":39951,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1004015-01","normalizedValue":"d4t20-1004015-01"}
+{"id":39952,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1006010","normalizedValue":"d4t20-1006010"}
+{"id":39953,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1006010-01","normalizedValue":"d4t20-1006010-01"}
+{"id":39954,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1008010","normalizedValue":"d4t20-1008010"}
+{"id":39955,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1008010-01","normalizedValue":"d4t20-1008010-01"}
+{"id":39956,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1008111","normalizedValue":"d4t20-1008111"}
+{"id":39957,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1008111-01","normalizedValue":"d4t20-1008111-01"}
+{"id":39958,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1008112","normalizedValue":"d4t20-1008112"}
+{"id":39959,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1008112-01","normalizedValue":"d4t20-1008112-01"}
+{"id":39960,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"مجموعه گیج روغن موتور با لوله","normalizedValue":"مجموعه گیج روغن موتور با لوله"}
+{"id":39961,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1009030","normalizedValue":"d4t20-1009030"}
+{"id":39962,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1009030-01","normalizedValue":"d4t20-1009030-01"}
+{"id":39963,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1014012","normalizedValue":"d4t20-1014012"}
+{"id":39964,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1014012-01","normalizedValue":"d4t20-1014012-01"}
+{"id":39965,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1025013","normalizedValue":"d4t20-1025013"}
+{"id":39966,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1025013-01","normalizedValue":"d4t20-1025013-01"}
+{"id":39967,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1118010","normalizedValue":"d4t20-1118010"}
+{"id":39968,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1118010-01","normalizedValue":"d4t20-1118010-01"}
+{"id":39969,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1118011","normalizedValue":"d4t20-1118011"}
+{"id":39970,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1118011-01","normalizedValue":"d4t20-1118011-01"}
+{"id":39971,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کاور حرارتی توربوشارژ","normalizedValue":"کاور حرارتی توربوشارژ"}
+{"id":39972,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1118012","normalizedValue":"d4t20-1118012"}
+{"id":39973,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1118012-01","normalizedValue":"d4t20-1118012-01"}
+{"id":39974,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه نگهدارنده توربو شارژر","normalizedValue":"پایه نگهدارنده توربو شارژر"}
+{"id":39975,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1118014","normalizedValue":"d4t20-1118014"}
+{"id":39976,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1118014-01","normalizedValue":"d4t20-1118014-01"}
+{"id":39977,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پیچ کاور حرارتی","normalizedValue":"پیچ کاور حرارتی"}
+{"id":39978,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1118017","normalizedValue":"d4t20-1118017"}
+{"id":39979,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1118017-01","normalizedValue":"d4t20-1118017-01"}
+{"id":39980,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله فلزی تغذیه روغن توربوشارژ","normalizedValue":"لوله فلزی تغذیه روغن توربوشارژ"}
+{"id":39981,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1118031","normalizedValue":"d4t20-1118031"}
+{"id":39982,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1118031-01","normalizedValue":"d4t20-1118031-01"}
+{"id":39983,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1118032","normalizedValue":"d4t20-1118032"}
+{"id":39984,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1118032-01","normalizedValue":"d4t20-1118032-01"}
+{"id":39985,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله فلزی خنک کن توربوشارژ","normalizedValue":"لوله فلزی خنک کن توربوشارژ"}
+{"id":39986,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1118051","normalizedValue":"d4t20-1118051"}
+{"id":39987,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1118051-01","normalizedValue":"d4t20-1118051-01"}
+{"id":39988,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله برگشت خنک کن توربوشارژ","normalizedValue":"لوله برگشت خنک کن توربوشارژ"}
+{"id":39989,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1118052","normalizedValue":"d4t20-1118052"}
+{"id":39990,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1118052-01","normalizedValue":"d4t20-1118052-01"}
+{"id":39991,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1121010","normalizedValue":"d4t20-1121010"}
+{"id":39992,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1121010-01","normalizedValue":"d4t20-1121010-01"}
+{"id":39993,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سه راهی فلزی اب موتور","normalizedValue":"سه راهی فلزی اب موتور"}
+{"id":39994,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1303010","normalizedValue":"d4t20-1303010"}
+{"id":39995,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1303010-01","normalizedValue":"d4t20-1303010-01"}
+{"id":39996,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1303030","normalizedValue":"d4t20-1303030"}
+{"id":39997,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1303030-01","normalizedValue":"d4t20-1303030-01"}
+{"id":39998,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1303621","normalizedValue":"d4t20-1303621"}
+{"id":39999,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"D4T20-1303621-01","normalizedValue":"d4t20-1303621-01"}
+{"id":40000,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"D4T20-1306010","normalizedValue":"d4t20-1306010"}

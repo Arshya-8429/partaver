@@ -1,0 +1,135 @@
+
+body.dark .vehicleGroup summary{background:#111827;border-color:#334155;color:#cbd5e1}
+body.dark .vehicleGroup details[open] summary{background:#172554;border-color:#1d4ed8;color:#bfdbfe}
+body.dark .vehicleModels{background:#0b1220;border-color:#1e3a8a;box-shadow:0 8px 18px rgba(0,0,0,.24)}
+body.dark .vehicleModelItem{color:#cbd5e1;border-top-color:#1f2937}
+body.dark .vehicleUngrouped span{background:#111827;border-color:#334155;color:#cbd5e1}
+body.dark .vehicleSuggestions{background:#0f172a;border-color:#334155;box-shadow:0 14px 34px rgba(0,0,0,.35)}
+body.dark .suggestGroup{background:#0f172a;color:#94a3b8}
+body.dark .vehicleOption{color:#cbd5e1}
+body.dark .vehicleOption:hover,body.dark .vehicleOption.active{background:#172554;color:#bfdbfe}
+body.dark .vehicleBadge{background:#312e81;color:#c7d2fe}
+body.dark .presetLabel{color:#cbd5e1}
+body.dark .presetHelp{color:#64748b}
+body.dark .presetFamily{background:#0f172a;border-color:#334155;color:#cbd5e1}
+body.dark .presetFamily.active{background:#172554;border-color:#1d4ed8;color:#bfdbfe}
+body.dark .presetDrawer{background:#0f172a;border-color:#1e3a8a}
+body.dark .presetDrawerHead{color:#cbd5e1}
+body.dark .presetToggle{background:#111827;border-color:#334155;color:#cbd5e1}
+body.dark .presetVariant{background:#111827;border-color:#334155;color:#cbd5e1}
+body.dark .presetVariant:hover,body.dark .presetVariant:focus{background:#172554;border-color:#1d4ed8;color:#bfdbfe}
+body.dark .presetVariant.selected{background:#2563eb;border-color:#2563eb;color:#fff}
+
+body.dark .footer{color:#64748b;border-top-color:#1f2937}
+
+body.dark .footer .footerCount{color:#94a3b8}
+
+body.dark .footer .designer{color:#64748b}
+
+body.dark{background:#0b1120;color:#e5e7eb}
+
+body.dark .panel{background:#111827;box-shadow:0 8px 24px rgba(0,0,0,.28)}
+
+body.dark .tabs{background:#1f2937}
+
+body.dark .tab{color:#94a3b8}
+
+body.dark .tab.active{background:#0f172a;color:#93c5fd;box-shadow:0 2px 10px rgba(0,0,0,.28)}
+
+body.dark .field label{color:#cbd5e1}
+
+body.dark .field input,body.dark .field select{background:#0f172a;color:#f8fafc;border-color:#334155;color-scheme:dark}
+
+body.dark .field input::placeholder{color:#64748b}
+
+body.dark .field input:focus,body.dark .field select:focus{border-color:#60a5fa;box-shadow:0 0 0 3px rgba(96,165,250,.13)}
+
+body.dark .hint{color:#94a3b8}
+
+body.dark .secondary{background:#1f2937;color:#e2e8f0}
+
+body.dark .chip{background:#0f172a;border-color:#334155;color:#cbd5e1}
+
+body.dark .message.warn{background:#431407;color:#fed7aa}
+
+body.dark .message.info{background:#172554;color:#bfdbfe}
+
+body.dark .count{background:#312e81;color:#c7d2fe}
+
+body.dark .resultCard{background:#0f172a;border-color:#1f2937}
+
+body.dark .partName{color:#f8fafc}
+
+body.dark .row{border-top-color:#1f2937}
+
+body.dark .key{color:#94a3b8}
+
+body.dark .value{color:#e5e7eb}
+
+body.dark .price{color:#34d399}
+body.dark .midPrice{color:#fbbf24}
+body.dark .finalPrice{color:#fb7185}
+
+body.dark .empty,body.dark .footer{color:#64748b}
+
+body.dark .header{box-shadow:0 12px 28px rgba(0,0,0,.35)}
+
+body.dark .panel{
+  border-color:#263449;
+  box-shadow:0 10px 28px rgba(0,0,0,.30), inset 0 1px 0 rgba(255,255,255,.035);
+}
+
+body.dark .resultCard{
+  border-color:#2a3850;
+  box-shadow:0 6px 18px rgba(0,0,0,.20), inset 0 1px 0 rgba(255,255,255,.025);
+}
+
+body.dark .tabs{border-color:#334155}
+
+body.dark .vehicleSuggestions{border-color:#3a4a62}
+
+body.dark .code{color:#f8fafc}
+
+body.dark .price,body.dark .midPrice,body.dark .finalPrice{
+  border-color:rgba(255,255,255,.095);
+  background:linear-gradient(135deg,rgba(255,255,255,.075),rgba(255,255,255,.025));
+  box-shadow:0 6px 16px rgba(0,0,0,.20), inset 0 1px 0 rgba(255,255,255,.06);
+}
+
+body.dark .price{border-color:rgba(52,211,153,.20);background:linear-gradient(135deg,rgba(6,78,59,.28),rgba(255,255,255,.025))}
+
+body.dark .midPrice{border-color:rgba(251,191,36,.20);background:linear-gradient(135deg,rgba(120,53,15,.25),rgba(255,255,255,.025))}
+
+body.dark .finalPrice{border-color:rgba(251,113,133,.20);background:linear-gradient(135deg,rgba(136,19,55,.24),rgba(255,255,255,.025))}
+
+body.dark .tap-soft{animation-name:tapSoftDark !important}
+
+body.dark .codeFamilyCard{background:rgba(15,23,42,.72);border-color:rgba(100,116,139,.38);box-shadow:0 10px 28px rgba(0,0,0,.22)}
+
+body.dark .codeFamilyBase{color:#94a3b8}
+
+body.dark .codeFamilyBaseCode{color:#e2e8f0;background:rgba(30,41,59,.82);border-color:rgba(100,116,139,.42)}
+
+body.dark .codeFamilyCount{color:#bfdbfe;background:rgba(30,64,175,.22);border-color:rgba(96,165,250,.26)}
+
+body.dark .codeVariant{background:rgba(15,23,42,.58);border-color:rgba(71,85,105,.52)}
+
+body.dark .codeVariant summary:hover{background:rgba(51,65,85,.38)}
+
+body.dark .variantBadge{color:#c7d2fe;background:rgba(67,56,202,.26);border-color:rgba(129,140,248,.30)}
+
+body.dark .variantBadge.base{color:#cbd5e1;background:rgba(51,65,85,.62);border-color:rgba(100,116,139,.34)}
+
+body.dark .variantTech{color:#f8fafc}
+
+body.dark .variantMeta,body.dark .variantArrow{color:#94a3b8}
+
+body.dark .codeVariantBody{border-top-color:rgba(71,85,105,.46)}
+
+body.dark .codeVariantPrice{background:rgba(30,41,59,.56);border-color:rgba(71,85,105,.42)}
+
+body.dark .logCode{color:#cbd5e1}
+
+body.dark .priceMini{background:rgba(15,23,42,.62);border-color:rgba(71,85,105,.42)}
+
+body.dark .priceMini span,body.dark .variantReplacement{color:#94a3b8}

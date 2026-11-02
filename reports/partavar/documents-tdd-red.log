@@ -1,0 +1,20 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ❯ tests/unit/documents.test.ts (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/unit/documents.test.ts [ tests/unit/documents.test.ts ]
+Error: Cannot find module '../../packages/domain/src/documents.js' imported from /Users/barmana/Documents/E/behrad/tests/unit/documents.test.ts
+ ❯ tests/unit/documents.test.ts:2:1
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  11:43:01
+   Duration  73ms (worker 97%, environment 3%)
+

@@ -1,0 +1,170 @@
+[WebServer] (node:4431) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ tsx src/server.ts
+[WebServer] (node:4446) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:4452) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:4452) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:4453) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ vite preview --host 127.0.0.1 -- --port 4173
+[WebServer] (node:4468) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:4474) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › tests/release/browser.spec.ts:63:1 › online catalogue, keyboard selection, details and documents preserve exact identities (2.3s)
+  ✘  2 [chromium] › tests/release/browser.spec.ts:187:1 › automated WCAG accessibility audit covers app workspaces, dialogs and public pages in both themes (21.8s)
+(node:4559) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  3 [chromium] › tests/release/browser.spec.ts:243:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content (1.6s)
+(node:4577) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  4 [chromium] › tests/release/history-version.spec.ts:8:1 › retained document history cannot recolor a current catalogue entry with the same numeric ID (1.5s)
+
+
+  1) [chromium] › tests/release/browser.spec.ts:187:1 › automated WCAG accessibility audit covers app workspaces, dialogs and public pages in both themes 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('#partList [role="option"]').first()
+    Expected: visible
+    Timeout: 20000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('#partList [role="option"]').first() with timeout 20000ms
+      - waiting for locator('#partList [role="option"]').first()
+
+
+      207 |     await page.locator('#vehicle').press('Escape');
+      208 |     await page.locator('#partQuery').fill('سپر');
+    > 209 |     await expect(page.locator('#partList [role="option"]').first()).toBeVisible();
+          |                                                                     ^
+      210 |     await check(`part-combobox-${theme}`);
+      211 |     await page.locator('#partQuery').press('Escape');
+      212 |     await codeSearch(page);
+        at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:209:69
+
+    attachment #1: axe-site-home-light (application/json) ──────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-site-home-light-f1bfc29d558719663856ad4c7361691d9eba6c53.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: axe-site-product-light (application/json) ───────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-site-product-light-b7767589c1685d96c6ed30151b4a72311730b41d.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: axe-site-features-light (application/json) ──────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-site-features-light-5682c8276302236a11f02538359a70336ac0ca12.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: axe-site-offline-data-light (application/json) ──────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-site-offline-data-light-e8bda57e18c89cfb7a4deb20977d11f8399c3f5a.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: axe-site-support-light (application/json) ───────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-site-support-light-81170972dc0aeae6090348c3f71936c2c32781e2.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: axe-site-contact-light (application/json) ───────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-site-contact-light-b71d37bca4bdfe286aebdd82df1082fbe96e6c33.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #7: axe-app-search-light (application/json) ─────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-app-search-light-e16e8bbce46dc6660eeabdb6b0b6215e01b8e164.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: axe-vehicle-combobox-light (application/json) ───────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/attachments/axe-vehicle-combobox-light-f395934ed45b6000e638b92da4c0e7ddcfdb4e45.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/release-2026-10-28/browser/test-results/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/error-context.md
+
+    attachment #11: trace (application/zip) ────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace reports/release-2026-10-28/browser/test-results/browser-automated-WCAG-acc-1c308-public-pages-in-both-themes-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests/release/browser.spec.ts:243:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 24
+
+    - Array []
+    + Array [
+    +   "0CF25BE-1500011BA",
+    +   "0CF25BE-1500011BA-01",
+    +   "0CF25BE-1500011BA",
+    +   "0CF25BE-1500011BA-04",
+    +   "0CF25BE-1500011BA",
+    +   "0CF25BE-1500011BA-02",
+    +   "0CF25BE-1500011BA",
+    +   "0CF25BE-1500011BA-03",
+    +   "0CF25BE-1500011BA",
+    +   "0CF25BE-1500011BA-05",
+    +   "025CHC-1500010BK",
+    +   "025CHC-1500010BK-01",
+    +   "025CHC-1500010BK",
+    +   "025CHC-1500010BK-02",
+    +   "0CF25BE-1500011BA-GAN",
+    +   "0CF25BE-1500011BA-GAN-01",
+    +   "0CF25BE-1500011BA-GB1",
+    +   "0CF25BE-1500011BA-GB1-01",
+    +   "0CF25BE-1500011BA-GKH",
+    +   "0CF25BE-1500011BA-GKH-01",
+    +   "0CF25BE-1500011BA-GMS",
+    +   "0CF25BE-1500011BA-GMS-01",
+    + ]
+
+      274 |   const clippedAtZoom = await clippedValues(page);
+      275 |   await screenshot(page, testInfo, 'app-zoom-200-percent');
+    > 276 |   expect(clippedAtZoom).toEqual([]);
+          |                         ^
+      277 |   await page.evaluate(() => { document.documentElement.style.zoom = ''; });
+      278 |   await page.locator('[data-area="settings"]').click();
+      279 |   await page.evaluate(() => { document.documentElement.style.fontSize = '200%'; });
+        at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:276:25
+
+    attachment #1: app-results-light-390 (image/png) ───────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/attachments/app-results-light-390-62be902b29fec5d73e4492f73dd9824338688c60.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: app-results-dark-390 (image/png) ────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/attachments/app-results-dark-390-22482f7b481448456cc517d8d9cd259c7a2517dc.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: app-zoom-200-percent (image/png) ────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/attachments/app-zoom-200-percent-1fc9cb4272388f211dd265fd98e3099a52f8b0cd.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/error-context.md
+
+    attachment #6: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [chromium] › tests/release/browser.spec.ts:187:1 › automated WCAG accessibility audit covers app workspaces, dialogs and public pages in both themes 
+    [chromium] › tests/release/browser.spec.ts:243:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content 
+  2 passed (30.3s)

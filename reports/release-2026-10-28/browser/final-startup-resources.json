@@ -1,0 +1,148 @@
+{
+  "scope": "Fresh isolated Chrome contexts after final ResizeObserver fix. Top-document Resource Timing of initial JS/CSS and catalogue Worker; Vite preview used gzip responses. SW bootstrap request is not included in this sample. No catalogue chunks were fetched at startup.",
+  "app": {
+    "assetCount": 7,
+    "encodedBytes": 119987,
+    "decodedBytes": 393892,
+    "transferBytes": 122087,
+    "navigation": [
+      {
+        "transferSize": 1212,
+        "encodedBodySize": 912,
+        "decodedBodySize": 912
+      }
+    ],
+    "assets": [
+      {
+        "name": "/assets/index-Cn94n4k4.js",
+        "initiatorType": "script",
+        "transferSize": 1712,
+        "encodedBodySize": 1412,
+        "decodedBodySize": 3037
+      },
+      {
+        "name": "/assets/index-BhVhxGnm.css",
+        "initiatorType": "link",
+        "transferSize": 4967,
+        "encodedBodySize": 4667,
+        "decodedBodySize": 18551
+      },
+      {
+        "name": "/assets/app-shell-CrojkZxx.js",
+        "initiatorType": "script",
+        "transferSize": 2908,
+        "encodedBodySize": 2608,
+        "decodedBodySize": 8167
+      },
+      {
+        "name": "/assets/app-bootstrap-CpZm4uWq.js",
+        "initiatorType": "script",
+        "transferSize": 66247,
+        "encodedBodySize": 65947,
+        "decodedBodySize": 214849
+      },
+      {
+        "name": "/assets/app-bootstrap-CCCwb77U.css",
+        "initiatorType": "link",
+        "transferSize": 4229,
+        "encodedBodySize": 3929,
+        "decodedBodySize": 16837
+      },
+      {
+        "name": "/assets/theme-mhmZZqUX.js",
+        "initiatorType": "script",
+        "transferSize": 1287,
+        "encodedBodySize": 987,
+        "decodedBodySize": 1894
+      },
+      {
+        "name": "/assets/catalogue.worker-Cmifh3cz.js",
+        "initiatorType": "other",
+        "transferSize": 40737,
+        "encodedBodySize": 40437,
+        "decodedBodySize": 130557
+      }
+    ]
+  },
+  "site": {
+    "assetCount": 6,
+    "encodedBytes": 21244,
+    "decodedBytes": 82804,
+    "transferBytes": 23044,
+    "navigation": [
+      {
+        "transferSize": 1212,
+        "encodedBodySize": 912,
+        "decodedBodySize": 912
+      }
+    ],
+    "assets": [
+      {
+        "name": "/assets/index-Cn94n4k4.js",
+        "initiatorType": "script",
+        "transferSize": 1712,
+        "encodedBodySize": 1412,
+        "decodedBodySize": 3037
+      },
+      {
+        "name": "/assets/index-BhVhxGnm.css",
+        "initiatorType": "link",
+        "transferSize": 4967,
+        "encodedBodySize": 4667,
+        "decodedBodySize": 18551
+      },
+      {
+        "name": "/assets/website-aFGBNYFj.js",
+        "initiatorType": "script",
+        "transferSize": 10168,
+        "encodedBodySize": 9868,
+        "decodedBodySize": 37245
+      },
+      {
+        "name": "/assets/website-C_-i1UU3.css",
+        "initiatorType": "link",
+        "transferSize": 4556,
+        "encodedBodySize": 4256,
+        "decodedBodySize": 22023
+      },
+      {
+        "name": "/assets/theme-Dubfbby_.js",
+        "initiatorType": "script",
+        "transferSize": 354,
+        "encodedBodySize": 54,
+        "decodedBodySize": 54
+      },
+      {
+        "name": "/assets/theme-mhmZZqUX.js",
+        "initiatorType": "script",
+        "transferSize": 1287,
+        "encodedBodySize": 987,
+        "decodedBodySize": 1894
+      }
+    ]
+  },
+  "console": {
+    "app": {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "## Console messages\n<no console messages found>"
+          }
+        ]
+      }
+    },
+    "site": {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "## Console messages\n<no console messages found>"
+          }
+        ]
+      }
+    }
+  }
+}

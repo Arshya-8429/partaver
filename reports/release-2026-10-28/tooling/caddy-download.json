@@ -1,0 +1,22 @@
+{
+  "format": "partavar-caddy-download-verification-v1",
+  "generatedAt": "2026-10-28T07:34:48.219Z",
+  "version": "v2.11.7",
+  "releaseUrl": "https://github.com/caddyserver/caddy/releases/tag/v2.11.7",
+  "officialAssets": [
+    {
+      "name": "caddy_2.11.7_checksums.txt",
+      "url": "https://github.com/caddyserver/caddy/releases/download/v2.11.7/caddy_2.11.7_checksums.txt",
+      "digest": "sha256:5d27b76b95f496638d79208c55250317b8755fd9e90005f7466aa32956944a90"
+    },
+    {
+      "name": "caddy_2.11.7_mac_arm64.tar.gz",
+      "url": "https://github.com/caddyserver/caddy/releases/download/v2.11.7/caddy_2.11.7_mac_arm64.tar.gz",
+      "digest": "sha256:cda3030e5d5b13eb9f0b6fb541037f633bddd958c070c5f561d7a5cccb581665"
+    }
+  ],
+  "githubAssetSha256Verified": true,
+  "publishedChecksumListAlgorithm": "SHA512",
+  "publishedChecksumListVerified": true,
+  "outsideWorkspace": true
+}

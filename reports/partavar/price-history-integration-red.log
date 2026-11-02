@@ -1,0 +1,25 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ❯ tests/integration/price-history.test.ts (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/price-history.test.ts [ tests/integration/price-history.test.ts ]
+Error: Cannot find package 'fastify' imported from /Users/barmana/Documents/E/behrad/tests/integration/price-history.test.ts
+ ❯ tests/integration/price-history.test.ts:7:1
+      5| import Database from 'better-sqlite3';
+      6| import ExcelJS from 'exceljs';
+      7| import Fastify from 'fastify';
+       | ^
+      8| import { afterEach, beforeEach, describe, expect, it } from 'vitest';
+      9| import { importCatalogue } from '../../packages/importer/src/import.js…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  11:45:27
+   Duration  428ms (worker 96%, environment 4%)
+

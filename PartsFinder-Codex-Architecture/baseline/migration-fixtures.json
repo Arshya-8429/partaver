@@ -1,0 +1,245 @@
+{
+  "0CF25BE-1500011BA": [
+    {
+      "part": "گیربکس اتوماتیک بدون تورک کانورتور",
+      "models": [
+        "TIGGO7 PRO Excellent",
+        "X55 Pro Excellent Sport",
+        "MVM X55 PRO Excellent",
+        "TIGGO 7 Pro Premium"
+      ],
+      "tech": "0CF25BE-1500011BA",
+      "log": "0CF25BE-1500011BA-04",
+      "price": 2386956000,
+      "replacement": "0CF25BE-1500011BA-GMS,0CF25BE-1500011BA-GB1,0CF25BE-1500011BA-GKH,0CF25BE-1500011BA-GAN",
+      "friendly": [
+        "X55 Pro Excellent",
+        "X55 Pro Excellent Sport",
+        "Tiggo 7 Pro Premium",
+        "Tiggo 7 Pro IE / Excellent"
+      ],
+      "aliases": [
+        "گیربکس کامل",
+        "مجموعه کامل گیربکس",
+        "complete gearbox",
+        "transmission assembly"
+      ]
+    },
+    {
+      "part": "گیربکس اتوماتیک بدون تورک کانورتور",
+      "models": [
+        "TIGGO7 PRO Excellent",
+        "X55 Pro Excellent Sport",
+        "MVM X55 PRO Excellent",
+        "TIGGO 7 Pro Premium"
+      ],
+      "tech": "0CF25BE-1500011BA",
+      "log": "0CF25BE-1500011BA-02",
+      "price": 2386956000,
+      "replacement": "0CF25BE-1500011BA-GMS,0CF25BE-1500011BA-GB1,0CF25BE-1500011BA-GKH,0CF25BE-1500011BA-GAN",
+      "friendly": [
+        "X55 Pro Excellent",
+        "X55 Pro Excellent Sport",
+        "Tiggo 7 Pro Premium",
+        "Tiggo 7 Pro IE / Excellent"
+      ],
+      "aliases": [
+        "گیربکس کامل",
+        "مجموعه کامل گیربکس",
+        "complete gearbox",
+        "transmission assembly"
+      ]
+    },
+    {
+      "part": "گیربکس اتوماتیک بدون تورک کانورتور",
+      "models": [
+        "TIGGO7 PRO Excellent",
+        "X55 Pro Excellent Sport",
+        "MVM X55 PRO Excellent",
+        "TIGGO 7 Pro Premium"
+      ],
+      "tech": "0CF25BE-1500011BA",
+      "log": "0CF25BE-1500011BA-03",
+      "price": 2386956000,
+      "replacement": "0CF25BE-1500011BA-GMS,0CF25BE-1500011BA-GB1,0CF25BE-1500011BA-GKH,0CF25BE-1500011BA-GAN",
+      "friendly": [
+        "X55 Pro Excellent",
+        "X55 Pro Excellent Sport",
+        "Tiggo 7 Pro Premium",
+        "Tiggo 7 Pro IE / Excellent"
+      ],
+      "aliases": [
+        "گیربکس کامل",
+        "مجموعه کامل گیربکس",
+        "complete gearbox",
+        "transmission assembly"
+      ]
+    },
+    {
+      "part": "گیربکس اتوماتیک بدون تورک کانورتور",
+      "models": [
+        "TIGGO7 PRO Excellent",
+        "X55 Pro Excellent Sport",
+        "MVM X55 PRO Excellent",
+        "TIGGO 7 Pro Premium"
+      ],
+      "tech": "0CF25BE-1500011BA",
+      "log": "0CF25BE-1500011BA-01",
+      "price": 3649644321,
+      "replacement": "0CF25BE-1500011BA-GMS,0CF25BE-1500011BA-GB1,0CF25BE-1500011BA-GKH,0CF25BE-1500011BA-GAN",
+      "friendly": [
+        "X55 Pro Excellent",
+        "X55 Pro Excellent Sport",
+        "Tiggo 7 Pro Premium",
+        "Tiggo 7 Pro IE / Excellent"
+      ],
+      "aliases": [
+        "گیربکس کامل",
+        "مجموعه کامل گیربکس",
+        "complete gearbox",
+        "transmission assembly"
+      ]
+    },
+    {
+      "part": "گیربکس اتوماتیک بدون تورک کانورتور",
+      "models": [
+        "TIGGO7 PRO Excellent",
+        "X55 Pro Excellent Sport",
+        "MVM X55 PRO Excellent",
+        "TIGGO 7 Pro Premium"
+      ],
+      "tech": "0CF25BE-1500011BA",
+      "log": "0CF25BE-1500011BA-05",
+      "price": 2386956000,
+      "replacement": "0CF25BE-1500011BA-GMS,0CF25BE-1500011BA-GB1,0CF25BE-1500011BA-GKH,0CF25BE-1500011BA-GAN",
+      "friendly": [
+        "X55 Pro Excellent",
+        "X55 Pro Excellent Sport",
+        "Tiggo 7 Pro Premium",
+        "Tiggo 7 Pro IE / Excellent"
+      ],
+      "aliases": [
+        "گیربکس کامل",
+        "مجموعه کامل گیربکس",
+        "complete gearbox",
+        "transmission assembly"
+      ]
+    }
+  ],
+  "112000177AA": [
+    {
+      "part": "MCU",
+      "models": [
+        "Tiggo 8 PHEV",
+        "TIGGO7 PRO PHEV",
+        "F8 PRO e+",
+        "Tiggo 8 Pro plug in hybrid",
+        "F7 PRO e+"
+      ],
+      "tech": "112000177AA",
+      "log": "112000177AA-02",
+      "price": 5347571575,
+      "replacement": "",
+      "friendly": [
+        "Tiggo 7 Pro PHEV",
+        "Tiggo 8 PHEV",
+        "Tiggo 8 Pro Plug-in Hybrid"
+      ],
+      "aliases": []
+    },
+    {
+      "part": "MCU",
+      "models": [],
+      "tech": "112000177AA",
+      "log": "112000177AA-03",
+      "price": 4496456773,
+      "replacement": "",
+      "friendly": [],
+      "aliases": []
+    },
+    {
+      "part": "MCU",
+      "models": [
+        "Tiggo 8 PHEV",
+        "TIGGO7 PRO PHEV",
+        "F8 PRO e+",
+        "Tiggo 8 Pro plug in hybrid",
+        "F7 PRO e+"
+      ],
+      "tech": "112000177AA",
+      "log": "112000177AA-01",
+      "price": 5882328733,
+      "replacement": "",
+      "friendly": [
+        "Tiggo 7 Pro PHEV",
+        "Tiggo 8 PHEV",
+        "Tiggo 8 Pro Plug-in Hybrid"
+      ],
+      "aliases": []
+    }
+  ],
+  "S11-5206500": [
+    {
+      "part": "شیشه جلو",
+      "models": [
+        "MVM110- 3 cyl",
+        "MVM110- 4 cyl",
+        "MVM110-AMT"
+      ],
+      "tech": "S11-5206500",
+      "log": "S11-5206500-02",
+      "price": 2452699,
+      "replacement": "S11-5206500BE",
+      "friendly": [],
+      "aliases": []
+    },
+    {
+      "part": "شیشه جلو",
+      "models": [
+        "MVM110- 3 cyl",
+        "MVM110- 4 cyl",
+        "MVM110-AMT"
+      ],
+      "tech": "S11-5206500",
+      "log": "S11-5206500-03",
+      "price": 95400433,
+      "replacement": "S11-5206500BE",
+      "friendly": [],
+      "aliases": []
+    },
+    {
+      "part": "شیشه جلو",
+      "models": [
+        "MVM110- 3 cyl",
+        "MVM110- 4 cyl",
+        "MVM110-AMT"
+      ],
+      "tech": "S11-5206500",
+      "log": "S11-5206500-01",
+      "price": 126987155,
+      "replacement": "S11-5206500BE",
+      "friendly": [],
+      "aliases": []
+    }
+  ],
+  "0CF25B-1501113GA": [
+    {
+      "part": "پیچ درپوش تخلیه روغن",
+      "models": [
+        "X33 Cross CVT",
+        "X22 AT sport lux c",
+        "X22 Pro IE Turbo",
+        "X22 1.0 Turbo"
+      ],
+      "tech": "0CF25B-1501113GA",
+      "log": "0CF25B-1501113GA-01",
+      "price": 3949733,
+      "replacement": "",
+      "friendly": [
+        "X33 Cross CVT",
+        "X22 Pro IE Turbo"
+      ],
+      "aliases": []
+    }
+  ]
+}

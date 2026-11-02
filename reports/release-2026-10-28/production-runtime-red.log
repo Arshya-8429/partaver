@@ -1,0 +1,116 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ❯ tests/integration/production-runtime.test.ts (7 tests | 6 failed) 199ms
+   ❯ private production runtime (7)
+     × serves the public website and hashed assets from the built root 29ms
+     × requires authentication on app, all API routes, manifests and snapshot bytes 2ms
+     × keeps authenticated indexed search, immutable snapshots and revalidation working 10ms
+     × rejects foreign Host, Origin and cross-site private reads even with credentials 0ms
+     ✓ never serves sources, databases, build metadata or an SPA response for missing APIs 1ms
+     × sends browser protections and revalidates shell/SW instead of caching a login 1ms
+     × fails closed when production environment has no authentication configuration 46ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 6 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/production-runtime.test.ts > private production runtime > serves the public website and hashed assets from the built root
+AssertionError: /: expected 404 to be 200 // Object.is equality
+
+- Expected
++ Received
+
+- 200
++ 404
+
+ ❯ tests/integration/production-runtime.test.ts:49:41
+     47|     for (const path of ['/', '/product', '/features', '/offline-data',…
+     48|       const response = await inject(path, {}, false);
+     49|       expect(response.statusCode, path).toBe(200);
+       |                                         ^
+     50|       expect(response.headers['content-type']).toContain('text/html');
+     51|       expect(response.body).toContain('PartAvar fixture');
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/6]⎯
+
+ FAIL  tests/integration/production-runtime.test.ts > private production runtime > requires authentication on app, all API routes, manifests and snapshot bytes
+AssertionError: /app: expected 404 to be 401 // Object.is equality
+
+- Expected
++ Received
+
+- 401
++ 404
+
+ ❯ tests/integration/production-runtime.test.ts:65:41
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/6]⎯
+
+ FAIL  tests/integration/production-runtime.test.ts > private production runtime > keeps authenticated indexed search, immutable snapshots and revalidation working
+AssertionError: expected 304 to be 401 // Object.is equality
+
+- Expected
++ Received
+
+- 401
++ 304
+
+ ❯ tests/integration/production-runtime.test.ts:85:146
+     83|     expect(createHash('sha256').update(chunk.rawPayload).digest('hex')…
+     84|     expect((await inject(`/api/v1/catalog/${version}/snapshot/manifest…
+     85|     expect((await inject(`/api/v1/catalog/${version}/snapshot/manifest…
+       |                                                                                                                                                  ^
+     86|   });
+     87|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/6]⎯
+
+ FAIL  tests/integration/production-runtime.test.ts > private production runtime > rejects foreign Host, Origin and cross-site private reads even with credentials
+AssertionError: expected 200 to be 403 // Object.is equality
+
+- Expected
++ Received
+
+- 403
++ 200
+
+ ❯ tests/integration/production-runtime.test.ts:91:35
+     89|     for (const headers of [{ host: 'attacker.invalid' }, { origin: 'ht…
+     90|       const response = await inject('/api/v1/catalog/manifest', header…
+     91|       expect(response.statusCode).toBe(403);
+       |                                   ^
+     92|       expect(response.body).not.toContain(version);
+     93|     }
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/6]⎯
+
+ FAIL  tests/integration/production-runtime.test.ts > private production runtime > sends browser protections and revalidates shell/SW instead of caching a login
+AssertionError: the given combination of arguments (undefined and string) is invalid for this assertion. You can use an array, a map, an object, a set, a string, or a weakset instead of a string
+ ❯ tests/integration/production-runtime.test.ts:109:57
+    107|     const response = await inject('/app/');
+    108|     expect(response.headers['x-content-type-options']).toBe('nosniff');
+    109|     expect(response.headers['content-security-policy']).toContain("fra…
+       |                                                         ^
+    110|     expect(response.headers['content-security-policy']).toContain("wor…
+    111|     expect(response.headers['cross-origin-resource-policy']).toBe('sam…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/6]⎯
+
+ FAIL  tests/integration/production-runtime.test.ts > private production runtime > fails closed when production environment has no authentication configuration
+AssertionError: expected undefined to be an instance of Error
+ ❯ tests/integration/production-runtime.test.ts:127:19
+    125|     try { accidental = await createServer({ databasePath: join(root, '…
+    126|     finally { await accidental?.close(); vi.unstubAllEnvs(); }
+    127|     expect(error).toBeInstanceOf(Error);
+       |                   ^
+    128|     expect((error as Error).message).toMatch(/auth|credential/i);
+    129|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/6]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  6 failed | 1 passed (7)
+   Start at  10:50:00
+   Duration  316ms (tests 75%, import 15%, transform 10%, worker 1%)
+

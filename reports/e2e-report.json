@@ -1,0 +1,51 @@
+{
+  "browser": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    }
+  },
+  "offlineInstallMs": 26390,
+  "threeCharacterSearchMs": 8337,
+  "paginationPageMs": 66,
+  "storageEstimate": {
+    "quota": 12030517437,
+    "usage": 1293099197,
+    "usageDetails": {
+      "caches": 808476,
+      "indexedDB": 1292288000,
+      "serviceWorkerRegistrations": 2721
+    }
+  },
+  "offlineRelaunch": {
+    "online": false,
+    "serviceWorkerControlled": true,
+    "cachedShellAssets": [
+      "/assets/index-Cn94n4k4.js",
+      "/assets/index-BhVhxGnm.css",
+      "/assets/app-bootstrap-CCCwb77U.css"
+    ],
+    "cachedStylesheetFont": "Tahoma, \"Segoe UI\", Arial, sans-serif",
+    "activeVersion": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+    "entryCount": 36569,
+    "searchResultCount": 11
+  },
+  "repeatedQueries": 100,
+  "maximumRenderedCards": 20,
+  "screenshotFiles": [
+    "reports/screenshots/desktop-light.png",
+    "reports/screenshots/desktop-dark.png",
+    "reports/screenshots/mobile-light.png"
+  ],
+  "pageErrors": [],
+  "interruptedUpdate": {
+    "oldVersion": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb-s1-n1-r1",
+    "attemptedVersion": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-s1-n1-r1",
+    "cancelledDuringChunkFetch": true,
+    "previousVersionRemainedActive": true,
+    "stagedVersionStatus": "failed",
+    "entryCountAfterRollback": 1
+  },
+  "result": "passed"
+}

@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-27T07:38:59.085Z",
+  "allMatched": true,
+  "hashes": [
+    {
+      "path": "apps/web/index.html",
+      "archivedPath": "deliverables/PartsFinder/apps/web/index.html",
+      "expected": "2721975b566d95be763d85019e111cdc1b29a16c4457bd0f89331db73761392e",
+      "actual": "2721975b566d95be763d85019e111cdc1b29a16c4457bd0f89331db73761392e",
+      "matched": true
+    },
+    {
+      "path": "apps/web/src/ui/search.ts",
+      "archivedPath": "deliverables/PartsFinder/apps/web/src/ui/search.ts",
+      "expected": "7d0f55e3d4b56240ed3edaf72aa92e9cd3848a949cfb5f38c040826f65534b81",
+      "actual": "7d0f55e3d4b56240ed3edaf72aa92e9cd3848a949cfb5f38c040826f65534b81",
+      "matched": true
+    },
+    {
+      "path": "apps/web/src/ui/vehicle-picker.ts",
+      "archivedPath": "deliverables/PartsFinder/apps/web/src/ui/vehicle-picker.ts",
+      "expected": "64bb77973d2c2d9b290086bfde8ca5233a113bd6ab50e88ce843072b50ebb642",
+      "actual": "64bb77973d2c2d9b290086bfde8ca5233a113bd6ab50e88ce843072b50ebb642",
+      "matched": true
+    },
+    {
+      "path": "apps/web/src/ui/catalogue-status.ts",
+      "archivedPath": "deliverables/PartsFinder/apps/web/src/ui/catalogue-status.ts",
+      "expected": "a9b111e71171bb9e7cf50b847f1e0d786f46578a475c89fcc5884d9ef97808db",
+      "actual": "a9b111e71171bb9e7cf50b847f1e0d786f46578a475c89fcc5884d9ef97808db",
+      "matched": true
+    },
+    {
+      "path": "apps/web/src/ui/presets.ts",
+      "archivedPath": "deliverables/PartsFinder/apps/web/src/ui/presets.ts",
+      "expected": "d14ca585a1ac4ae5b80bf8d9b213772270f83089d55d657546f95177723852a8",
+      "actual": "d14ca585a1ac4ae5b80bf8d9b213772270f83089d55d657546f95177723852a8",
+      "matched": true
+    },
+    {
+      "path": "apps/web/src/styles/components.css",
+      "archivedPath": "deliverables/PartsFinder/apps/web/src/styles/components.css",
+      "expected": "265f337fd34872e6b822005cc842d647d4aa3c122be481b97d9563301f827a53",
+      "actual": "265f337fd34872e6b822005cc842d647d4aa3c122be481b97d9563301f827a53",
+      "matched": true
+    },
+    {
+      "path": "apps/web/src/styles/dark.css",
+      "archivedPath": "deliverables/PartsFinder/apps/web/src/styles/dark.css",
+      "expected": "34e19dfd71443be147ed034dab110baf96626ec229be8236427c4284f29ad0c7",
+      "actual": "34e19dfd71443be147ed034dab110baf96626ec229be8236427c4284f29ad0c7",
+      "matched": true
+    },
+    {
+      "path": "PartsFinder_Android-28 (1) (1).html",
+      "archivedPath": "deliverables/PartsFinder/PartsFinder_Android-28 (1) (1).html",
+      "expected": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480",
+      "actual": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480",
+      "matched": true
+    }
+  ]
+}

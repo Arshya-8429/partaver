@@ -1,0 +1,42 @@
+{
+  "verifiedAt": "2026-10-28T08:32:48.065Z",
+  "status": "passed",
+  "uniqueCases": 27,
+  "axe": [
+    {
+      "engine": "chromium",
+      "violations": 0
+    },
+    {
+      "engine": "firefox",
+      "violations": 0
+    },
+    {
+      "engine": "webkit",
+      "violations": 0
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "final-app-light-390.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "final-app-light-1440.png",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "file": "final-app-dark-390.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "final-app-dark-1440.png",
+      "width": 1440,
+      "height": 1000
+    }
+  ],
+  "webkitFullProcessOfflineVerified": true
+}

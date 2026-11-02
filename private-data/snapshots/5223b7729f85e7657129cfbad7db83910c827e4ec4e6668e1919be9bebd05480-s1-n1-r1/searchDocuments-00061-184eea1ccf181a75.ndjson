@@ -1,0 +1,500 @@
+{"id":30501,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001489AA-01","normalizedValue":"703001489aa-01"}
+{"id":30502,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001498AA","normalizedValue":"703001498aa"}
+{"id":30503,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001498AA-01","normalizedValue":"703001498aa-01"}
+{"id":30504,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001499AA","normalizedValue":"703001499aa"}
+{"id":30505,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001499AA-01","normalizedValue":"703001499aa-01"}
+{"id":30506,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کنترل یونیت  ردیابی بی سیم","normalizedValue":"کنترل یونیت ردیابی بی سیم"}
+{"id":30507,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001507AA","normalizedValue":"703001507aa"}
+{"id":30508,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001507AA-01","normalizedValue":"703001507aa-01"}
+{"id":30509,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001511AA","normalizedValue":"703001511aa"}
+{"id":30510,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001511AA-01","normalizedValue":"703001511aa-01"}
+{"id":30511,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"صفحه نمایشگر جلو روی داشبورد","normalizedValue":"صفحه نمایشگر جلو روی داشبورد"}
+{"id":30512,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001522AA","normalizedValue":"703001522aa"}
+{"id":30513,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001522AA-01","normalizedValue":"703001522aa-01"}
+{"id":30514,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001529AA","normalizedValue":"703001529aa"}
+{"id":30515,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001529AA-01","normalizedValue":"703001529aa-01"}
+{"id":30516,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"703001531AA","normalizedValue":"703001531aa"}
+{"id":30517,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001531AA","normalizedValue":"703001531aa"}
+{"id":30518,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001531AA-01","normalizedValue":"703001531aa-01"}
+{"id":30519,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"703001529AA","normalizedValue":"703001529aa"}
+{"id":30520,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001545AA","normalizedValue":"703001545aa"}
+{"id":30521,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001545AA-01","normalizedValue":"703001545aa-01"}
+{"id":30522,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001546AA","normalizedValue":"703001546aa"}
+{"id":30523,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001546AA-01","normalizedValue":"703001546aa-01"}
+{"id":30524,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"دوربین کنترل راننده (DMS)","normalizedValue":"دوربین کنترل راننده (dms)"}
+{"id":30525,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001563AA","normalizedValue":"703001563aa"}
+{"id":30526,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001563AA-01","normalizedValue":"703001563aa-01"}
+{"id":30527,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001575AA","normalizedValue":"703001575aa"}
+{"id":30528,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001575AA-01","normalizedValue":"703001575aa-01"}
+{"id":30529,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"صفحه نمایش صوتی","normalizedValue":"صفحه نمایش صوتی"}
+{"id":30530,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001607AA","normalizedValue":"703001607aa"}
+{"id":30531,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001607AA-01","normalizedValue":"703001607aa-01"}
+{"id":30532,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001608AA","normalizedValue":"703001608aa"}
+{"id":30533,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001608AA-01","normalizedValue":"703001608aa-01"}
+{"id":30534,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001609AAABK","normalizedValue":"703001609aaabk"}
+{"id":30535,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001609AAABK-01","normalizedValue":"703001609aaabk-01"}
+{"id":30536,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001626AA","normalizedValue":"703001626aa"}
+{"id":30537,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001626AA-01","normalizedValue":"703001626aa-01"}
+{"id":30538,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001677AA","normalizedValue":"703001677aa"}
+{"id":30539,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001677AA-01","normalizedValue":"703001677aa-01"}
+{"id":30540,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"میکروفن","normalizedValue":"میکروفن"}
+{"id":30541,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001688AA","normalizedValue":"703001688aa"}
+{"id":30542,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001688AA-01","normalizedValue":"703001688aa-01"}
+{"id":30543,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001755AA","normalizedValue":"703001755aa"}
+{"id":30544,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001755AA-01","normalizedValue":"703001755aa-01"}
+{"id":30545,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001839AA","normalizedValue":"703001839aa"}
+{"id":30546,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001839AA-01","normalizedValue":"703001839aa-01"}
+{"id":30547,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001854AA","normalizedValue":"703001854aa"}
+{"id":30548,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001854AA-01","normalizedValue":"703001854aa-01"}
+{"id":30549,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001869AA","normalizedValue":"703001869aa"}
+{"id":30550,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001869AA-01","normalizedValue":"703001869aa-01"}
+{"id":30551,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"یونیت ضبط","normalizedValue":"یونیت ضبط"}
+{"id":30552,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001894AA","normalizedValue":"703001894aa"}
+{"id":30553,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001894AA-01","normalizedValue":"703001894aa-01"}
+{"id":30554,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001919AA","normalizedValue":"703001919aa"}
+{"id":30555,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001919AA-02","normalizedValue":"703001919aa-02"}
+{"id":30556,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001919AA-01","normalizedValue":"703001919aa-01"}
+{"id":30557,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"میکروفون دیجیتاال عقب سقف","normalizedValue":"میکروفون دیجیتاال عقب سقف"}
+{"id":30558,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001920AA","normalizedValue":"703001920aa"}
+{"id":30559,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001920AA-01","normalizedValue":"703001920aa-01"}
+{"id":30560,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703001953AA","normalizedValue":"703001953aa"}
+{"id":30561,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703001953AA-01","normalizedValue":"703001953aa-01"}
+{"id":30562,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"جهت یاب","normalizedValue":"جهت یاب"}
+{"id":30563,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703002019AA","normalizedValue":"703002019aa"}
+{"id":30564,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703002019AA-01","normalizedValue":"703002019aa-01"}
+{"id":30565,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"یونیت","normalizedValue":"یونیت"}
+{"id":30566,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703002036AA","normalizedValue":"703002036aa"}
+{"id":30567,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703002036AA-01","normalizedValue":"703002036aa-01"}
+{"id":30568,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703002046AA","normalizedValue":"703002046aa"}
+{"id":30569,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703002046AA-01","normalizedValue":"703002046aa-01"}
+{"id":30570,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703002063AA","normalizedValue":"703002063aa"}
+{"id":30571,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703002063AA-01","normalizedValue":"703002063aa-01"}
+{"id":30572,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703002086AA","normalizedValue":"703002086aa"}
+{"id":30573,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703002086AA-01","normalizedValue":"703002086aa-01"}
+{"id":30574,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703002087AA","normalizedValue":"703002087aa"}
+{"id":30575,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703002087AA-01","normalizedValue":"703002087aa-01"}
+{"id":30576,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703002088AA","normalizedValue":"703002088aa"}
+{"id":30577,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703002088AA-01","normalizedValue":"703002088aa-01"}
+{"id":30578,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"یونیت تله ماتیک","normalizedValue":"یونیت تله ماتیک"}
+{"id":30579,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703002096AA","normalizedValue":"703002096aa"}
+{"id":30580,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703002096AA-01","normalizedValue":"703002096aa-01"}
+{"id":30581,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703002211AA","normalizedValue":"703002211aa"}
+{"id":30582,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703002211AA-01","normalizedValue":"703002211aa-01"}
+{"id":30583,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703002237AA","normalizedValue":"703002237aa"}
+{"id":30584,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703002237AA-01","normalizedValue":"703002237aa-01"}
+{"id":30585,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703002511AA","normalizedValue":"703002511aa"}
+{"id":30586,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703002511AA-01","normalizedValue":"703002511aa-01"}
+{"id":30587,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"یونیت تشخیص عیب","normalizedValue":"یونیت تشخیص عیب"}
+{"id":30588,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703002586AA","normalizedValue":"703002586aa"}
+{"id":30589,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703002586AA-01","normalizedValue":"703002586aa-01"}
+{"id":30590,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703002760AA","normalizedValue":"703002760aa"}
+{"id":30591,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703002760AA-01","normalizedValue":"703002760aa-01"}
+{"id":30592,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"DATA BOX","normalizedValue":"data box"}
+{"id":30593,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703002956AA","normalizedValue":"703002956aa"}
+{"id":30594,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703002956AA-01","normalizedValue":"703002956aa-01"}
+{"id":30595,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"703003303AA","normalizedValue":"703003303aa"}
+{"id":30596,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"703003303AA-01","normalizedValue":"703003303aa-01"}
+{"id":30597,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000025AA","normalizedValue":"704000025aa"}
+{"id":30598,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000025AA-01","normalizedValue":"704000025aa-01"}
+{"id":30599,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"رادار جلو","normalizedValue":"رادار جلو"}
+{"id":30600,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000027AA","normalizedValue":"704000027aa"}
+{"id":30601,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000027AA-01","normalizedValue":"704000027aa-01"}
+{"id":30602,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب رادار جلو","normalizedValue":"قاب رادار جلو"}
+{"id":30603,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000053AA","normalizedValue":"704000053aa"}
+{"id":30604,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000053AA-01","normalizedValue":"704000053aa-01"}
+{"id":30605,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"واحد کنترل دوربین پانوراما","normalizedValue":"واحد کنترل دوربین پانوراما"}
+{"id":30606,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000077AA","normalizedValue":"704000077aa"}
+{"id":30607,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000077AA-01","normalizedValue":"704000077aa-01"}
+{"id":30608,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T15-7900101","normalizedValue":"t15-7900101"}
+{"id":30609,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب دور رادار جلو","normalizedValue":"قاب دور رادار جلو"}
+{"id":30610,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000139AA","normalizedValue":"704000139aa"}
+{"id":30611,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000139AA-01","normalizedValue":"704000139aa-01"}
+{"id":30612,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"دوربین","normalizedValue":"دوربین"}
+{"id":30613,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000141AA","normalizedValue":"704000141aa"}
+{"id":30614,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000141AA-01","normalizedValue":"704000141aa-01"}
+{"id":30615,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"دوربین دنده عقب","normalizedValue":"دوربین دنده عقب"}
+{"id":30616,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000147AA","normalizedValue":"704000147aa"}
+{"id":30617,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000147AA-01","normalizedValue":"704000147aa-01"}
+{"id":30618,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000154AA","normalizedValue":"704000154aa"}
+{"id":30619,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000154AA-01","normalizedValue":"704000154aa-01"}
+{"id":30620,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپرسفید رنگ","normalizedValue":"سنسور تشخیص فاصله سپرسفید رنگ"}
+{"id":30621,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAABS","normalizedValue":"704000156aaabs"}
+{"id":30622,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAABS-01","normalizedValue":"704000156aaabs-01"}
+{"id":30623,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سفید","normalizedValue":"سنسور تشخیص فاصله سفید"}
+{"id":30624,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAABW","normalizedValue":"704000156aaabw"}
+{"id":30625,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAABW-01","normalizedValue":"704000156aaabw-01"}
+{"id":30626,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپر خاکستری رنگ","normalizedValue":"سنسور تشخیص فاصله سپر خاکستری رنگ"}
+{"id":30627,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAACE","normalizedValue":"704000156aaace"}
+{"id":30628,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAACE-02","normalizedValue":"704000156aaace-02"}
+{"id":30629,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAACE-01","normalizedValue":"704000156aaace-01"}
+{"id":30630,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپرمشکی رنگ","normalizedValue":"سنسور تشخیص فاصله سپرمشکی رنگ"}
+{"id":30631,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAACG","normalizedValue":"704000156aaacg"}
+{"id":30632,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAACG-01","normalizedValue":"704000156aaacg-01"}
+{"id":30633,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAACL","normalizedValue":"704000156aaacl"}
+{"id":30634,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAACL-01","normalizedValue":"704000156aaacl-01"}
+{"id":30635,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپر آبی رنگ","normalizedValue":"سنسور تشخیص فاصله سپر آبی رنگ"}
+{"id":30636,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAGT","normalizedValue":"704000156aaagt"}
+{"id":30637,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAGT-01","normalizedValue":"704000156aaagt-01"}
+{"id":30638,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپرخاکستری رنگ","normalizedValue":"سنسور تشخیص فاصله سپرخاکستری رنگ"}
+{"id":30639,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAGV","normalizedValue":"704000156aaagv"}
+{"id":30640,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAGV-01","normalizedValue":"704000156aaagv-01"}
+{"id":30641,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAGW","normalizedValue":"704000156aaagw"}
+{"id":30642,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAGW-01","normalizedValue":"704000156aaagw-01"}
+{"id":30643,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAGX","normalizedValue":"704000156aaagx"}
+{"id":30644,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAGX-01","normalizedValue":"704000156aaagx-01"}
+{"id":30645,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپر مسی رنگ","normalizedValue":"سنسور تشخیص فاصله سپر مسی رنگ"}
+{"id":30646,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAJE","normalizedValue":"704000156aaaje"}
+{"id":30647,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAJE-01","normalizedValue":"704000156aaaje-01"}
+{"id":30648,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپر مشکي رنگ","normalizedValue":"سنسور تشخیص فاصله سپر مشکی رنگ"}
+{"id":30649,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAJH","normalizedValue":"704000156aaajh"}
+{"id":30650,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAJH-01","normalizedValue":"704000156aaajh-01"}
+{"id":30651,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپربنفش رنگ","normalizedValue":"سنسور تشخیص فاصله سپربنفش رنگ"}
+{"id":30652,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAJK","normalizedValue":"704000156aaajk"}
+{"id":30653,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAJK-01","normalizedValue":"704000156aaajk-01"}
+{"id":30654,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپرنقره ایی رنگ","normalizedValue":"سنسور تشخیص فاصله سپرنقره ایی رنگ"}
+{"id":30655,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAKH","normalizedValue":"704000156aaakh"}
+{"id":30656,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAKH-01","normalizedValue":"704000156aaakh-01"}
+{"id":30657,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپر نقره ای رنگ","normalizedValue":"سنسور تشخیص فاصله سپر نقره ای رنگ"}
+{"id":30658,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAKN","normalizedValue":"704000156aaakn"}
+{"id":30659,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAKN-01","normalizedValue":"704000156aaakn-01"}
+{"id":30660,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAKP","normalizedValue":"704000156aaakp"}
+{"id":30661,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAKP-01","normalizedValue":"704000156aaakp-01"}
+{"id":30662,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAKT","normalizedValue":"704000156aaakt"}
+{"id":30663,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAKT-01","normalizedValue":"704000156aaakt-01"}
+{"id":30664,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخص فاصله نقره ای","normalizedValue":"سنسور تشخص فاصله نقره ای"}
+{"id":30665,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAKU","normalizedValue":"704000156aaaku"}
+{"id":30666,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAKU-01","normalizedValue":"704000156aaaku-01"}
+{"id":30667,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAKX","normalizedValue":"704000156aaakx"}
+{"id":30668,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAKX-01","normalizedValue":"704000156aaakx-01"}
+{"id":30669,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله","normalizedValue":"سنسور تشخیص فاصله"}
+{"id":30670,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAKZ","normalizedValue":"704000156aaakz"}
+{"id":30671,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAKZ-01","normalizedValue":"704000156aaakz-01"}
+{"id":30672,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAALF","normalizedValue":"704000156aaalf"}
+{"id":30673,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAALF-01","normalizedValue":"704000156aaalf-01"}
+{"id":30674,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپرقرمز رنگ","normalizedValue":"سنسور تشخیص فاصله سپرقرمز رنگ"}
+{"id":30675,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAANL","normalizedValue":"704000156aaanl"}
+{"id":30676,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAANL-01","normalizedValue":"704000156aaanl-01"}
+{"id":30677,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپرنارنجی رنگ","normalizedValue":"سنسور تشخیص فاصله سپرنارنجی رنگ"}
+{"id":30678,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAANQ","normalizedValue":"704000156aaanq"}
+{"id":30679,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAANQ-01","normalizedValue":"704000156aaanq-01"}
+{"id":30680,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپر قرمز رنگ","normalizedValue":"سنسور تشخیص فاصله سپر قرمز رنگ"}
+{"id":30681,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAANR","normalizedValue":"704000156aaanr"}
+{"id":30682,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAANR-01","normalizedValue":"704000156aaanr-01"}
+{"id":30683,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAANS","normalizedValue":"704000156aaans"}
+{"id":30684,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAANS-01","normalizedValue":"704000156aaans-01"}
+{"id":30685,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپر نارنجی رنگ","normalizedValue":"سنسور تشخیص فاصله سپر نارنجی رنگ"}
+{"id":30686,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAANU","normalizedValue":"704000156aaanu"}
+{"id":30687,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAANU-01","normalizedValue":"704000156aaanu-01"}
+{"id":30688,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAPA","normalizedValue":"704000156aaapa"}
+{"id":30689,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAPA-01","normalizedValue":"704000156aaapa-01"}
+{"id":30690,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAQD","normalizedValue":"704000156aaaqd"}
+{"id":30691,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAQD-01","normalizedValue":"704000156aaaqd-01"}
+{"id":30692,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپر سفید رنگ","normalizedValue":"سنسور تشخیص فاصله سپر سفید رنگ"}
+{"id":30693,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAQE","normalizedValue":"704000156aaaqe"}
+{"id":30694,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAQE-01","normalizedValue":"704000156aaaqe-01"}
+{"id":30695,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAASC","normalizedValue":"704000156aaasc"}
+{"id":30696,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAASC-01","normalizedValue":"704000156aaasc-01"}
+{"id":30697,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAASJ","normalizedValue":"704000156aaasj"}
+{"id":30698,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAASJ-01","normalizedValue":"704000156aaasj-01"}
+{"id":30699,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپرسبز رنگ","normalizedValue":"سنسور تشخیص فاصله سپرسبز رنگ"}
+{"id":30700,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAASK","normalizedValue":"704000156aaask"}
+{"id":30701,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAASK-01","normalizedValue":"704000156aaask-01"}
+{"id":30702,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAUD","normalizedValue":"704000156aaaud"}
+{"id":30703,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAUD-01","normalizedValue":"704000156aaaud-01"}
+{"id":30704,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAUH","normalizedValue":"704000156aaauh"}
+{"id":30705,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAUH-01","normalizedValue":"704000156aaauh-01"}
+{"id":30706,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAVL","normalizedValue":"704000156aaavl"}
+{"id":30707,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAVL-01","normalizedValue":"704000156aaavl-01"}
+{"id":30708,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAVM","normalizedValue":"704000156aaavm"}
+{"id":30709,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAVM-01","normalizedValue":"704000156aaavm-01"}
+{"id":30710,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAVN","normalizedValue":"704000156aaavn"}
+{"id":30711,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAVN-01","normalizedValue":"704000156aaavn-01"}
+{"id":30712,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAVQ","normalizedValue":"704000156aaavq"}
+{"id":30713,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAVQ-01","normalizedValue":"704000156aaavq-01"}
+{"id":30714,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAVR","normalizedValue":"704000156aaavr"}
+{"id":30715,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAVR-01","normalizedValue":"704000156aaavr-01"}
+{"id":30716,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپرآبی رنگ","normalizedValue":"سنسور تشخیص فاصله سپرآبی رنگ"}
+{"id":30717,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAVW","normalizedValue":"704000156aaavw"}
+{"id":30718,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAVW-01","normalizedValue":"704000156aaavw-01"}
+{"id":30719,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAWA","normalizedValue":"704000156aaawa"}
+{"id":30720,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAWA-01","normalizedValue":"704000156aaawa-01"}
+{"id":30721,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAWB","normalizedValue":"704000156aaawb"}
+{"id":30722,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAWB-01","normalizedValue":"704000156aaawb-01"}
+{"id":30723,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAWC","normalizedValue":"704000156aaawc"}
+{"id":30724,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAWC-01","normalizedValue":"704000156aaawc-01"}
+{"id":30725,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000156AAAWE","normalizedValue":"704000156aaawe"}
+{"id":30726,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000156AAAWE-01","normalizedValue":"704000156aaawe-01"}
+{"id":30727,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"واحد کنترل رادار پارک","normalizedValue":"واحد کنترل رادار پارک"}
+{"id":30728,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000160AA","normalizedValue":"704000160aa"}
+{"id":30729,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000160AA-01","normalizedValue":"704000160aa-01"}
+{"id":30730,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000161AA","normalizedValue":"704000161aa"}
+{"id":30731,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000161AA-02","normalizedValue":"704000161aa-02"}
+{"id":30732,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000161AA-01","normalizedValue":"704000161aa-01"}
+{"id":30733,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب سنسور دنده عقب سفید","normalizedValue":"قاب سنسور دنده عقب سفید"}
+{"id":30734,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000185AAABK","normalizedValue":"704000185aaabk"}
+{"id":30735,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000185AAABK-01","normalizedValue":"704000185aaabk-01"}
+{"id":30736,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب دور سنسور تشخیص فاصله","normalizedValue":"قاب دور سنسور تشخیص فاصله"}
+{"id":30737,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000185AAABW","normalizedValue":"704000185aaabw"}
+{"id":30738,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000185AAABW-01","normalizedValue":"704000185aaabw-01"}
+{"id":30739,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه نصب سنسور دنده عقب","normalizedValue":"پایه نصب سنسور دنده عقب"}
+{"id":30740,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000185AAACE","normalizedValue":"704000185aaace"}
+{"id":30741,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000185AAACE-01","normalizedValue":"704000185aaace-01"}
+{"id":30742,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000185AAACG","normalizedValue":"704000185aaacg"}
+{"id":30743,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000185AAACG-01","normalizedValue":"704000185aaacg-01"}
+{"id":30744,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000185AAAGT","normalizedValue":"704000185aaagt"}
+{"id":30745,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000185AAAGT-01","normalizedValue":"704000185aaagt-01"}
+{"id":30746,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000185AAAKH","normalizedValue":"704000185aaakh"}
+{"id":30747,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000185AAAKH-01","normalizedValue":"704000185aaakh-01"}
+{"id":30748,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب سنسور دنده عقب نقره ای","normalizedValue":"قاب سنسور دنده عقب نقره ای"}
+{"id":30749,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000185AAAKT","normalizedValue":"704000185aaakt"}
+{"id":30750,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000185AAAKT-01","normalizedValue":"704000185aaakt-01"}
+{"id":30751,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب سنسور دنده عقب قرمز","normalizedValue":"قاب سنسور دنده عقب قرمز"}
+{"id":30752,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000185AAANL","normalizedValue":"704000185aaanl"}
+{"id":30753,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000185AAANL-01","normalizedValue":"704000185aaanl-01"}
+{"id":30754,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب سنسور دنده عقب نارنجی","normalizedValue":"قاب سنسور دنده عقب نارنجی"}
+{"id":30755,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000185AAANQ","normalizedValue":"704000185aaanq"}
+{"id":30756,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000185AAANQ-01","normalizedValue":"704000185aaanq-01"}
+{"id":30757,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب سنسور دنده عقب آبی","normalizedValue":"قاب سنسور دنده عقب آبی"}
+{"id":30758,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000185AAAVL","normalizedValue":"704000185aaavl"}
+{"id":30759,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000185AAAVL-01","normalizedValue":"704000185aaavl-01"}
+{"id":30760,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه نگهدارنده سنسور رادار","normalizedValue":"پایه نگهدارنده سنسور رادار"}
+{"id":30761,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000198AA","normalizedValue":"704000198aa"}
+{"id":30762,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000198AA-01","normalizedValue":"704000198aa-01"}
+{"id":30763,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"دوربین جلو بین خطوط و 360درجه","normalizedValue":"دوربین جلو بین خطوط و 360درجه"}
+{"id":30764,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000305AA","normalizedValue":"704000305aa"}
+{"id":30765,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000305AA-01","normalizedValue":"704000305aa-01"}
+{"id":30766,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"دوربین عقب","normalizedValue":"دوربین عقب"}
+{"id":30767,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000310AA","normalizedValue":"704000310aa"}
+{"id":30768,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000310AA-01","normalizedValue":"704000310aa-01"}
+{"id":30769,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه رادار","normalizedValue":"پایه رادار"}
+{"id":30770,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000315AA","normalizedValue":"704000315aa"}
+{"id":30771,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000315AA-01","normalizedValue":"704000315aa-01"}
+{"id":30772,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور رادار","normalizedValue":"سنسور رادار"}
+{"id":30773,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000334AAABS","normalizedValue":"704000334aaabs"}
+{"id":30774,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000334AAABS-01","normalizedValue":"704000334aaabs-01"}
+{"id":30775,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000334AAABW","normalizedValue":"704000334aaabw"}
+{"id":30776,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000334AAABW-01","normalizedValue":"704000334aaabw-01"}
+{"id":30777,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000334AAACE","normalizedValue":"704000334aaace"}
+{"id":30778,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000334AAACE-01","normalizedValue":"704000334aaace-01"}
+{"id":30779,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000334AAANQ","normalizedValue":"704000334aaanq"}
+{"id":30780,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000334AAANQ-01","normalizedValue":"704000334aaanq-01"}
+{"id":30781,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"خار نگهدارنده  رادار","normalizedValue":"خار نگهدارنده رادار"}
+{"id":30782,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000367AA","normalizedValue":"704000367aa"}
+{"id":30783,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000367AA-02","normalizedValue":"704000367aa-02"}
+{"id":30784,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000367AA-01","normalizedValue":"704000367aa-01"}
+{"id":30785,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000367AA-03","normalizedValue":"704000367aa-03"}
+{"id":30786,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"دوربین جلو","normalizedValue":"دوربین جلو"}
+{"id":30787,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000423AA","normalizedValue":"704000423aa"}
+{"id":30788,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000423AA-01","normalizedValue":"704000423aa-01"}
+{"id":30789,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000423AA-02","normalizedValue":"704000423aa-02"}
+{"id":30790,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000424AA","normalizedValue":"704000424aa"}
+{"id":30791,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000424AA-01","normalizedValue":"704000424aa-01"}
+{"id":30792,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000424AA-02","normalizedValue":"704000424aa-02"}
+{"id":30793,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"دوربین 360 درجه جلو با سیم کشی","normalizedValue":"دوربین 360 درجه جلو با سیم کشی"}
+{"id":30794,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000434AA","normalizedValue":"704000434aa"}
+{"id":30795,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000434AA-01","normalizedValue":"704000434aa-01"}
+{"id":30796,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000439AA","normalizedValue":"704000439aa"}
+{"id":30797,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000439AA-01","normalizedValue":"704000439aa-01"}
+{"id":30798,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000440AA","normalizedValue":"704000440aa"}
+{"id":30799,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000440AA-01","normalizedValue":"704000440aa-01"}
+{"id":30800,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000453AA","normalizedValue":"704000453aa"}
+{"id":30801,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000453AA-01","normalizedValue":"704000453aa-01"}
+{"id":30802,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000454AA","normalizedValue":"704000454aa"}
+{"id":30803,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000454AA-01","normalizedValue":"704000454aa-01"}
+{"id":30804,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه سنسور رادار","normalizedValue":"پایه سنسور رادار"}
+{"id":30805,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000481AA","normalizedValue":"704000481aa"}
+{"id":30806,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000481AA-01","normalizedValue":"704000481aa-01"}
+{"id":30807,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"رادار اصلی سیستم تشخیص نقطه کورچپ","normalizedValue":"رادار اصلی سیستم تشخیص نقطه کورچپ"}
+{"id":30808,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000483AA","normalizedValue":"704000483aa"}
+{"id":30809,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000483AA-01","normalizedValue":"704000483aa-01"}
+{"id":30810,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور رادار راست","normalizedValue":"سنسور رادار راست"}
+{"id":30811,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000484AA","normalizedValue":"704000484aa"}
+{"id":30812,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000484AA-01","normalizedValue":"704000484aa-01"}
+{"id":30813,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه نگهدارنده یونیت اصلی رادار سنسور نقطه کور","normalizedValue":"پایه نگهدارنده یونیت اصلی رادار سنسور نقطه کور"}
+{"id":30814,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000485AA","normalizedValue":"704000485aa"}
+{"id":30815,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000485AA-01","normalizedValue":"704000485aa-01"}
+{"id":30816,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000505AA","normalizedValue":"704000505aa"}
+{"id":30817,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000505AA-01","normalizedValue":"704000505aa-01"}
+{"id":30818,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000507AA","normalizedValue":"704000507aa"}
+{"id":30819,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000507AA-01","normalizedValue":"704000507aa-01"}
+{"id":30820,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000513AA","normalizedValue":"704000513aa"}
+{"id":30821,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000513AA-02","normalizedValue":"704000513aa-02"}
+{"id":30822,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000513AA-01","normalizedValue":"704000513aa-01"}
+{"id":30823,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000514AA","normalizedValue":"704000514aa"}
+{"id":30824,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000514AA-02","normalizedValue":"704000514aa-02"}
+{"id":30825,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000514AA-01","normalizedValue":"704000514aa-01"}
+{"id":30826,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000521AA","normalizedValue":"704000521aa"}
+{"id":30827,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000521AA-01","normalizedValue":"704000521aa-01"}
+{"id":30828,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه نگهدارنده یونیت فرعی رادار سنسور نقطه کور","normalizedValue":"پایه نگهدارنده یونیت فرعی رادار سنسور نقطه کور"}
+{"id":30829,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000522AA","normalizedValue":"704000522aa"}
+{"id":30830,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000522AA-01","normalizedValue":"704000522aa-01"}
+{"id":30831,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"یونیت کنترل دوربین 360 درجه","normalizedValue":"یونیت کنترل دوربین 360 درجه"}
+{"id":30832,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000533AA","normalizedValue":"704000533aa"}
+{"id":30833,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000533AA-01","normalizedValue":"704000533aa-01"}
+{"id":30834,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"یونیت اصلی رادار سنسور نقطه کور","normalizedValue":"یونیت اصلی رادار سنسور نقطه کور"}
+{"id":30835,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000580AA","normalizedValue":"704000580aa"}
+{"id":30836,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000580AA-01","normalizedValue":"704000580aa-01"}
+{"id":30837,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"یونیت فرعی رادار سنسور نقطه کور","normalizedValue":"یونیت فرعی رادار سنسور نقطه کور"}
+{"id":30838,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000581AA","normalizedValue":"704000581aa"}
+{"id":30839,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000581AA-01","normalizedValue":"704000581aa-01"}
+{"id":30840,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000593AA","normalizedValue":"704000593aa"}
+{"id":30841,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000593AA-01","normalizedValue":"704000593aa-01"}
+{"id":30842,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000597AA","normalizedValue":"704000597aa"}
+{"id":30843,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000597AA-01","normalizedValue":"704000597aa-01"}
+{"id":30844,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000601AA","normalizedValue":"704000601aa"}
+{"id":30845,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000601AA-01","normalizedValue":"704000601aa-01"}
+{"id":30846,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000618AA","normalizedValue":"704000618aa"}
+{"id":30847,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000618AA-02","normalizedValue":"704000618aa-02"}
+{"id":30848,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000618AA-01","normalizedValue":"704000618aa-01"}
+{"id":30849,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب رادار","normalizedValue":"قاب رادار"}
+{"id":30850,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000619AA","normalizedValue":"704000619aa"}
+{"id":30851,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000619AA-01","normalizedValue":"704000619aa-01"}
+{"id":30852,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000633AA","normalizedValue":"704000633aa"}
+{"id":30853,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000633AA-01","normalizedValue":"704000633aa-01"}
+{"id":30854,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"رادار کمکی سیستم تشخیص نقطه کور راست","normalizedValue":"رادار کمکی سیستم تشخیص نقطه کور راست"}
+{"id":30855,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000635AA","normalizedValue":"704000635aa"}
+{"id":30856,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000635AA-01","normalizedValue":"704000635aa-01"}
+{"id":30857,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000644AA","normalizedValue":"704000644aa"}
+{"id":30858,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000644AA-02","normalizedValue":"704000644aa-02"}
+{"id":30859,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000644AA-01","normalizedValue":"704000644aa-01"}
+{"id":30860,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000648AA","normalizedValue":"704000648aa"}
+{"id":30861,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000648AA-01","normalizedValue":"704000648aa-01"}
+{"id":30862,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000650AA","normalizedValue":"704000650aa"}
+{"id":30863,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000650AA-01","normalizedValue":"704000650aa-01"}
+{"id":30864,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000666AA","normalizedValue":"704000666aa"}
+{"id":30865,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000666AA-01","normalizedValue":"704000666aa-01"}
+{"id":30866,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000667AA","normalizedValue":"704000667aa"}
+{"id":30867,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000667AA-01","normalizedValue":"704000667aa-01"}
+{"id":30868,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000670AB","normalizedValue":"704000670ab"}
+{"id":30869,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000670AB-01","normalizedValue":"704000670ab-01"}
+{"id":30870,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"704000670AA","normalizedValue":"704000670aa"}
+{"id":30871,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000671AA","normalizedValue":"704000671aa"}
+{"id":30872,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000671AA-01","normalizedValue":"704000671aa-01"}
+{"id":30873,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"واحد کنترل دوربین (کنترل یونیت دوربین )","normalizedValue":"واحد کنترل دوربین (کنترل یونیت دوربین )"}
+{"id":30874,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000676AA","normalizedValue":"704000676aa"}
+{"id":30875,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000676AA-02","normalizedValue":"704000676aa-02"}
+{"id":30876,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000676AA-01","normalizedValue":"704000676aa-01"}
+{"id":30877,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000679AA","normalizedValue":"704000679aa"}
+{"id":30878,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000679AA-01","normalizedValue":"704000679aa-01"}
+{"id":30879,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"رادار اصلی سیستم تشخیص نقطه کور","normalizedValue":"رادار اصلی سیستم تشخیص نقطه کور"}
+{"id":30880,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000685AA","normalizedValue":"704000685aa"}
+{"id":30881,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000685AA-01","normalizedValue":"704000685aa-01"}
+{"id":30882,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000686AA","normalizedValue":"704000686aa"}
+{"id":30883,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000686AA-01","normalizedValue":"704000686aa-01"}
+{"id":30884,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000696AA","normalizedValue":"704000696aa"}
+{"id":30885,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000696AA-01","normalizedValue":"704000696aa-01"}
+{"id":30886,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000699AA","normalizedValue":"704000699aa"}
+{"id":30887,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000699AA-01","normalizedValue":"704000699aa-01"}
+{"id":30888,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"یونیت ثبت وقایع","normalizedValue":"یونیت ثبت وقایع"}
+{"id":30889,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000710AA","normalizedValue":"704000710aa"}
+{"id":30890,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000710AA-01","normalizedValue":"704000710aa-01"}
+{"id":30891,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000714AA","normalizedValue":"704000714aa"}
+{"id":30892,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000714AA-01","normalizedValue":"704000714aa-01"}
+{"id":30893,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000715AA","normalizedValue":"704000715aa"}
+{"id":30894,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000715AA-01","normalizedValue":"704000715aa-01"}
+{"id":30895,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپرکرم رنگ","normalizedValue":"سنسور تشخیص فاصله سپرکرم رنگ"}
+{"id":30896,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000722AAABW","normalizedValue":"704000722aaabw"}
+{"id":30897,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000722AAABW-01","normalizedValue":"704000722aaabw-01"}
+{"id":30898,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000722AAABX","normalizedValue":"704000722aaabx"}
+{"id":30899,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000722AAABX-01","normalizedValue":"704000722aaabx-01"}
+{"id":30900,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور تشخیص فاصله سپر کربن رنگ","normalizedValue":"سنسور تشخیص فاصله سپر کربن رنگ"}
+{"id":30901,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000722AAACL","normalizedValue":"704000722aaacl"}
+{"id":30902,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000722AAACL-01","normalizedValue":"704000722aaacl-01"}
+{"id":30903,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000722AAACM","normalizedValue":"704000722aaacm"}
+{"id":30904,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000722AAACM-01","normalizedValue":"704000722aaacm-01"}
+{"id":30905,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000722AAASM","normalizedValue":"704000722aaasm"}
+{"id":30906,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000722AAASM-01","normalizedValue":"704000722aaasm-01"}
+{"id":30907,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000722AAAWF","normalizedValue":"704000722aaawf"}
+{"id":30908,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000722AAAWF-01","normalizedValue":"704000722aaawf-01"}
+{"id":30909,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"واحد کنترل دوربین","normalizedValue":"واحد کنترل دوربین"}
+{"id":30910,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000727AA","normalizedValue":"704000727aa"}
+{"id":30911,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000727AA-01","normalizedValue":"704000727aa-01"}
+{"id":30912,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000735AA","normalizedValue":"704000735aa"}
+{"id":30913,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000735AA-01","normalizedValue":"704000735aa-01"}
+{"id":30914,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور رادار سفید","normalizedValue":"سنسور رادار سفید"}
+{"id":30915,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000756AAABX","normalizedValue":"704000756aaabx"}
+{"id":30916,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000756AAABX-01","normalizedValue":"704000756aaabx-01"}
+{"id":30917,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000756AAACL","normalizedValue":"704000756aaacl"}
+{"id":30918,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000756AAACL-01","normalizedValue":"704000756aaacl-01"}
+{"id":30919,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سنسور رادار مشکی","normalizedValue":"سنسور رادار مشکی"}
+{"id":30920,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000756AAACM","normalizedValue":"704000756aaacm"}
+{"id":30921,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000756AAACM-01","normalizedValue":"704000756aaacm-01"}
+{"id":30922,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000757AA","normalizedValue":"704000757aa"}
+{"id":30923,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000757AA-01","normalizedValue":"704000757aa-01"}
+{"id":30924,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000758AA","normalizedValue":"704000758aa"}
+{"id":30925,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000758AA-01","normalizedValue":"704000758aa-01"}
+{"id":30926,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000759AA","normalizedValue":"704000759aa"}
+{"id":30927,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000759AA-01","normalizedValue":"704000759aa-01"}
+{"id":30928,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"واحد کنترل رادار","normalizedValue":"واحد کنترل رادار"}
+{"id":30929,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000765AA","normalizedValue":"704000765aa"}
+{"id":30930,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000765AA-01","normalizedValue":"704000765aa-01"}
+{"id":30931,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000768AA","normalizedValue":"704000768aa"}
+{"id":30932,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000768AA-01","normalizedValue":"704000768aa-01"}
+{"id":30933,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000781AA","normalizedValue":"704000781aa"}
+{"id":30934,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000781AA-01","normalizedValue":"704000781aa-01"}
+{"id":30935,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000782AA","normalizedValue":"704000782aa"}
+{"id":30936,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000782AA-01","normalizedValue":"704000782aa-01"}
+{"id":30937,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000789AA","normalizedValue":"704000789aa"}
+{"id":30938,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000789AA-01","normalizedValue":"704000789aa-01"}
+{"id":30939,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000792AA","normalizedValue":"704000792aa"}
+{"id":30940,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000792AA-01","normalizedValue":"704000792aa-01"}
+{"id":30941,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000794AA","normalizedValue":"704000794aa"}
+{"id":30942,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000794AA-01","normalizedValue":"704000794aa-01"}
+{"id":30943,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000806AA","normalizedValue":"704000806aa"}
+{"id":30944,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000806AA-01","normalizedValue":"704000806aa-01"}
+{"id":30945,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000807AA","normalizedValue":"704000807aa"}
+{"id":30946,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000807AA-01","normalizedValue":"704000807aa-01"}
+{"id":30947,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000808AA","normalizedValue":"704000808aa"}
+{"id":30948,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000808AA-01","normalizedValue":"704000808aa-01"}
+{"id":30949,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000816AA","normalizedValue":"704000816aa"}
+{"id":30950,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000816AA-01","normalizedValue":"704000816aa-01"}
+{"id":30951,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000837AA","normalizedValue":"704000837aa"}
+{"id":30952,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000837AA-01","normalizedValue":"704000837aa-01"}
+{"id":30953,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"رادار  جانبی سیستم تشخیص نقطه کور","normalizedValue":"رادار جانبی سیستم تشخیص نقطه کور"}
+{"id":30954,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000838AA","normalizedValue":"704000838aa"}
+{"id":30955,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000838AA-01","normalizedValue":"704000838aa-01"}
+{"id":30956,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000850AA","normalizedValue":"704000850aa"}
+{"id":30957,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000850AA-01","normalizedValue":"704000850aa-01"}
+{"id":30958,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000851AA","normalizedValue":"704000851aa"}
+{"id":30959,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000851AA-01","normalizedValue":"704000851aa-01"}
+{"id":30960,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000852AA","normalizedValue":"704000852aa"}
+{"id":30961,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000852AA-01","normalizedValue":"704000852aa-01"}
+{"id":30962,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000857AA","normalizedValue":"704000857aa"}
+{"id":30963,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000857AA-01","normalizedValue":"704000857aa-01"}
+{"id":30964,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"دوربین 360 درجه","normalizedValue":"دوربین 360 درجه"}
+{"id":30965,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000858AA","normalizedValue":"704000858aa"}
+{"id":30966,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000858AA-01","normalizedValue":"704000858aa-01"}
+{"id":30967,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000859AA","normalizedValue":"704000859aa"}
+{"id":30968,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000859AA-01","normalizedValue":"704000859aa-01"}
+{"id":30969,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000862AAACL","normalizedValue":"704000862aaacl"}
+{"id":30970,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000862AAACL-01","normalizedValue":"704000862aaacl-01"}
+{"id":30971,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000862AAAKL","normalizedValue":"704000862aaakl"}
+{"id":30972,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000862AAAKL-01","normalizedValue":"704000862aaakl-01"}
+{"id":30973,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000867AA","normalizedValue":"704000867aa"}
+{"id":30974,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000867AA-01","normalizedValue":"704000867aa-01"}
+{"id":30975,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000868AA","normalizedValue":"704000868aa"}
+{"id":30976,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000868AA-01","normalizedValue":"704000868aa-01"}
+{"id":30977,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"رادار نظارت بر نقطه کور کمکی","normalizedValue":"رادار نظارت بر نقطه کور کمکی"}
+{"id":30978,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000869AA","normalizedValue":"704000869aa"}
+{"id":30979,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000869AA-01","normalizedValue":"704000869aa-01"}
+{"id":30980,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000895AA","normalizedValue":"704000895aa"}
+{"id":30981,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000895AA-01","normalizedValue":"704000895aa-01"}
+{"id":30982,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000896AA","normalizedValue":"704000896aa"}
+{"id":30983,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000896AA-01","normalizedValue":"704000896aa-01"}
+{"id":30984,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000917AA","normalizedValue":"704000917aa"}
+{"id":30985,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000917AA-01","normalizedValue":"704000917aa-01"}
+{"id":30986,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000931AA","normalizedValue":"704000931aa"}
+{"id":30987,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000931AA-01","normalizedValue":"704000931aa-01"}
+{"id":30988,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه نگهدارنده واحد کنترل رادار پارک","normalizedValue":"پایه نگهدارنده واحد کنترل رادار پارک"}
+{"id":30989,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000939AA","normalizedValue":"704000939aa"}
+{"id":30990,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000939AA-01","normalizedValue":"704000939aa-01"}
+{"id":30991,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000942AA","normalizedValue":"704000942aa"}
+{"id":30992,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000942AA-01","normalizedValue":"704000942aa-01"}
+{"id":30993,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000946AA","normalizedValue":"704000946aa"}
+{"id":30994,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000946AA-01","normalizedValue":"704000946aa-01"}
+{"id":30995,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000947AA","normalizedValue":"704000947aa"}
+{"id":30996,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000947AA-01","normalizedValue":"704000947aa-01"}
+{"id":30997,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000954AA","normalizedValue":"704000954aa"}
+{"id":30998,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"704000954AA-01","normalizedValue":"704000954aa-01"}
+{"id":30999,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه نگهدارنده یونیت اصلی رادار سنسور تشخیص فاصله","normalizedValue":"پایه نگهدارنده یونیت اصلی رادار سنسور تشخیص فاصله"}
+{"id":31000,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"704000964AA","normalizedValue":"704000964aa"}

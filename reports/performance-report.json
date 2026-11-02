@@ -1,0 +1,89 @@
+{
+  "generatedAt": "2026-10-20T13:05:37.996Z",
+  "dataset": {
+    "version": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+    "databasePath": "/Users/barmana/Documents/E/behrad/private-data/sqlite/catalogue.db",
+    "active": true,
+    "sourcePath": "/Users/barmana/Documents/E/behrad/PartsFinder_Android-28 (1) (1).html",
+    "sourceVerification": {
+      "fullDatabaseHashMatch": true,
+      "rowHashMismatches": 0,
+      "storedRowHashMismatches": 0,
+      "integrityCheck": "ok",
+      "foreignKeyViolations": 0
+    }
+  },
+  "environment": {
+    "node": "v24.19.0",
+    "platform": "darwin",
+    "architecture": "arm64",
+    "cpuModel": "Apple M4",
+    "cpuCores": 10,
+    "benchmarkHost": "local Node.js API worker; same machine as the browser app"
+  },
+  "method": {
+    "engine": "Fastify inject through dedicated SQLite Worker thread",
+    "warmupRequestsPerCase": 2,
+    "measuredSamplesPerCase": 7,
+    "queryLimit": 20,
+    "timings": "request start to complete response; sequential; no CPU throttling"
+  },
+  "elapsedSeconds": 1.59,
+  "memory": {
+    "rssBeforeBytes": 822034432,
+    "rssAfterBytes": 829915136,
+    "heapUsedBeforeBytes": 310029216,
+    "heapUsedAfterBytes": 328565536
+  },
+  "results": [
+    {
+      "name": "warm_exact_code",
+      "query": "0CF25BE-1500011BA",
+      "samples": 7,
+      "totalMatchedEntries": 11,
+      "returnedPageSize": 11,
+      "p50Ms": 4.05,
+      "p95Ms": 4.32,
+      "targetMs": 150,
+      "targetMet": true
+    },
+    {
+      "name": "name_phrase",
+      "query": "گیربکس اتوماتیک",
+      "samples": 7,
+      "totalMatchedEntries": 56,
+      "returnedPageSize": 20,
+      "p50Ms": 12.14,
+      "p95Ms": 12.43,
+      "targetMs": 300,
+      "targetMet": true
+    },
+    {
+      "name": "vehicle_name",
+      "query": "گیربکس",
+      "samples": 7,
+      "totalMatchedEntries": 50,
+      "returnedPageSize": 20,
+      "p50Ms": 42.09,
+      "p95Ms": 43.23,
+      "targetMs": 300,
+      "targetMet": true
+    },
+    {
+      "name": "short_code_fallback_2_chars",
+      "query": "BA",
+      "samples": 7,
+      "totalMatchedEntries": 2586,
+      "returnedPageSize": 20,
+      "p50Ms": 113.9,
+      "p95Ms": 127.6,
+      "targetMs": null,
+      "targetMet": null
+    }
+  ],
+  "limitations": [
+    "No original-HTML browser baseline was captured in the same run; this report is not a before/after performance claim.",
+    "The 1–2 character code fallback is measured separately and has no target threshold.",
+    "No representative Android handset was available for this run."
+  ]
+}

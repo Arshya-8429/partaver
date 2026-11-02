@@ -1,0 +1,500 @@
+{"id":3501,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه کنترل یونیت ترمز دستی برقی","normalizedValue":"پایه کنترل یونیت ترمز دستی برقی"}
+{"id":3502,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000372AA","normalizedValue":"204000372aa"}
+{"id":3503,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000372AA-01","normalizedValue":"204000372aa-01"}
+{"id":3504,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله ترمز شماره 2 چرخ جلو چپ","normalizedValue":"لوله ترمز شماره 2 چرخ جلو چپ"}
+{"id":3505,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000375AA","normalizedValue":"204000375aa"}
+{"id":3506,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000375AA-01","normalizedValue":"204000375aa-01"}
+{"id":3507,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله بوستر ترمز شماره 1","normalizedValue":"لوله بوستر ترمز شماره 1"}
+{"id":3508,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000386AB","normalizedValue":"204000386ab"}
+{"id":3509,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000386AB-01","normalizedValue":"204000386ab-01"}
+{"id":3510,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله بوستر ترمز شماره 2","normalizedValue":"لوله بوستر ترمز شماره 2"}
+{"id":3511,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000387AB","normalizedValue":"204000387ab"}
+{"id":3512,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000387AB-01","normalizedValue":"204000387ab-01"}
+{"id":3513,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله ترمز چرخ جلو چپ-شماره 1","normalizedValue":"لوله ترمز چرخ جلو چپ-شماره 1"}
+{"id":3514,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000388AB","normalizedValue":"204000388ab"}
+{"id":3515,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000388AB-01","normalizedValue":"204000388ab-01"}
+{"id":3516,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله ترمز جلو راست","normalizedValue":"لوله ترمز جلو راست"}
+{"id":3517,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000391AB","normalizedValue":"204000391ab"}
+{"id":3518,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000391AB-01","normalizedValue":"204000391ab-01"}
+{"id":3519,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000409AA","normalizedValue":"204000409aa"}
+{"id":3520,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000409AA-01","normalizedValue":"204000409aa-01"}
+{"id":3521,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله ترمز چرخ عقب چپ شماره 2","normalizedValue":"لوله ترمز چرخ عقب چپ شماره 2"}
+{"id":3522,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000410AA","normalizedValue":"204000410aa"}
+{"id":3523,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000410AA-01","normalizedValue":"204000410aa-01"}
+{"id":3524,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله ترمز چرخ عقب راست شماره 2","normalizedValue":"لوله ترمز چرخ عقب راست شماره 2"}
+{"id":3525,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000411AA","normalizedValue":"204000411aa"}
+{"id":3526,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000411AA-01","normalizedValue":"204000411aa-01"}
+{"id":3527,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000412AA","normalizedValue":"204000412aa"}
+{"id":3528,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000412AA-01","normalizedValue":"204000412aa-01"}
+{"id":3529,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله وکیوم بوستر ترمز","normalizedValue":"لوله وکیوم بوستر ترمز"}
+{"id":3530,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000413AA","normalizedValue":"204000413aa"}
+{"id":3531,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000413AA-01","normalizedValue":"204000413aa-01"}
+{"id":3532,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000414AB","normalizedValue":"204000414ab"}
+{"id":3533,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000414AB-01","normalizedValue":"204000414ab-01"}
+{"id":3534,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله 2 روغن ترمز عقب چپ","normalizedValue":"لوله 2 روغن ترمز عقب چپ"}
+{"id":3535,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000416AB","normalizedValue":"204000416ab"}
+{"id":3536,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000416AB-01","normalizedValue":"204000416ab-01"}
+{"id":3537,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000418AA","normalizedValue":"204000418aa"}
+{"id":3538,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000418AA-01","normalizedValue":"204000418aa-01"}
+{"id":3539,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000419AA","normalizedValue":"204000419aa"}
+{"id":3540,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000419AA-01","normalizedValue":"204000419aa-01"}
+{"id":3541,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"واشر","normalizedValue":"واشر"}
+{"id":3542,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000420AA","normalizedValue":"204000420aa"}
+{"id":3543,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000420AA-01","normalizedValue":"204000420aa-01"}
+{"id":3544,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000421AA","normalizedValue":"204000421aa"}
+{"id":3545,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000421AA-01","normalizedValue":"204000421aa-01"}
+{"id":3546,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کابل رابط ترمز دستی(قسمت جلو)","normalizedValue":"کابل رابط ترمز دستی(قسمت جلو)"}
+{"id":3547,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000427AA","normalizedValue":"204000427aa"}
+{"id":3548,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000427AA-01","normalizedValue":"204000427aa-01"}
+{"id":3549,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"شیلنگ ترمز چرخ عقب","normalizedValue":"شیلنگ ترمز چرخ عقب"}
+{"id":3550,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000435AA","normalizedValue":"204000435aa"}
+{"id":3551,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000435AA-01","normalizedValue":"204000435aa-01"}
+{"id":3552,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000440AA","normalizedValue":"204000440aa"}
+{"id":3553,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000440AA-01","normalizedValue":"204000440aa-01"}
+{"id":3554,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه شیلنگ وکیوم بوستر","normalizedValue":"پایه شیلنگ وکیوم بوستر"}
+{"id":3555,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000442AA","normalizedValue":"204000442aa"}
+{"id":3556,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000442AA-01","normalizedValue":"204000442aa-01"}
+{"id":3557,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000447AA","normalizedValue":"204000447aa"}
+{"id":3558,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000447AA-01","normalizedValue":"204000447aa-01"}
+{"id":3559,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000448AA","normalizedValue":"204000448aa"}
+{"id":3560,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000448AA-01","normalizedValue":"204000448aa-01"}
+{"id":3561,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کالیپر ترمز چرخ جلو چپ","normalizedValue":"کالیپر ترمز چرخ جلو چپ"}
+{"id":3562,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000449AA","normalizedValue":"204000449aa"}
+{"id":3563,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000449AA-01","normalizedValue":"204000449aa-01"}
+{"id":3564,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کالیپر ترمز جلو راست","normalizedValue":"کالیپر ترمز جلو راست"}
+{"id":3565,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000450AA","normalizedValue":"204000450aa"}
+{"id":3566,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000450AA-01","normalizedValue":"204000450aa-01"}
+{"id":3567,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سینی پشت دیسک چرخ جلو چپ","normalizedValue":"سینی پشت دیسک چرخ جلو چپ"}
+{"id":3568,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000451AA","normalizedValue":"204000451aa"}
+{"id":3569,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000451AA-01","normalizedValue":"204000451aa-01"}
+{"id":3570,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سینی پشت دیسک چرخ جلو راست","normalizedValue":"سینی پشت دیسک چرخ جلو راست"}
+{"id":3571,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000452AA","normalizedValue":"204000452aa"}
+{"id":3572,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000452AA-01","normalizedValue":"204000452aa-01"}
+{"id":3573,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"دیسک ترمز چرخ جلو","normalizedValue":"دیسک ترمز چرخ جلو"}
+{"id":3574,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000453AA","normalizedValue":"204000453aa"}
+{"id":3575,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000453AA-01","normalizedValue":"204000453aa-01"}
+{"id":3576,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000455AA","normalizedValue":"204000455aa"}
+{"id":3577,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000455AA-01","normalizedValue":"204000455aa-01"}
+{"id":3578,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"خار رینگی","normalizedValue":"خار رینگی"}
+{"id":3579,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000456AA","normalizedValue":"204000456aa"}
+{"id":3580,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000456AA-01","normalizedValue":"204000456aa-01"}
+{"id":3581,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پیچ کوتاه کالیپر ترمز","normalizedValue":"پیچ کوتاه کالیپر ترمز"}
+{"id":3582,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000457AA","normalizedValue":"204000457aa"}
+{"id":3583,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000457AA-01","normalizedValue":"204000457aa-01"}
+{"id":3584,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پین بالایی کالیپر ترمز عقب","normalizedValue":"پین بالایی کالیپر ترمز عقب"}
+{"id":3585,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000463AA","normalizedValue":"204000463aa"}
+{"id":3586,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000463AA-01","normalizedValue":"204000463aa-01"}
+{"id":3587,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T1C-XLB3501067","normalizedValue":"t1c-xlb3501067"}
+{"id":3588,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پین پایینی کالیپر ترمز عقب","normalizedValue":"پین پایینی کالیپر ترمز عقب"}
+{"id":3589,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000464AA","normalizedValue":"204000464aa"}
+{"id":3590,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000464AA-01","normalizedValue":"204000464aa-01"}
+{"id":3591,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"فنر لنت ترمز جلو","normalizedValue":"فنر لنت ترمز جلو"}
+{"id":3592,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000465AA","normalizedValue":"204000465aa"}
+{"id":3593,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000465AA-01","normalizedValue":"204000465aa-01"}
+{"id":3594,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پیچ هواگیری سیلندر ترمز","normalizedValue":"پیچ هواگیری سیلندر ترمز"}
+{"id":3595,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000467AA","normalizedValue":"204000467aa"}
+{"id":3596,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000467AA-01","normalizedValue":"204000467aa-01"}
+{"id":3597,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"درپوش لاستیکی پیچ هواگیری سیلندر ترمز","normalizedValue":"درپوش لاستیکی پیچ هواگیری سیلندر ترمز"}
+{"id":3598,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000468AA","normalizedValue":"204000468aa"}
+{"id":3599,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000468AA-01","normalizedValue":"204000468aa-01"}
+{"id":3600,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پیچ خودکار آچار خور","normalizedValue":"پیچ خودکار آچار خور"}
+{"id":3601,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000469AA","normalizedValue":"204000469aa"}
+{"id":3602,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000469AA-01","normalizedValue":"204000469aa-01"}
+{"id":3603,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"خار  لنت ترمز جلو","normalizedValue":"خار لنت ترمز جلو"}
+{"id":3604,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000470AA","normalizedValue":"204000470aa"}
+{"id":3605,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000470AA-01","normalizedValue":"204000470aa-01"}
+{"id":3606,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کالیپر ترمز برقی چرخ عقب سمت چپ","normalizedValue":"کالیپر ترمز برقی چرخ عقب سمت چپ"}
+{"id":3607,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000473AA","normalizedValue":"204000473aa"}
+{"id":3608,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000473AA-01","normalizedValue":"204000473aa-01"}
+{"id":3609,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کالیپر ترمز برقی چرخ عقب راست","normalizedValue":"کالیپر ترمز برقی چرخ عقب راست"}
+{"id":3610,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000474AA","normalizedValue":"204000474aa"}
+{"id":3611,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000474AA-01","normalizedValue":"204000474aa-01"}
+{"id":3612,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سینی پشت دیسک چرخ عقب چپ","normalizedValue":"سینی پشت دیسک چرخ عقب چپ"}
+{"id":3613,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000475AA","normalizedValue":"204000475aa"}
+{"id":3614,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000475AA-01","normalizedValue":"204000475aa-01"}
+{"id":3615,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سینی پشت دیسک چرخ عقب راست","normalizedValue":"سینی پشت دیسک چرخ عقب راست"}
+{"id":3616,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000476AA","normalizedValue":"204000476aa"}
+{"id":3617,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000476AA-01","normalizedValue":"204000476aa-01"}
+{"id":3618,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه نگهدارنده سیم کشی ترمز پارک برقی چپ","normalizedValue":"پایه نگهدارنده سیم کشی ترمز پارک برقی چپ"}
+{"id":3619,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000477AA","normalizedValue":"204000477aa"}
+{"id":3620,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000477AA-01","normalizedValue":"204000477aa-01"}
+{"id":3621,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه نگهدارنده سیم کشی ترمز پارک برقی راست","normalizedValue":"پایه نگهدارنده سیم کشی ترمز پارک برقی راست"}
+{"id":3622,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000478AA","normalizedValue":"204000478aa"}
+{"id":3623,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000478AA-01","normalizedValue":"204000478aa-01"}
+{"id":3624,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"دیسک ترمز چرخ عقب","normalizedValue":"دیسک ترمز چرخ عقب"}
+{"id":3625,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000479AA","normalizedValue":"204000479aa"}
+{"id":3626,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000479AA-01","normalizedValue":"204000479aa-01"}
+{"id":3627,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"توپی چرخ عقب","normalizedValue":"توپی چرخ عقب"}
+{"id":3628,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000480AA","normalizedValue":"204000480aa"}
+{"id":3629,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000480AA-01","normalizedValue":"204000480aa-01"}
+{"id":3630,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پيچ کالیپر ترمز جلو","normalizedValue":"پیچ کالیپر ترمز جلو"}
+{"id":3631,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000481AA","normalizedValue":"204000481aa"}
+{"id":3632,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000481AA-01","normalizedValue":"204000481aa-01"}
+{"id":3633,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پیچ پایه کالیپر ترمز","normalizedValue":"پیچ پایه کالیپر ترمز"}
+{"id":3634,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000482AA","normalizedValue":"204000482aa"}
+{"id":3635,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000482AA-01","normalizedValue":"204000482aa-01"}
+{"id":3636,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه کالیپر ترمز چرخ عقب","normalizedValue":"پایه کالیپر ترمز چرخ عقب"}
+{"id":3637,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000487AA","normalizedValue":"204000487aa"}
+{"id":3638,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000487AA-01","normalizedValue":"204000487aa-01"}
+{"id":3639,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000491AA","normalizedValue":"204000491aa"}
+{"id":3640,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000491AA-01","normalizedValue":"204000491aa-01"}
+{"id":3641,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"فنر لنت ترمز عقب","normalizedValue":"فنر لنت ترمز عقب"}
+{"id":3642,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000492AA","normalizedValue":"204000492aa"}
+{"id":3643,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000492AA-01","normalizedValue":"204000492aa-01"}
+{"id":3644,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"خار فنري لنت عقب","normalizedValue":"خار فنری لنت عقب"}
+{"id":3645,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000493AA","normalizedValue":"204000493aa"}
+{"id":3646,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000493AA-01","normalizedValue":"204000493aa-01"}
+{"id":3647,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"عملگر ترمز پارک برقی","normalizedValue":"عملگر ترمز پارک برقی"}
+{"id":3648,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000494AA","normalizedValue":"204000494aa"}
+{"id":3649,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000494AA-01","normalizedValue":"204000494aa-01"}
+{"id":3650,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پیچ آلن خور","normalizedValue":"پیچ آلن خور"}
+{"id":3651,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000495AA","normalizedValue":"204000495aa"}
+{"id":3652,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000495AA-01","normalizedValue":"204000495aa-01"}
+{"id":3653,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله ترمز چرخ عقب چپ -شماره 2","normalizedValue":"لوله ترمز چرخ عقب چپ -شماره 2"}
+{"id":3654,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000498AA","normalizedValue":"204000498aa"}
+{"id":3655,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000498AA-01","normalizedValue":"204000498aa-01"}
+{"id":3656,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله ترمز چرخ عقب راست-شماره 2","normalizedValue":"لوله ترمز چرخ عقب راست-شماره 2"}
+{"id":3657,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000499AA","normalizedValue":"204000499aa"}
+{"id":3658,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000499AA-01","normalizedValue":"204000499aa-01"}
+{"id":3659,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000507AA","normalizedValue":"204000507aa"}
+{"id":3660,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000507AA-01","normalizedValue":"204000507aa-01"}
+{"id":3661,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000508AA","normalizedValue":"204000508aa"}
+{"id":3662,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000508AA-01","normalizedValue":"204000508aa-01"}
+{"id":3663,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله 1 ترمز از پمپ تا بلوک ABS","normalizedValue":"لوله 1 ترمز از پمپ تا بلوک abs"}
+{"id":3664,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000509AA","normalizedValue":"204000509aa"}
+{"id":3665,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000509AA-01","normalizedValue":"204000509aa-01"}
+{"id":3666,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله 2 ترمز از پمپ تا بلوک ABS","normalizedValue":"لوله 2 ترمز از پمپ تا بلوک abs"}
+{"id":3667,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000510AA","normalizedValue":"204000510aa"}
+{"id":3668,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000510AA-01","normalizedValue":"204000510aa-01"}
+{"id":3669,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پیچ سر خزینه آلن خور","normalizedValue":"پیچ سر خزینه آلن خور"}
+{"id":3670,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000518AA","normalizedValue":"204000518aa"}
+{"id":3671,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000518AA-01","normalizedValue":"204000518aa-01"}
+{"id":3672,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000522AA","normalizedValue":"204000522aa"}
+{"id":3673,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000522AA-01","normalizedValue":"204000522aa-01"}
+{"id":3674,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پیچ آچار خور M6","normalizedValue":"پیچ آچار خور m6"}
+{"id":3675,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000523AA","normalizedValue":"204000523aa"}
+{"id":3676,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000523AA-01","normalizedValue":"204000523aa-01"}
+{"id":3677,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"واشر فنری","normalizedValue":"واشر فنری"}
+{"id":3678,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000524AA","normalizedValue":"204000524aa"}
+{"id":3679,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000524AA-01","normalizedValue":"204000524aa-01"}
+{"id":3680,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"مهره سیلندر اصلی ترمز","normalizedValue":"مهره سیلندر اصلی ترمز"}
+{"id":3681,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000525AA","normalizedValue":"204000525aa"}
+{"id":3682,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000525AA-01","normalizedValue":"204000525aa-01"}
+{"id":3683,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله خلاء","normalizedValue":"لوله خلاء"}
+{"id":3684,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000527AA","normalizedValue":"204000527aa"}
+{"id":3685,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000527AA-02","normalizedValue":"204000527aa-02"}
+{"id":3686,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000527AA-04","normalizedValue":"204000527aa-04"}
+{"id":3687,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000527AA-01","normalizedValue":"204000527aa-01"}
+{"id":3688,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000527AA-03","normalizedValue":"204000527aa-03"}
+{"id":3689,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"مجموعه کامل لنت ترمز دستی عقب چپ","normalizedValue":"مجموعه کامل لنت ترمز دستی عقب چپ"}
+{"id":3690,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000530AA","normalizedValue":"204000530aa"}
+{"id":3691,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000530AA-01","normalizedValue":"204000530aa-01"}
+{"id":3692,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"مجموعه کامل لنت ترمز دستی عقب راست","normalizedValue":"مجموعه کامل لنت ترمز دستی عقب راست"}
+{"id":3693,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000531AA","normalizedValue":"204000531aa"}
+{"id":3694,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000531AA-01","normalizedValue":"204000531aa-01"}
+{"id":3695,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله ترمز چرخ عقب راست-شماره 1","normalizedValue":"لوله ترمز چرخ عقب راست-شماره 1"}
+{"id":3696,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000533AA","normalizedValue":"204000533aa"}
+{"id":3697,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000533AA-01","normalizedValue":"204000533aa-01"}
+{"id":3698,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله ترمز چرخ عقب چپ -شماره 1","normalizedValue":"لوله ترمز چرخ عقب چپ -شماره 1"}
+{"id":3699,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000535AA","normalizedValue":"204000535aa"}
+{"id":3700,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000535AA-01","normalizedValue":"204000535aa-01"}
+{"id":3701,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000541AA","normalizedValue":"204000541aa"}
+{"id":3702,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000541AA-01","normalizedValue":"204000541aa-01"}
+{"id":3703,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله روغن ترمز جلو چپ","normalizedValue":"لوله روغن ترمز جلو چپ"}
+{"id":3704,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000556AA","normalizedValue":"204000556aa"}
+{"id":3705,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000556AA-01","normalizedValue":"204000556aa-01"}
+{"id":3706,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000557AA","normalizedValue":"204000557aa"}
+{"id":3707,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000557AA-01","normalizedValue":"204000557aa-01"}
+{"id":3708,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله 1 ترمزعقب چپ","normalizedValue":"لوله 1 ترمزعقب چپ"}
+{"id":3709,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000558AA","normalizedValue":"204000558aa"}
+{"id":3710,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000558AA-01","normalizedValue":"204000558aa-01"}
+{"id":3711,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله 1 روغن ترمز عقب راست","normalizedValue":"لوله 1 روغن ترمز عقب راست"}
+{"id":3712,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000559AA","normalizedValue":"204000559aa"}
+{"id":3713,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000559AA-01","normalizedValue":"204000559aa-01"}
+{"id":3714,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"شیلنگ خلا بوستر","normalizedValue":"شیلنگ خلا بوستر"}
+{"id":3715,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000560AA","normalizedValue":"204000560aa"}
+{"id":3716,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000560AA-01","normalizedValue":"204000560aa-01"}
+{"id":3717,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000598AA","normalizedValue":"204000598aa"}
+{"id":3718,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000598AA-01","normalizedValue":"204000598aa-01"}
+{"id":3719,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000599AA","normalizedValue":"204000599aa"}
+{"id":3720,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000599AA-01","normalizedValue":"204000599aa-01"}
+{"id":3721,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000600AA","normalizedValue":"204000600aa"}
+{"id":3722,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000600AA-01","normalizedValue":"204000600aa-01"}
+{"id":3723,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله ترمز چرخ عقب چپ شماره 1","normalizedValue":"لوله ترمز چرخ عقب چپ شماره 1"}
+{"id":3724,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000601AA","normalizedValue":"204000601aa"}
+{"id":3725,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000601AA-01","normalizedValue":"204000601aa-01"}
+{"id":3726,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله ترمز چرخ عقب راست شماره 1","normalizedValue":"لوله ترمز چرخ عقب راست شماره 1"}
+{"id":3727,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000602AA","normalizedValue":"204000602aa"}
+{"id":3728,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000602AA-01","normalizedValue":"204000602aa-01"}
+{"id":3729,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000603AA","normalizedValue":"204000603aa"}
+{"id":3730,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000603AA-01","normalizedValue":"204000603aa-01"}
+{"id":3731,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000633AB","normalizedValue":"204000633ab"}
+{"id":3732,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000633AB-01","normalizedValue":"204000633ab-01"}
+{"id":3733,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000664AA","normalizedValue":"204000664aa"}
+{"id":3734,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000664AA-01","normalizedValue":"204000664aa-01"}
+{"id":3735,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"براکت کابل ترمز دستی چپ","normalizedValue":"براکت کابل ترمز دستی چپ"}
+{"id":3736,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000665AA","normalizedValue":"204000665aa"}
+{"id":3737,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000665AA-01","normalizedValue":"204000665aa-01"}
+{"id":3738,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کابل ترمز دستی چپ","normalizedValue":"کابل ترمز دستی چپ"}
+{"id":3739,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000666AA","normalizedValue":"204000666aa"}
+{"id":3740,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000666AA-01","normalizedValue":"204000666aa-01"}
+{"id":3741,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000675AA","normalizedValue":"204000675aa"}
+{"id":3742,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000675AA-01","normalizedValue":"204000675aa-01"}
+{"id":3743,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000676AA","normalizedValue":"204000676aa"}
+{"id":3744,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000676AA-01","normalizedValue":"204000676aa-01"}
+{"id":3745,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000677AA","normalizedValue":"204000677aa"}
+{"id":3746,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000677AA-01","normalizedValue":"204000677aa-01"}
+{"id":3747,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000678AA","normalizedValue":"204000678aa"}
+{"id":3748,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000678AA-01","normalizedValue":"204000678aa-01"}
+{"id":3749,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000683AA","normalizedValue":"204000683aa"}
+{"id":3750,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000683AA-01","normalizedValue":"204000683aa-01"}
+{"id":3751,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000684AA","normalizedValue":"204000684aa"}
+{"id":3752,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000684AA-01","normalizedValue":"204000684aa-01"}
+{"id":3753,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سینی محافظ دیسک چرخ عقب","normalizedValue":"سینی محافظ دیسک چرخ عقب"}
+{"id":3754,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000685AA","normalizedValue":"204000685aa"}
+{"id":3755,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000685AA-01","normalizedValue":"204000685aa-01"}
+{"id":3756,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000686AA","normalizedValue":"204000686aa"}
+{"id":3757,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000686AA-01","normalizedValue":"204000686aa-01"}
+{"id":3758,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000688AA","normalizedValue":"204000688aa"}
+{"id":3759,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000688AA-01","normalizedValue":"204000688aa-01"}
+{"id":3760,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سیلندر ترمز اصلی","normalizedValue":"سیلندر ترمز اصلی"}
+{"id":3761,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000694AA","normalizedValue":"204000694aa"}
+{"id":3762,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000694AA-01","normalizedValue":"204000694aa-01"}
+{"id":3763,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000695AA","normalizedValue":"204000695aa"}
+{"id":3764,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000695AA-01","normalizedValue":"204000695aa-01"}
+{"id":3765,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000696AA","normalizedValue":"204000696aa"}
+{"id":3766,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000696AA-01","normalizedValue":"204000696aa-01"}
+{"id":3767,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"اورینگ آب بندی سیلندر ترمز با بوستر","normalizedValue":"اورینگ آب بندی سیلندر ترمز با بوستر"}
+{"id":3768,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000697AA","normalizedValue":"204000697aa"}
+{"id":3769,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000697AA-01","normalizedValue":"204000697aa-01"}
+{"id":3770,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کالیپر ترمزچرخ عقب سمت چپ","normalizedValue":"کالیپر ترمزچرخ عقب سمت چپ"}
+{"id":3771,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000731AA","normalizedValue":"204000731aa"}
+{"id":3772,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000731AA-01","normalizedValue":"204000731aa-01"}
+{"id":3773,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000732AA","normalizedValue":"204000732aa"}
+{"id":3774,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000732AA-01","normalizedValue":"204000732aa-01"}
+{"id":3775,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله شماره 1 ترمز چرخ جلو چپ","normalizedValue":"لوله شماره 1 ترمز چرخ جلو چپ"}
+{"id":3776,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000818AA","normalizedValue":"204000818aa"}
+{"id":3777,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000818AA-01","normalizedValue":"204000818aa-01"}
+{"id":3778,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000819AA","normalizedValue":"204000819aa"}
+{"id":3779,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000819AA-01","normalizedValue":"204000819aa-01"}
+{"id":3780,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله ترمز بلند بغل شاسی شماره 1","normalizedValue":"لوله ترمز بلند بغل شاسی شماره 1"}
+{"id":3781,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000820AA","normalizedValue":"204000820aa"}
+{"id":3782,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000820AA-01","normalizedValue":"204000820aa-01"}
+{"id":3783,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000821AA","normalizedValue":"204000821aa"}
+{"id":3784,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000821AA-01","normalizedValue":"204000821aa-01"}
+{"id":3785,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000822AA","normalizedValue":"204000822aa"}
+{"id":3786,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000822AA-01","normalizedValue":"204000822aa-01"}
+{"id":3787,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله2 روغن ترمز عقب چپ","normalizedValue":"لوله2 روغن ترمز عقب چپ"}
+{"id":3788,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000824AA","normalizedValue":"204000824aa"}
+{"id":3789,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000824AA-01","normalizedValue":"204000824aa-01"}
+{"id":3790,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله شماره 2 ترمز چرخ عقب راست","normalizedValue":"لوله شماره 2 ترمز چرخ عقب راست"}
+{"id":3791,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000825AB","normalizedValue":"204000825ab"}
+{"id":3792,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000825AB-01","normalizedValue":"204000825ab-01"}
+{"id":3793,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کابل ترمز دستی راست","normalizedValue":"کابل ترمز دستی راست"}
+{"id":3794,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000907AA","normalizedValue":"204000907aa"}
+{"id":3795,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000907AA-01","normalizedValue":"204000907aa-01"}
+{"id":3796,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کالیپر ترمز چرخ عقب سمت چپ","normalizedValue":"کالیپر ترمز چرخ عقب سمت چپ"}
+{"id":3797,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000910AA","normalizedValue":"204000910aa"}
+{"id":3798,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000910AA-01","normalizedValue":"204000910aa-01"}
+{"id":3799,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کالیپر ترمز چرخ عقب سمت راست","normalizedValue":"کالیپر ترمز چرخ عقب سمت راست"}
+{"id":3800,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000911AA","normalizedValue":"204000911aa"}
+{"id":3801,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000911AA-01","normalizedValue":"204000911aa-01"}
+{"id":3802,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"مجموعه پدال ترمز","normalizedValue":"مجموعه پدال ترمز"}
+{"id":3803,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000920AA","normalizedValue":"204000920aa"}
+{"id":3804,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000920AA-01","normalizedValue":"204000920aa-01"}
+{"id":3805,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"خاردنده","normalizedValue":"خاردنده"}
+{"id":3806,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000958AA","normalizedValue":"204000958aa"}
+{"id":3807,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000958AA-01","normalizedValue":"204000958aa-01"}
+{"id":3808,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000959AA","normalizedValue":"204000959aa"}
+{"id":3809,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000959AA-01","normalizedValue":"204000959aa-01"}
+{"id":3810,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پیچ بلند کالیپر ترمز","normalizedValue":"پیچ بلند کالیپر ترمز"}
+{"id":3811,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000960AA","normalizedValue":"204000960aa"}
+{"id":3812,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000960AA-01","normalizedValue":"204000960aa-01"}
+{"id":3813,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000963AA","normalizedValue":"204000963aa"}
+{"id":3814,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000963AA-01","normalizedValue":"204000963aa-01"}
+{"id":3815,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000964AA","normalizedValue":"204000964aa"}
+{"id":3816,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000964AA-01","normalizedValue":"204000964aa-01"}
+{"id":3817,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000965AA","normalizedValue":"204000965aa"}
+{"id":3818,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000965AA-01","normalizedValue":"204000965aa-01"}
+{"id":3819,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000972AA","normalizedValue":"204000972aa"}
+{"id":3820,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000972AA-01","normalizedValue":"204000972aa-01"}
+{"id":3821,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کاليپر ترمزچرخ جلو سمت راست","normalizedValue":"کالیپر ترمزچرخ جلو سمت راست"}
+{"id":3822,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000973AA","normalizedValue":"204000973aa"}
+{"id":3823,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000973AA-01","normalizedValue":"204000973aa-01"}
+{"id":3824,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کالیپر و موتور ترمز پارک برقی عقب چپ","normalizedValue":"کالیپر و موتور ترمز پارک برقی عقب چپ"}
+{"id":3825,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000974AA","normalizedValue":"204000974aa"}
+{"id":3826,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000974AA-01","normalizedValue":"204000974aa-01"}
+{"id":3827,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کالیپر و موتور ترمز پارک برقی عقب راست","normalizedValue":"کالیپر و موتور ترمز پارک برقی عقب راست"}
+{"id":3828,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000975AA","normalizedValue":"204000975aa"}
+{"id":3829,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000975AA-01","normalizedValue":"204000975aa-01"}
+{"id":3830,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204000993AA","normalizedValue":"204000993aa"}
+{"id":3831,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204000993AA-01","normalizedValue":"204000993aa-01"}
+{"id":3832,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"محور چرخ عقب راست","normalizedValue":"محور چرخ عقب راست"}
+{"id":3833,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001045AA","normalizedValue":"204001045aa"}
+{"id":3834,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001045AA-01","normalizedValue":"204001045aa-01"}
+{"id":3835,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"محور چرخ عقب چپ","normalizedValue":"محور چرخ عقب چپ"}
+{"id":3836,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001046AA","normalizedValue":"204001046aa"}
+{"id":3837,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001046AA-01","normalizedValue":"204001046aa-01"}
+{"id":3838,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سینی محافظ دیسک چرخ عقب LH","normalizedValue":"سینی محافظ دیسک چرخ عقب lh"}
+{"id":3839,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001047AA","normalizedValue":"204001047aa"}
+{"id":3840,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001047AA-01","normalizedValue":"204001047aa-01"}
+{"id":3841,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سینی محافظ دیسک چرخ عقب RH","normalizedValue":"سینی محافظ دیسک چرخ عقب rh"}
+{"id":3842,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001048AA","normalizedValue":"204001048aa"}
+{"id":3843,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001048AA-01","normalizedValue":"204001048aa-01"}
+{"id":3844,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001050AA","normalizedValue":"204001050aa"}
+{"id":3845,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001050AA-01","normalizedValue":"204001050aa-01"}
+{"id":3846,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"مجموعه شیلنگ ترمز شماره 2 عقب","normalizedValue":"مجموعه شیلنگ ترمز شماره 2 عقب"}
+{"id":3847,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001053AA","normalizedValue":"204001053aa"}
+{"id":3848,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001053AA-01","normalizedValue":"204001053aa-01"}
+{"id":3849,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001054AA","normalizedValue":"204001054aa"}
+{"id":3850,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001054AA-01","normalizedValue":"204001054aa-01"}
+{"id":3851,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پدال ترمز کامل","normalizedValue":"پدال ترمز کامل"}
+{"id":3852,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001060AA","normalizedValue":"204001060aa"}
+{"id":3853,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001060AA-01","normalizedValue":"204001060aa-01"}
+{"id":3854,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001062AA","normalizedValue":"204001062aa"}
+{"id":3855,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001062AA-01","normalizedValue":"204001062aa-01"}
+{"id":3856,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001069AA","normalizedValue":"204001069aa"}
+{"id":3857,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001069AA-01","normalizedValue":"204001069aa-01"}
+{"id":3858,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001070AA","normalizedValue":"204001070aa"}
+{"id":3859,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001070AA-01","normalizedValue":"204001070aa-01"}
+{"id":3860,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001196AA","normalizedValue":"204001196aa"}
+{"id":3861,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001196AA-01","normalizedValue":"204001196aa-01"}
+{"id":3862,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سگدست چرخ جلو چپ","normalizedValue":"سگدست چرخ جلو چپ"}
+{"id":3863,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001219AA","normalizedValue":"204001219aa"}
+{"id":3864,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001219AA-01","normalizedValue":"204001219aa-01"}
+{"id":3865,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سگدست چرخ جلو راست","normalizedValue":"سگدست چرخ جلو راست"}
+{"id":3866,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001220AA","normalizedValue":"204001220aa"}
+{"id":3867,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001220AA-01","normalizedValue":"204001220aa-01"}
+{"id":3868,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001231AA","normalizedValue":"204001231aa"}
+{"id":3869,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001231AA-03","normalizedValue":"204001231aa-03"}
+{"id":3870,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"204001231AA-R","normalizedValue":"204001231aa-r"}
+{"id":3871,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001231AA-02","normalizedValue":"204001231aa-02"}
+{"id":3872,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001231AA-01","normalizedValue":"204001231aa-01"}
+{"id":3873,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001231AA-R","normalizedValue":"204001231aa-r"}
+{"id":3874,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001231AA-R-01","normalizedValue":"204001231aa-r-01"}
+{"id":3875,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"204001231AA","normalizedValue":"204001231aa"}
+{"id":3876,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001232AA","normalizedValue":"204001232aa"}
+{"id":3877,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001232AA-01","normalizedValue":"204001232aa-01"}
+{"id":3878,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001235AA","normalizedValue":"204001235aa"}
+{"id":3879,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001235AA-01","normalizedValue":"204001235aa-01"}
+{"id":3880,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"مجموعه سگدست و کالیپر ترمز عقب چپ","normalizedValue":"مجموعه سگدست و کالیپر ترمز عقب چپ"}
+{"id":3881,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001264AA","normalizedValue":"204001264aa"}
+{"id":3882,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001264AA-01","normalizedValue":"204001264aa-01"}
+{"id":3883,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"مجموعه سگدست و کالیپر ترمز عقب راست","normalizedValue":"مجموعه سگدست و کالیپر ترمز عقب راست"}
+{"id":3884,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001265AA","normalizedValue":"204001265aa"}
+{"id":3885,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001265AA-01","normalizedValue":"204001265aa-01"}
+{"id":3886,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"توپی چرخ عقب چپ","normalizedValue":"توپی چرخ عقب چپ"}
+{"id":3887,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001281AA","normalizedValue":"204001281aa"}
+{"id":3888,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001281AA-01","normalizedValue":"204001281aa-01"}
+{"id":3889,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"توپی چرخ عقب راست","normalizedValue":"توپی چرخ عقب راست"}
+{"id":3890,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001282AA","normalizedValue":"204001282aa"}
+{"id":3891,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001282AA-01","normalizedValue":"204001282aa-01"}
+{"id":3892,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001283AA","normalizedValue":"204001283aa"}
+{"id":3893,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001283AA-01","normalizedValue":"204001283aa-01"}
+{"id":3894,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001284AA","normalizedValue":"204001284aa"}
+{"id":3895,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001284AA-01","normalizedValue":"204001284aa-01"}
+{"id":3896,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001301AA","normalizedValue":"204001301aa"}
+{"id":3897,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001301AA-01","normalizedValue":"204001301aa-01"}
+{"id":3898,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001302AA","normalizedValue":"204001302aa"}
+{"id":3899,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001302AA-01","normalizedValue":"204001302aa-01"}
+{"id":3900,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله ترمز جلو چپ","normalizedValue":"لوله ترمز جلو چپ"}
+{"id":3901,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001321AA","normalizedValue":"204001321aa"}
+{"id":3902,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001321AA-01","normalizedValue":"204001321aa-01"}
+{"id":3903,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001323AA","normalizedValue":"204001323aa"}
+{"id":3904,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001323AA-01","normalizedValue":"204001323aa-01"}
+{"id":3905,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001327AA","normalizedValue":"204001327aa"}
+{"id":3906,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001327AA-01","normalizedValue":"204001327aa-01"}
+{"id":3907,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001334AA","normalizedValue":"204001334aa"}
+{"id":3908,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001334AA-01","normalizedValue":"204001334aa-01"}
+{"id":3909,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001335AA","normalizedValue":"204001335aa"}
+{"id":3910,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001335AA-01","normalizedValue":"204001335aa-01"}
+{"id":3911,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"گیره نگهدارنده لوله ترمز - 1 راهه","normalizedValue":"گیره نگهدارنده لوله ترمز - 1 راهه"}
+{"id":3912,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001351AA","normalizedValue":"204001351aa"}
+{"id":3913,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001351AA-01","normalizedValue":"204001351aa-01"}
+{"id":3914,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001355AA","normalizedValue":"204001355aa"}
+{"id":3915,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001355AA-01","normalizedValue":"204001355aa-01"}
+{"id":3916,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لوله رابط لوله  روغن ترمز","normalizedValue":"لوله رابط لوله روغن ترمز"}
+{"id":3917,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001364AA","normalizedValue":"204001364aa"}
+{"id":3918,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001364AA-01","normalizedValue":"204001364aa-01"}
+{"id":3919,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001403AA","normalizedValue":"204001403aa"}
+{"id":3920,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001403AA-01","normalizedValue":"204001403aa-01"}
+{"id":3921,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001404AA","normalizedValue":"204001404aa"}
+{"id":3922,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001404AA-01","normalizedValue":"204001404aa-01"}
+{"id":3923,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001405AA","normalizedValue":"204001405aa"}
+{"id":3924,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001405AA-01","normalizedValue":"204001405aa-01"}
+{"id":3925,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001406AA","normalizedValue":"204001406aa"}
+{"id":3926,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001406AA-01","normalizedValue":"204001406aa-01"}
+{"id":3927,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"دیسک چرخ عقب","normalizedValue":"دیسک چرخ عقب"}
+{"id":3928,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001412AA","normalizedValue":"204001412aa"}
+{"id":3929,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001412AA-01","normalizedValue":"204001412aa-01"}
+{"id":3930,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001413AA","normalizedValue":"204001413aa"}
+{"id":3931,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001413AA-01","normalizedValue":"204001413aa-01"}
+{"id":3932,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001414AA","normalizedValue":"204001414aa"}
+{"id":3933,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001414AA-01","normalizedValue":"204001414aa-01"}
+{"id":3934,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001447AA","normalizedValue":"204001447aa"}
+{"id":3935,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001447AA-01","normalizedValue":"204001447aa-01"}
+{"id":3936,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001450AA","normalizedValue":"204001450aa"}
+{"id":3937,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001450AA-01","normalizedValue":"204001450aa-01"}
+{"id":3938,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001451AA","normalizedValue":"204001451aa"}
+{"id":3939,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001451AA-01","normalizedValue":"204001451aa-01"}
+{"id":3940,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"گردگیر فلزی دیسک چرخ","normalizedValue":"گردگیر فلزی دیسک چرخ"}
+{"id":3941,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001452AA","normalizedValue":"204001452aa"}
+{"id":3942,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001452AA-01","normalizedValue":"204001452aa-01"}
+{"id":3943,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001453AA","normalizedValue":"204001453aa"}
+{"id":3944,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001453AA-01","normalizedValue":"204001453aa-01"}
+{"id":3945,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001454AA","normalizedValue":"204001454aa"}
+{"id":3946,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001454AA-01","normalizedValue":"204001454aa-01"}
+{"id":3947,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001455AA","normalizedValue":"204001455aa"}
+{"id":3948,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001455AA-01","normalizedValue":"204001455aa-01"}
+{"id":3949,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001456AA","normalizedValue":"204001456aa"}
+{"id":3950,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001456AA-01","normalizedValue":"204001456aa-01"}
+{"id":3951,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001482AA","normalizedValue":"204001482aa"}
+{"id":3952,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001482AA-01","normalizedValue":"204001482aa-01"}
+{"id":3953,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001483AA","normalizedValue":"204001483aa"}
+{"id":3954,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001483AA-01","normalizedValue":"204001483aa-01"}
+{"id":3955,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001503AA","normalizedValue":"204001503aa"}
+{"id":3956,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001503AA-01","normalizedValue":"204001503aa-01"}
+{"id":3957,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001504AA","normalizedValue":"204001504aa"}
+{"id":3958,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001504AA-01","normalizedValue":"204001504aa-01"}
+{"id":3959,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001505AA","normalizedValue":"204001505aa"}
+{"id":3960,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001505AA-01","normalizedValue":"204001505aa-01"}
+{"id":3961,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001519AA","normalizedValue":"204001519aa"}
+{"id":3962,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001519AA-01","normalizedValue":"204001519aa-01"}
+{"id":3963,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001520AA","normalizedValue":"204001520aa"}
+{"id":3964,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001520AA-01","normalizedValue":"204001520aa-01"}
+{"id":3965,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پیچ پین کالیپر","normalizedValue":"پیچ پین کالیپر"}
+{"id":3966,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001521AA","normalizedValue":"204001521aa"}
+{"id":3967,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001521AA-01","normalizedValue":"204001521aa-01"}
+{"id":3968,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001522AA","normalizedValue":"204001522aa"}
+{"id":3969,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001522AA-01","normalizedValue":"204001522aa-01"}
+{"id":3970,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001524AA","normalizedValue":"204001524aa"}
+{"id":3971,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001524AA-01","normalizedValue":"204001524aa-01"}
+{"id":3972,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کالیپر ترمزچرخ عقب سمت راست","normalizedValue":"کالیپر ترمزچرخ عقب سمت راست"}
+{"id":3973,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001525AA","normalizedValue":"204001525aa"}
+{"id":3974,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001525AA-01","normalizedValue":"204001525aa-01"}
+{"id":3975,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"گردگیر فلزی دیسک چرخ جلو چپ","normalizedValue":"گردگیر فلزی دیسک چرخ جلو چپ"}
+{"id":3976,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001528AA","normalizedValue":"204001528aa"}
+{"id":3977,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001528AA-01","normalizedValue":"204001528aa-01"}
+{"id":3978,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001529AA","normalizedValue":"204001529aa"}
+{"id":3979,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001529AA-01","normalizedValue":"204001529aa-01"}
+{"id":3980,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001530AA","normalizedValue":"204001530aa"}
+{"id":3981,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001530AA-01","normalizedValue":"204001530aa-01"}
+{"id":3982,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"گردگیر فلزی دیسک چرخ جلو راست","normalizedValue":"گردگیر فلزی دیسک چرخ جلو راست"}
+{"id":3983,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001533AA","normalizedValue":"204001533aa"}
+{"id":3984,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001533AA-01","normalizedValue":"204001533aa-01"}
+{"id":3985,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001534AA","normalizedValue":"204001534aa"}
+{"id":3986,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001534AA-01","normalizedValue":"204001534aa-01"}
+{"id":3987,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"سگدست عقب چپ","normalizedValue":"سگدست عقب چپ"}
+{"id":3988,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001535AA","normalizedValue":"204001535aa"}
+{"id":3989,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001535AA-01","normalizedValue":"204001535aa-01"}
+{"id":3990,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001536AA","normalizedValue":"204001536aa"}
+{"id":3991,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001536AA-01","normalizedValue":"204001536aa-01"}
+{"id":3992,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001537AA","normalizedValue":"204001537aa"}
+{"id":3993,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001537AA-01","normalizedValue":"204001537aa-01"}
+{"id":3994,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"توپی چرخ","normalizedValue":"توپی چرخ"}
+{"id":3995,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001538AA","normalizedValue":"204001538aa"}
+{"id":3996,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001538AA-01","normalizedValue":"204001538aa-01"}
+{"id":3997,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001539AA","normalizedValue":"204001539aa"}
+{"id":3998,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001539AA-01","normalizedValue":"204001539aa-01"}
+{"id":3999,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"204001540AA","normalizedValue":"204001540aa"}
+{"id":4000,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"204001540AA-01","normalizedValue":"204001540aa-01"}

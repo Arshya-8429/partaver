@@ -1,0 +1,28 @@
+{
+  "browserVersion": "156.0.8078.48",
+  "installMs": 23442,
+  "storage": {
+    "estimate": {
+      "quota": 12030598588,
+      "usage": 1293180348,
+      "usageDetails": {
+        "caches": 807707,
+        "indexedDB": 1292369920,
+        "serviceWorkerRegistrations": 2721
+      }
+    },
+    "caches": [
+      "partavar-shell-6d2197c6287f7cf7"
+    ],
+    "secureContext": true,
+    "controller": true
+  },
+  "rowCount": 36569,
+  "exactCode": "0CF25BE-1500011BA",
+  "onlineOfflineResultCount": 11,
+  "searchParity": true,
+  "shellReopenedWithoutNetwork": true,
+  "relaunchScope": "page closed and new page opened in the same live browser context; full browser process restart is covered separately by existing Chromium tests",
+  "errors": [],
+  "consoleProblems": []
+}

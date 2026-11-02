@@ -1,0 +1,500 @@
+{"id":70001,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6202410PL","normalizedValue":"t11-6202410pl"}
+{"id":70002,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202420AD","normalizedValue":"t11-6202420ad"}
+{"id":70003,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202420AD-02","normalizedValue":"t11-6202420ad-02"}
+{"id":70004,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6202420BB","normalizedValue":"t11-6202420bb"}
+{"id":70005,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202420AD-01","normalizedValue":"t11-6202420ad-01"}
+{"id":70006,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202420BB","normalizedValue":"t11-6202420bb"}
+{"id":70007,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202420BB-01","normalizedValue":"t11-6202420bb-01"}
+{"id":70008,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6202420AD","normalizedValue":"t11-6202420ad"}
+{"id":70009,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202420BL","normalizedValue":"t11-6202420bl"}
+{"id":70010,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202420BL-01","normalizedValue":"t11-6202420bl-01"}
+{"id":70011,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب تودربی عقب سمت راست","normalizedValue":"قاب تودربی عقب سمت راست"}
+{"id":70012,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202420FC","normalizedValue":"t11-6202420fc"}
+{"id":70013,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202420FC-01","normalizedValue":"t11-6202420fc-01"}
+{"id":70014,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"رودری درب عقب راست(مشکی با نوار قرمز)","normalizedValue":"رودری درب عقب راست(مشکی با نوار قرمز)"}
+{"id":70015,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202420FD","normalizedValue":"t11-6202420fd"}
+{"id":70016,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202420FD-01","normalizedValue":"t11-6202420fd-01"}
+{"id":70017,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202420PG","normalizedValue":"t11-6202420pg"}
+{"id":70018,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202420PG-01","normalizedValue":"t11-6202420pg-01"}
+{"id":70019,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202420PL","normalizedValue":"t11-6202420pl"}
+{"id":70020,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202420PL-01","normalizedValue":"t11-6202420pl-01"}
+{"id":70021,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6202420PQ","normalizedValue":"t11-6202420pq"}
+{"id":70022,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202420PQ","normalizedValue":"t11-6202420pq"}
+{"id":70023,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202420PQ-01","normalizedValue":"t11-6202420pq-01"}
+{"id":70024,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6202420PL","normalizedValue":"t11-6202420pl"}
+{"id":70025,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"زير آرنجي درب عقب چپ","normalizedValue":"زیر آرنجی درب عقب چپ"}
+{"id":70026,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202433BB","normalizedValue":"t11-6202433bb"}
+{"id":70027,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202433BB-02","normalizedValue":"t11-6202433bb-02"}
+{"id":70028,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202433BB-01","normalizedValue":"t11-6202433bb-01"}
+{"id":70029,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202433BJ","normalizedValue":"t11-6202433bj"}
+{"id":70030,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202433BJ-01","normalizedValue":"t11-6202433bj-01"}
+{"id":70031,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کاور دستگيره آرنجي رو دري عقب راست","normalizedValue":"کاور دستگیره آرنجی رو دری عقب راست"}
+{"id":70032,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202433FB","normalizedValue":"t11-6202433fb"}
+{"id":70033,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202433FB-01","normalizedValue":"t11-6202433fb-01"}
+{"id":70034,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب آرنجی درب عقب چپ (خاکستری)","normalizedValue":"قاب آرنجی درب عقب چپ (خاکستری)"}
+{"id":70035,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202433PF","normalizedValue":"t11-6202433pf"}
+{"id":70036,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202433PF-01","normalizedValue":"t11-6202433pf-01"}
+{"id":70037,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"زير آرنجي درب عقب راست","normalizedValue":"زیر آرنجی درب عقب راست"}
+{"id":70038,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202434BB","normalizedValue":"t11-6202434bb"}
+{"id":70039,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202434BB-01","normalizedValue":"t11-6202434bb-01"}
+{"id":70040,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202434BJ","normalizedValue":"t11-6202434bj"}
+{"id":70041,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202434BJ-01","normalizedValue":"t11-6202434bj-01"}
+{"id":70042,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202434FB","normalizedValue":"t11-6202434fb"}
+{"id":70043,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202434FB-01","normalizedValue":"t11-6202434fb-01"}
+{"id":70044,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب آرنجی درب عقب راست (خاکستری)","normalizedValue":"قاب آرنجی درب عقب راست (خاکستری)"}
+{"id":70045,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202434PF","normalizedValue":"t11-6202434pf"}
+{"id":70046,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202434PF-01","normalizedValue":"t11-6202434pf-01"}
+{"id":70047,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پايه نگه دارنده فلزي آرنجي رودري جلو چپ","normalizedValue":"پایه نگه دارنده فلزی آرنجی رودری جلو چپ"}
+{"id":70048,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202493FA","normalizedValue":"t11-6202493fa"}
+{"id":70049,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202493FA-01","normalizedValue":"t11-6202493fa-01"}
+{"id":70050,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه آرنجی درب عقب چپ -","normalizedValue":"پایه آرنجی درب عقب چپ -"}
+{"id":70051,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202493PF","normalizedValue":"t11-6202493pf"}
+{"id":70052,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202493PF-01","normalizedValue":"t11-6202493pf-01"}
+{"id":70053,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پايه نگه دارنده فلزي آرنجي رودري جلو راست","normalizedValue":"پایه نگه دارنده فلزی آرنجی رودری جلو راست"}
+{"id":70054,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202494FA","normalizedValue":"t11-6202494fa"}
+{"id":70055,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202494FA-01","normalizedValue":"t11-6202494fa-01"}
+{"id":70056,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پایه آرنجی درب عقب راست -","normalizedValue":"پایه آرنجی درب عقب راست -"}
+{"id":70057,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202494PF","normalizedValue":"t11-6202494pf"}
+{"id":70058,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202494PF-01","normalizedValue":"t11-6202494pf-01"}
+{"id":70059,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"جا آرنجي درب جلو سمت چپ","normalizedValue":"جا آرنجی درب جلو سمت چپ"}
+{"id":70060,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202495PF","normalizedValue":"t11-6202495pf"}
+{"id":70061,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202495PF-01","normalizedValue":"t11-6202495pf-01"}
+{"id":70062,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"جا آرنجي عقب سمت راست","normalizedValue":"جا آرنجی عقب سمت راست"}
+{"id":70063,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202496PF","normalizedValue":"t11-6202496pf"}
+{"id":70064,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202496PF-01","normalizedValue":"t11-6202496pf-01"}
+{"id":70065,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"جا آرنجي عقب سمت چپ","normalizedValue":"جا آرنجی عقب سمت چپ"}
+{"id":70066,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202497PF","normalizedValue":"t11-6202497pf"}
+{"id":70067,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202497PF-01","normalizedValue":"t11-6202497pf-01"}
+{"id":70068,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202498PF","normalizedValue":"t11-6202498pf"}
+{"id":70069,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202498PF-01","normalizedValue":"t11-6202498pf-01"}
+{"id":70070,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"بوش لاستيکي استوپر درب عقب","normalizedValue":"بوش لاستیکی استوپر درب عقب"}
+{"id":70071,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6202541","normalizedValue":"t11-6202541"}
+{"id":70072,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6202541-01","normalizedValue":"t11-6202541-01"}
+{"id":70073,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203010","normalizedValue":"t11-6203010"}
+{"id":70074,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203010-02","normalizedValue":"t11-6203010-02"}
+{"id":70075,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203010-01","normalizedValue":"t11-6203010-01"}
+{"id":70076,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203020","normalizedValue":"t11-6203020"}
+{"id":70077,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203020-03","normalizedValue":"t11-6203020-03"}
+{"id":70078,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203020-02","normalizedValue":"t11-6203020-02"}
+{"id":70079,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203020-01","normalizedValue":"t11-6203020-01"}
+{"id":70080,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203041","normalizedValue":"t11-6203041"}
+{"id":70081,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203041-01","normalizedValue":"t11-6203041-01"}
+{"id":70082,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"شيشه لچکي درب عقب سمت چپ","normalizedValue":"شیشه لچکی درب عقب سمت چپ"}
+{"id":70083,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203042","normalizedValue":"t11-6203042"}
+{"id":70084,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203042-01","normalizedValue":"t11-6203042-01"}
+{"id":70085,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203110","normalizedValue":"t11-6203110"}
+{"id":70086,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203110-01","normalizedValue":"t11-6203110-01"}
+{"id":70087,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6203110PF","normalizedValue":"t11-6203110pf"}
+{"id":70088,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"نوار ريل شيشه درب عقب سمت چپ","normalizedValue":"نوار ریل شیشه درب عقب سمت چپ"}
+{"id":70089,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203110PF","normalizedValue":"t11-6203110pf"}
+{"id":70090,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203110PF-02","normalizedValue":"t11-6203110pf-02"}
+{"id":70091,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6203110","normalizedValue":"t11-6203110"}
+{"id":70092,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203110PF-03","normalizedValue":"t11-6203110pf-03"}
+{"id":70093,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203110PF-01","normalizedValue":"t11-6203110pf-01"}
+{"id":70094,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203120","normalizedValue":"t11-6203120"}
+{"id":70095,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203120-01","normalizedValue":"t11-6203120-01"}
+{"id":70096,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6203120PF","normalizedValue":"t11-6203120pf"}
+{"id":70097,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"نوار ريل شيشه درب عقب سمت راست","normalizedValue":"نوار ریل شیشه درب عقب سمت راست"}
+{"id":70098,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203120PF","normalizedValue":"t11-6203120pf"}
+{"id":70099,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203120PF-02","normalizedValue":"t11-6203120pf-02"}
+{"id":70100,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6203120","normalizedValue":"t11-6203120"}
+{"id":70101,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203120PF-03","normalizedValue":"t11-6203120pf-03"}
+{"id":70102,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203120PF-01","normalizedValue":"t11-6203120pf-01"}
+{"id":70103,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203210","normalizedValue":"t11-6203210"}
+{"id":70104,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203210-01","normalizedValue":"t11-6203210-01"}
+{"id":70105,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"آبگیر بیرونی درب عقب چپ (با زه استیل)","normalizedValue":"آبگیر بیرونی درب عقب چپ (با زه استیل)"}
+{"id":70106,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203210BB","normalizedValue":"t11-6203210bb"}
+{"id":70107,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203210BB-02","normalizedValue":"t11-6203210bb-02"}
+{"id":70108,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203210BB-01","normalizedValue":"t11-6203210bb-01"}
+{"id":70109,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203220","normalizedValue":"t11-6203220"}
+{"id":70110,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203220-01","normalizedValue":"t11-6203220-01"}
+{"id":70111,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"آبگیر بیرونی درب عقب راست (با زه استیل)","normalizedValue":"آبگیر بیرونی درب عقب راست (با زه استیل)"}
+{"id":70112,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203220BB","normalizedValue":"t11-6203220bb"}
+{"id":70113,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203220BB-02","normalizedValue":"t11-6203220bb-02"}
+{"id":70114,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203220BB-03","normalizedValue":"t11-6203220bb-03"}
+{"id":70115,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203220BB-01","normalizedValue":"t11-6203220bb-01"}
+{"id":70116,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"نوار آبگير داخلي شيشه درب عقب سمت چپ","normalizedValue":"نوار آبگیر داخلی شیشه درب عقب سمت چپ"}
+{"id":70117,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203310","normalizedValue":"t11-6203310"}
+{"id":70118,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203310-01","normalizedValue":"t11-6203310-01"}
+{"id":70119,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"نوار آبگير داخلي درب عقب سمت راست","normalizedValue":"نوار آبگیر داخلی درب عقب سمت راست"}
+{"id":70120,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203320","normalizedValue":"t11-6203320"}
+{"id":70121,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203320-01","normalizedValue":"t11-6203320-01"}
+{"id":70122,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"نوار درزگير لچکي عقب چپ","normalizedValue":"نوار درزگیر لچکی عقب چپ"}
+{"id":70123,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203411","normalizedValue":"t11-6203411"}
+{"id":70124,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203411-01","normalizedValue":"t11-6203411-01"}
+{"id":70125,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"نوار لچکي درب عقب سمت راست","normalizedValue":"نوار لچکی درب عقب سمت راست"}
+{"id":70126,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203412","normalizedValue":"t11-6203412"}
+{"id":70127,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203412-01","normalizedValue":"t11-6203412-01"}
+{"id":70128,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203511","normalizedValue":"t11-6203511"}
+{"id":70129,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203511-01","normalizedValue":"t11-6203511-01"}
+{"id":70130,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"نوار برچسب جلوئی درب عقب چپ","normalizedValue":"نوار برچسب جلوئی درب عقب چپ"}
+{"id":70131,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203511AB","normalizedValue":"t11-6203511ab"}
+{"id":70132,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203511AB-02","normalizedValue":"t11-6203511ab-02"}
+{"id":70133,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-0BT6203511AB","normalizedValue":"t11-0bt6203511ab"}
+{"id":70134,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203511AB-01","normalizedValue":"t11-6203511ab-01"}
+{"id":70135,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203512","normalizedValue":"t11-6203512"}
+{"id":70136,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203512-01","normalizedValue":"t11-6203512-01"}
+{"id":70137,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"نوار برچسب جلوئی درب عقب راست","normalizedValue":"نوار برچسب جلوئی درب عقب راست"}
+{"id":70138,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203512AB","normalizedValue":"t11-6203512ab"}
+{"id":70139,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203512AB-02","normalizedValue":"t11-6203512ab-02"}
+{"id":70140,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-0BT6203512AB","normalizedValue":"t11-0bt6203512ab"}
+{"id":70141,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203512AB-01","normalizedValue":"t11-6203512ab-01"}
+{"id":70142,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203513","normalizedValue":"t11-6203513"}
+{"id":70143,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203513-01","normalizedValue":"t11-6203513-01"}
+{"id":70144,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203513AB","normalizedValue":"t11-6203513ab"}
+{"id":70145,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203513AB-02","normalizedValue":"t11-6203513ab-02"}
+{"id":70146,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-0BT6203513AB","normalizedValue":"t11-0bt6203513ab"}
+{"id":70147,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203513AB-01","normalizedValue":"t11-6203513ab-01"}
+{"id":70148,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203514","normalizedValue":"t11-6203514"}
+{"id":70149,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203514-01","normalizedValue":"t11-6203514-01"}
+{"id":70150,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203514AB","normalizedValue":"t11-6203514ab"}
+{"id":70151,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203514AB-01","normalizedValue":"t11-6203514ab-01"}
+{"id":70152,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-0BT6203514AB","normalizedValue":"t11-0bt6203514ab"}
+{"id":70153,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203515","normalizedValue":"t11-6203515"}
+{"id":70154,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203515-01","normalizedValue":"t11-6203515-01"}
+{"id":70155,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"نوار برچسب عقبی درب عقب چپ","normalizedValue":"نوار برچسب عقبی درب عقب چپ"}
+{"id":70156,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203515AB","normalizedValue":"t11-6203515ab"}
+{"id":70157,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203515AB-02","normalizedValue":"t11-6203515ab-02"}
+{"id":70158,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-0BT6203515AB","normalizedValue":"t11-0bt6203515ab"}
+{"id":70159,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203515AB-01","normalizedValue":"t11-6203515ab-01"}
+{"id":70160,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203516","normalizedValue":"t11-6203516"}
+{"id":70161,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203516-01","normalizedValue":"t11-6203516-01"}
+{"id":70162,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6203516AB","normalizedValue":"t11-6203516ab"}
+{"id":70163,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6203516AB-01","normalizedValue":"t11-6203516ab-01"}
+{"id":70164,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-0BT6203516AB","normalizedValue":"t11-0bt6203516ab"}
+{"id":70165,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6204110","normalizedValue":"t11-6204110"}
+{"id":70166,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6204110-01","normalizedValue":"t11-6204110-01"}
+{"id":70167,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6204110CA","normalizedValue":"t11-6204110ca"}
+{"id":70168,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6204110AC","normalizedValue":"t11-6204110ac"}
+{"id":70169,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6204110AC-01","normalizedValue":"t11-6204110ac-01"}
+{"id":70170,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6204110BA","normalizedValue":"t11-6204110ba"}
+{"id":70171,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6204110BA-01","normalizedValue":"t11-6204110ba-01"}
+{"id":70172,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6204110CA","normalizedValue":"t11-6204110ca"}
+{"id":70173,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6204110CA-02","normalizedValue":"t11-6204110ca-02"}
+{"id":70174,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6204110","normalizedValue":"t11-6204110"}
+{"id":70175,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6204110AC","normalizedValue":"t11-6204110ac"}
+{"id":70176,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6204110BA","normalizedValue":"t11-6204110ba"}
+{"id":70177,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-62041110BA","normalizedValue":"t11-62041110ba"}
+{"id":70178,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6204110CA-01","normalizedValue":"t11-6204110ca-01"}
+{"id":70179,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ريل جانبي شيشه عقب سمت چپ","normalizedValue":"ریل جانبی شیشه عقب سمت چپ"}
+{"id":70180,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6204115","normalizedValue":"t11-6204115"}
+{"id":70181,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6204115-01","normalizedValue":"t11-6204115-01"}
+{"id":70182,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ريل جانبي شيشه عقب سمت راست","normalizedValue":"ریل جانبی شیشه عقب سمت راست"}
+{"id":70183,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6204116","normalizedValue":"t11-6204116"}
+{"id":70184,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6204116-01","normalizedValue":"t11-6204116-01"}
+{"id":70185,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6204120","normalizedValue":"t11-6204120"}
+{"id":70186,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6204120-01","normalizedValue":"t11-6204120-01"}
+{"id":70187,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6204120CA","normalizedValue":"t11-6204120ca"}
+{"id":70188,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6204120AC","normalizedValue":"t11-6204120ac"}
+{"id":70189,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6204120AC-01","normalizedValue":"t11-6204120ac-01"}
+{"id":70190,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6204120BA","normalizedValue":"t11-6204120ba"}
+{"id":70191,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6204120BA-01","normalizedValue":"t11-6204120ba-01"}
+{"id":70192,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6204120CA","normalizedValue":"t11-6204120ca"}
+{"id":70193,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6204120CA-02","normalizedValue":"t11-6204120ca-02"}
+{"id":70194,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6204120","normalizedValue":"t11-6204120"}
+{"id":70195,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6204120AC","normalizedValue":"t11-6204120ac"}
+{"id":70196,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6204120BA","normalizedValue":"t11-6204120ba"}
+{"id":70197,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6204120CA-01","normalizedValue":"t11-6204120ca-01"}
+{"id":70198,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205030","normalizedValue":"t11-6205030"}
+{"id":70199,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205030-02","normalizedValue":"t11-6205030-02"}
+{"id":70200,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205030-01","normalizedValue":"t11-6205030-01"}
+{"id":70201,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205030FP","normalizedValue":"t11-6205030fp"}
+{"id":70202,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205030FP-01","normalizedValue":"t11-6205030fp-01"}
+{"id":70203,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205030PD","normalizedValue":"t11-6205030pd"}
+{"id":70204,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205030PD-01","normalizedValue":"t11-6205030pd-01"}
+{"id":70205,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205040","normalizedValue":"t11-6205040"}
+{"id":70206,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205040-03","normalizedValue":"t11-6205040-03"}
+{"id":70207,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205040-02","normalizedValue":"t11-6205040-02"}
+{"id":70208,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205040-01","normalizedValue":"t11-6205040-01"}
+{"id":70209,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205040FP","normalizedValue":"t11-6205040fp"}
+{"id":70210,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205040FP-01","normalizedValue":"t11-6205040fp-01"}
+{"id":70211,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205040PD","normalizedValue":"t11-6205040pd"}
+{"id":70212,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205040PD-01","normalizedValue":"t11-6205040pd-01"}
+{"id":70213,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"دستگیر درب بازکن داخلی درب عقب راست","normalizedValue":"دستگیر درب بازکن داخلی درب عقب راست"}
+{"id":70214,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205120FA","normalizedValue":"t11-6205120fa"}
+{"id":70215,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205120FA-01","normalizedValue":"t11-6205120fa-01"}
+{"id":70216,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"دستگیره داخلی درب عقب راست -","normalizedValue":"دستگیره داخلی درب عقب راست -"}
+{"id":70217,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205120PF","normalizedValue":"t11-6205120pf"}
+{"id":70218,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205120PF-01","normalizedValue":"t11-6205120pf-01"}
+{"id":70219,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"دستگیر درب بازکن داخلی درب عقب چپ","normalizedValue":"دستگیر درب بازکن داخلی درب عقب چپ"}
+{"id":70220,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205130FA","normalizedValue":"t11-6205130fa"}
+{"id":70221,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205130FA-01","normalizedValue":"t11-6205130fa-01"}
+{"id":70222,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"دستگیره داخلی درب عقب چپ -","normalizedValue":"دستگیره داخلی درب عقب چپ -"}
+{"id":70223,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205130PF","normalizedValue":"t11-6205130pf"}
+{"id":70224,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205130PF-01","normalizedValue":"t11-6205130pf-01"}
+{"id":70225,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب دستگیره داخلی درب عقب چپ -","normalizedValue":"قاب دستگیره داخلی درب عقب چپ -"}
+{"id":70226,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205131PF","normalizedValue":"t11-6205131pf"}
+{"id":70227,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205131PF-01","normalizedValue":"t11-6205131pf-01"}
+{"id":70228,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب دستگیره داخلی درب عقب راست -","normalizedValue":"قاب دستگیره داخلی درب عقب راست -"}
+{"id":70229,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205132PF","normalizedValue":"t11-6205132pf"}
+{"id":70230,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205132PF-01","normalizedValue":"t11-6205132pf-01"}
+{"id":70231,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205171","normalizedValue":"t11-6205171"}
+{"id":70232,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205171-01","normalizedValue":"t11-6205171-01"}
+{"id":70233,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205171FP","normalizedValue":"t11-6205171fp"}
+{"id":70234,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205171FP-01","normalizedValue":"t11-6205171fp-01"}
+{"id":70235,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205171PD","normalizedValue":"t11-6205171pd"}
+{"id":70236,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205171PD-01","normalizedValue":"t11-6205171pd-01"}
+{"id":70237,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205172","normalizedValue":"t11-6205172"}
+{"id":70238,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205172-01","normalizedValue":"t11-6205172-01"}
+{"id":70239,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205172FP","normalizedValue":"t11-6205172fp"}
+{"id":70240,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205172FP-01","normalizedValue":"t11-6205172fp-01"}
+{"id":70241,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205172PD","normalizedValue":"t11-6205172pd"}
+{"id":70242,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205172PD-01","normalizedValue":"t11-6205172pd-01"}
+{"id":70243,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205230","normalizedValue":"t11-6205230"}
+{"id":70244,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205230-01","normalizedValue":"t11-6205230-01"}
+{"id":70245,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205240","normalizedValue":"t11-6205240"}
+{"id":70246,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205240-01","normalizedValue":"t11-6205240-01"}
+{"id":70247,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کابل بازکن دستگیره داخلی قفل عقب چپ","normalizedValue":"کابل بازکن دستگیره داخلی قفل عقب چپ"}
+{"id":70248,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205250","normalizedValue":"t11-6205250"}
+{"id":70249,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205250-01","normalizedValue":"t11-6205250-01"}
+{"id":70250,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205250LA","normalizedValue":"t11-6205250la"}
+{"id":70251,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205250LA-01","normalizedValue":"t11-6205250la-01"}
+{"id":70252,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کابل بازکن دستگیره داخلی قفل عقب راست","normalizedValue":"کابل بازکن دستگیره داخلی قفل عقب راست"}
+{"id":70253,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205260","normalizedValue":"t11-6205260"}
+{"id":70254,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205260-01","normalizedValue":"t11-6205260-01"}
+{"id":70255,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کابل شستی قفل کن دستگیره عقب چپ","normalizedValue":"کابل شستی قفل کن دستگیره عقب چپ"}
+{"id":70256,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205270","normalizedValue":"t11-6205270"}
+{"id":70257,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205270-01","normalizedValue":"t11-6205270-01"}
+{"id":70258,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205270LA","normalizedValue":"t11-6205270la"}
+{"id":70259,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205270LA-01","normalizedValue":"t11-6205270la-01"}
+{"id":70260,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کابل شستی قفل کن دستگیره عقب راست","normalizedValue":"کابل شستی قفل کن دستگیره عقب راست"}
+{"id":70261,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205280","normalizedValue":"t11-6205280"}
+{"id":70262,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205280-01","normalizedValue":"t11-6205280-01"}
+{"id":70263,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6205310-DQ","normalizedValue":"t11-6205310-dq"}
+{"id":70264,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6205310-DQ-01","normalizedValue":"t11-6205310-dq-01"}
+{"id":70265,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6206010-DY","normalizedValue":"t11-6206010-dy"}
+{"id":70266,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6206010-DY-01","normalizedValue":"t11-6206010-dy-01"}
+{"id":70267,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6206020-DY","normalizedValue":"t11-6206020-dy"}
+{"id":70268,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6206020-DY-01","normalizedValue":"t11-6206020-dy-01"}
+{"id":70269,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لولاي پائيني درب عقب سمت چپ","normalizedValue":"لولای پائینی درب عقب سمت چپ"}
+{"id":70270,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6206030-DY","normalizedValue":"t11-6206030-dy"}
+{"id":70271,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6206030-DY-01","normalizedValue":"t11-6206030-dy-01"}
+{"id":70272,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"لولاي پائيني درب عقب سمت راست","normalizedValue":"لولای پائینی درب عقب سمت راست"}
+{"id":70273,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6206040-DY","normalizedValue":"t11-6206040-dy"}
+{"id":70274,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6206040-DY-01","normalizedValue":"t11-6206040-dy-01"}
+{"id":70275,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6207110","normalizedValue":"t11-6207110"}
+{"id":70276,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6207110-01","normalizedValue":"t11-6207110-01"}
+{"id":70277,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6207110PF","normalizedValue":"t11-6207110pf"}
+{"id":70278,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"نوار دور درب عقب سمت چپ","normalizedValue":"نوار دور درب عقب سمت چپ"}
+{"id":70279,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6207110PF","normalizedValue":"t11-6207110pf"}
+{"id":70280,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6207110PF-02","normalizedValue":"t11-6207110pf-02"}
+{"id":70281,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6207110","normalizedValue":"t11-6207110"}
+{"id":70282,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6207110PF-01","normalizedValue":"t11-6207110pf-01"}
+{"id":70283,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6207120","normalizedValue":"t11-6207120"}
+{"id":70284,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6207120-01","normalizedValue":"t11-6207120-01"}
+{"id":70285,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6207120PF","normalizedValue":"t11-6207120pf"}
+{"id":70286,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6207120PF","normalizedValue":"t11-6207120pf"}
+{"id":70287,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6207120PF-02","normalizedValue":"t11-6207120pf-02"}
+{"id":70288,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6207120","normalizedValue":"t11-6207120"}
+{"id":70289,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6207120PF-01","normalizedValue":"t11-6207120pf-01"}
+{"id":70290,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"زه درب عقب چپ -","normalizedValue":"زه درب عقب چپ -"}
+{"id":70291,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6208450PF-DQ","normalizedValue":"t11-6208450pf-dq"}
+{"id":70292,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6208450PF-DQ-01","normalizedValue":"t11-6208450pf-dq-01"}
+{"id":70293,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"زه بيروني درب عقب سمت چپ","normalizedValue":"زه بیرونی درب عقب سمت چپ"}
+{"id":70294,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6208451-DQ","normalizedValue":"t11-6208451-dq"}
+{"id":70295,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6208451-DQ-01","normalizedValue":"t11-6208451-dq-01"}
+{"id":70296,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6208452","normalizedValue":"t11-6208452"}
+{"id":70297,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6208452-01","normalizedValue":"t11-6208452-01"}
+{"id":70298,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"زه درب عقب راست -","normalizedValue":"زه درب عقب راست -"}
+{"id":70299,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6208460PF-DQ","normalizedValue":"t11-6208460pf-dq"}
+{"id":70300,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6208460PF-DQ-01","normalizedValue":"t11-6208460pf-dq-01"}
+{"id":70301,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"زه بيروني درب عقب سمت راست","normalizedValue":"زه بیرونی درب عقب سمت راست"}
+{"id":70302,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6208461-DQ","normalizedValue":"t11-6208461-dq"}
+{"id":70303,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6208461-DQ-01","normalizedValue":"t11-6208461-dq-01"}
+{"id":70304,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6208462","normalizedValue":"t11-6208462"}
+{"id":70305,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6208462-01","normalizedValue":"t11-6208462-01"}
+{"id":70306,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6209110","normalizedValue":"t11-6209110"}
+{"id":70307,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6209110-01","normalizedValue":"t11-6209110-01"}
+{"id":70308,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ترمز درب عقب( راست و چپ)","normalizedValue":"ترمز درب عقب( راست و چپ)"}
+{"id":70309,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6209110BA","normalizedValue":"t11-6209110ba"}
+{"id":70310,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6209110BA-01","normalizedValue":"t11-6209110ba-01"}
+{"id":70311,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6301010CA-DY","normalizedValue":"t11-6301010ca-dy"}
+{"id":70312,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6301010CA-DY-02","normalizedValue":"t11-6301010ca-dy-02"}
+{"id":70313,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6301010CA-DY-03","normalizedValue":"t11-6301010ca-dy-03"}
+{"id":70314,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6301010CA-DY-01","normalizedValue":"t11-6301010ca-dy-01"}
+{"id":70315,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6301010LV-DY","normalizedValue":"t11-6301010lv-dy"}
+{"id":70316,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6301010LV-DY-01","normalizedValue":"t11-6301010lv-dy-01"}
+{"id":70317,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6301011","normalizedValue":"t11-6301011"}
+{"id":70318,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6301011-01","normalizedValue":"t11-6301011-01"}
+{"id":70319,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6301013","normalizedValue":"t11-6301013"}
+{"id":70320,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6301013-01","normalizedValue":"t11-6301013-01"}
+{"id":70321,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"FQ150B0826TF61","normalizedValue":"fq150b0826tf61"}
+{"id":70322,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"گردگیر پشت رودری درب صندوق","normalizedValue":"گردگیر پشت رودری درب صندوق"}
+{"id":70323,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302110","normalizedValue":"t11-6302110"}
+{"id":70324,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302110-01","normalizedValue":"t11-6302110-01"}
+{"id":70325,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302111","normalizedValue":"t11-6302111"}
+{"id":70326,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302111-01","normalizedValue":"t11-6302111-01"}
+{"id":70327,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302112","normalizedValue":"t11-6302112"}
+{"id":70328,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302112-01","normalizedValue":"t11-6302112-01"}
+{"id":70329,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پانل سمت چپ","normalizedValue":"پانل سمت چپ"}
+{"id":70330,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302114","normalizedValue":"t11-6302114"}
+{"id":70331,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302114-01","normalizedValue":"t11-6302114-01"}
+{"id":70332,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"محافظ (فیلم)درب عقب سمت چپ","normalizedValue":"محافظ (فیلم)درب عقب سمت چپ"}
+{"id":70333,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302120","normalizedValue":"t11-6302120"}
+{"id":70334,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302120-01","normalizedValue":"t11-6302120-01"}
+{"id":70335,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"محافظ(فیلم)درب عقب سمت راست","normalizedValue":"محافظ(فیلم)درب عقب سمت راست"}
+{"id":70336,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302130","normalizedValue":"t11-6302130"}
+{"id":70337,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302130-01","normalizedValue":"t11-6302130-01"}
+{"id":70338,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"صفحه کامل درب عقب","normalizedValue":"صفحه کامل درب عقب"}
+{"id":70339,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302420AD","normalizedValue":"t11-6302420ad"}
+{"id":70340,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302420AD-01","normalizedValue":"t11-6302420ad-01"}
+{"id":70341,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6302420BB","normalizedValue":"t11-6302420bb"}
+{"id":70342,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"مجموعه قاب روئي درب صندوق عقب","normalizedValue":"مجموعه قاب روئی درب صندوق عقب"}
+{"id":70343,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302420BB","normalizedValue":"t11-6302420bb"}
+{"id":70344,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302420BB-01","normalizedValue":"t11-6302420bb-01"}
+{"id":70345,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6302420AD","normalizedValue":"t11-6302420ad"}
+{"id":70346,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"رودری درب صندوق (مشکی)","normalizedValue":"رودری درب صندوق (مشکی)"}
+{"id":70347,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302420HA","normalizedValue":"t11-6302420ha"}
+{"id":70348,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302420HA-01","normalizedValue":"t11-6302420ha-01"}
+{"id":70349,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302420PE","normalizedValue":"t11-6302420pe"}
+{"id":70350,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302420PE-01","normalizedValue":"t11-6302420pe-01"}
+{"id":70351,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب رودربي صندوق","normalizedValue":"قاب رودربی صندوق"}
+{"id":70352,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302420PF","normalizedValue":"t11-6302420pf"}
+{"id":70353,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302420PF-01","normalizedValue":"t11-6302420pf-01"}
+{"id":70354,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"خار فلزي نصب درب صندوق عقب","normalizedValue":"خار فلزی نصب درب صندوق عقب"}
+{"id":70355,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302421","normalizedValue":"t11-6302421"}
+{"id":70356,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302421-01","normalizedValue":"t11-6302421-01"}
+{"id":70357,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"درپوش محافظ روي لامپ","normalizedValue":"درپوش محافظ روی لامپ"}
+{"id":70358,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302430BJ","normalizedValue":"t11-6302430bj"}
+{"id":70359,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302430BJ-01","normalizedValue":"t11-6302430bj-01"}
+{"id":70360,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پنل محافظ روی استپ ترمز","normalizedValue":"پنل محافظ روی استپ ترمز"}
+{"id":70361,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302430FA","normalizedValue":"t11-6302430fa"}
+{"id":70362,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302430FA-01","normalizedValue":"t11-6302430fa-01"}
+{"id":70363,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پنل محافظ پايه لامپ","normalizedValue":"پنل محافظ پایه لامپ"}
+{"id":70364,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302430PF","normalizedValue":"t11-6302430pf"}
+{"id":70365,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302430PF-01","normalizedValue":"t11-6302430pf-01"}
+{"id":70366,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب نگهدارنده پايه چراغ","normalizedValue":"قاب نگهدارنده پایه چراغ"}
+{"id":70367,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302431BD","normalizedValue":"t11-6302431bd"}
+{"id":70368,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302431BD-02","normalizedValue":"t11-6302431bd-02"}
+{"id":70369,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302431BD-01","normalizedValue":"t11-6302431bd-01"}
+{"id":70370,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب محافظ چراغ ترمز وسط (خاکستری)","normalizedValue":"قاب محافظ چراغ ترمز وسط (خاکستری)"}
+{"id":70371,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302431BE","normalizedValue":"t11-6302431be"}
+{"id":70372,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302431BE-01","normalizedValue":"t11-6302431be-01"}
+{"id":70373,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"پنل محافظ ستون عقب سمت چپ","normalizedValue":"پنل محافظ ستون عقب سمت چپ"}
+{"id":70374,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302440BJ","normalizedValue":"t11-6302440bj"}
+{"id":70375,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302440BJ-01","normalizedValue":"t11-6302440bj-01"}
+{"id":70376,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب کناري ستون عقب سمت چپ","normalizedValue":"قاب کناری ستون عقب سمت چپ"}
+{"id":70377,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302440FA","normalizedValue":"t11-6302440fa"}
+{"id":70378,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302440FA-01","normalizedValue":"t11-6302440fa-01"}
+{"id":70379,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب چپ رودری درب صندوق (خاکستری)","normalizedValue":"قاب چپ رودری درب صندوق (خاکستری)"}
+{"id":70380,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302440NV","normalizedValue":"t11-6302440nv"}
+{"id":70381,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302440NV-01","normalizedValue":"t11-6302440nv-01"}
+{"id":70382,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302440PF","normalizedValue":"t11-6302440pf"}
+{"id":70383,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302440PF-01","normalizedValue":"t11-6302440pf-01"}
+{"id":70384,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب کناري ستون درب صندوق عقب سمت چپ","normalizedValue":"قاب کناری ستون درب صندوق عقب سمت چپ"}
+{"id":70385,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302441AD","normalizedValue":"t11-6302441ad"}
+{"id":70386,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302441AD-01","normalizedValue":"t11-6302441ad-01"}
+{"id":70387,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6302441BB","normalizedValue":"t11-6302441bb"}
+{"id":70388,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302441BB","normalizedValue":"t11-6302441bb"}
+{"id":70389,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302441BB-01","normalizedValue":"t11-6302441bb-01"}
+{"id":70390,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6302441AD","normalizedValue":"t11-6302441ad"}
+{"id":70391,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب کناري ستون درب صندوق عقب سمت راست","normalizedValue":"قاب کناری ستون درب صندوق عقب سمت راست"}
+{"id":70392,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302442AD","normalizedValue":"t11-6302442ad"}
+{"id":70393,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302442AD-01","normalizedValue":"t11-6302442ad-01"}
+{"id":70394,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6302442BB","normalizedValue":"t11-6302442bb"}
+{"id":70395,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6302460BJ","normalizedValue":"t11-6302460bj"}
+{"id":70396,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302442BB","normalizedValue":"t11-6302442bb"}
+{"id":70397,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302442BB-01","normalizedValue":"t11-6302442bb-01"}
+{"id":70398,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6302442AD","normalizedValue":"t11-6302442ad"}
+{"id":70399,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302451","normalizedValue":"t11-6302451"}
+{"id":70400,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302451-01","normalizedValue":"t11-6302451-01"}
+{"id":70401,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302451BJ","normalizedValue":"t11-6302451bj"}
+{"id":70402,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302451BJ-01","normalizedValue":"t11-6302451bj-01"}
+{"id":70403,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"درپوش روي درب صندوق عقب","normalizedValue":"درپوش روی درب صندوق عقب"}
+{"id":70404,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302453AD","normalizedValue":"t11-6302453ad"}
+{"id":70405,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302453AD-01","normalizedValue":"t11-6302453ad-01"}
+{"id":70406,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"درپوش رودربي صندوق عقب","normalizedValue":"درپوش رودربی صندوق عقب"}
+{"id":70407,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302453BJ","normalizedValue":"t11-6302453bj"}
+{"id":70408,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302453BJ-01","normalizedValue":"t11-6302453bj-01"}
+{"id":70409,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302453HA","normalizedValue":"t11-6302453ha"}
+{"id":70410,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302453HA-01","normalizedValue":"t11-6302453ha-01"}
+{"id":70411,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"درپوش داخلي رودري در صندوق","normalizedValue":"درپوش داخلی رودری در صندوق"}
+{"id":70412,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302453PF","normalizedValue":"t11-6302453pf"}
+{"id":70413,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302453PF-01","normalizedValue":"t11-6302453pf-01"}
+{"id":70414,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب ستون عقب سمت راست","normalizedValue":"قاب ستون عقب سمت راست"}
+{"id":70415,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302460BJ","normalizedValue":"t11-6302460bj"}
+{"id":70416,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302460BJ-01","normalizedValue":"t11-6302460bj-01"}
+{"id":70417,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"صفحه محافظ رودري در صندوق سمت راست","normalizedValue":"صفحه محافظ رودری در صندوق سمت راست"}
+{"id":70418,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302460FA","normalizedValue":"t11-6302460fa"}
+{"id":70419,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302460FA-01","normalizedValue":"t11-6302460fa-01"}
+{"id":70420,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب راست بالائی درب صندوق (خاکستری)","normalizedValue":"قاب راست بالائی درب صندوق (خاکستری)"}
+{"id":70421,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302460NV","normalizedValue":"t11-6302460nv"}
+{"id":70422,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302460NV-01","normalizedValue":"t11-6302460nv-01"}
+{"id":70423,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب راست بالائی درب صندوق","normalizedValue":"قاب راست بالائی درب صندوق"}
+{"id":70424,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302460PF","normalizedValue":"t11-6302460pf"}
+{"id":70425,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302460PF-01","normalizedValue":"t11-6302460pf-01"}
+{"id":70426,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302511","normalizedValue":"t11-6302511"}
+{"id":70427,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302511-01","normalizedValue":"t11-6302511-01"}
+{"id":70428,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302515","normalizedValue":"t11-6302515"}
+{"id":70429,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302515-01","normalizedValue":"t11-6302515-01"}
+{"id":70430,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب داخلي لاستيک زاپاس","normalizedValue":"قاب داخلی لاستیک زاپاس"}
+{"id":70431,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302520","normalizedValue":"t11-6302520"}
+{"id":70432,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302520-01","normalizedValue":"t11-6302520-01"}
+{"id":70433,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب داخلی چرخ زاپاس","normalizedValue":"قاب داخلی چرخ زاپاس"}
+{"id":70434,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302520BA","normalizedValue":"t11-6302520ba"}
+{"id":70435,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302520BA-03","normalizedValue":"t11-6302520ba-03"}
+{"id":70436,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302520BA-02","normalizedValue":"t11-6302520ba-02"}
+{"id":70437,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302520BA-01","normalizedValue":"t11-6302520ba-01"}
+{"id":70438,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب داخلي زاپاس","normalizedValue":"قاب داخلی زاپاس"}
+{"id":70439,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302520PF","normalizedValue":"t11-6302520pf"}
+{"id":70440,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302520PF-02","normalizedValue":"t11-6302520pf-02"}
+{"id":70441,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302520PF-01","normalizedValue":"t11-6302520pf-01"}
+{"id":70442,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب داخلي زاپاس Tiggo 3","normalizedValue":"قاب داخلی زاپاس tiggo 3"}
+{"id":70443,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302520PQ","normalizedValue":"t11-6302520pq"}
+{"id":70444,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302520PQ-02","normalizedValue":"t11-6302520pq-02"}
+{"id":70445,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302520PQ-01","normalizedValue":"t11-6302520pq-01"}
+{"id":70446,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"آستري داخل بدنه","normalizedValue":"آستری داخل بدنه"}
+{"id":70447,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302521","normalizedValue":"t11-6302521"}
+{"id":70448,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302521-01","normalizedValue":"t11-6302521-01"}
+{"id":70449,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قفل قاب زاپاس","normalizedValue":"قفل قاب زاپاس"}
+{"id":70450,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302521BA","normalizedValue":"t11-6302521ba"}
+{"id":70451,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302521BA-01","normalizedValue":"t11-6302521ba-01"}
+{"id":70452,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب خارجي لاستيک زاپاس","normalizedValue":"قاب خارجی لاستیک زاپاس"}
+{"id":70453,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302530","normalizedValue":"t11-6302530"}
+{"id":70454,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302530-01","normalizedValue":"t11-6302530-01"}
+{"id":70455,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب زاپاس بند","normalizedValue":"قاب زاپاس بند"}
+{"id":70456,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302530BA","normalizedValue":"t11-6302530ba"}
+{"id":70457,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302530BA-01","normalizedValue":"t11-6302530ba-01"}
+{"id":70458,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6302530BA-DQ","normalizedValue":"t11-6302530ba-dq"}
+{"id":70459,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302530BA-1","normalizedValue":"t11-6302530ba-1"}
+{"id":70460,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302530BA-02","normalizedValue":"t11-6302530ba-02"}
+{"id":70461,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب بیرونی چرخ زاپاس","normalizedValue":"قاب بیرونی چرخ زاپاس"}
+{"id":70462,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302530BA-DQ","normalizedValue":"t11-6302530ba-dq"}
+{"id":70463,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302530BA-DQ-02","normalizedValue":"t11-6302530ba-dq-02"}
+{"id":70464,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6302530BA","normalizedValue":"t11-6302530ba"}
+{"id":70465,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302530BA-DQ-01","normalizedValue":"t11-6302530ba-dq-01"}
+{"id":70466,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302530PF-DQ","normalizedValue":"t11-6302530pf-dq"}
+{"id":70467,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302530PF-DQ-02","normalizedValue":"t11-6302530pf-dq-02"}
+{"id":70468,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302530PF-DQ-01","normalizedValue":"t11-6302530pf-dq-01"}
+{"id":70469,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"قاب خارجي لاستيک زاپاس Tiggo 3","normalizedValue":"قاب خارجی لاستیک زاپاس tiggo 3"}
+{"id":70470,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302530PQ-DQ","normalizedValue":"t11-6302530pq-dq"}
+{"id":70471,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302530PQ-DQ-02","normalizedValue":"t11-6302530pq-dq-02"}
+{"id":70472,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6302530PQ-SC","normalizedValue":"t11-6302530pq-sc"}
+{"id":70473,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302530PQ-DQ-01","normalizedValue":"t11-6302530pq-dq-01"}
+{"id":70474,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"کاور چرخ زاپاس","normalizedValue":"کاور چرخ زاپاس"}
+{"id":70475,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302531FA","normalizedValue":"t11-6302531fa"}
+{"id":70476,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302531FA-01","normalizedValue":"t11-6302531fa-01"}
+{"id":70477,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"زه نگهدارنده گوشه درب صندوق عقب سمت  چپ","normalizedValue":"زه نگهدارنده گوشه درب صندوق عقب سمت چپ"}
+{"id":70478,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302541","normalizedValue":"t11-6302541"}
+{"id":70479,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302541-01","normalizedValue":"t11-6302541-01"}
+{"id":70480,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"زه نگهدارنده گوشه درب صندوق عقب سمت  راست","normalizedValue":"زه نگهدارنده گوشه درب صندوق عقب سمت راست"}
+{"id":70481,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302542","normalizedValue":"t11-6302542"}
+{"id":70482,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302542-01","normalizedValue":"t11-6302542-01"}
+{"id":70483,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302551","normalizedValue":"t11-6302551"}
+{"id":70484,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302551-01","normalizedValue":"t11-6302551-01"}
+{"id":70485,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"بوش لاستيکي کورکن بالائي بدنه","normalizedValue":"بوش لاستیکی کورکن بالائی بدنه"}
+{"id":70486,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302561","normalizedValue":"t11-6302561"}
+{"id":70487,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302561-01","normalizedValue":"t11-6302561-01"}
+{"id":70488,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"ضربه گیر پائینی درب صندوق","normalizedValue":"ضربه گیر پائینی درب صندوق"}
+{"id":70489,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6302563","normalizedValue":"t11-6302563"}
+{"id":70490,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6302563-01","normalizedValue":"t11-6302563-01"}
+{"id":70491,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"name","rawValue":"شيشه صندوق عقب","normalizedValue":"شیشه صندوق عقب"}
+{"id":70492,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6303010","normalizedValue":"t11-6303010"}
+{"id":70493,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6303010-01","normalizedValue":"t11-6303010-01"}
+{"id":70494,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6303010BA","normalizedValue":"t11-6303010ba"}
+{"id":70495,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6303010BA","normalizedValue":"t11-6303010ba"}
+{"id":70496,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6303010BA-02","normalizedValue":"t11-6303010ba-02"}
+{"id":70497,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"replacement","rawValue":"T11-6303010","normalizedValue":"t11-6303010"}
+{"id":70498,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6303010BA-01","normalizedValue":"t11-6303010ba-01"}
+{"id":70499,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"tech","rawValue":"T11-6303010LV","normalizedValue":"t11-6303010lv"}
+{"id":70500,"version":"5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1","kind":"log","rawValue":"T11-6303010LV-01","normalizedValue":"t11-6303010lv-01"}

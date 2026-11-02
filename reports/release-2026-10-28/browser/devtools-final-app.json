@@ -1,0 +1,46 @@
+{
+  "audit": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "## Lighthouse Audit Results\nMode: snapshot\nDevice: desktop\nURL: http://127.0.0.1:4173/app/\n### Category Scores\n- Accessibility: 100 (accessibility)\n- Best Practices: 100 (best-practices)\n- SEO: 80 (seo)\n- Agentic Browsing: 50 (agentic-browsing)\n### Audit Summary\nPassed: 35\nFailed: 2\nTotal Timing: 1209.99ms\n### Reports\n- /var/folders/qc/91mz59vs2qx62xr748kl1r840000gn/T/chrome-devtools-mcp-DxJYfC/report.json\n- /var/folders/qc/91mz59vs2qx62xr748kl1r840000gn/T/chrome-devtools-mcp-PtrWNB/report.html"
+        }
+      ]
+    }
+  },
+  "console": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "## Console messages\n<no console messages found>"
+        }
+      ]
+    }
+  },
+  "network": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "## Network requests\nShowing 1-13 of 13 (Page 1 of 1).\nreqid=1 GET http://127.0.0.1:4173/app/ [200]\nreqid=2 GET http://127.0.0.1:4173/assets/index-C970vbRj.js [200]\nreqid=3 GET http://127.0.0.1:4173/assets/index-BhVhxGnm.css [200]\nreqid=4 GET http://127.0.0.1:4173/assets/app-shell-CrojkZxx.js [200]\nreqid=5 GET http://127.0.0.1:4173/assets/app-bootstrap-BQgAro2n.js [200]\nreqid=6 GET http://127.0.0.1:4173/assets/theme-mhmZZqUX.js [200]\nreqid=7 GET http://127.0.0.1:4173/assets/app-bootstrap-CCCwb77U.css [200]\nreqid=8 GET http://127.0.0.1:4173/favicon.svg [200]\nreqid=9 GET http://127.0.0.1:4173/assets/catalogue.worker-Cmifh3cz.js [200]\nreqid=10 GET http://127.0.0.1:4173/api/v1/catalog/manifest [200]\nreqid=11 GET http://127.0.0.1:4173/api/v1/vehicles?version=5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1&q=&limit=80 [200]\nreqid=12 GET http://127.0.0.1:4173/api/v1/presets?version=5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1 [200]\nreqid=13 GET http://127.0.0.1:4173/sw.js [304]"
+        }
+      ]
+    }
+  },
+  "accessibilityTree": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "## Latest page snapshot\nuid=2_0 RootWebArea \"PartAvar | پارت‌آور\" url=\"http://127.0.0.1:4173/app/\"\n  uid=2_1 link \"رفتن به جست‌وجو\" url=\"http://127.0.0.1:4173/app/#workspace\"\n    uid=2_2 StaticText \"رفتن به جست‌وجو\"\n  uid=2_3 banner\n    uid=2_4 heading \"PartAvar.\" level=\"1\"\n    uid=2_5 StaticText \"پارت‌آور · ابزار کار قطعات خودرو\"\n    uid=2_6 StaticText \"متصل\"\n    uid=2_7 button \"تغییر به حالت روشن\" description=\"حالت روشن\"\n  uid=2_8 navigation \"بخش‌های پارت‌آور\"\n    uid=2_9 button \"جست‌وجو\"\n    uid=2_10 button \"لیست خرید\"\n    uid=2_11 button \"بسته‌ها\"\n    uid=2_12 button \"فاکتورها\"\n    uid=2_13 button \"روند قیمت\"\n    uid=2_14 button \"تنظیمات\"\n    uid=2_15 link \"وب‌سایت ↗\" url=\"http://127.0.0.1:4173/\"\n      uid=2_16 StaticText \"وب‌سایت ↗\"\n  uid=2_17 region \"وضعیت کاتالوگ\"\n    uid=2_18 DisclosureTriangle \"جست‌وجوی آنلاین آماده است · دریافت آفلاین اختیاری، اطلاعات و دریافت\" description=\"اطلاعات و دریافت\" expandable\n      uid=2_19 status atomic live=\"polite\" relevant=\"additions text\"\n  uid=2_20 main\n    uid=2_21 region \"جست‌وجوی قطعات\"\n      uid=2_22 StaticText \"کاتالوگ قطعات\"\n      uid=2_23 heading \"قطعهٔ موردنظرت را پیدا کن\" level=\"2\"\n      uid=2_24 tab \"قطعه و خودرو\" selectable selected\n      uid=2_25 tab \"کد یا نام قطعه\" selectable\n      uid=2_26 StaticText \"خودرو و تیپ\"\n      uid=2_27 combobox \"خودرو و تیپ\" autocomplete=\"list\" description=\"تیپ دقیق خودرو را از فهرست انتخاب کنید.\" expandable haspopup=\"listbox\"\n      uid=2_28 StaticText \"تیپ دقیق خودرو را از فهرست انتخاب کنید.\"\n      uid=2_29 StaticText \"نام قطعه\"\n      uid=2_30 combobox \"نام قطعه\" autocomplete=\"list\" description=\"بخشی از نام قطعه هم کافی است.\" expandable haspopup=\"listbox\"\n      uid=2_31 StaticText \"بخشی از نام قطعه هم کافی است.\"\n      uid=2_32 DisclosureTriangle \"+ انتخاب سریع خودرو خانواده و تیپ\" expandable\n      uid=2_33 button \"جست‌وجوی قطعه\"\n      uid=2_34 button \"پاک کردن\"\n    uid=2_35 heading \"از خودرو یا کد قطعه شروع کنید\" level=\"2\"\n    uid=2_36 StaticText \"قیمت و خودروهای مرتبط برای هر کد لجستیکی، جداگانه نمایش داده می‌شود.\"\n    uid=2_37 StaticText \"·\"\n    uid=2_38 StaticText \"کدهای قابل کپی\"\n    uid=2_37 StaticText \"·\"\n    uid=2_39 StaticText \"سه سطح قیمت\"\n    uid=2_37 StaticText \"·\"\n    uid=2_40 StaticText \"جزئیات دقیق هر ردیف\"\n  uid=2_41 contentinfo\n    uid=2_42 StaticText \"ردیف‌های کاتالوگ: \"\n    uid=2_43 StaticText \"۳۶٬۵۶۹\"\n    uid=2_44 StaticText \"میانی ۱۰٪ و نهایی ۲۰٪ بالاتر از پایه\"\n    uid=2_45 StaticText \"design by behrad\"\n  uid=2_46 status atomic live=\"polite\" relevant=\"additions text\"\n"
+        }
+      ]
+    }
+  }
+}

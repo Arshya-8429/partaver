@@ -1,0 +1,181 @@
+{
+  "scope": "Real website module and stylesheet, isolated entry harness while parent app-bootstrap is in progress; not integrated E2E proof",
+  "widths": [
+    320,
+    360,
+    390,
+    430,
+    768,
+    1024,
+    1440
+  ],
+  "routes": [
+    "/",
+    "/product",
+    "/features",
+    "/offline-data",
+    "/support",
+    "/contact"
+  ],
+  "failures": [
+    {
+      "dark": false,
+      "route": "/",
+      "width": 1024,
+      "overflow": false,
+      "tooSmall": [
+        {
+          "text": "تماس",
+          "width": 42.71875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "dark": false,
+      "route": "/product",
+      "width": 1024,
+      "overflow": false,
+      "tooSmall": [
+        {
+          "text": "تماس",
+          "width": 42.71875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "dark": false,
+      "route": "/features",
+      "width": 1024,
+      "overflow": false,
+      "tooSmall": [
+        {
+          "text": "تماس",
+          "width": 42.71875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "dark": false,
+      "route": "/offline-data",
+      "width": 1024,
+      "overflow": false,
+      "tooSmall": [
+        {
+          "text": "تماس",
+          "width": 42.71875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "dark": false,
+      "route": "/support",
+      "width": 1024,
+      "overflow": false,
+      "tooSmall": [
+        {
+          "text": "تماس",
+          "width": 42.71875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "dark": false,
+      "route": "/contact",
+      "width": 1024,
+      "overflow": false,
+      "tooSmall": [
+        {
+          "text": "تماس",
+          "width": 42.71875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "dark": true,
+      "route": "/",
+      "width": 1024,
+      "overflow": false,
+      "tooSmall": [
+        {
+          "text": "تماس",
+          "width": 42.71875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "dark": true,
+      "route": "/product",
+      "width": 1024,
+      "overflow": false,
+      "tooSmall": [
+        {
+          "text": "تماس",
+          "width": 42.71875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "dark": true,
+      "route": "/features",
+      "width": 1024,
+      "overflow": false,
+      "tooSmall": [
+        {
+          "text": "تماس",
+          "width": 42.71875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "dark": true,
+      "route": "/offline-data",
+      "width": 1024,
+      "overflow": false,
+      "tooSmall": [
+        {
+          "text": "تماس",
+          "width": 42.71875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "dark": true,
+      "route": "/support",
+      "width": 1024,
+      "overflow": false,
+      "tooSmall": [
+        {
+          "text": "تماس",
+          "width": 42.71875,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "dark": true,
+      "route": "/contact",
+      "width": 1024,
+      "overflow": false,
+      "tooSmall": [
+        {
+          "text": "تماس",
+          "width": 42.71875,
+          "height": 44
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "checks": 84,
+  "initialFailure": "Desktop contact navigation target measured42.72px at1024; corrected by min-width44px. Retest below is separate."
+}

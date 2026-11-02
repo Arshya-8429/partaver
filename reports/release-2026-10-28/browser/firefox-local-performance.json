@@ -1,0 +1,358 @@
+{
+  "measurementScope": "actual keydown-to-result DOM update using performance.now and MutationObserver; includes local Worker work and UI rendering, excludes Playwright transport time; seven warm sequential samples after two warmups per query",
+  "environment": "single shared macOS host; no controlled mobile/low-end hardware or before/after performance claim",
+  "browserVersion": "157.0",
+  "latency": [
+    {
+      "label": "exact logistics code",
+      "query": "111100001AA-01",
+      "mode": "global",
+      "warmupSamples": [
+        {
+          "query": "111100001AA-01",
+          "mode": "global",
+          "durationMs": 1627,
+          "resultCount": "۱ ردیف"
+        },
+        {
+          "query": "111100001AA-01",
+          "mode": "global",
+          "durationMs": 2,
+          "resultCount": "۱ ردیف"
+        }
+      ],
+      "warmSamplesMs": [
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "p95Ms": 3,
+      "proposedWarmP95TargetMs": 150,
+      "meetsProposedTarget": true
+    },
+    {
+      "label": "part phrase",
+      "query": "واتر پمپ",
+      "mode": "global",
+      "warmupSamples": [
+        {
+          "query": "واتر پمپ",
+          "mode": "global",
+          "durationMs": 67,
+          "resultCount": "۱۴۲ ردیف"
+        },
+        {
+          "query": "واتر پمپ",
+          "mode": "global",
+          "durationMs": 10,
+          "resultCount": "۱۴۲ ردیف"
+        }
+      ],
+      "warmSamplesMs": [
+        9,
+        9,
+        10,
+        10,
+        10,
+        10,
+        12
+      ],
+      "p95Ms": 12,
+      "proposedWarmP95TargetMs": 300,
+      "meetsProposedTarget": true
+    },
+    {
+      "label": "broad three-character code",
+      "query": "150",
+      "mode": "global",
+      "warmupSamples": [
+        {
+          "query": "150",
+          "mode": "global",
+          "durationMs": 251,
+          "resultCount": "۱٬۲۷۴ ردیف"
+        },
+        {
+          "query": "150",
+          "mode": "global",
+          "durationMs": 10,
+          "resultCount": "۱٬۲۷۴ ردیف"
+        }
+      ],
+      "warmSamplesMs": [
+        9,
+        10,
+        10,
+        10,
+        11,
+        11,
+        13
+      ],
+      "p95Ms": 13,
+      "proposedWarmP95TargetMs": null,
+      "meetsProposedTarget": null
+    },
+    {
+      "label": "vehicle-filtered part",
+      "query": "سپر",
+      "mode": "vehiclePart",
+      "warmupSamples": [
+        {
+          "query": "سپر",
+          "mode": "vehiclePart",
+          "durationMs": 69,
+          "resultCount": "۶۸ ردیف"
+        },
+        {
+          "query": "سپر",
+          "mode": "vehiclePart",
+          "durationMs": 10,
+          "resultCount": "۶۸ ردیف"
+        }
+      ],
+      "warmSamplesMs": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        9,
+        12
+      ],
+      "p95Ms": 12,
+      "proposedWarmP95TargetMs": 300,
+      "meetsProposedTarget": true
+    }
+  ],
+  "installationPerformance": {
+    "search": [],
+    "longTasks": [],
+    "longTaskSupported": false
+  },
+  "searchPerformance": {
+    "search": [
+      {
+        "query": "111100001AA-01",
+        "mode": "global",
+        "durationMs": 1627,
+        "resultCount": "۱ ردیف"
+      },
+      {
+        "query": "111100001AA-01",
+        "mode": "global",
+        "durationMs": 2,
+        "resultCount": "۱ ردیف"
+      },
+      {
+        "query": "111100001AA-01",
+        "mode": "global",
+        "durationMs": 2,
+        "resultCount": "۱ ردیف"
+      },
+      {
+        "query": "111100001AA-01",
+        "mode": "global",
+        "durationMs": 2,
+        "resultCount": "۱ ردیف"
+      },
+      {
+        "query": "111100001AA-01",
+        "mode": "global",
+        "durationMs": 2,
+        "resultCount": "۱ ردیف"
+      },
+      {
+        "query": "111100001AA-01",
+        "mode": "global",
+        "durationMs": 2,
+        "resultCount": "۱ ردیف"
+      },
+      {
+        "query": "111100001AA-01",
+        "mode": "global",
+        "durationMs": 3,
+        "resultCount": "۱ ردیف"
+      },
+      {
+        "query": "111100001AA-01",
+        "mode": "global",
+        "durationMs": 3,
+        "resultCount": "۱ ردیف"
+      },
+      {
+        "query": "111100001AA-01",
+        "mode": "global",
+        "durationMs": 3,
+        "resultCount": "۱ ردیف"
+      },
+      {
+        "query": "واتر پمپ",
+        "mode": "global",
+        "durationMs": 67,
+        "resultCount": "۱۴۲ ردیف"
+      },
+      {
+        "query": "واتر پمپ",
+        "mode": "global",
+        "durationMs": 10,
+        "resultCount": "۱۴۲ ردیف"
+      },
+      {
+        "query": "واتر پمپ",
+        "mode": "global",
+        "durationMs": 10,
+        "resultCount": "۱۴۲ ردیف"
+      },
+      {
+        "query": "واتر پمپ",
+        "mode": "global",
+        "durationMs": 10,
+        "resultCount": "۱۴۲ ردیف"
+      },
+      {
+        "query": "واتر پمپ",
+        "mode": "global",
+        "durationMs": 10,
+        "resultCount": "۱۴۲ ردیف"
+      },
+      {
+        "query": "واتر پمپ",
+        "mode": "global",
+        "durationMs": 9,
+        "resultCount": "۱۴۲ ردیف"
+      },
+      {
+        "query": "واتر پمپ",
+        "mode": "global",
+        "durationMs": 9,
+        "resultCount": "۱۴۲ ردیف"
+      },
+      {
+        "query": "واتر پمپ",
+        "mode": "global",
+        "durationMs": 10,
+        "resultCount": "۱۴۲ ردیف"
+      },
+      {
+        "query": "واتر پمپ",
+        "mode": "global",
+        "durationMs": 12,
+        "resultCount": "۱۴۲ ردیف"
+      },
+      {
+        "query": "150",
+        "mode": "global",
+        "durationMs": 251,
+        "resultCount": "۱٬۲۷۴ ردیف"
+      },
+      {
+        "query": "150",
+        "mode": "global",
+        "durationMs": 10,
+        "resultCount": "۱٬۲۷۴ ردیف"
+      },
+      {
+        "query": "150",
+        "mode": "global",
+        "durationMs": 10,
+        "resultCount": "۱٬۲۷۴ ردیف"
+      },
+      {
+        "query": "150",
+        "mode": "global",
+        "durationMs": 11,
+        "resultCount": "۱٬۲۷۴ ردیف"
+      },
+      {
+        "query": "150",
+        "mode": "global",
+        "durationMs": 9,
+        "resultCount": "۱٬۲۷۴ ردیف"
+      },
+      {
+        "query": "150",
+        "mode": "global",
+        "durationMs": 10,
+        "resultCount": "۱٬۲۷۴ ردیف"
+      },
+      {
+        "query": "150",
+        "mode": "global",
+        "durationMs": 10,
+        "resultCount": "۱٬۲۷۴ ردیف"
+      },
+      {
+        "query": "150",
+        "mode": "global",
+        "durationMs": 13,
+        "resultCount": "۱٬۲۷۴ ردیف"
+      },
+      {
+        "query": "150",
+        "mode": "global",
+        "durationMs": 11,
+        "resultCount": "۱٬۲۷۴ ردیف"
+      },
+      {
+        "query": "سپر",
+        "mode": "vehiclePart",
+        "durationMs": 69,
+        "resultCount": "۶۸ ردیف"
+      },
+      {
+        "query": "سپر",
+        "mode": "vehiclePart",
+        "durationMs": 10,
+        "resultCount": "۶۸ ردیف"
+      },
+      {
+        "query": "سپر",
+        "mode": "vehiclePart",
+        "durationMs": 12,
+        "resultCount": "۶۸ ردیف"
+      },
+      {
+        "query": "سپر",
+        "mode": "vehiclePart",
+        "durationMs": 8,
+        "resultCount": "۶۸ ردیف"
+      },
+      {
+        "query": "سپر",
+        "mode": "vehiclePart",
+        "durationMs": 8,
+        "resultCount": "۶۸ ردیف"
+      },
+      {
+        "query": "سپر",
+        "mode": "vehiclePart",
+        "durationMs": 8,
+        "resultCount": "۶۸ ردیف"
+      },
+      {
+        "query": "سپر",
+        "mode": "vehiclePart",
+        "durationMs": 8,
+        "resultCount": "۶۸ ردیف"
+      },
+      {
+        "query": "سپر",
+        "mode": "vehiclePart",
+        "durationMs": 8,
+        "resultCount": "۶۸ ردیف"
+      },
+      {
+        "query": "سپر",
+        "mode": "vehiclePart",
+        "durationMs": 9,
+        "resultCount": "۶۸ ردیف"
+      }
+    ],
+    "longTasks": [],
+    "longTaskSupported": false
+  }
+}

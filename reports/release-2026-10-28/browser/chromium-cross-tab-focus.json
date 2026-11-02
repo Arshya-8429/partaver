@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "notification": "focus",
+  "oldVersion": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc-s1-n1-r1",
+  "newVersion": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd-s1-n1-r1",
+  "rowsPerFixture": 1,
+  "syntheticFixture": true,
+  "catalogueWritten": "isolated browser IndexedDB only",
+  "staleRowsCleared": true,
+  "queryTextPreserved": true,
+  "freshSearchUsesNewVersion": true,
+  "notificationScope": "BroadcastChannel disabled in window; actual event handler exercised by synthetic lifecycle event"
+}

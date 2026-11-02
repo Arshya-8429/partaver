@@ -1,0 +1,1 @@
+$ tsx packages/importer/src/cli.ts verify -- --version 5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1

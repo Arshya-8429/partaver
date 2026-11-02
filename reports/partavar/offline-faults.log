@@ -1,0 +1,79 @@
+[WebServer] (node:2804) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] $ tsx src/server.ts
+
+[WebServer] (node:2819) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] (node:2825) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] (node:2825) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] (node:2826) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] $ vite preview --host 127.0.0.1 -- --port 4173
+
+[WebServer] (node:2841) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+
+Running 4 tests using 1 worker
+
+(node:2849) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/4] [chromium] › tests/e2e/offline-faults.spec.ts:240:1 › a corrupt snapshot chunk fails hash verification and leaves the old catalogue active
+  1) [chromium] › tests/e2e/offline-faults.spec.ts:240:1 › a corrupt snapshot chunk fails hash verification and leaves the old catalogue active 
+
+    Error: Corruption fixture could not find the basePrice field.
+
+      109 |       const priceToken = Buffer.from('"basePrice":"');
+      110 |       const priceOffset = responseBody.indexOf(priceToken);
+    > 111 |       if (priceOffset < 0) throw new Error('Corruption fixture could not find the basePrice field.');
+          |                                  ^
+      112 |       const digitOffset = priceOffset + priceToken.byteLength;
+      113 |       const digit = responseBody[digitOffset];
+      114 |       if (digit === undefined) throw new Error('Corruption fixture could not locate a price digit.');
+        at /Users/barmana/Documents/E/behrad/tests/e2e/offline-faults.spec.ts:111:34
+
+    Error: page.evaluate: Target page, context or browser has been closed
+
+      168 |   oldEntryCount: number;
+      169 | }> {
+    > 170 |   return page.evaluate(({ target, old }) => new Promise((resolve, reject) => {
+          |               ^
+      171 |     const request = indexedDB.open('PartsFinderCatalogue');
+      172 |     request.onerror = () => reject(request.error);
+      173 |     request.onsuccess = () => {
+        at replicaState (/Users/barmana/Documents/E/behrad/tests/e2e/offline-faults.spec.ts:170:15)
+        at expect.poll.timeout (/Users/barmana/Documents/E/behrad/tests/e2e/offline-faults.spec.ts:252:29)
+        at /Users/barmana/Documents/E/behrad/tests/e2e/offline-faults.spec.ts:252:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/offline-faults-a-corrupt-s-32615-es-the-old-catalogue-active-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/offline-faults-a-corrupt-s-32615-es-the-old-catalogue-active-chromium/error-context.md
+
+    Error Context: test-results/offline-faults-a-corrupt-s-32615-es-the-old-catalogue-active-chromium/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/offline-faults-a-corrupt-s-32615-es-the-old-catalogue-active-chromium/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/offline-faults-a-corrupt-s-32615-es-the-old-catalogue-active-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[2/4] [chromium] › tests/e2e/offline-faults.spec.ts:274:1 › two tabs share one update lease while the existing version stays searchable
+[3/4] [chromium] › tests/e2e/offline-faults.spec.ts:322:1 › browser close during staging relaunches from the same profile and recovers the update
+[4/4] [chromium] › tests/e2e/offline-faults.spec.ts:407:1 › low browser quota blocks an update before staging and keeps the old offline version
+  1 failed
+    [chromium] › tests/e2e/offline-faults.spec.ts:240:1 › a corrupt snapshot chunk fails hash verification and leaves the old catalogue active 
+  3 did not run

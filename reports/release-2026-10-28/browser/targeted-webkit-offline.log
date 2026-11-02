@@ -1,0 +1,75 @@
+
+Running 1 test using 1 worker
+
+(node:7986) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [webkit] › tests/release/browser.spec.ts:329:1 › full catalogue installs and offline shell relaunch preserves search parity in real IndexedDB (1.5m)
+
+
+  1) [webkit] › tests/release/browser.spec.ts:329:1 › full catalogue installs and offline shell relaunch preserves search parity in real IndexedDB 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 5
+
+    - Array []
+    + Array [
+    +   "ResizeObserver loop completed with undelivered notifications.",
+    +   "ResizeObserver loop completed with undelivered notifications.",
+    +   "ResizeObserver loop completed with undelivered notifications.",
+    + ]
+
+      424 |     errors, consoleProblems,
+      425 |   });
+    > 426 |   expect(errors).toEqual([]);
+          |                  ^
+      427 |   expect(consoleProblems).toEqual([]);
+      428 |   } finally {
+      429 |     await context.close();
+        at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:426:18
+
+    attachment #1: install-outcome (application/json) ──────────────────────────────────────────────
+    reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/attachments/install-outcome-84721109671dfdd4bfe0d33be38f67aeb62d5e49.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: local-performance (application/json) ────────────────────────────────────────────
+    reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/attachments/local-performance-dee0a3d2f460c73e759eb42d5f7ad323167a4280.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: offline-search-390 (image/png) ──────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/attachments/offline-search-390-0588732d3a453614c3b6117f6aab2e5250535dbf.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: offline (application/json) ──────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/attachments/offline-041af86ee6d06d5f41a0a8ee050c739289a783e4.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/test-failed-4.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/error-context.md
+
+    attachment #10: trace (application/zip) ────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [webkit] › tests/release/browser.spec.ts:329:1 › full catalogue installs and offline shell relaunch preserves search parity in real IndexedDB 

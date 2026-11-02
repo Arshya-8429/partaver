@@ -1,0 +1,35 @@
+[Unit]
+Description=PartAvar private catalogue and application
+After=network.target
+
+[Service]
+Type=simple
+User=partavar
+Group=partavar
+WorkingDirectory=/opt/partavar/current
+# Install Node.js 24+ here, or replace this path with its verified absolute path.
+ExecStart=/usr/bin/node --env-file=/etc/partavar/operator.env --import tsx apps/api/src/server.ts
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+KillSignal=SIGTERM
+UMask=0077
+StateDirectory=partavar
+StateDirectoryMode=0700
+ReadWritePaths=/var/lib/partavar
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+CapabilityBoundingSet=
+AmbientCapabilities=
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

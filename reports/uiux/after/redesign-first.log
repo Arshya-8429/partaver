@@ -1,0 +1,51 @@
+
+Running 1 test using 1 worker
+
+(node:2978) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › tests/e2e/redesign.spec.ts:3:1 › compact RTL redesign uses bounded online search and explicit vehicle selection (5.3s)
+
+
+  1) [chromium] › tests/e2e/redesign.spec.ts:3:1 › compact RTL redesign uses bounded online search and explicit vehicle selection 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  locator('.vehicleOption')
+    Expected: 2
+    Received: 3
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" locator('.vehicleOption') with timeout 5000ms
+      - waiting for locator('.vehicleOption')
+        3 × locator resolved to 0 elements
+          - unexpected value "0"
+        11 × locator resolved to 3 elements
+           - unexpected value "3"
+
+
+      10 |   expect(chunks).toEqual([]);
+      11 |   await page.locator('#vehicle').fill('X33 Cross');
+    > 12 |   await expect(page.locator('.vehicleOption')).toHaveCount(2);
+         |                                                ^
+      13 |   await page.locator('#vehicle').press('Enter');
+      14 |   await expect(page.locator('#vehicle')).toHaveValue('X33 Cross');
+      15 |   await expect(page.locator('#vehicle')).toHaveAttribute('aria-expanded', 'true');
+        at /Users/barmana/Documents/E/behrad/tests/e2e/redesign.spec.ts:12:48
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/redesign-compact-RTL-redes-fa118--explicit-vehicle-selection-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/redesign-compact-RTL-redes-fa118--explicit-vehicle-selection-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/redesign-compact-RTL-redes-fa118--explicit-vehicle-selection-chromium/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/redesign-compact-RTL-redes-fa118--explicit-vehicle-selection-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › tests/e2e/redesign.spec.ts:3:1 › compact RTL redesign uses bounded online search and explicit vehicle selection 

@@ -1,0 +1,19 @@
+$ playwright test
+
+Running 8 tests using 2 workers
+
+(node:5118) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:5119) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › tests/e2e/redesign.spec.ts:3:1 › compact RTL redesign uses bounded online search and explicit vehicle selection (1.5s)
+  ✓  3 [chromium] › tests/e2e/redesign.spec.ts:61:1 › discarded requests cannot restore cleared or other-mode results (892ms)
+  ✓  4 [chromium] › tests/e2e/redesign.spec.ts:85:1 › copy reports success only on actual writes; themes, keyboard and enlarged layout remain usable (655ms)
+  ✓  5 [chromium] › tests/e2e/redesign.spec.ts:122:1 › vehicle search, normalized digits, empty results and large values retain their real identities (1.8s)
+  ✓  6 [chromium] › tests/e2e/redesign.spec.ts:149:1 › simulated quota exhaustion explains recovery without activating a partial catalogue (419ms)
+  ✓  7 [chromium] › tests/e2e/redesign.spec.ts:169:1 › lazy logistics navigation follows actual API cursors and preserves entry prices (619ms)
+OFFLINE_DIAGNOSTICS {"online":false,"controller":true,"serviceWorkers":["activated"],"stylesheetLinks":["http://127.0.0.1:4173/assets/index-Bgk0z1dg.css"],"loadedStylesheets":1,"bodyFont":"Tahoma, \"Segoe UI\", Arial, sans-serif","resources":[{"name":"http://127.0.0.1:4173/assets/index-XET2gxRF.js","duration":0.7999999998137355,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/index-Bgk0z1dg.css","duration":0.900000000372529,"transferSize":0}],"status":"در حال بررسی کاتالوگ…"}
+  ✓  2 [chromium] › tests/e2e/offline-workflows.spec.ts:96:1 › preserves original workflows, installs the full catalogue, and searches after offline relaunch (32.9s)
+  ✓  8 [chromium] › tests/e2e/offline-workflows.spec.ts:297:1 › cancels a staged update at a chunk boundary and keeps the prior offline catalogue active (538ms)
+
+  8 passed (34.8s)

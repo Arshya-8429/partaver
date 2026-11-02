@@ -1,0 +1,56 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ✓ tests/integration/api.test.ts (6 tests) 461ms
+ ✓ tests/integration/production-runtime.test.ts (7 tests) 732ms
+ ✓ tests/integration/price-history.test.ts (7 tests) 1504ms
+   ✓ historical XLSX import and bounded reads (7)
+     ✓ stages immutable XLSX evidence, reports ambiguity, commits explicitly and never writes catalogue 391ms
+     ✓ audits supersede and rollback, ranks growth and restores a verified backup to a new target 375ms
+ ✓ tests/integration/operator-credentials.test.ts (2 tests) 797ms
+   ✓ rejects external HTTP and credential injection before writing either file 536ms
+ ✓ tests/integration/publication.test.ts (2 tests) 680ms
+ ✓ tests/integration/backup-relocation.test.ts (3 tests) 145ms
+ ✓ tests/unit/source-inventory.test.ts (1 test) 3198ms
+   ✓ source baseline (1)
+     ✓ matches the archived SHA and all documented source inventory counts 3197ms
+ ✓ tests/integration/backup-restore.test.ts (3 tests) 219ms
+ ✓ tests/integration/search.test.ts (7 tests) 86ms
+ ✓ tests/unit/documents-backup.test.ts (4 tests) 15ms
+ ✓ tests/unit/pricing.test.ts (3 tests) 3545ms
+   ✓ integer catalogue pricing (3)
+     ✓ matches the original Math.round output for every source row 3541ms
+ ✓ tests/integration/release-packaging.test.ts (6 tests) 3538ms
+   ✓ verified release archives (6)
+     ✓ ships committed WAL data, authoritative sources and evidence without secrets or old bundles 1206ms
+     ✓ produces the same archive bytes from unchanged inputs at a fixed epoch and refuses overwrite 1153ms
+     ✓ verifies a relocated archive while its original absolute import path is unavailable 303ms
+     ✓ does not publish an archive when an active immutable snapshot chunk is corrupt 489ms
+ ✓ tests/unit/documents-export.test.ts (2 tests) 100ms
+ ✓ tests/unit/documents.test.ts (6 tests) 14ms
+ ✓ tests/unit/price-history.test.ts (5 tests) 15ms
+ ✓ tests/unit/related-parts.test.ts (3 tests) 10ms
+ ✓ tests/unit/code-family.test.ts (2 tests) 4ms
+ ✓ tests/unit/storage-budget.test.ts (2 tests) 3ms
+ ✓ tests/unit/normalization.test.ts (3 tests) 4ms
+ ✓ tests/unit/vehicle-rules.test.ts (3 tests) 4447ms
+   ✓ vehicle option projection and source ranking rules (3)
+     ✓ keeps 40 raw primary options while exposing the 39-option AWD projection 2863ms
+     ✓ preserves the nine source quick-preset families over effective primary options 1581ms
+ ✓ tests/unit/source-extraction.test.ts (4 tests) 4547ms
+   ✓ safe legacy source extraction (4)
+     ✓ extracts the complete literal DB without evaluating application scripts 2994ms
+     ✓ rejects non-JSON object values and preserves the input source 1547ms
+ ✓ tests/integration/round-trip.test.ts (1 test) 16944ms
+   ✓ lossless source-to-SQLite round trip (1)
+     ✓ reconstructs every source row field, ordered relation, and top-level metadata from normalized tables 16943ms
+ ✓ tests/integration/migration.test.ts (5 tests) 42962ms
+   ✓ catalogue migration (5)
+     ✓ imports the actual source without merging sibling logistics prices or vehicle data 14897ms
+     ✓ is idempotent for the same source hash and archives source bytes exactly 27996ms
+
+ Test Files  23 passed (23)
+      Tests  87 passed (87)
+   Start at  11:54:57
+   Duration  43.18s (tests 97%, import 2%, transform 1%)
+

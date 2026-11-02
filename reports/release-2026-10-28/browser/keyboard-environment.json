@@ -1,0 +1,9 @@
+{
+  "platform": "macOS",
+  "webkitTabBehavior": "Default WebKit preference skips links during ordinary Tab navigation. Option+Tab includes all controls.",
+  "minimalActualBrowserExperiment": [
+    { "key": "Tab", "active": { "tag": "BODY", "id": "" } },
+    { "key": "Alt+Tab", "active": { "tag": "A", "id": "skip" } }
+  ],
+  "releaseTestAdaptation": "WebKit uses Option+Tab for reaching a skip link, then Enter to exercise its real focus transfer. Chromium and Firefox use Tab. This does not certify Safari or OS accessibility preferences."
+}

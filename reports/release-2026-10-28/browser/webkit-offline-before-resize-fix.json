@@ -1,0 +1,27 @@
+{
+  "browserVersion": "27.2",
+  "installMs": 71299,
+  "storage": {
+    "estimate": {
+      "quota": 20615843021,
+      "usage": 737120821
+    },
+    "caches": [
+      "partavar-shell-9c139ef81d649899"
+    ],
+    "secureContext": true,
+    "controller": true
+  },
+  "rowCount": 36569,
+  "exactCode": "0CF25BE-1500011BA",
+  "onlineOfflineResultCount": 11,
+  "searchParity": true,
+  "shellReopenedWithoutNetwork": true,
+  "relaunchScope": "temporary persistent WebKit profile: full browser process closed and reopened with offline=true before navigation",
+  "errors": [
+    "ResizeObserver loop completed with undelivered notifications.",
+    "ResizeObserver loop completed with undelivered notifications.",
+    "ResizeObserver loop completed with undelivered notifications."
+  ],
+  "consoleProblems": []
+}

@@ -1,0 +1,90 @@
+{
+  "generatedAt": "2026-10-27T12:02:20.798Z",
+  "sourceScriptsExecuted": false,
+  "allCatalogueObjectsEqual": true,
+  "sources": [
+    {
+      "name": "PartsFinder_Android-28_original.html",
+      "bytes": 11417283,
+      "fileSha256": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480",
+      "completeCatalogueSha256": "31e20fb3e789addad084bcc19c0de5f3d9baa09fb1a83fa30093858c36d540ea",
+      "rowCount": 36569,
+      "technicalCodes": 31509,
+      "logisticsCodes": 36569,
+      "rawModels": 119,
+      "fields": {
+        "part": "d7fa86334a05b82955db38c053b9917b35e74cc5a5998b2052bf94d00c6bd2fe",
+        "tech": "2cc4d1373e407a1bfb5d9673f363ab13757e3bc86f84f9a757c4cd80078250f3",
+        "log": "9b607ca8d28f593d73c1490629cf42b46ef17b7e8fae6753f477ef125fe2d8d2",
+        "price": "9c08e20766ea372bc2fa0a71493d1a693b2b0354f9da7c89c4521a5a8f2131bd",
+        "models": "2c922d7f8767b9b877757b77d2a9c6bb3d0c209e0629d8909ccd80e4b953069c",
+        "friendly": "3174039181c45e2ebca30d4f080cfff607766e54fe57648bb5be4f136d5c5c80",
+        "aliases": "07d6786f71ee470d2afa7696d9285359112ae5b28c89edca496d0050af193cc9",
+        "replacement": "1b565969b3db1e3fb9bbf0844fe03028d4fe84437b70e029085e59532b4ec7fd"
+      },
+      "metadata": {
+        "parts": "1aa44868589c1c48d60c2bd42d96e43dbebd060f488cba6a61344f9ec71e9be5",
+        "primary": "2fa6b1557df5d7f22d5dc89e1b9b071cac939e5fffdc427a103e73f8649ec708",
+        "others": "e88b9b7514fa7b2dc2ef2b2da22ce88652a323241a3742294287fc6c6f0d35d4",
+        "groups": "4243cbde618ae3983452f171b7f3144e9716b4ac886d90882b653262cc8ca2a1",
+        "primaryOptions": "d462b0d64f3620f8b80179a4a5af4fd0c9f6b80ffb78f9a753638fd8f7aac203"
+      }
+    },
+    {
+      "name": "PartsFinder_Windows_v3_0_1.html",
+      "bytes": 11492329,
+      "fileSha256": "b8ef2483f3d4af4d0ed72625ee9b9fdd7c99d1c2ff73bae5199d05375add976d",
+      "completeCatalogueSha256": "31e20fb3e789addad084bcc19c0de5f3d9baa09fb1a83fa30093858c36d540ea",
+      "rowCount": 36569,
+      "technicalCodes": 31509,
+      "logisticsCodes": 36569,
+      "rawModels": 119,
+      "fields": {
+        "part": "d7fa86334a05b82955db38c053b9917b35e74cc5a5998b2052bf94d00c6bd2fe",
+        "tech": "2cc4d1373e407a1bfb5d9673f363ab13757e3bc86f84f9a757c4cd80078250f3",
+        "log": "9b607ca8d28f593d73c1490629cf42b46ef17b7e8fae6753f477ef125fe2d8d2",
+        "price": "9c08e20766ea372bc2fa0a71493d1a693b2b0354f9da7c89c4521a5a8f2131bd",
+        "models": "2c922d7f8767b9b877757b77d2a9c6bb3d0c209e0629d8909ccd80e4b953069c",
+        "friendly": "3174039181c45e2ebca30d4f080cfff607766e54fe57648bb5be4f136d5c5c80",
+        "aliases": "07d6786f71ee470d2afa7696d9285359112ae5b28c89edca496d0050af193cc9",
+        "replacement": "1b565969b3db1e3fb9bbf0844fe03028d4fe84437b70e029085e59532b4ec7fd"
+      },
+      "metadata": {
+        "parts": "1aa44868589c1c48d60c2bd42d96e43dbebd060f488cba6a61344f9ec71e9be5",
+        "primary": "2fa6b1557df5d7f22d5dc89e1b9b071cac939e5fffdc427a103e73f8649ec708",
+        "others": "e88b9b7514fa7b2dc2ef2b2da22ce88652a323241a3742294287fc6c6f0d35d4",
+        "groups": "4243cbde618ae3983452f171b7f3144e9716b4ac886d90882b653262cc8ca2a1",
+        "primaryOptions": "d462b0d64f3620f8b80179a4a5af4fd0c9f6b80ffb78f9a753638fd8f7aac203"
+      }
+    },
+    {
+      "name": "PartsFinder_Android_v3_0_1.html",
+      "bytes": 11487359,
+      "fileSha256": "4a832a2cf39b6777390f24bbd2bee4da63de6cd6888302d1b51b4230b903e7bd",
+      "completeCatalogueSha256": "31e20fb3e789addad084bcc19c0de5f3d9baa09fb1a83fa30093858c36d540ea",
+      "rowCount": 36569,
+      "technicalCodes": 31509,
+      "logisticsCodes": 36569,
+      "rawModels": 119,
+      "fields": {
+        "part": "d7fa86334a05b82955db38c053b9917b35e74cc5a5998b2052bf94d00c6bd2fe",
+        "tech": "2cc4d1373e407a1bfb5d9673f363ab13757e3bc86f84f9a757c4cd80078250f3",
+        "log": "9b607ca8d28f593d73c1490629cf42b46ef17b7e8fae6753f477ef125fe2d8d2",
+        "price": "9c08e20766ea372bc2fa0a71493d1a693b2b0354f9da7c89c4521a5a8f2131bd",
+        "models": "2c922d7f8767b9b877757b77d2a9c6bb3d0c209e0629d8909ccd80e4b953069c",
+        "friendly": "3174039181c45e2ebca30d4f080cfff607766e54fe57648bb5be4f136d5c5c80",
+        "aliases": "07d6786f71ee470d2afa7696d9285359112ae5b28c89edca496d0050af193cc9",
+        "replacement": "1b565969b3db1e3fb9bbf0844fe03028d4fe84437b70e029085e59532b4ec7fd"
+      },
+      "metadata": {
+        "parts": "1aa44868589c1c48d60c2bd42d96e43dbebd060f488cba6a61344f9ec71e9be5",
+        "primary": "2fa6b1557df5d7f22d5dc89e1b9b071cac939e5fffdc427a103e73f8649ec708",
+        "others": "e88b9b7514fa7b2dc2ef2b2da22ce88652a323241a3742294287fc6c6f0d35d4",
+        "groups": "4243cbde618ae3983452f171b7f3144e9716b4ac886d90882b653262cc8ca2a1",
+        "primaryOptions": "d462b0d64f3620f8b80179a4a5af4fd0c9f6b80ffb78f9a753638fd8f7aac203"
+      }
+    }
+  ],
+  "authority": "Retain the already verified original catalogue. Both v3 sources have identical complete catalogue objects; their behavior remains the feature reference.",
+  "differences": []
+}

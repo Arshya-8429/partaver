@@ -1,0 +1,82 @@
+{
+  "generatedAt": "2026-10-28T08:26:20.882Z",
+  "status": "passed",
+  "testOnly": true,
+  "warning": "Historical prices, dates and XLSX source files are generated test fixtures, not company data. The production catalogue was opened read-only; all history writes used a temporary operations database that was removed after this test.",
+  "catalogueVersion": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+  "cataloguePath": "/Users/barmana/Documents/E/behrad/private-data/sqlite/catalogue.db",
+  "temporaryOperationsDatabase": "/var/folders/qc/91mz59vs2qx62xr748kl1r840000gn/T/partavar-history-ui-e2e-y7DeEw/operations.db",
+  "sourceFileName": "PartAvar-TEST-FIXTURE-NOT-COMPANY-history.xlsx",
+  "sourceSha256": "f9430837ce55ce1df8d9e070a415de3c0ecf883b6e87dc40ec08a4a6b6de4925",
+  "correctionSourceSha256": "90d63548a211db7217f651e3d10c6e8e85a8e1e8b8192b7c4b09046122d1a1a4",
+  "importedBatchId": "21cb30df-77e6-43af-afdf-b6ae626f9bef",
+  "fixtureEntries": [
+    {
+      "entryId": 111,
+      "technicalCodeRaw": "111100001AA",
+      "logisticsCodeRaw": "111100001AA-01",
+      "catalogueBasePrice": "158093176"
+    },
+    {
+      "entryId": 112,
+      "technicalCodeRaw": "111100001AA",
+      "logisticsCodeRaw": "111100001AA-02",
+      "catalogueBasePrice": "75533718"
+    },
+    {
+      "entryId": 113,
+      "technicalCodeRaw": "111100012AA",
+      "logisticsCodeRaw": "111100012AA-01",
+      "catalogueBasePrice": "25779105"
+    },
+    {
+      "entryId": 114,
+      "technicalCodeRaw": "111100013AA",
+      "logisticsCodeRaw": "111100013AA-01",
+      "catalogueBasePrice": "12275766"
+    }
+  ],
+  "catalogueBasePricesBefore": {
+    "111": "158093176",
+    "112": "75533718",
+    "113": "25779105",
+    "114": "12275766"
+  },
+  "observedHistoryRouteStatuses": [
+    {
+      "path": "/api/v1/price-history/summary?version=5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1&ids=111%2C112",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/price-history/entries?version=5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1&limit=20&sort=growth&minimumObservations=2",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/price-history/entries?version=5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1&limit=20&sort=growth&classification=high&minimumObservations=2",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/price-history/entries?version=5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1&limit=20&sort=date&minimumObservations=2",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/price-history/summary?version=5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1&ids=111%2C112",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/price-history/entries/111?version=5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1&limit=50",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/price-history/entries/111?version=5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1&limit=50&cursor=eyJjb250ZXh0Ijp7ImNhdGFsb2dWZXJzaW9uIjoiNTIyM2I3NzI5Zjg1ZTc2NTcxMjljZmJhZDdkYjgzOTEwYzgyN2U0ZWM0ZTY2NjhlMTkxOWJlOWJlYmQwNTQ4MC1zMS1uMS1yMSIsImVudHJ5SWQiOjExMSwicmV2aXNpb24iOjF9LCJvZmZzZXQiOjUwfQ",
+      "status": 409
+    },
+    {
+      "path": "/api/v1/price-history/entries/111?version=5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1&limit=50",
+      "status": 200
+    }
+  ],
+  "screenshot": "reports/partavar/history-ui-e2e.png",
+  "testResult": "passed",
+  "durationMs": 1057
+}

@@ -1,0 +1,103 @@
+$ tsx scripts/check-bundle.ts
+{
+  "generatedAt": "2026-10-27T12:13:54.615Z",
+  "sourceSha256": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480",
+  "originalSourceUnchanged": true,
+  "outputDirectory": "/Users/barmana/Documents/E/behrad/apps/web/dist",
+  "files": [
+    {
+      "path": "assets/app-bootstrap-BBgSLEZ1.js",
+      "bytes": 213290,
+      "gzipBytes": 65490
+    },
+    {
+      "path": "assets/app-bootstrap-CCCwb77U.css",
+      "bytes": 16837,
+      "gzipBytes": 3911
+    },
+    {
+      "path": "assets/app-shell-B8iglXNN.js",
+      "bytes": 8153,
+      "gzipBytes": 2607
+    },
+    {
+      "path": "assets/catalogue.worker-D2OE2FHB.js",
+      "bytes": 128793,
+      "gzipBytes": 40122
+    },
+    {
+      "path": "assets/index-Bgk0z1dg.css",
+      "bytes": 18277,
+      "gzipBytes": 4607
+    },
+    {
+      "path": "assets/index-PUroESew.js",
+      "bytes": 3037,
+      "gzipBytes": 1413
+    },
+    {
+      "path": "assets/theme-Dubfbby_.js",
+      "bytes": 54,
+      "gzipBytes": 71
+    },
+    {
+      "path": "assets/theme-mhmZZqUX.js",
+      "bytes": 1894,
+      "gzipBytes": 987
+    },
+    {
+      "path": "assets/website-BCWhj9jm.js",
+      "bytes": 37225,
+      "gzipBytes": 9848
+    },
+    {
+      "path": "assets/website-C_-i1UU3.css",
+      "bytes": 22023,
+      "gzipBytes": 4205
+    },
+    {
+      "path": "index.html",
+      "bytes": 824,
+      "gzipBytes": 541
+    },
+    {
+      "path": "sw.js",
+      "bytes": 2721,
+      "gzipBytes": 1131
+    }
+  ],
+  "initialShellFiles": [
+    {
+      "path": "assets/app-bootstrap-CCCwb77U.css",
+      "bytes": 16837,
+      "gzipBytes": 3911
+    },
+    {
+      "path": "assets/index-Bgk0z1dg.css",
+      "bytes": 18277,
+      "gzipBytes": 4607
+    },
+    {
+      "path": "assets/index-PUroESew.js",
+      "bytes": 3037,
+      "gzipBytes": 1413
+    },
+    {
+      "path": "assets/website-C_-i1UU3.css",
+      "bytes": 22023,
+      "gzipBytes": 4205
+    },
+    {
+      "path": "index.html",
+      "bytes": 824,
+      "gzipBytes": 541
+    }
+  ],
+  "initialShellGzipBytes": 14677,
+  "appJsBytes": 395167,
+  "appJsGzipBytes": 121669,
+  "legacyLiteralFound": false,
+  "privateFilesFound": false,
+  "catalogueInServiceWorkerCache": false,
+  "result": "passed"
+}

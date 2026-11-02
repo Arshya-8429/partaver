@@ -1,0 +1,81 @@
+[WebServer] (node:2988) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] $ tsx src/server.ts
+
+[WebServer] (node:3003) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] (node:3009) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] (node:3009) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] (node:3012) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+[WebServer] $ vite preview --host 127.0.0.1 -- --port 4173
+
+[WebServer] (node:3027) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+
+Running 1 test using 1 worker
+
+(node:3033) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/1] [chromium] › tests/e2e/offline-faults.spec.ts:274:1 › two tabs share one update lease while the existing version stays searchable
+  1) [chromium] › tests/e2e/offline-faults.spec.ts:274:1 › two tabs share one update lease while the existing version stays searchable 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  locator('#catalogueStatusText')
+    Expected: "online"
+    Received: "ready"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveAttribute" locator('#catalogueStatusText') with timeout 5000ms
+      - waiting for locator('#catalogueStatusText')
+        - locator resolved to <span role="status" aria-live="polite" data-state="checking" id="catalogueStatusText">در حال بررسی کاتالوگ…</span>
+        - unexpected value "checking"
+        13 × locator resolved to <span role="status" aria-live="polite" data-state="ready" id="catalogueStatusText" data-offline-ready="false">کاتالوگ محلی آماده است · پوستهٔ آفلاین تأیید نشده</span>
+           - unexpected value "ready"
+
+
+      139 |   page.setDefaultTimeout(15_000);
+      140 |   await page.goto(appUrl, { waitUntil: 'domcontentloaded' });
+    > 141 |   await expect(page.locator('#catalogueStatusText')).toHaveAttribute('data-state', 'online');
+          |                                                      ^
+      142 |   return page;
+      143 | }
+      144 |
+        at openApp (/Users/barmana/Documents/E/behrad/tests/e2e/offline-faults.spec.ts:141:54)
+        at /Users/barmana/Documents/E/behrad/tests/e2e/offline-faults.spec.ts:293:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/offline-faults-two-tabs-sh-45d4f-ng-version-stays-searchable-chromium/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/offline-faults-two-tabs-sh-45d4f-ng-version-stays-searchable-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/offline-faults-two-tabs-sh-45d4f-ng-version-stays-searchable-chromium/error-context.md
+
+    Error Context: test-results/offline-faults-two-tabs-sh-45d4f-ng-version-stays-searchable-chromium/error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/offline-faults-two-tabs-sh-45d4f-ng-version-stays-searchable-chromium/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/offline-faults-two-tabs-sh-45d4f-ng-version-stays-searchable-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+  1 failed
+    [chromium] › tests/e2e/offline-faults.spec.ts:274:1 › two tabs share one update lease while the existing version stays searchable 

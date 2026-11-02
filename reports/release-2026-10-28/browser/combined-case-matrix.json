@@ -1,0 +1,333 @@
+{
+  "generatedAt": "2026-10-28T08:29:49.045Z",
+  "basis": "Union of27 unique Playwright scenarios across initial and focused follow-up runs, selecting latest relevant execution per scenario. This is not a single27-case green run. Initial failures and all diagnostic evidence are retained.",
+  "uniqueCases": 27,
+  "latestPassed": 27,
+  "latestFailed": 0,
+  "engines": [
+    {
+      "project": "chromium",
+      "cases": 9,
+      "passed": 9
+    },
+    {
+      "project": "firefox",
+      "cases": 9,
+      "passed": 9
+    },
+    {
+      "project": "webkit",
+      "cases": 9,
+      "passed": 9
+    }
+  ],
+  "runs": [
+    {
+      "source": "initial-full-results.json",
+      "executions": 27,
+      "passed": 21,
+      "failed": 6,
+      "startedAt": "2026-10-28T07:34:11.659Z",
+      "durationMs": 832982.559
+    },
+    {
+      "source": "targeted-layout-results.json",
+      "executions": 6,
+      "passed": 6,
+      "failed": 0,
+      "startedAt": "2026-10-28T08:06:38.539Z",
+      "durationMs": 25811.542
+    },
+    {
+      "source": "targeted-webkit-fixture-results.json",
+      "executions": 4,
+      "passed": 4,
+      "failed": 0,
+      "startedAt": "2026-10-28T08:07:36.774Z",
+      "durationMs": 4084.181
+    },
+    {
+      "source": "final-code-results.json",
+      "executions": 9,
+      "passed": 9,
+      "failed": 0,
+      "startedAt": "2026-10-28T08:23:13.592Z",
+      "durationMs": 31610.260000000002
+    },
+    {
+      "source": "final-webkit-offline-results.json",
+      "executions": 1,
+      "passed": 1,
+      "failed": 0,
+      "startedAt": "2026-10-28T08:24:16.843Z",
+      "durationMs": 135616.832
+    }
+  ],
+  "cases": [
+    {
+      "project": "chromium",
+      "title": "another tab activation refreshes the local version via broadcast and clears stale catalogue rows",
+      "file": "cross-tab.spec.ts",
+      "status": "passed",
+      "durationMs": 846,
+      "evidenceRun": "initial-full-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "chromium",
+      "title": "another tab activation refreshes the local version via focus and clears stale catalogue rows",
+      "file": "cross-tab.spec.ts",
+      "status": "passed",
+      "durationMs": 709,
+      "evidenceRun": "initial-full-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "chromium",
+      "title": "another tab activation refreshes the local version via visibility and clears stale catalogue rows",
+      "file": "cross-tab.spec.ts",
+      "status": "passed",
+      "durationMs": 754,
+      "evidenceRun": "initial-full-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "chromium",
+      "title": "app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content",
+      "file": "browser.spec.ts",
+      "status": "passed",
+      "durationMs": 1527,
+      "evidenceRun": "final-code-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "chromium",
+      "title": "automated WCAG accessibility audit covers app workspaces, dialogs and public pages in both themes",
+      "file": "browser.spec.ts",
+      "status": "passed",
+      "durationMs": 5675,
+      "evidenceRun": "final-code-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "chromium",
+      "title": "full catalogue installs and offline shell relaunch preserves search parity in real IndexedDB",
+      "file": "browser.spec.ts",
+      "status": "passed",
+      "durationMs": 42613,
+      "evidenceRun": "initial-full-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "chromium",
+      "title": "online catalogue, keyboard selection, details and documents preserve exact identities",
+      "file": "browser.spec.ts",
+      "status": "passed",
+      "durationMs": 1764,
+      "evidenceRun": "final-code-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "chromium",
+      "title": "public routes, both themes, seven widths, keyboard and 200 percent enlargement are usable",
+      "file": "browser.spec.ts",
+      "status": "passed",
+      "durationMs": 4482,
+      "evidenceRun": "targeted-layout-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "chromium",
+      "title": "retained document history cannot recolor a current catalogue entry with the same numeric ID",
+      "file": "history-version.spec.ts",
+      "status": "passed",
+      "durationMs": 1492,
+      "evidenceRun": "initial-full-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "firefox",
+      "title": "another tab activation refreshes the local version via broadcast and clears stale catalogue rows",
+      "file": "cross-tab.spec.ts",
+      "status": "passed",
+      "durationMs": 842,
+      "evidenceRun": "initial-full-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "firefox",
+      "title": "another tab activation refreshes the local version via focus and clears stale catalogue rows",
+      "file": "cross-tab.spec.ts",
+      "status": "passed",
+      "durationMs": 829,
+      "evidenceRun": "initial-full-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "firefox",
+      "title": "another tab activation refreshes the local version via visibility and clears stale catalogue rows",
+      "file": "cross-tab.spec.ts",
+      "status": "passed",
+      "durationMs": 846,
+      "evidenceRun": "initial-full-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "firefox",
+      "title": "app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content",
+      "file": "browser.spec.ts",
+      "status": "passed",
+      "durationMs": 1491,
+      "evidenceRun": "final-code-results.json",
+      "initialStatus": "failed"
+    },
+    {
+      "project": "firefox",
+      "title": "automated WCAG accessibility audit covers app workspaces, dialogs and public pages in both themes",
+      "file": "browser.spec.ts",
+      "status": "passed",
+      "durationMs": 6451,
+      "evidenceRun": "final-code-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "firefox",
+      "title": "full catalogue installs and offline shell relaunch preserves search parity in real IndexedDB",
+      "file": "browser.spec.ts",
+      "status": "passed",
+      "durationMs": 48091,
+      "evidenceRun": "initial-full-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "firefox",
+      "title": "online catalogue, keyboard selection, details and documents preserve exact identities",
+      "file": "browser.spec.ts",
+      "status": "passed",
+      "durationMs": 2890,
+      "evidenceRun": "final-code-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "firefox",
+      "title": "public routes, both themes, seven widths, keyboard and 200 percent enlargement are usable",
+      "file": "browser.spec.ts",
+      "status": "passed",
+      "durationMs": 7338,
+      "evidenceRun": "targeted-layout-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "firefox",
+      "title": "retained document history cannot recolor a current catalogue entry with the same numeric ID",
+      "file": "history-version.spec.ts",
+      "status": "passed",
+      "durationMs": 697,
+      "evidenceRun": "initial-full-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "webkit",
+      "title": "another tab activation refreshes the local version via broadcast and clears stale catalogue rows",
+      "file": "cross-tab.spec.ts",
+      "status": "passed",
+      "durationMs": 1100,
+      "evidenceRun": "targeted-webkit-fixture-results.json",
+      "initialStatus": "failed"
+    },
+    {
+      "project": "webkit",
+      "title": "another tab activation refreshes the local version via focus and clears stale catalogue rows",
+      "file": "cross-tab.spec.ts",
+      "status": "passed",
+      "durationMs": 926,
+      "evidenceRun": "targeted-webkit-fixture-results.json",
+      "initialStatus": "failed"
+    },
+    {
+      "project": "webkit",
+      "title": "another tab activation refreshes the local version via visibility and clears stale catalogue rows",
+      "file": "cross-tab.spec.ts",
+      "status": "passed",
+      "durationMs": 875,
+      "evidenceRun": "targeted-webkit-fixture-results.json",
+      "initialStatus": "failed"
+    },
+    {
+      "project": "webkit",
+      "title": "app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content",
+      "file": "browser.spec.ts",
+      "status": "passed",
+      "durationMs": 1991,
+      "evidenceRun": "final-code-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "webkit",
+      "title": "automated WCAG accessibility audit covers app workspaces, dialogs and public pages in both themes",
+      "file": "browser.spec.ts",
+      "status": "passed",
+      "durationMs": 5753,
+      "evidenceRun": "final-code-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "webkit",
+      "title": "full catalogue installs and offline shell relaunch preserves search parity in real IndexedDB",
+      "file": "browser.spec.ts",
+      "status": "passed",
+      "durationMs": 134912,
+      "evidenceRun": "final-webkit-offline-results.json",
+      "initialStatus": "failed"
+    },
+    {
+      "project": "webkit",
+      "title": "online catalogue, keyboard selection, details and documents preserve exact identities",
+      "file": "browser.spec.ts",
+      "status": "passed",
+      "durationMs": 1778,
+      "evidenceRun": "final-code-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "webkit",
+      "title": "public routes, both themes, seven widths, keyboard and 200 percent enlargement are usable",
+      "file": "browser.spec.ts",
+      "status": "passed",
+      "durationMs": 4735,
+      "evidenceRun": "targeted-layout-results.json",
+      "initialStatus": "passed"
+    },
+    {
+      "project": "webkit",
+      "title": "retained document history cannot recolor a current catalogue entry with the same numeric ID",
+      "file": "history-version.spec.ts",
+      "status": "passed",
+      "durationMs": 700,
+      "evidenceRun": "targeted-webkit-fixture-results.json",
+      "initialStatus": "failed"
+    }
+  ],
+  "diagnosticExplanations": [
+    {
+      "initialCase": "Firefox layout",
+      "cause": "Harness used scrollWidth on inline bdi: Firefox clientWidth0, scrollWidth9 despite actual text fitting. Corrected to test meaningful box scrollWidth plus text rectangle containment.",
+      "evidence": "firefox-price-dimensions-before.json"
+    },
+    {
+      "initialCase": "WebKit full install in ephemeral context",
+      "cause": "Real ephemeral quota1048576000B was below the app required estimate. Refused early with clear storage message. Persistent isolated profile quota20615843021B supports full actual install.",
+      "evidence": "webkit-storage-diagnostic.json; webkit-persistent-storage-diagnostic.json"
+    },
+    {
+      "initialCase": "WebKit routed tiny/history fixtures",
+      "cause": "Active service workers bypassed network routes. Disabling service workers only in routed fixtures restores intended synthetic data. Real full offline test retains service worker.",
+      "evidence": "targeted-webkit-fixture-results.json"
+    },
+    {
+      "initialCase": "WebKit persistent offline runtime",
+      "cause": "Genuine synchronous ResizeObserver layout writes caused an undelivered-notification loop. Red narrow layout regression; production fix defers width-triggered writes to requestAnimationFrame. Final layout and real offline run have no pageerrors.",
+      "evidence": "resize-red.log; final-code-results.json; final-webkit-offline-results.json"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ❯ tests/unit/documents-backup.test.ts (0 test)
+ ❯ tests/unit/documents-export.test.ts (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/unit/documents-backup.test.ts [ tests/unit/documents-backup.test.ts ]
+Error: Cannot find module '../../apps/web/src/documents/backup.js' imported from /Users/barmana/Documents/E/behrad/tests/unit/documents-backup.test.ts
+ ❯ tests/unit/documents-backup.test.ts:3:1
+      1| import { describe, expect, it } from 'vitest';
+      2| import { createDocument, createLineSnapshot, addDocumentLine, DEFAULT_…
+      3| import { createOperationsBackup, parseOperationsImport, MAX_BACKUP_BYT…
+       | ^
+      4| describe('validated operational backup and legacy conversion', () => {
+      5|   it('round-trips snapshots and preferences without numeric conversion…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/unit/documents-export.test.ts [ tests/unit/documents-export.test.ts ]
+Error: Cannot find module '../../apps/web/src/documents/xlsx.js' imported from /Users/barmana/Documents/E/behrad/tests/unit/documents-export.test.ts
+ ❯ tests/unit/documents-export.test.ts:4:1
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  2 failed (2)
+      Tests  no tests
+   Start at  11:44:45
+   Duration  239ms (worker 97%, environment 3%)
+

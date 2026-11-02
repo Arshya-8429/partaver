@@ -1,0 +1,12 @@
+# Replace this reserved example name with the approved real hostname.
+# Caddy must be the only publicly reachable entry point.
+partavar.example.invalid {
+	encode zstd gzip
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		-Server
+	}
+	# Caddy forwards Host and Authorization and supplies X-Forwarded-Proto.
+	# Do not add a file_server for the project or private-data directory.
+	reverse_proxy 127.0.0.1:8787
+}

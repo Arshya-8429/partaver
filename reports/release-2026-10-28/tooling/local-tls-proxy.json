@@ -1,0 +1,124 @@
+{
+  "format": "partavar-local-tls-proxy-verification-v1",
+  "generatedAt": "2026-10-28T07:38:07.900Z",
+  "proxy": "Caddy 2.11.7",
+  "origin": "https://localhost:9443",
+  "backend": "http://127.0.0.1:8789",
+  "tlsProtocol": "TLSv1.3",
+  "certificateTrust": "verified against temporary local CA supplied explicitly to each HTTPS request",
+  "osTrustStoreChanged": false,
+  "publicListener": false,
+  "externalDnsUsed": false,
+  "publicAcmeUsed": false,
+  "privateKeysOrTokensInReport": false,
+  "checks": [
+    {
+      "name": "anonymous homepage",
+      "passed": true,
+      "status": 200
+    },
+    {
+      "name": "CSP preserved",
+      "passed": true
+    },
+    {
+      "name": "HSTS enabled",
+      "passed": true
+    },
+    {
+      "name": "anonymous private route denied: /app/",
+      "passed": true,
+      "status": 401
+    },
+    {
+      "name": "anonymous private route denied: /api/v1/catalog/manifest",
+      "passed": true,
+      "status": 401
+    },
+    {
+      "name": "anonymous private route denied: /api/v1/search",
+      "passed": true,
+      "status": 401
+    },
+    {
+      "name": "anonymous private route denied: /health/ready",
+      "passed": true,
+      "status": 401
+    },
+    {
+      "name": "anonymous private route denied: /sw.js",
+      "passed": true,
+      "status": 401
+    },
+    {
+      "name": "anonymous private route denied: /manifest.webmanifest",
+      "passed": true,
+      "status": 401
+    },
+    {
+      "name": "authorized catalogue metadata",
+      "passed": true,
+      "status": 200
+    },
+    {
+      "name": "authorized real search",
+      "passed": true,
+      "status": 200
+    },
+    {
+      "name": "anonymous snapshot manifest denied",
+      "passed": true,
+      "status": 401
+    },
+    {
+      "name": "authorized snapshot manifest",
+      "passed": true,
+      "status": 200
+    },
+    {
+      "name": "anonymous snapshot chunk denied",
+      "passed": true,
+      "status": 401
+    },
+    {
+      "name": "authorized snapshot chunk has exact SHA256",
+      "passed": true,
+      "status": 200
+    },
+    {
+      "name": "private file unreachable: /private-data/sqlite/catalogue.db",
+      "passed": true,
+      "status": 404
+    },
+    {
+      "name": "private file unreachable: /.env",
+      "passed": true,
+      "status": 404
+    },
+    {
+      "name": "private file unreachable: /package.json",
+      "passed": true,
+      "status": 404
+    },
+    {
+      "name": "private file unreachable: /source-archive/source.html",
+      "passed": true,
+      "status": 404
+    },
+    {
+      "name": "cross-origin denied",
+      "passed": true,
+      "status": 403
+    },
+    {
+      "name": "authorized readiness",
+      "passed": true,
+      "status": 200
+    }
+  ],
+  "passedChecks": 21,
+  "productionDnsTlsIssuanceTested": false,
+  "systemdInstalled": false,
+  "temporaryProcessesStopped": true,
+  "temporaryBinaryKeysAndSyntheticCredentialsRemoved": true
+}

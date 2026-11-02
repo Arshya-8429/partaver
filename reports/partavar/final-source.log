@@ -1,0 +1,2 @@
+$ tsx scripts/partavar-source-check.ts
+{"allCatalogueObjectsEqual":true,"counts":[{"name":"PartsFinder_Android-28_original.html","rowCount":36569},{"name":"PartsFinder_Windows_v3_0_1.html","rowCount":36569},{"name":"PartsFinder_Android_v3_0_1.html","rowCount":36569}]}

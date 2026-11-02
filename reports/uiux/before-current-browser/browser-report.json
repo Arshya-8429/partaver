@@ -1,0 +1,204 @@
+{
+  "capturedAt": "2026-10-27T07:45:16.173Z",
+  "stage": "archived-production-before-ui-on-current-browser",
+  "datasetVersion": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+  "environment": {
+    "node": "v24.19.0",
+    "os": "24.3.0",
+    "platform": "darwin",
+    "architecture": "arm64",
+    "cpu": "Apple M4",
+    "browserVersion": "156.0.8078.48",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "cpuThrottling": "none",
+    "network": "loopback; no throttling",
+    "deviceScaleFactor": 1
+  },
+  "method": {
+    "startup": "navigation to DOMContentLoaded then row-count/search-enabled; 5 warm installed starts",
+    "query": "UI click until expected count and bounded cards; first then 5 warm repeated queries, Worker cache retained",
+    "screenshots": "same real exact query, 11 entries, 1440x1000 / 390x844, both themes, top and results",
+    "limits": "not INP, no physical Android, no network throttling, no statistically significant speedup claim; archived delivered production bundle; 4174 loopback proxy instead of 4173; all 8 baseline source hashes match; original bundle assets unchanged"
+  },
+  "firstDomReadyMs": 60.13691700000004,
+  "firstOnlineReadyMs": null,
+  "firstLoadToCatalogueReadyMs": 18434.730375,
+  "automaticChunkRequests": 1103,
+  "manualInstallMs": null,
+  "installChunkRequests": 1103,
+  "warmStartupMs": [
+    161.92445800000132,
+    75.98412500000268,
+    78.66329199999745,
+    79.91575000000012,
+    76.08458400000018
+  ],
+  "warmLaunchChunkRequests": 0,
+  "timings": [
+    {
+      "input": "0CF25BE-1500011BA",
+      "count": 11,
+      "firstMs": 1223.2779169999994,
+      "warmMs": [
+        60.661292000000685,
+        57.47279100000014,
+        52.82900000000154,
+        52.2700420000001,
+        61.21274999999878
+      ]
+    },
+    {
+      "input": "گیربکس اتوماتیک",
+      "count": 56,
+      "firstMs": 2325.7814169999983,
+      "warmMs": [
+        50.26737499999945,
+        58.92541699999856,
+        62.45929199999955,
+        55.42625000000044,
+        61.74295799999891
+      ]
+    }
+  ],
+  "overflow": [
+    {
+      "theme": "light",
+      "viewport": 320,
+      "documentWidth": 320,
+      "firstCardHeight": 741.34375,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "light",
+      "viewport": 360,
+      "documentWidth": 360,
+      "firstCardHeight": 607.40625,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "light",
+      "viewport": 390,
+      "documentWidth": 390,
+      "firstCardHeight": 559.84375,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "light",
+      "viewport": 430,
+      "documentWidth": 430,
+      "firstCardHeight": 536.0625,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "light",
+      "viewport": 768,
+      "documentWidth": 768,
+      "firstCardHeight": 536.0625,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "light",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "firstCardHeight": 512.28125,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "light",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "firstCardHeight": 512.28125,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "dark",
+      "viewport": 320,
+      "documentWidth": 320,
+      "firstCardHeight": 741.34375,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "dark",
+      "viewport": 360,
+      "documentWidth": 360,
+      "firstCardHeight": 607.40625,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "dark",
+      "viewport": 390,
+      "documentWidth": 390,
+      "firstCardHeight": 559.84375,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "dark",
+      "viewport": 430,
+      "documentWidth": 430,
+      "firstCardHeight": 536.0625,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "dark",
+      "viewport": 768,
+      "documentWidth": 768,
+      "firstCardHeight": 536.0625,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "dark",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "firstCardHeight": 512.28125,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "dark",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "firstCardHeight": 512.28125,
+      "renderedCards": 11,
+      "priceClipping": 0
+    }
+  ],
+  "storage": {
+    "quota": 12029878243,
+    "usage": 1292460003,
+    "usageDetails": {
+      "caches": 534640,
+      "indexedDB": 1291923456,
+      "serviceWorkerRegistrations": 1907
+    }
+  },
+  "localAndShellVerified": false,
+  "ambiguousEnterPreserved": false,
+  "lazyFamily": {
+    "visibleVariants": null,
+    "expandedVariantEntries": null
+  },
+  "screenshots": [
+    "/Users/barmana/Documents/E/behrad/reports/uiux/before-current-browser/desktop-light-overview.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/before-current-browser/desktop-light-results.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/before-current-browser/mobile-light-overview.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/before-current-browser/mobile-light-results.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/before-current-browser/desktop-dark-overview.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/before-current-browser/desktop-dark-results.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/before-current-browser/mobile-dark-overview.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/before-current-browser/mobile-dark-results.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/before-current-browser/mobile-light-vehicle-picker.png"
+  ],
+  "pageErrors": []
+}

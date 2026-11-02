@@ -1,0 +1,69 @@
+{
+  "format": "partavar-release-tooling-evidence-v1",
+  "generatedAt": "2026-10-28T08:25:38.975Z",
+  "verification": {
+    "unitIntegration": {
+      "passedTests": 84,
+      "passedFiles": 22,
+      "log": "unit-integration.log"
+    },
+    "typecheck": {
+      "exitCode": 0,
+      "log": "typecheck.log"
+    },
+    "lint": {
+      "scope": "scripts/release packages/importer/src/operations.ts tests/integration/release-packaging.test.ts tests/integration/backup-relocation.test.ts",
+      "exitCode": 0,
+      "log": "lint.log"
+    }
+  },
+  "fixtureCoverage": [
+    "online backup includes committed WAL data",
+    "two independent fixed-epoch ZIP archives have identical SHA256",
+    "secret/env/login/dependency/backup/transient exclusions",
+    "destination overwrite is refused",
+    "trusted archive SHA256 mismatch and modified shipped files are rejected",
+    "relocation works without original absolute source path",
+    "corrupt active snapshot prevents publication",
+    "modified immutable source prevents publication"
+  ],
+  "finalArchiveCreated": false,
+  "deploymentExecuted": false,
+  "publicSideEffects": false,
+  "postRelocationTests": {
+    "passedFiles": 3,
+    "passedTests": 12,
+    "log": "relocation-green.log"
+  },
+  "localTLSProxy": {
+    "passedChecks": 21,
+    "tlsProtocol": "TLSv1.3",
+    "caddyVersion": "2.11.7",
+    "report": "local-tls-proxy.json",
+    "templateValidation": "caddy-template-validate.log",
+    "binaryChecksumVerification": "caddy-download.json",
+    "publicDnsOrAcmeTested": false,
+    "systemdInstalled": false
+  },
+  "cleanInstall": {
+    "passed": true,
+    "downloadedPackages": 402,
+    "reusedPackages": 0,
+    "isolatedStore": true,
+    "nativePrebuiltLoaded": true,
+    "sqliteVersion": "3.53.4",
+    "sourceRowsVerified": 36569,
+    "snapshotChunksVerified": 1103,
+    "httpChecksPassed": 23,
+    "gracefulSigtermExitCode": 0,
+    "report": "clean-install-verification.json",
+    "redNativeBuildDiagnosis": "clean-install-native-diagnosis.json",
+    "finalPlatformCoverage": "macOS arm64"
+  },
+  "packagingUserSecretsRegression": {
+    "testsPassed": 6,
+    "redLog": "clean-install-secret-exclusions-red.log",
+    "greenLog": "clean-install-secret-exclusions-green.log",
+    "lintLog": "clean-install-secret-exclusions-lint.log"
+  }
+}

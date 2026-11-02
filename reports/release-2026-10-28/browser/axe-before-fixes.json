@@ -1,0 +1,831 @@
+{
+  "automatedScope": "axe-core WCAG 2 A/AA, WCAG 2.1 A/AA and best-practice rules; not screen-reader certification",
+  "failures": [
+    {
+      "state": "site-home-light",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "help": "Elements must have their visible text as part of their accessible name",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "header > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "div > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "site-product-light",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "help": "Elements must have their visible text as part of their accessible name",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "header > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "div > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "site-features-light",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "help": "Elements must have their visible text as part of their accessible name",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "header > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "div > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "site-offline-data-light",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "help": "Elements must have their visible text as part of their accessible name",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "header > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "div > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "site-support-light",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "help": "Elements must have their visible text as part of their accessible name",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "header > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "div > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "site-contact-light",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "help": "Elements must have their visible text as part of their accessible name",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "header > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "div > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "site-home-dark",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "help": "Elements must have their visible text as part of their accessible name",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "header > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "div > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "site-product-dark",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "help": "Elements must have their visible text as part of their accessible name",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "header > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "div > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "site-features-dark",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "help": "Elements must have their visible text as part of their accessible name",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "header > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "div > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "site-offline-data-dark",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "help": "Elements must have their visible text as part of their accessible name",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "header > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "div > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "site-support-dark",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "help": "Elements must have their visible text as part of their accessible name",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "header > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "div > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "site-contact-dark",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "help": "Elements must have their visible text as part of their accessible name",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "header > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "any": [
+                {
+                  "id": "label-content-name-mismatch",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Text inside the element is not included in the accessible name"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"site-brand\" href=\"/\" aria-label=\"پارت‌آور، صفحهٔ اصلی\"><span class=\"site-wordmark\"><b lang=\"en\" dir=\"ltr\">PartAvar<span aria-hidden=\"true\">.</span></b><span>پارت‌آور</span></span></a>",
+              "target": [
+                "div > .site-brand[href=\"/\"][aria-label=\"پارت‌آور، صفحهٔ اصلی\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "state": "app-search-dark",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#6690f4",
+                    "bgColor": "#596b86",
+                    "contrastRatio": 1.77,
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "bold",
+                    "messageKey": null,
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<button type=\"button\" data-area=\"search\" aria-current=\"page\">جست‌وجو</button>",
+                      "target": [
+                        "button[data-area=\"search\"]"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element has insufficient color contrast of 1.77 (foreground color: #6690f4, background color: #596b86, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<button type=\"button\" data-area=\"search\" aria-current=\"page\">جست‌وجو</button>",
+              "target": [
+                "button[data-area=\"search\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.77 (foreground color: #6690f4, background color: #596b86, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#535963",
+                    "bgColor": "#6690f4",
+                    "contrastRatio": 2.3,
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "bold",
+                    "messageKey": null,
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<button type=\"button\" class=\"btn primary\" id=\"partSearchBtn\">جست‌وجوی قطعه <span aria-hidden=\"true\">←</span></button>",
+                      "target": [
+                        "#partSearchBtn"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element has insufficient color contrast of 2.3 (foreground color: #535963, background color: #6690f4, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<button type=\"button\" class=\"btn primary\" id=\"partSearchBtn\">جست‌وجوی قطعه <span aria-hidden=\"true\">←</span></button>",
+              "target": [
+                "#partSearchBtn"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.3 (foreground color: #535963, background color: #6690f4, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "nodeVersion": "v24.19.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "packageVersion": "13.0.3",
+  "sqliteVersion": "3.53.4",
+  "trigramRows": 1,
+  "addonFromFreshInstall": true,
+  "addonPath": "/private/var/folders/qc/91mz59vs2qx62xr748kl1r840000gn/T/partavar-clean-install-final-dW5552/release/node_modules/.pnpm/better-sqlite3@13.0.3/node_modules/better-sqlite3/prebuilds/darwin-arm64.node",
+  "sha256": "98e0e8acd01c632fe5615243e1296af0372826f8783b18fc31c506f73c47459c",
+  "compilerUsed": false
+}

@@ -1,0 +1,14 @@
+node_modules/
+**/node_modules/
+apps/web/dist/
+private-data/
+.env
+.superpowers/
+test-results/
+playwright-report/
+coverage/
+.DS_Store
+PartsFinder_Android-28 (1) (1).html
+.env
+.env.*
+*.login.json

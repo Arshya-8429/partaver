@@ -1,0 +1,10 @@
+{
+  "inputPath": "/Users/barmana/Documents/E/behrad/private-data/backups/partavar-release-2026-10-28/catalogue.db",
+  "restoredRows": 36569,
+  "activeVersionId": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+  "integrityCheck": "ok",
+  "foreignKeyViolations": 0,
+  "queryable": true,
+  "restoreDestination": "isolated temporary database (removed after verification)",
+  "backupManifestVerified": true
+}

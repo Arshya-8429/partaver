@@ -1,0 +1,170 @@
+{
+  "startedAt": "2026-10-27T08:35:27.095Z",
+  "environment": "Isolated desktop Chrome via Playwright; actual catalogue API; Vite development module harness",
+  "checks": [
+    {
+      "name": "Loaded actual catalogue entry with exact logistics",
+      "passed": true
+    },
+    {
+      "name": "Manual large integer and quantity are persisted",
+      "passed": true
+    },
+    {
+      "name": "Package saved to history",
+      "passed": true
+    },
+    {
+      "name": "Draft and saved source survive reload",
+      "passed": true
+    },
+    {
+      "name": "Browser download is real XLSX and round-trips manual price and logistics",
+      "passed": true
+    },
+    {
+      "name": "Duplicate is a new saved document",
+      "passed": true
+    },
+    {
+      "name": "Cancel clear preserves draft",
+      "passed": true
+    },
+    {
+      "name": "Clear leaves saved history intact",
+      "passed": true
+    },
+    {
+      "name": "Package to invoice preserves manual price, quantity, logistics and version",
+      "passed": true
+    },
+    {
+      "name": "Invoice history persists",
+      "passed": true
+    },
+    {
+      "name": "Dedicated print state with no popup",
+      "passed": true
+    },
+    {
+      "name": "Print hides controls, repeats table header and isolates LTR codes",
+      "passed": true
+    },
+    {
+      "name": "390px layout has no horizontal overflow and 44px touch targets",
+      "passed": true
+    },
+    {
+      "name": "Custom add uses exact base markup",
+      "passed": true
+    },
+    {
+      "name": "Purchase save, clear, reopen retains snapshot and quantity",
+      "passed": true
+    },
+    {
+      "name": "Purchase builds a package using complete line snapshots",
+      "passed": true
+    },
+    {
+      "name": "Operator preference persisted",
+      "passed": true
+    },
+    {
+      "name": "Backup contains real drafts, history and configured preferences",
+      "passed": true
+    },
+    {
+      "name": "Import preview requires an explicit action",
+      "passed": true
+    },
+    {
+      "name": "Import is additive and preserves active draft",
+      "passed": true
+    },
+    {
+      "name": "Legacy imports keep unresolved identity and raw technical code",
+      "passed": true
+    },
+    {
+      "name": "Large document print contains every snapshot row",
+      "passed": true
+    },
+    {
+      "name": "No uncaught document runtime errors",
+      "passed": true
+    }
+  ],
+  "catalogueEntry": {
+    "entryId": 17502,
+    "tech": "F4J16-1012030",
+    "log": "F4J16-1012030-01",
+    "version": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1"
+  },
+  "printState": {
+    "toolbar": "none",
+    "tableHeader": "table-header-group",
+    "codeDirection": "ltr",
+    "bodyWidth": 1440,
+    "viewport": 1440,
+    "controls": 0
+  },
+  "mobile": {
+    "viewport": 390,
+    "width": 390,
+    "controls": [
+      {
+        "text": "فاکتور جدید",
+        "width": 158,
+        "height": 48
+      },
+      {
+        "text": "ذخیره تغییرات",
+        "width": 158,
+        "height": 48
+      },
+      {
+        "text": "حذف",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "text": "خروجی Excel (.xlsx)",
+        "width": 158,
+        "height": 48
+      },
+      {
+        "text": "نمای چاپ / PDF",
+        "width": 158,
+        "height": 48
+      },
+      {
+        "text": "بازکردن",
+        "width": 102.65625,
+        "height": 44
+      },
+      {
+        "text": "رونوشت",
+        "width": 102.671875,
+        "height": 44
+      },
+      {
+        "text": "Excel",
+        "width": 102.65625,
+        "height": 44
+      },
+      {
+        "text": "چاپ / PDF",
+        "width": 102.65625,
+        "height": 44
+      },
+      {
+        "text": "حذف",
+        "width": 102.671875,
+        "height": 44
+      }
+    ]
+  },
+  "errors": [],
+  "finishedAt": "2026-10-27T08:35:29.389Z"
+}

@@ -1,0 +1,1 @@
+$ tsx scripts/release/package.ts --output deliverables/PartAvar-1.0.0-2026-10-28.zip --version 1.0.0 --epoch 1793145600 --report deliverables/PartAvar-1.0.0-2026-10-28-package.json

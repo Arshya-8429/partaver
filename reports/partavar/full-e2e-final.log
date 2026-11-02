@@ -1,0 +1,117 @@
+[WebServer] (node:3758) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ tsx src/server.ts
+[WebServer] (node:3773) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:3779) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:3779) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:3780) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ vite preview --host 127.0.0.1 -- --port 4173
+[WebServer] (node:3795) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 20 tests using 5 workers
+
+(node:3803) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3805) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3802) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3801) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3804) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3805) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 [chromium] › tests/e2e/offline-faults.spec.ts:240:1 › a corrupt snapshot chunk fails hash verification and leaves the old catalogue active (1.4s)
+  ✓   4 [chromium] › tests/e2e/partavar-workflows.spec.ts:5:1 › PartAvar application separates public site and supports custom mobile part suggestions (1.7s)
+  ✓   1 [chromium] › tests/e2e/redesign.spec.ts:3:1 › compact RTL redesign uses bounded online search and explicit vehicle selection (2.5s)
+  ✓   6 [chromium] › tests/e2e/offline-faults.spec.ts:274:1 › two tabs share one update lease while the existing version stays searchable (1.4s)
+  ✓   8 [chromium] › tests/e2e/redesign.spec.ts:61:1 › discarded requests cannot restore cleared or other-mode results (1.1s)
+  ✓  10 [chromium] › tests/e2e/redesign.spec.ts:85:1 › copy reports success only on actual writes; themes, keyboard and enlarged layout remain usable (844ms)
+  ✓   5 [chromium] › tests/e2e/price-history.spec.ts:207:1 › real catalogue entries keep independent historical evidence in the browser UI (4.6s)
+  ✓  11 [chromium] › tests/e2e/redesign.spec.ts:122:1 › vehicle search, normalized digits, empty results and large values retain their real identities (1.3s)
+  ✓  13 [chromium] › tests/e2e/redesign.spec.ts:149:1 › simulated quota exhaustion explains recovery without activating a partial catalogue (567ms)
+  ✓  12 [chromium] › tests/e2e/website.spec.ts:7:1 › public routes have distinct metadata, real internal links and no catalogue requests (1.2s)
+  ✓  15 [chromium] › tests/e2e/website.spec.ts:45:1 › responsive navigation supports keyboard, Escape, route links and app entry (513ms)
+  ✓  14 [chromium] › tests/e2e/redesign.spec.ts:169:1 › lazy logistics navigation follows actual API cursors and preserves entry prices (902ms)
+  ✘   9 [chromium] › tests/e2e/offline-faults.spec.ts:322:1 › browser close during staging relaunches from the same profile and recovers the update (4.5s)
+  -  17 [chromium] › tests/e2e/offline-faults.spec.ts:407:1 › low browser quota blocks an update before staging and keeps the old offline version
+  ✓  16 [chromium] › tests/e2e/website.spec.ts:70:1 › themes, public page layouts, touch targets and text enlargement stay usable (4.3s)
+  ✓  18 [chromium] › tests/e2e/website.spec.ts:101:1 › real preview loads and a failed image keeps useful app access (280ms)
+  ✓  19 [chromium] › tests/e2e/website.spec.ts:115:1 › help links resolve to sections and contact does not invent a submission channel (250ms)
+  ✘   7 [chromium] › tests/e2e/partavar-workflows.spec.ts:27:1 › package edits keep exact logistics and manual price through saved history, invoice, XLSX and A4 print (30.1s)
+OFFLINE_DIAGNOSTICS {"online":false,"controller":true,"serviceWorkers":["activated"],"stylesheetLinks":["http://127.0.0.1:4173/assets/index-Bgk0z1dg.css","http://127.0.0.1:4173/assets/app-bootstrap-CCCwb77U.css"],"loadedStylesheets":2,"bodyFont":"Tahoma, \"Segoe UI\", Arial, sans-serif","resources":[{"name":"http://127.0.0.1:4173/assets/index-Bgk0z1dg.css","duration":1.5,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/index-PUroESew.js","duration":1.400000000023283,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/app-shell-B8iglXNN.js","duration":0.5999999999767169,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/app-bootstrap-BBgSLEZ1.js","duration":0.9000000000232831,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/app-bootstrap-CCCwb77U.css","duration":0.8999999999068677,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/theme-mhmZZqUX.js","duration":0.8999999999068677,"transferSize":0}],"status":"در حال بررسی کاتالوگ…"}
+  ✓   2 [chromium] › tests/e2e/offline-workflows.spec.ts:96:1 › preserves original workflows, installs the full catalogue, and searches after offline relaunch (35.3s)
+  ✓  20 [chromium] › tests/e2e/offline-workflows.spec.ts:297:1 › cancels a staged update at a chunk boundary and keeps the prior offline catalogue active (498ms)
+
+
+  1) [chromium] › tests/e2e/offline-faults.spec.ts:322:1 › browser close during staging relaunches from the same profile and recovers the update 
+
+    Error: expect(received).toMatchObject(expected)
+
+    - Expected  - 3
+    + Received  + 3
+
+      Object {
+    -   "activeVersion": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff-s1-n1-r1",
+    +   "activeVersion": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb-s1-n1-r1",
+        "oldEntryCount": 1,
+    -   "targetEntryCount": 1,
+    -   "targetStatus": "ready",
+    +   "targetEntryCount": 0,
+    +   "targetStatus": "downloading",
+      }
+
+      387 |     await waitForReady(relaunchPage);
+      388 |     const recovered = await replicaState(relaunchPage, restartVersion);
+    > 389 |     expect(recovered).toMatchObject({ activeVersion: restartVersion, targetStatus: 'ready', oldEntryCount: 1, targetEntryCount: 1 });
+          |                       ^
+      390 |     expect(recovered.activeEntry).toMatchObject({ logRaw: 'LOG-NEXT-3', basePrice: '22' });
+      391 |     caseDetails.set(testInfo.title, {
+      392 |       outcome: 'passed',
+        at /Users/barmana/Documents/E/behrad/tests/e2e/offline-faults.spec.ts:389:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/offline-faults-browser-clo-9cb37-ile-and-recovers-the-update-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/offline-faults-browser-clo-9cb37-ile-and-recovers-the-update-chromium/error-context.md
+
+    Error Context: test-results/offline-faults-browser-clo-9cb37-ile-and-recovers-the-update-chromium/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/offline-faults-browser-clo-9cb37-ile-and-recovers-the-update-chromium/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/offline-faults-browser-clo-9cb37-ile-and-recovers-the-update-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests/e2e/partavar-workflows.spec.ts:27:1 › package edits keep exact logistics and manual price through saved history, invoice, XLSX and A4 print 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/partavar-workflows-package-b54b6-y-invoice-XLSX-and-A4-print-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/partavar-workflows-package-b54b6-y-invoice-XLSX-and-A4-print-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/partavar-workflows-package-b54b6-y-invoice-XLSX-and-A4-print-chromium/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/partavar-workflows-package-b54b6-y-invoice-XLSX-and-A4-print-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [chromium] › tests/e2e/offline-faults.spec.ts:322:1 › browser close during staging relaunches from the same profile and recovers the update 
+    [chromium] › tests/e2e/partavar-workflows.spec.ts:27:1 › package edits keep exact logistics and manual price through saved history, invoice, XLSX and A4 print 
+  1 did not run
+  17 passed (38.6s)

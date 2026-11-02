@@ -1,0 +1,18 @@
+{
+  "measuredAt": "2026-10-27T08:27:43.854Z",
+  "environment": {
+    "node": "v24.19.0",
+    "platform": "darwin",
+    "architecture": "arm64"
+  },
+  "catalogueVersion": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+  "productionBatchCount": 0,
+  "importedProductionHistory": false,
+  "entriesPerRequest": 20,
+  "requests": 200,
+  "medianMs": 0.4295829999999796,
+  "p95Ms": 0.5788340000000005,
+  "maxMs": 1.637042000000008,
+  "responseBytes": 8312,
+  "note": "Fastify in-process inject timing on the retained real catalogue. No company history was supplied or invented. This measures the neutral-summary path, excludes network/browser latency, and does not establish populated production-history performance."
+}

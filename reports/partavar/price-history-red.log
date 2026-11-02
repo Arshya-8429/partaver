@@ -1,0 +1,24 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ❯ tests/unit/price-history.test.ts (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/unit/price-history.test.ts [ tests/unit/price-history.test.ts ]
+Error: Cannot find module '../../packages/domain/src/price-history.js' imported from /Users/barmana/Documents/E/behrad/tests/unit/price-history.test.ts
+ ❯ tests/unit/price-history.test.ts:2:1
+      1| import { describe, expect, it } from 'vitest';
+      2| import { calculateHistoryMetrics, classifyPriceHistory, DEFAULT_PRICE_…
+       | ^
+      3|
+      4| const point = (price: string, effectiveDate: string | null, currencyUn…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  11:43:17
+   Duration  66ms (worker 96%, environment 4%)
+

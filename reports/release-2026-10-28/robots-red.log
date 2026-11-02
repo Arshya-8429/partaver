@@ -1,0 +1,40 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ❯ tests/integration/production-runtime.test.ts (7 tests | 1 failed) 131ms
+   ❯ private production runtime (7)
+     × serves the public website and hashed assets from the built root 32ms
+     ✓ requires authentication on app, all API routes, manifests and snapshot bytes 2ms
+     ✓ keeps authenticated indexed search, immutable snapshots and revalidation working 10ms
+     ✓ rejects foreign Host, Origin and cross-site private reads even with credentials 0ms
+     ✓ never serves sources, databases, build metadata or an SPA response for missing APIs 1ms
+     ✓ sends browser protections and revalidates shell/SW instead of caching a login 1ms
+     ✓ fails closed when production environment has no authentication configuration 0ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/production-runtime.test.ts > private production runtime > serves the public website and hashed assets from the built root
+AssertionError: expected 404 to be 200 // Object.is equality
+
+- Expected
++ Received
+
+- 200
++ 404
+
+ ❯ tests/integration/production-runtime.test.ts:61:31
+     59|     expect((await inject('/health/live', {}, false)).json()).toEqual({…
+     60|     const robots = await inject('/robots.txt', {}, false);
+     61|     expect(robots.statusCode).toBe(200);
+       |                               ^
+     62|     expect(robots.headers['content-type']).toContain('text/plain');
+     63|     expect(robots.body).toContain('Disallow: /app');
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 6 passed (7)
+   Start at  11:09:07
+   Duration  285ms (tests 56%, import 24%, transform 20%, worker 1%)
+

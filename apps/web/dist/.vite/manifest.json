@@ -1,0 +1,60 @@
+{
+  "_theme-mhmZZqUX.js": {
+    "file": "assets/theme-mhmZZqUX.js",
+    "name": "theme"
+  },
+  "index.html": {
+    "file": "assets/index-Cn94n4k4.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/app-shell.ts",
+      "src/app-bootstrap.ts",
+      "src/website/index.ts",
+      "src/ui/theme.ts"
+    ],
+    "css": [
+      "assets/index-BhVhxGnm.css"
+    ]
+  },
+  "src/app-bootstrap.ts": {
+    "file": "assets/app-bootstrap-CpZm4uWq.js",
+    "name": "app-bootstrap",
+    "src": "src/app-bootstrap.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_theme-mhmZZqUX.js"
+    ],
+    "css": [
+      "assets/app-bootstrap-CCCwb77U.css"
+    ],
+    "assets": [
+      "assets/catalogue.worker-Cmifh3cz.js"
+    ]
+  },
+  "src/app-shell.ts": {
+    "file": "assets/app-shell-CrojkZxx.js",
+    "name": "app-shell",
+    "src": "src/app-shell.ts",
+    "isDynamicEntry": true
+  },
+  "src/ui/theme.ts": {
+    "file": "assets/theme-Dubfbby_.js",
+    "name": "theme",
+    "src": "src/ui/theme.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_theme-mhmZZqUX.js"
+    ]
+  },
+  "src/website/index.ts": {
+    "file": "assets/website-aFGBNYFj.js",
+    "name": "website",
+    "src": "src/website/index.ts",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/website-C_-i1UU3.css"
+    ]
+  }
+}

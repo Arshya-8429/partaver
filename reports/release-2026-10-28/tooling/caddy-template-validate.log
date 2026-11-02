@@ -1,0 +1,8 @@
+{"level":"info","ts":1793173058.342884,"msg":"using config from file","file":"/Users/barmana/Documents/E/behrad/deploy/Caddyfile"}
+{"level":"info","ts":1793173058.3433,"msg":"adapted config to JSON","adapter":"caddyfile"}
+{"level":"info","ts":1793173058.343461,"logger":"http.auto_https","msg":"server is listening only on the HTTPS port but has no TLS connection policies; adding one to enable TLS","server_name":"srv0","https_port":443}
+{"level":"info","ts":1793173058.343467,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x7ced18e15e00"}
+{"level":"info","ts":1793173058.3434691,"logger":"http.auto_https","msg":"enabling automatic HTTP->HTTPS redirects","server_name":"srv0"}
+{"level":"info","ts":1793173058.343575,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x7ced18e15e00"}
+{"level":"info","ts":1793173058.343584,"logger":"http","msg":"servers shutting down with eternal grace period"}
+Valid configuration

@@ -1,0 +1,10 @@
+$ tsx packages/importer/src/cli.ts backup -- --output private-data/backups/partavar-release-2026-10-27
+{
+  "outputPath": "/Users/barmana/Documents/E/behrad/private-data/backups/partavar-release-2026-10-27",
+  "manifestPath": "/Users/barmana/Documents/E/behrad/private-data/backups/partavar-release-2026-10-27/backup-manifest.json",
+  "bytes": 323524253,
+  "sha256": "19e280e4c05664adde1af4d1f3cc584e87315fcd64bab1c69031f5f504d35c69",
+  "integrityCheck": "ok",
+  "activeVersionId": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+  "artifactCount": 1105
+}

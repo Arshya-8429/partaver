@@ -1,0 +1,10 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ✓ tests/integration/production-runtime.test.ts (7 tests) 124ms
+
+ Test Files  1 passed (1)
+      Tests  7 passed (7)
+   Start at  10:52:07
+   Duration  256ms (tests 59%, import 27%, transform 13%, worker 1%)
+

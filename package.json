@@ -1,0 +1,51 @@
+{
+  "name": "partsfinder-catalogue",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c blue,green \"pnpm --filter @partsfinder/api dev\" \"pnpm --filter @partsfinder/web dev\"",
+    "start": "pnpm --filter @partsfinder/api start",
+    "release:credentials": "tsx scripts/operator-credentials.ts",
+    "release:package": "tsx scripts/release/package.ts",
+    "release:verify": "tsx scripts/release/verify.ts",
+    "test:release:browsers": "playwright test --config playwright.release.config.ts",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "test:e2e": "playwright test",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint apps packages scripts tests --ext .ts",
+    "build": "pnpm --filter @partsfinder/api build && pnpm --filter @partsfinder/web build",
+    "catalogue:import": "tsx packages/importer/src/cli.ts import",
+    "catalogue:verify": "tsx packages/importer/src/cli.ts verify",
+    "catalogue:publish": "tsx packages/importer/src/cli.ts publish",
+    "catalogue:rollback": "tsx packages/importer/src/cli.ts rollback",
+    "catalogue:backup": "tsx packages/importer/src/cli.ts backup",
+    "catalogue:restore": "tsx packages/importer/src/cli.ts restore",
+    "check:bundle": "tsx scripts/check-bundle.ts",
+    "benchmark": "tsx scripts/benchmark.ts",
+    "test:all": "pnpm typecheck && pnpm lint && pnpm test:unit && pnpm test:integration && pnpm build && pnpm test:e2e",
+    "partavar:prices": "tsx scripts/price-history.ts",
+    "partavar:source-check": "tsx scripts/partavar-source-check.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/better-sqlite3": "9.6.0",
+    "@types/node": "^24.19.2",
+    "axe-core": "^4.14.0",
+    "better-sqlite3": "13.0.3",
+    "concurrently": "10.0.6",
+    "eslint": "10.13.0",
+    "exceljs": "4.4.0",
+    "fastify": "5.12.7",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.71.2",
+    "vite": "8.3.4",
+    "vitest": "5.0.5"
+  }
+}

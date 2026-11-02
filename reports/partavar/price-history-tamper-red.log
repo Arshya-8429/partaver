@@ -1,0 +1,44 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ❯ tests/integration/price-history.test.ts (6 tests | 1 failed) 256ms
+   ❯ historical XLSX import and bounded reads (6)
+     ✓ stages immutable XLSX evidence, reports ambiguity, commits explicitly and never writes catalogue 95ms
+     ✓ audits supersede and rollback, ranks growth and restores a verified backup to a new target 52ms
+     ✓ rejects legacy XLS, formula cells, unsafe numeric prices, invalid dates and unbounded reads 28ms
+     × refuses to activate source archives changed after staging and canonicalizes equivalent column mappings 22ms
+     ✓ keeps retained catalogue versions isolated and invalidates timeline cursors after audited transitions 32ms
+     ✓ preserves conflicting same-day evidence, rejects database aliases and verifies backup tampering 26ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/price-history.test.ts > historical XLSX import and bounded reads > refuses to activate source archives changed after staging and canonicalizes equivalent column mappings
+AssertionError: promise resolved "{ …(3) }" instead of rejecting
+
+- Expected
++ Received
+
+- Error {
+-   "message": "rejected promise",
++ {
++   "batchId": "1ecbd235-2744-425a-a132-5813abd8ee56",
++   "revision": 1,
++   "status": "active",
+  }
+
+ ❯ tests/integration/price-history.test.ts:158:151
+    156|     expect((await stagePriceHistory({ sourcePath, cataloguePath, opera…
+    157|     await writeFile(join(root, 'price-history-sources', `${staged.sour…
+    158|     await expect(commitPriceHistory({ operationsPath, cataloguePath, b…
+       |                                                                                                                                                       ^
+    159|     expect(previewPriceHistory(operationsPath, staged.batchId).status)…
+    160|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 5 passed (6)
+   Start at  11:53:26
+   Duration  453ms (tests 64%, import 30%, transform 6%)
+

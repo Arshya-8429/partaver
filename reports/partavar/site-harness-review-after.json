@@ -1,0 +1,517 @@
+{
+  "scope": "Real website renderer through isolated entry harness; integrated entry pending",
+  "changes": [
+    "Desktop contact target min-width44px",
+    "Mobile trust strip uses two-column icon/text grid and separate link row"
+  ],
+  "checks": [
+    {
+      "theme": "light",
+      "route": "/",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/",
+      "width": 360,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/",
+      "width": 430,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/",
+      "width": 1024,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/product",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/product",
+      "width": 360,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/product",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/product",
+      "width": 430,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/product",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/product",
+      "width": 1024,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/product",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/features",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/features",
+      "width": 360,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/features",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/features",
+      "width": 430,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/features",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/features",
+      "width": 1024,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/features",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/offline-data",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/offline-data",
+      "width": 360,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/offline-data",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/offline-data",
+      "width": 430,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/offline-data",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/offline-data",
+      "width": 1024,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/offline-data",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/support",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/support",
+      "width": 360,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/support",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/support",
+      "width": 430,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/support",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/support",
+      "width": 1024,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/support",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/contact",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/contact",
+      "width": 360,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/contact",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/contact",
+      "width": 430,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/contact",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/contact",
+      "width": 1024,
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "route": "/contact",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/",
+      "width": 360,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/",
+      "width": 430,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/",
+      "width": 1024,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/product",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/product",
+      "width": 360,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/product",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/product",
+      "width": 430,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/product",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/product",
+      "width": 1024,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/product",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/features",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/features",
+      "width": 360,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/features",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/features",
+      "width": 430,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/features",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/features",
+      "width": 1024,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/features",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/offline-data",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/offline-data",
+      "width": 360,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/offline-data",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/offline-data",
+      "width": 430,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/offline-data",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/offline-data",
+      "width": 1024,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/offline-data",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/support",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/support",
+      "width": 360,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/support",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/support",
+      "width": 430,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/support",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/support",
+      "width": 1024,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/support",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/contact",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/contact",
+      "width": 360,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/contact",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/contact",
+      "width": 430,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/contact",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/contact",
+      "width": 1024,
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "route": "/contact",
+      "width": 1440,
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "errors": [],
+  "menuOpen": "true",
+  "escapeFocus": true
+}

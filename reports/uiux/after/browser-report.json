@@ -1,0 +1,206 @@
+{
+  "capturedAt": "2026-10-27T07:45:41.653Z",
+  "stage": "implemented-redesign",
+  "datasetVersion": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+  "environment": {
+    "node": "v24.19.0",
+    "os": "24.3.0",
+    "platform": "darwin",
+    "architecture": "arm64",
+    "cpu": "Apple M4",
+    "browserVersion": "156.0.8078.48",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "cpuThrottling": "none",
+    "network": "loopback; no throttling",
+    "deviceScaleFactor": 1
+  },
+  "method": {
+    "startup": "navigation to DOMContentLoaded then row-count/search-enabled; 5 warm installed starts",
+    "query": "UI click until expected count and bounded cards; first then 5 warm repeated queries, Worker cache retained",
+    "screenshots": "same real exact query, 11 entries, 1440x1000 / 390x844, both themes, top and results",
+    "limits": "not INP, no physical Android, no network throttling, no statistically significant speedup claim; screenshot test profile differs from baseline"
+  },
+  "firstDomReadyMs": 39.22533299999998,
+  "firstOnlineReadyMs": 93.29533300000003,
+  "automaticChunkRequests": 0,
+  "manualInstallMs": 17867.866459,
+  "installChunkRequests": 1103,
+  "warmStartupMs": [
+    54.83941599999889,
+    41.30187499999738,
+    22.98054200000115,
+    49.592375000000175,
+    42.512791000001016
+  ],
+  "warmLaunchChunkRequests": 0,
+  "timings": [
+    {
+      "input": "0CF25BE-1500011BA",
+      "count": 11,
+      "firstMs": 827.5414999999994,
+      "warmMs": [
+        57.20324999999866,
+        56.72333300000173,
+        44.79054200000246,
+        44.10112499999741,
+        48.141459000002214
+      ]
+    },
+    {
+      "input": "گیربکس اتوماتیک",
+      "count": 56,
+      "firstMs": 1823.5922079999982,
+      "warmMs": [
+        49.83162500000253,
+        54.54258299999856,
+        45.69683399999849,
+        61.90154199999961,
+        60.8682919999992
+      ]
+    }
+  ],
+  "overflow": [
+    {
+      "theme": "light",
+      "viewport": 320,
+      "documentWidth": 320,
+      "firstCardHeight": 378.71875,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "light",
+      "viewport": 360,
+      "documentWidth": 360,
+      "firstCardHeight": 381.53125,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "light",
+      "viewport": 390,
+      "documentWidth": 390,
+      "firstCardHeight": 356.34375,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "light",
+      "viewport": 430,
+      "documentWidth": 430,
+      "firstCardHeight": 320.5625,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "light",
+      "viewport": 768,
+      "documentWidth": 768,
+      "firstCardHeight": 235.15625,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "light",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "firstCardHeight": 203.375,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "light",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "firstCardHeight": 167,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "dark",
+      "viewport": 320,
+      "documentWidth": 320,
+      "firstCardHeight": 378.71875,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "dark",
+      "viewport": 360,
+      "documentWidth": 360,
+      "firstCardHeight": 381.53125,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "dark",
+      "viewport": 390,
+      "documentWidth": 390,
+      "firstCardHeight": 356.34375,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "dark",
+      "viewport": 430,
+      "documentWidth": 430,
+      "firstCardHeight": 320.5625,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "dark",
+      "viewport": 768,
+      "documentWidth": 768,
+      "firstCardHeight": 235.15625,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "dark",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "firstCardHeight": 203.375,
+      "renderedCards": 11,
+      "priceClipping": 0
+    },
+    {
+      "theme": "dark",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "firstCardHeight": 167,
+      "renderedCards": 11,
+      "priceClipping": 0
+    }
+  ],
+  "storage": {
+    "quota": 12029887013,
+    "usage": 1292468773,
+    "usageDetails": {
+      "caches": 542901,
+      "indexedDB": 1291923456,
+      "serviceWorkerRegistrations": 2416
+    }
+  },
+  "localAndShellVerified": true,
+  "ambiguousEnterPreserved": true,
+  "lazyFamily": {
+    "visibleVariants": 5,
+    "expandedVariantEntries": 5
+  },
+  "screenshots": [
+    "/Users/barmana/Documents/E/behrad/reports/uiux/after/desktop-light-overview.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/after/desktop-light-results.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/after/mobile-light-overview.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/after/mobile-light-results.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/after/desktop-dark-overview.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/after/desktop-dark-results.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/after/mobile-dark-overview.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/after/mobile-dark-results.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/after/mobile-light-entry-detail.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/after/mobile-light-family.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/after/mobile-light-variant-entries.png",
+    "/Users/barmana/Documents/E/behrad/reports/uiux/after/mobile-light-vehicle-picker.png"
+  ],
+  "pageErrors": []
+}

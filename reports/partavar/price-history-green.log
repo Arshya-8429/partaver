@@ -1,0 +1,11 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ✓ tests/unit/price-history.test.ts (5 tests) 9ms
+ ✓ tests/integration/price-history.test.ts (7 tests) 298ms
+
+ Test Files  2 passed (2)
+      Tests  12 passed (12)
+   Start at  12:01:21
+   Duration  584ms (tests 55%, import 39%, transform 6%, worker 1%)
+

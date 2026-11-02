@@ -1,0 +1,65 @@
+
+Running 1 test using 1 worker
+
+(node:2635) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › tests/e2e/redesign.spec.ts:3:1 › compact RTL redesign uses bounded online search and explicit vehicle selection (5.7s)
+
+
+  1) [chromium] › tests/e2e/redesign.spec.ts:3:1 › compact RTL redesign uses bounded online search and explicit vehicle selection 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  locator('#catalogueStatusText')
+    Expected: "online"
+    Received: "empty"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveAttribute" locator('#catalogueStatusText') with timeout 5000ms
+      - waiting for locator('#catalogueStatusText')
+        - locator resolved to <span role="status" aria-live="polite" data-state="empty" id="catalogueStatusText">Checking the catalogue version.</span>
+        4 × unexpected value "empty"
+          - locator resolved to <span role="status" aria-live="polite" data-state="empty" id="catalogueStatusText">Importing partNames data.</span>
+        2 × unexpected value "empty"
+          - locator resolved to <span role="status" aria-live="polite" data-state="empty" id="catalogueStatusText">Importing parts data.</span>
+        - unexpected value "empty"
+        - locator resolved to <span role="status" aria-live="polite" data-state="empty" id="catalogueStatusText">Importing entries data.</span>
+        - unexpected value "empty"
+        - locator resolved to <span role="status" aria-live="polite" data-state="empty" id="catalogueStatusText">Checked 173 of 1103 chunks.</span>
+        - unexpected value "empty"
+        - locator resolved to <span role="status" aria-live="polite" data-state="empty" id="catalogueStatusText">Checked 218 of 1103 chunks.</span>
+        - unexpected value "empty"
+        - locator resolved to <span role="status" aria-live="polite" data-state="empty" id="catalogueStatusText">Importing entryModels data.</span>
+        - unexpected value "empty"
+        - locator resolved to <span role="status" aria-live="polite" data-state="empty" id="catalogueStatusText">Checked 305 of 1103 chunks.</span>
+        - unexpected value "empty"
+        - locator resolved to <span role="status" aria-live="polite" data-state="empty" id="catalogueStatusText">Checked 348 of 1103 chunks.</span>
+        - unexpected value "empty"
+
+
+       7 |   page.on('request', request => { if (request.url().includes('/snapshot/chunks/')) chunks.push(request.url()); });
+       8 |   await page.goto('/');
+    >  9 |   await expect(page.locator('#catalogueStatusText')).toHaveAttribute('data-state', 'online');
+         |                                                      ^
+      10 |   expect(chunks).toEqual([]);
+      11 |   await page.locator('#vehicle').fill('X33 Cross');
+      12 |   await expect(page.locator('.vehicleOption')).toHaveCount(2);
+        at /Users/barmana/Documents/E/behrad/tests/e2e/redesign.spec.ts:9:54
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/redesign-compact-RTL-redes-fa118--explicit-vehicle-selection-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/redesign-compact-RTL-redes-fa118--explicit-vehicle-selection-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/redesign-compact-RTL-redes-fa118--explicit-vehicle-selection-chromium/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/redesign-compact-RTL-redes-fa118--explicit-vehicle-selection-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › tests/e2e/redesign.spec.ts:3:1 › compact RTL redesign uses bounded online search and explicit vehicle selection 

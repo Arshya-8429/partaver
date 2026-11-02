@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-10-28T07:32:52.759Z",
+  "platform": "darwin",
+  "release": "24.3.0",
+  "arch": "arm64",
+  "node": "v24.19.0",
+  "playwright": "1.64.1",
+  "axe": "4.14.0",
+  "browsers": {
+    "chromium": "156.0.8078.48",
+    "firefox": "157.0",
+    "webkit": "27.2"
+  },
+  "android": {
+    "adbOnPath": false,
+    "standardPathsChecked": [
+      {
+        "path": "/Users/barmana/Library/Android/sdk/platform-tools/adb",
+        "exists": false
+      },
+      {
+        "path": "/opt/homebrew/bin/adb",
+        "exists": false
+      },
+      {
+        "path": "/usr/local/bin/adb",
+        "exists": false
+      }
+    ],
+    "deviceInventory": "unavailable; adb was not installed, so connected physical devices were not enumerated"
+  },
+  "limitations": [
+    "WebKit engine is not actual Safari browser or iOS hardware",
+    "No physical Android or Android WebView run",
+    "No manual screen reader run",
+    "Single macOS machine, desktop browser engines, mobile widths and CSS enlargement"
+  ]
+}

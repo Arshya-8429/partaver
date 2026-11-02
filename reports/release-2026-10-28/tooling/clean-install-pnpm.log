@@ -1,0 +1,116 @@
+Scope: all 6 workspace projects
+? Verifying lockfile against supply-chain policies (451 entries)...
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +402
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 402, reused 0, downloaded 0, added 0
+Packages are cloned from the content-addressable store to the virtual store.
+  Content-addressable store is at: /var/folders/qc/91mz59vs2qx62xr748kl1r840000gn/T/partavar-clean-install-qJpCbe/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 402, reused 0, downloaded 7, added 7
+
+   ╭──────────────────────────────────────────────────────────────────────╮
+   │                                                                      │
+   │                 Update available! 11.25.0 → 12.15.0.                 │
+   │                 Changelog: https://pnpm.io/v/12.15.0                 │
+   │   To update, run: curl -fsSL https://get.pnpm.io/install.sh | sh -   │
+   │                                                                      │
+   ╰──────────────────────────────────────────────────────────────────────╯
+
+Progress: resolved 402, reused 0, downloaded 43, added 43
+Progress: resolved 402, reused 0, downloaded 58, added 58
+Progress: resolved 402, reused 0, downloaded 63, added 63
+Progress: resolved 402, reused 0, downloaded 69, added 69
+Progress: resolved 402, reused 0, downloaded 80, added 80
+Progress: resolved 402, reused 0, downloaded 98, added 98
+Progress: resolved 402, reused 0, downloaded 117, added 116
+Progress: resolved 402, reused 0, downloaded 121, added 121
+Progress: resolved 402, reused 0, downloaded 139, added 139
+Progress: resolved 402, reused 0, downloaded 147, added 147
+Progress: resolved 402, reused 0, downloaded 155, added 155
+Progress: resolved 402, reused 0, downloaded 163, added 163
+Progress: resolved 402, reused 0, downloaded 185, added 185
+[WARN] Request took 13879ms: https://registry.npmjs.org/@typescript-eslint%2Ftypescript-estree
+[WARN] Tarball download average speed 22 KiB/s (size 128 KiB) is below 50 KiB/s: https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz (GET)
+Progress: resolved 402, reused 0, downloaded 211, added 209
+[WARN] Request took 14436ms: https://registry.npmjs.org/@types%2Fnode
+Progress: resolved 402, reused 0, downloaded 225, added 225
+[WARN] Request took 15833ms: https://registry.npmjs.org/@typescript-eslint%2Ftypes
+[WARN] Tarball download average speed 43 KiB/s (size 49 KiB) is below 50 KiB/s: https://registry.npmjs.org/cacheable/-/cacheable-2.5.0.tgz (GET)
+Progress: resolved 402, reused 0, downloaded 242, added 242
+[WARN] Request took 14017ms: https://registry.npmjs.org/axe-core
+[WARN] Request took 17192ms: https://registry.npmjs.org/@typescript-eslint%2Fscope-manager
+Progress: resolved 402, reused 0, downloaded 274, added 274
+Progress: resolved 402, reused 0, downloaded 304, added 304
+Progress: resolved 402, reused 0, downloaded 332, added 332
+Progress: resolved 402, reused 0, downloaded 359, added 359
+Progress: resolved 402, reused 0, downloaded 395, added 394
+Progress: resolved 402, reused 0, downloaded 397, added 397
+Progress: resolved 402, reused 0, downloaded 398, added 397
+Progress: resolved 402, reused 0, downloaded 398, added 398
+[WARN] Request took 10477ms: https://registry.npmjs.org/playwright-core
+[WARN] Request took 28492ms: https://registry.npmjs.org/@typescript-eslint%2Feslint-plugin
+Progress: resolved 402, reused 0, downloaded 399, added 398
+[WARN] Request took 32784ms: https://registry.npmjs.org/@typescript-eslint%2Fparser
+Progress: resolved 402, reused 0, downloaded 400, added 400
+[WARN] Request took 16100ms: https://registry.npmjs.org/playwright
+✓ Lockfile passes supply-chain policies (451 entries in 35.9s)
+Progress: resolved 402, reused 0, downloaded 401, added 400
+Progress: resolved 402, reused 0, downloaded 401, added 401
+Progress: resolved 402, reused 0, downloaded 402, added 401
+Progress: resolved 402, reused 0, downloaded 402, added 402, done
+.../node_modules/better-sqlite3 install$ node-gyp rebuild
+.../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+.../node_modules/better-sqlite3 install: gyp info it worked if it ends with ok
+.../node_modules/better-sqlite3 install: gyp info using node-gyp@12.3.0
+.../node_modules/better-sqlite3 install: gyp info using node@24.19.0 | darwin | arm64
+.../node_modules/better-sqlite3 install: gyp info find Python using Python version 3.12.14 found at "/Users/barmana/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3"
+.../node_modules/better-sqlite3 install: gyp http GET https://nodejs.org/download/release/v24.19.0/node-v24.19.0-headers.tar.gz
+.../node_modules/better-sqlite3 install: gyp http 200 https://nodejs.org/download/release/v24.19.0/node-v24.19.0-headers.tar.gz
+.../node_modules/better-sqlite3 install: gyp http GET https://nodejs.org/download/release/v24.19.0/SHASUMS256.txt
+.../node_modules/better-sqlite3 install: gyp http 200 https://nodejs.org/download/release/v24.19.0/SHASUMS256.txt
+.../node_modules/better-sqlite3 install: gyp info spawn /Users/barmana/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3
+.../node_modules/better-sqlite3 install: gyp info spawn args [
+.../node_modules/better-sqlite3 install: gyp info spawn args '/Users/barmana/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/pnpm/dist/node_modules/node-gyp/gyp/gyp_main.py',
+.../node_modules/better-sqlite3 install: gyp info spawn args 'binding.gyp',
+.../node_modules/better-sqlite3 install: gyp info spawn args '-f',
+.../node_modules/better-sqlite3 install: gyp info spawn args 'make',
+.../node_modules/better-sqlite3 install: gyp info spawn args '-I',
+.../node_modules/better-sqlite3 install: gyp info spawn args '/private/var/folders/qc/91mz59vs2qx62xr748kl1r840000gn/T/partavar-clean-install-qJpCbe/release/node_modules/.pnpm/better-sqlite3@13.0.3/node_modules/better-sqlite3/build/config.gypi',
+.../node_modules/better-sqlite3 install: gyp info spawn args '-I',
+.../node_modules/better-sqlite3 install: gyp info spawn args '/Users/barmana/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/pnpm/dist/node_modules/node-gyp/addon.gypi',
+.../node_modules/better-sqlite3 install: gyp info spawn args '-I',
+.../node_modules/better-sqlite3 install: gyp info spawn args '/Users/barmana/Library/Caches/node-gyp/24.19.0/include/node/common.gypi',
+.../node_modules/better-sqlite3 install: gyp info spawn args '-Dlibrary=shared_library',
+.../node_modules/better-sqlite3 install: gyp info spawn args '-Dvisibility=default',
+.../node_modules/better-sqlite3 install: gyp info spawn args '-Dnode_root_dir=/Users/barmana/Library/Caches/node-gyp/24.19.0',
+.../node_modules/better-sqlite3 install: gyp info spawn args '-Dnode_gyp_dir=/Users/barmana/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/pnpm/dist/node_modules/node-gyp',
+.../node_modules/better-sqlite3 install: gyp info spawn args '-Dnode_lib_file=/Users/barmana/Library/Caches/node-gyp/24.19.0/<(target_arch)/node.lib',
+.../node_modules/better-sqlite3 install: gyp info spawn args '-Dmodule_root_dir=/private/var/folders/qc/91mz59vs2qx62xr748kl1r840000gn/T/partavar-clean-install-qJpCbe/release/node_modules/.pnpm/better-sqlite3@13.0.3/node_modules/better-sqlite3',
+.../node_modules/better-sqlite3 install: gyp info spawn args '-Dnode_engine=v8',
+.../node_modules/better-sqlite3 install: gyp info spawn args '--depth=.',
+.../node_modules/better-sqlite3 install: gyp info spawn args '--no-parallel',
+.../node_modules/better-sqlite3 install: gyp info spawn args '--generator-output',
+.../node_modules/better-sqlite3 install: gyp info spawn args 'build',
+.../node_modules/better-sqlite3 install: gyp info spawn args '-Goutput_dir=.'
+.../node_modules/better-sqlite3 install: gyp info spawn args ]
+.../node_modules/better-sqlite3 install: gyp info spawn make
+.../node_modules/better-sqlite3 install: gyp info spawn args [ 'BUILDTYPE=Release', '-C', 'build' ]
+.../node_modules/better-sqlite3 install: xcode-select: note: No developer tools were found, requesting install.
+.../node_modules/better-sqlite3 install: If developer tools are located at a non-default location on disk, use `sudo xcode-select --switch path/to/Xcode.app` to specify the Xcode that you wish to use for command line developer tools, and cancel the installation dialog.
+.../node_modules/better-sqlite3 install: See `man xcode-select` for more details.
+.../node_modules/better-sqlite3 install: gyp ERR! build error 
+.../node_modules/better-sqlite3 install: gyp ERR! stack Error: `make` failed with exit code: 1
+.../node_modules/better-sqlite3 install: gyp ERR! stack at ChildProcess.<anonymous> (/Users/barmana/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/pnpm/dist/node_modules/node-gyp/lib/build.js:219:23)
+.../node_modules/better-sqlite3 install: gyp ERR! System Darwin 24.3.0
+.../node_modules/better-sqlite3 install: gyp ERR! command "/Users/barmana/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node" "/Users/barmana/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/pnpm/dist/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+.../node_modules/better-sqlite3 install: gyp ERR! cwd /private/var/folders/qc/91mz59vs2qx62xr748kl1r840000gn/T/partavar-clean-install-qJpCbe/release/node_modules/.pnpm/better-sqlite3@13.0.3/node_modules/better-sqlite3
+.../node_modules/better-sqlite3 install: gyp ERR! node -v v24.19.0
+.../node_modules/better-sqlite3 install: gyp ERR! node-gyp -v v12.3.0
+.../node_modules/better-sqlite3 install: gyp ERR! $npm_package_name better-sqlite3
+.../node_modules/better-sqlite3 install: gyp ERR! $npm_package_version 13.0.3
+.../node_modules/better-sqlite3 install: gyp ERR! not ok 
+.../node_modules/better-sqlite3 install: Failed
+[ELIFECYCLE] Command failed with exit code 1.

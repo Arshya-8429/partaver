@@ -1,0 +1,76 @@
+{
+  "createdAt": "2026-10-28T08:25:36.243Z",
+  "browser": {
+    "engine": "Chromium",
+    "version": "156.0.8078.48"
+  },
+  "appUrl": "http://127.0.0.1:4173/app/",
+  "fixtureScope": "small synthetic rows only; production SQLite catalogue and imported data are not modified",
+  "cases": [
+    {
+      "name": "a corrupt snapshot chunk fails hash verification and leaves the old catalogue active",
+      "status": "passed",
+      "details": {
+        "outcome": "passed",
+        "rejectedChunk": "same byte length; body modified after descriptor SHA-256 was calculated",
+        "activeVersionAfterFailure": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb-s1-n1-r1",
+        "catalogueEntryPreserved": {
+          "version": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb-s1-n1-r1",
+          "id": 1,
+          "partId": 1,
+          "logRaw": "LOG-OLD-1",
+          "logNorm": "LOG-OLD-1",
+          "basePrice": "10",
+          "replacementRaw": "",
+          "sourceRowOrdinal": 1,
+          "sourceRowSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+          "suffix01Rank": 0
+        },
+        "failedCandidate": "Snapshot chunk hash mismatch: entries-00000-2601c103dba0a57b"
+      }
+    },
+    {
+      "name": "two tabs share one update lease while the existing version stays searchable",
+      "status": "passed",
+      "details": {
+        "outcome": "passed",
+        "competingTabMessage": "second tab was refused while the first held the IndexedDB installer lease",
+        "activeDuringFirstDownload": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb-s1-n1-r1",
+        "activeAfterFirstDownload": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-s1-n1-r1",
+        "oldVersionRetained": true
+      }
+    },
+    {
+      "name": "browser close during staging relaunches from the same profile and recovers the update",
+      "status": "passed",
+      "details": {
+        "outcome": "passed",
+        "interruption": "Chrome page and persistent browser context closed while the candidate snapshot request was held",
+        "relaunchedWithSameUserDataDirectory": true,
+        "stagedRecordSurvivedRelaunch": true,
+        "oldVersionAfterRelaunch": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb-s1-n1-r1",
+        "activeVersionAfterRecovery": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff-s1-n1-r1",
+        "bothVersionRowsRetained": true
+      }
+    },
+    {
+      "name": "low browser quota blocks an update before staging and keeps the old offline version",
+      "status": "passed",
+      "details": {
+        "outcome": "passed",
+        "injectedQuotaBytes": 1,
+        "observedUsageBytes": 0,
+        "candidateRequiredEstimateBytes": 12600,
+        "candidateNotStaged": true,
+        "activeVersionAfterQuotaRejection": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb-s1-n1-r1"
+      }
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "productionCatalogueChanged": false,
+    "quotaFailureInjection": "the dedicated catalogue Worker receives a deterministic navigator.storage.estimate quota stub; browser storage is unchanged",
+    "persistentRelaunch": "same temporary Chromium user-data directory closed and reopened"
+  }
+}

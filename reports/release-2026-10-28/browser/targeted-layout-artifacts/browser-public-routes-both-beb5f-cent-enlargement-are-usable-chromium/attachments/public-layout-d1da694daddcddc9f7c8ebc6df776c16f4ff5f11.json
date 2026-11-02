@@ -1,0 +1,26 @@
+{
+  "widths": [
+    320,
+    360,
+    390,
+    430,
+    768,
+    1024,
+    1440
+  ],
+  "routes": [
+    "/",
+    "/product",
+    "/features",
+    "/offline-data",
+    "/support",
+    "/contact"
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "violations": [],
+  "privateRequests": [],
+  "errors": []
+}

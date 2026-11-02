@@ -1,0 +1,46 @@
+$ tsx scripts/price-history.ts inspect --source reports/partavar/price-history-test-fixture.xlsx
+{
+  "sourceFileName": "price-history-test-fixture.xlsx",
+  "sheets": [
+    {
+      "name": "TEST ONLY",
+      "rows": 1,
+      "columns": 1,
+      "preview": [
+        [
+          null,
+          "TEST FIXTURE ONLY. Fabricated identifiers, prices and dates. Never import as company production history."
+        ]
+      ]
+    },
+    {
+      "name": "PriceHistory",
+      "rows": 3,
+      "columns": 4,
+      "preview": [
+        [
+          null,
+          "Technical code",
+          "Logistics code",
+          "Price",
+          "Effective date"
+        ],
+        [
+          null,
+          "TEST-TECH",
+          "00001",
+          "90071992547409930",
+          "2025-01-01"
+        ],
+        [
+          null,
+          "TEST-TECH",
+          "00001",
+          "180143985094819860",
+          "2025-02-01"
+        ]
+      ]
+    }
+  ],
+  "note": "Preview only; supply an explicit mapping and trusted Gregorian effective dates before staging."
+}

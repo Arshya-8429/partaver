@@ -1,0 +1,11 @@
+{
+  "browserVersion": "157.0",
+  "logistics": "111100001AA-01",
+  "errors": [],
+  "consoleProblems": [],
+  "catalogueChunksAtStartupAndOnlineSearch": 0,
+  "manualUnitPrice": "12345678901234567890",
+  "quantity": "3",
+  "xlsxReadBack": true,
+  "printScope": "browser HTML print preview; native OS PDF dialog is not exercised"
+}

@@ -1,0 +1,37 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ❯ tests/unit/documents.test.ts (6 tests | 2 failed) 6ms
+   ❯ operational document snapshots (6)
+     ✓ snapshots exact entry identity and vehicle; never merges sibling logistics records 3ms
+     ✓ uses integer half-up markups directly on base and exact totals beyond Number safe range 0ms
+     ✓ preserves manual price and quantities when transferring package lines 0ms
+     ✓ rejects unsafe inputs instead of silently rounding or inventing units 0ms
+     × validates an exact total larger than either bounded input 2ms
+     × keeps classification boundaries separate and defaults packages to base 0ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/unit/documents.test.ts > operational document snapshots > validates an exact total larger than either bounded input
+TypeError: Price must be a non-negative integer string
+ ❯ integerString packages/domain/src/documents.ts:66:109
+
+ ❯ validateDocument packages/domain/src/documents.ts:123:639
+ ❯ tests/unit/documents.test.ts:36:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/unit/documents.test.ts > operational document snapshots > keeps classification boundaries separate and defaults packages to base
+TypeError: Invalid classification boundaries
+ ❯ validatePreferences packages/domain/src/documents.ts:135:163
+
+ ❯ tests/unit/documents.test.ts:41:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 4 passed (6)
+   Start at  12:01:57
+   Duration  75ms (transform 45%, tests 28%, import 20%, worker 6%)
+

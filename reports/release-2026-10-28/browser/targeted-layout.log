@@ -1,0 +1,17 @@
+
+Running 6 tests using 1 worker
+
+(node:7758) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › tests/release/browser.spec.ts:169:1 › public routes, both themes, seven widths, keyboard and 200 percent enlargement are usable (4.5s)
+  ✓  2 [chromium] › tests/release/browser.spec.ts:284:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content (1.7s)
+(node:7842) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 [firefox] › tests/release/browser.spec.ts:169:1 › public routes, both themes, seven widths, keyboard and 200 percent enlargement are usable (7.3s)
+  ✓  4 [firefox] › tests/release/browser.spec.ts:284:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content (1.7s)
+(node:7859) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  5 [webkit] › tests/release/browser.spec.ts:169:1 › public routes, both themes, seven widths, keyboard and 200 percent enlargement are usable (4.7s)
+  ✓  6 [webkit] › tests/release/browser.spec.ts:284:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content (2.2s)
+
+  6 passed (25.8s)

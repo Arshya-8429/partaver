@@ -1,0 +1,16 @@
+{
+  "name": "@partsfinder/web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && tsx ../../scripts/inject-sw-assets.ts",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@partsfinder/contracts": "workspace:*",
+    "@partsfinder/domain": "workspace:*",
+    "dexie": "4.4.6"
+  }
+}

@@ -1,0 +1,66 @@
+Scope: all 6 workspace projects
+? Verifying lockfile against supply-chain policies (451 entries)...
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +402
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 402, reused 0, downloaded 0, added 0
+Packages are cloned from the content-addressable store to the virtual store.
+  Content-addressable store is at: /var/folders/qc/91mz59vs2qx62xr748kl1r840000gn/T/partavar-clean-install-final-dW5552/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 402, reused 0, downloaded 19, added 18
+Progress: resolved 402, reused 0, downloaded 49, added 49
+Progress: resolved 402, reused 0, downloaded 54, added 54
+Progress: resolved 402, reused 0, downloaded 58, added 58
+Progress: resolved 402, reused 0, downloaded 64, added 64
+Progress: resolved 402, reused 0, downloaded 80, added 80
+Progress: resolved 402, reused 0, downloaded 100, added 100
+Progress: resolved 402, reused 0, downloaded 108, added 108
+[WARN] Tarball download average speed 40 KiB/s (size 144 KiB) is below 50 KiB/s: https://registry.npmjs.org/dayjs/-/dayjs-1.11.23.tgz (GET)
+Progress: resolved 402, reused 0, downloaded 116, added 115
+Progress: resolved 402, reused 0, downloaded 136, added 136
+Progress: resolved 402, reused 0, downloaded 163, added 163
+[WARN] Request took 10589ms: https://registry.npmjs.org/axe-core
+[WARN] Request took 10874ms: https://registry.npmjs.org/@typescript-eslint%2Ftypes
+[WARN] Request took 12495ms: https://registry.npmjs.org/@humanfs%2Fcore
+[WARN] Request took 11480ms: https://registry.npmjs.org/@typescript-eslint%2Fscope-manager
+Progress: resolved 402, reused 0, downloaded 174, added 174
+Progress: resolved 402, reused 0, downloaded 191, added 191
+[WARN] Request took 13372ms: https://registry.npmjs.org/@typescript-eslint%2Fparser
+[WARN] Request took 13433ms: https://registry.npmjs.org/@typescript-eslint%2Feslint-plugin
+[WARN] Request took 13521ms: https://registry.npmjs.org/@typescript-eslint%2Ftypescript-estree
+Progress: resolved 402, reused 0, downloaded 223, added 223
+[WARN] Request took 13572ms: https://registry.npmjs.org/@typescript-eslint%2Fvisitor-keys
+Progress: resolved 402, reused 0, downloaded 235, added 235
+Progress: resolved 402, reused 0, downloaded 271, added 271
+Progress: resolved 402, reused 0, downloaded 288, added 288
+Progress: resolved 402, reused 0, downloaded 316, added 315
+Progress: resolved 402, reused 0, downloaded 350, added 350
+Progress: resolved 402, reused 0, downloaded 385, added 385
+Progress: resolved 402, reused 0, downloaded 398, added 398
+Progress: resolved 402, reused 0, downloaded 399, added 398
+Progress: resolved 402, reused 0, downloaded 399, added 399
+Progress: resolved 402, reused 0, downloaded 400, added 399
+✓ Lockfile passes supply-chain policies (451 entries in 29.9s)
+Progress: resolved 402, reused 0, downloaded 401, added 401
+Progress: resolved 402, reused 0, downloaded 402, added 402, done
+.../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+
+devDependencies:
++ @playwright/test 1.64.1
++ @types/better-sqlite3 9.6.0
++ @types/node 24.19.2
++ axe-core 4.14.0
++ better-sqlite3 13.0.3
++ concurrently 10.0.6
++ eslint 10.13.0
++ exceljs 4.4.0
++ fastify 5.12.7
++ tsx 4.23.15
++ typescript 5.9.3
++ typescript-eslint 8.71.2
++ vite 8.3.4
++ vitest 5.0.5
+
+Done in 31.5s using pnpm v11.25.0

@@ -1,0 +1,22 @@
+$ vitest run tests/integration
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ✓ tests/integration/search.test.ts (7 tests) 71ms
+ ✓ tests/integration/backup-restore.test.ts (2 tests) 104ms
+ ✓ tests/integration/publication.test.ts (2 tests) 256ms
+ ✓ tests/integration/api.test.ts (6 tests) 259ms
+ ✓ tests/integration/price-history.test.ts (7 tests) 390ms
+ ✓ tests/integration/round-trip.test.ts (1 test) 10266ms
+   ✓ lossless source-to-SQLite round trip (1)
+     ✓ reconstructs every source row field, ordered relation, and top-level metadata from normalized tables 10266ms
+ ✓ tests/integration/migration.test.ts (5 tests) 31490ms
+   ✓ catalogue migration (5)
+     ✓ imports the actual source without merging sibling logistics prices or vehicle data 8156ms
+     ✓ is idempotent for the same source hash and archives source bytes exactly 23305ms
+
+ Test Files  7 passed (7)
+      Tests  30 passed (30)
+   Start at  15:24:27
+   Duration  31.61s (tests 98%, import 1%)
+

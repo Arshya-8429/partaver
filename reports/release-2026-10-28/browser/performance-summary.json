@@ -1,0 +1,134 @@
+{
+  "scope": "Release verification on a single shared macOS host; no controlled before/after, throttling or physical target benchmark. Chrome/Firefox timings precede final visual ResizeObserver scheduling fix; Worker/search logic unchanged. WebKit timings use final build. Seven warm keydown-to-result DOM samples after two warmups per query.",
+  "browsers": [
+    {
+      "project": "chromium",
+      "browserVersion": "156.0.8078.48",
+      "installMs": 23442,
+      "reportedUsageBytes": 1293180348,
+      "reportedQuotaBytes": 12030598588,
+      "relaunchScope": "page closed and new page opened in the same live browser context; full browser process restart is covered separately by existing Chromium tests",
+      "pageErrors": [],
+      "consoleProblems": [],
+      "latency": [
+        {
+          "label": "exact logistics code",
+          "p95Ms": 11.399999999906868,
+          "firstQueryMs": 826.3000000002794,
+          "proposedWarmP95TargetMs": 150,
+          "meetsProposedTarget": true
+        },
+        {
+          "label": "part phrase",
+          "p95Ms": 19.600000000093132,
+          "firstQueryMs": 1059.5,
+          "proposedWarmP95TargetMs": 300,
+          "meetsProposedTarget": true
+        },
+        {
+          "label": "broad three-character code",
+          "p95Ms": 9.100000000093132,
+          "firstQueryMs": 9181.30000000028,
+          "proposedWarmP95TargetMs": null,
+          "meetsProposedTarget": null
+        },
+        {
+          "label": "vehicle-filtered part",
+          "p95Ms": 12.899999999906868,
+          "firstQueryMs": 1197.6000000000931,
+          "proposedWarmP95TargetMs": 300,
+          "meetsProposedTarget": true
+        }
+      ],
+      "longTaskApiSupported": true,
+      "installLongTasks": [],
+      "searchLongTasks": []
+    },
+    {
+      "project": "firefox",
+      "browserVersion": "157.0",
+      "installMs": 39088,
+      "reportedUsageBytes": 1160020562,
+      "reportedQuotaBytes": 10737418240,
+      "relaunchScope": "page closed and new page opened in the same live browser context; full browser process restart is covered separately by existing Chromium tests",
+      "pageErrors": [],
+      "consoleProblems": [],
+      "latency": [
+        {
+          "label": "exact logistics code",
+          "p95Ms": 3,
+          "firstQueryMs": 1627,
+          "proposedWarmP95TargetMs": 150,
+          "meetsProposedTarget": true
+        },
+        {
+          "label": "part phrase",
+          "p95Ms": 12,
+          "firstQueryMs": 67,
+          "proposedWarmP95TargetMs": 300,
+          "meetsProposedTarget": true
+        },
+        {
+          "label": "broad three-character code",
+          "p95Ms": 13,
+          "firstQueryMs": 251,
+          "proposedWarmP95TargetMs": null,
+          "meetsProposedTarget": null
+        },
+        {
+          "label": "vehicle-filtered part",
+          "p95Ms": 12,
+          "firstQueryMs": 69,
+          "proposedWarmP95TargetMs": 300,
+          "meetsProposedTarget": true
+        }
+      ],
+      "longTaskApiSupported": false,
+      "installLongTasks": [],
+      "searchLongTasks": []
+    },
+    {
+      "project": "webkit",
+      "browserVersion": "27.2",
+      "installMs": 99061,
+      "reportedUsageBytes": 737120969,
+      "reportedQuotaBytes": 20615843021,
+      "relaunchScope": "temporary persistent WebKit profile: full browser process closed and reopened with offline=true before navigation",
+      "pageErrors": [],
+      "consoleProblems": [],
+      "latency": [
+        {
+          "label": "exact logistics code",
+          "p95Ms": 5,
+          "firstQueryMs": 4744,
+          "proposedWarmP95TargetMs": 150,
+          "meetsProposedTarget": true
+        },
+        {
+          "label": "part phrase",
+          "p95Ms": 16,
+          "firstQueryMs": 4941,
+          "proposedWarmP95TargetMs": 300,
+          "meetsProposedTarget": true
+        },
+        {
+          "label": "broad three-character code",
+          "p95Ms": 16,
+          "firstQueryMs": 8448,
+          "proposedWarmP95TargetMs": null,
+          "meetsProposedTarget": null
+        },
+        {
+          "label": "vehicle-filtered part",
+          "p95Ms": 18,
+          "firstQueryMs": 2959,
+          "proposedWarmP95TargetMs": 300,
+          "meetsProposedTarget": true
+        }
+      ],
+      "longTaskApiSupported": false,
+      "installLongTasks": [],
+      "searchLongTasks": []
+    }
+  ]
+}

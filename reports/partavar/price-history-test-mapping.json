@@ -1,0 +1,11 @@
+{
+  "sheet": "PriceHistory",
+  "headerRow": 1,
+  "columns": {
+    "technicalCode": "A",
+    "logisticsCode": "B",
+    "price": "C",
+    "effectiveDate": "D"
+  },
+  "currencyUnit": "IRR"
+}

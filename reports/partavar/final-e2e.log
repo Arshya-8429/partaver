@@ -1,0 +1,53 @@
+[WebServer] (node:5301) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ tsx src/server.ts
+[WebServer] (node:5316) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:5322) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:5322) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:5323) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ vite preview --host 127.0.0.1 -- --port 4173
+[WebServer] (node:5338) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 20 tests using 5 workers
+
+(node:5346) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:5345) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:5344) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:5348) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:5347) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:5347) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 [chromium] › tests/e2e/offline-faults.spec.ts:243:1 › a corrupt snapshot chunk fails hash verification and leaves the old catalogue active (1.1s)
+  ✓   4 [chromium] › tests/e2e/partavar-workflows.spec.ts:5:1 › PartAvar application separates public site and supports custom mobile part suggestions (2.2s)
+  ✓   6 [chromium] › tests/e2e/offline-faults.spec.ts:277:1 › two tabs share one update lease while the existing version stays searchable (1.5s)
+  ✓   1 [chromium] › tests/e2e/redesign.spec.ts:3:1 › compact RTL redesign uses bounded online search and explicit vehicle selection (3.2s)
+[WebServer] {"requestId":"req-2x","code":20}
+  ✓   5 [chromium] › tests/e2e/price-history.spec.ts:207:1 › real catalogue entries keep independent historical evidence in the browser UI (2.3s)
+  ✓   7 [chromium] › tests/e2e/partavar-workflows.spec.ts:27:1 › package edits keep exact logistics and manual price through saved history, invoice, XLSX and A4 print (1.9s)
+  ✓   9 [chromium] › tests/e2e/redesign.spec.ts:61:1 › discarded requests cannot restore cleared or other-mode results (1.4s)
+  ✓  10 [chromium] › tests/e2e/website.spec.ts:7:1 › public routes have distinct metadata, real internal links and no catalogue requests (1.2s)
+  ✓  12 [chromium] › tests/e2e/website.spec.ts:45:1 › responsive navigation supports keyboard, Escape, route links and app entry (480ms)
+  ✓  11 [chromium] › tests/e2e/redesign.spec.ts:85:1 › copy reports success only on actual writes; themes, keyboard and enlarged layout remain usable (811ms)
+  ✓  14 [chromium] › tests/e2e/redesign.spec.ts:122:1 › vehicle search, normalized digits, empty results and large values retain their real identities (1.2s)
+  ✓  15 [chromium] › tests/e2e/redesign.spec.ts:149:1 › simulated quota exhaustion explains recovery without activating a partial catalogue (484ms)
+  ✓  16 [chromium] › tests/e2e/redesign.spec.ts:169:1 › lazy logistics navigation follows actual API cursors and preserves entry prices (740ms)
+  ✓  13 [chromium] › tests/e2e/website.spec.ts:70:1 › themes, public page layouts, touch targets and text enlargement stay usable (4.6s)
+  ✓  17 [chromium] › tests/e2e/website.spec.ts:101:1 › real preview loads and a failed image keeps useful app access (277ms)
+  ✓  18 [chromium] › tests/e2e/website.spec.ts:115:1 › help links resolve to sections and contact does not invent a submission channel (262ms)
+OFFLINE_DIAGNOSTICS {"online":false,"controller":true,"serviceWorkers":["activated"],"stylesheetLinks":["http://127.0.0.1:4173/assets/index-Bgk0z1dg.css","http://127.0.0.1:4173/assets/app-bootstrap-CCCwb77U.css"],"loadedStylesheets":2,"bodyFont":"Tahoma, \"Segoe UI\", Arial, sans-serif","resources":[{"name":"http://127.0.0.1:4173/assets/index-PUroESew.js","duration":1,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/index-Bgk0z1dg.css","duration":0.8999999999068677,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/app-shell-B8iglXNN.js","duration":1.2000000001862645,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/app-bootstrap-BBgSLEZ1.js","duration":0.6999999999534339,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/theme-mhmZZqUX.js","duration":0.8000000000465661,"transferSize":0},{"name":"http://127.0.0.1:4173/assets/app-bootstrap-CCCwb77U.css","duration":0.5999999998603016,"transferSize":0}],"status":"در حال بررسی کاتالوگ…"}
+  ✓   8 [chromium] › tests/e2e/offline-faults.spec.ts:325:1 › browser close during staging relaunches from the same profile and recovers the update (32.1s)
+  ✓  19 [chromium] › tests/e2e/offline-faults.spec.ts:417:1 › low browser quota blocks an update before staging and keeps the old offline version (633ms)
+  ✓   3 [chromium] › tests/e2e/offline-workflows.spec.ts:96:1 › preserves original workflows, installs the full catalogue, and searches after offline relaunch (35.3s)
+  ✓  20 [chromium] › tests/e2e/offline-workflows.spec.ts:297:1 › cancels a staged update at a chunk boundary and keeps the prior offline catalogue active (515ms)
+
+  20 passed (38.8s)

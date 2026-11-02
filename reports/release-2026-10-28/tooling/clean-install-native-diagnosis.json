@@ -1,0 +1,17 @@
+{
+  "format": "partavar-clean-install-native-diagnosis-v1",
+  "firstInstallExitCode": 1,
+  "reason": "allowBuilds:true caused implicit node-gyp rebuild; make failed because macOS Command Line Tools are absent",
+  "packageVersion": "13.0.3",
+  "packageGypfile": false,
+  "explicitInstallScript": null,
+  "prebuiltIncludedInFreshNpmPackage": true,
+  "prebuiltSha256": "98e0e8acd01c632fe5615243e1296af0372826f8783b18fc31c506f73c47459c",
+  "nativeLoadAfterFailedInstall": {
+    "success": true,
+    "sqliteVersion": "3.53.4",
+    "testQuery": 42
+  },
+  "upstream": "https://github.com/WiseLibs/better-sqlite3/issues/1503",
+  "correctedSetting": "allowBuilds.better-sqlite3:false"
+}

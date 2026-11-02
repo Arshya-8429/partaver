@@ -1,0 +1,304 @@
+{
+  "generatedAt": "2026-10-28T08:24:59.774Z",
+  "testOnly": true,
+  "warning": "All prices, dates and company source files in these reports are generated test fixtures. No production history has been imported.",
+  "batches": [
+    {
+      "batchId": "e06131d7-4bf9-4b73-ab59-d4fe4fbb7c08",
+      "sourceSha256": "a5f3deeea659cfbde1040875fa9ed35a7e77d1ec20ce41f1a187cf8025342cca",
+      "sourceFileName": "test-company-history.xlsx",
+      "catalogueVersion": "4ce6652667a356b8aef0d2d15ccdcef3bc7c93a6bf2af3319f1b855d8f9ee758-s1-n1-r1",
+      "status": "staged",
+      "sheets": [
+        "Notes",
+        "PriceHistory"
+      ],
+      "rowCount": 8,
+      "counts": {
+        "matched_exact": 2,
+        "matched_unique_technical": 1,
+        "matched_reviewed_name": 0,
+        "ambiguous": 1,
+        "unmatched": 1,
+        "invalid_price": 2,
+        "invalid_date": 0,
+        "invalid_currency": 0,
+        "invalid_cell": 0,
+        "invalid_identifier": 0,
+        "duplicate": 1
+      },
+      "stagedAt": "2026-10-28T08:24:58.442Z",
+      "supersedesBatchId": null
+    },
+    {
+      "batchId": "e06131d7-4bf9-4b73-ab59-d4fe4fbb7c08",
+      "sourceSha256": "a5f3deeea659cfbde1040875fa9ed35a7e77d1ec20ce41f1a187cf8025342cca",
+      "sourceFileName": "test-company-history.xlsx",
+      "catalogueVersion": "4ce6652667a356b8aef0d2d15ccdcef3bc7c93a6bf2af3319f1b855d8f9ee758-s1-n1-r1",
+      "status": "staged",
+      "sheets": [
+        "Notes",
+        "PriceHistory"
+      ],
+      "rowCount": 8,
+      "counts": {
+        "matched_exact": 2,
+        "matched_unique_technical": 1,
+        "matched_reviewed_name": 0,
+        "ambiguous": 1,
+        "unmatched": 1,
+        "invalid_price": 2,
+        "invalid_date": 0,
+        "invalid_currency": 0,
+        "invalid_cell": 0,
+        "invalid_identifier": 0,
+        "duplicate": 1
+      },
+      "stagedAt": "2026-10-28T08:24:58.442Z",
+      "supersedesBatchId": null
+    },
+    {
+      "batchId": "eab0a30d-174d-4c79-abde-7f2daa8d2ee1",
+      "sourceSha256": "45891647d3be129795bbde4059be03f2f56a0aae78ce12038a9c4f4eb89ac30b",
+      "sourceFileName": "test-first.xlsx",
+      "catalogueVersion": "4ce6652667a356b8aef0d2d15ccdcef3bc7c93a6bf2af3319f1b855d8f9ee758-s1-n1-r1",
+      "status": "staged",
+      "sheets": [
+        "Notes",
+        "PriceHistory"
+      ],
+      "rowCount": 4,
+      "counts": {
+        "matched_exact": 4,
+        "matched_unique_technical": 0,
+        "matched_reviewed_name": 0,
+        "ambiguous": 0,
+        "unmatched": 0,
+        "invalid_price": 0,
+        "invalid_date": 0,
+        "invalid_currency": 0,
+        "invalid_cell": 0,
+        "invalid_identifier": 0,
+        "duplicate": 0
+      },
+      "stagedAt": "2026-10-28T08:24:58.773Z",
+      "supersedesBatchId": null
+    },
+    {
+      "batchId": "8a6b40f1-fd3b-4ab7-9691-3a436b161edf",
+      "sourceSha256": "daf51541d255c77fe5c7724bce8a80f021b9ef5661eb76fb6a6b79aed0de4bbc",
+      "sourceFileName": "test-corrected.xlsx",
+      "catalogueVersion": "4ce6652667a356b8aef0d2d15ccdcef3bc7c93a6bf2af3319f1b855d8f9ee758-s1-n1-r1",
+      "status": "staged",
+      "sheets": [
+        "Notes",
+        "PriceHistory"
+      ],
+      "rowCount": 2,
+      "counts": {
+        "matched_exact": 2,
+        "matched_unique_technical": 0,
+        "matched_reviewed_name": 0,
+        "ambiguous": 0,
+        "unmatched": 0,
+        "invalid_price": 0,
+        "invalid_date": 0,
+        "invalid_currency": 0,
+        "invalid_cell": 0,
+        "invalid_identifier": 0,
+        "duplicate": 0
+      },
+      "stagedAt": "2026-10-28T08:24:58.974Z",
+      "supersedesBatchId": "eab0a30d-174d-4c79-abde-7f2daa8d2ee1"
+    },
+    {
+      "batchId": "fa6e0ef5-6409-4fb8-8c1d-c08b2b8e06c3",
+      "sourceSha256": "e1a7c4e13b058404182cd82b238fe80a4604f31bcb1989550500b5c58bf39171",
+      "sourceFileName": "test-invalid.xlsx",
+      "catalogueVersion": "4ce6652667a356b8aef0d2d15ccdcef3bc7c93a6bf2af3319f1b855d8f9ee758-s1-n1-r1",
+      "status": "staged",
+      "sheets": [
+        "Notes",
+        "PriceHistory"
+      ],
+      "rowCount": 3,
+      "counts": {
+        "matched_exact": 0,
+        "matched_unique_technical": 0,
+        "matched_reviewed_name": 0,
+        "ambiguous": 0,
+        "unmatched": 0,
+        "invalid_price": 1,
+        "invalid_date": 1,
+        "invalid_currency": 0,
+        "invalid_cell": 1,
+        "invalid_identifier": 0,
+        "duplicate": 0
+      },
+      "stagedAt": "2026-10-28T08:24:59.140Z",
+      "supersedesBatchId": null
+    },
+    {
+      "batchId": "7fe497bb-0944-4724-ad10-ccad974d3ebc",
+      "sourceSha256": "28df9d408706f299797a8406feca571b56bb9de508ad0ab7bb46107b545e358c",
+      "sourceFileName": "test-tamper.xlsx",
+      "catalogueVersion": "4ce6652667a356b8aef0d2d15ccdcef3bc7c93a6bf2af3319f1b855d8f9ee758-s1-n1-r1",
+      "status": "staged",
+      "sheets": [
+        "Notes",
+        "PriceHistory"
+      ],
+      "rowCount": 1,
+      "counts": {
+        "matched_exact": 1,
+        "matched_unique_technical": 0,
+        "matched_reviewed_name": 0,
+        "ambiguous": 0,
+        "unmatched": 0,
+        "invalid_price": 0,
+        "invalid_date": 0,
+        "invalid_currency": 0,
+        "invalid_cell": 0,
+        "invalid_identifier": 0,
+        "duplicate": 0
+      },
+      "stagedAt": "2026-10-28T08:24:59.260Z",
+      "supersedesBatchId": null
+    },
+    {
+      "batchId": "7fe497bb-0944-4724-ad10-ccad974d3ebc",
+      "sourceSha256": "28df9d408706f299797a8406feca571b56bb9de508ad0ab7bb46107b545e358c",
+      "sourceFileName": "test-tamper.xlsx",
+      "catalogueVersion": "4ce6652667a356b8aef0d2d15ccdcef3bc7c93a6bf2af3319f1b855d8f9ee758-s1-n1-r1",
+      "status": "staged",
+      "sheets": [
+        "Notes",
+        "PriceHistory"
+      ],
+      "rowCount": 1,
+      "counts": {
+        "matched_exact": 1,
+        "matched_unique_technical": 0,
+        "matched_reviewed_name": 0,
+        "ambiguous": 0,
+        "unmatched": 0,
+        "invalid_price": 0,
+        "invalid_date": 0,
+        "invalid_currency": 0,
+        "invalid_cell": 0,
+        "invalid_identifier": 0,
+        "duplicate": 0
+      },
+      "stagedAt": "2026-10-28T08:24:59.260Z",
+      "supersedesBatchId": null
+    },
+    {
+      "batchId": "d28c4e1a-bdb3-4393-8349-a341b5d74481",
+      "sourceSha256": "fec74ea6e13304a2945b0dbd71d6add4b804e4d8ae90aaa18d24b0966193bc5a",
+      "sourceFileName": "test-version-pinning.xlsx",
+      "catalogueVersion": "4ce6652667a356b8aef0d2d15ccdcef3bc7c93a6bf2af3319f1b855d8f9ee758-s1-n1-r1",
+      "status": "staged",
+      "sheets": [
+        "Notes",
+        "PriceHistory"
+      ],
+      "rowCount": 2,
+      "counts": {
+        "matched_exact": 2,
+        "matched_unique_technical": 0,
+        "matched_reviewed_name": 0,
+        "ambiguous": 0,
+        "unmatched": 0,
+        "invalid_price": 0,
+        "invalid_date": 0,
+        "invalid_currency": 0,
+        "invalid_cell": 0,
+        "invalid_identifier": 0,
+        "duplicate": 0
+      },
+      "stagedAt": "2026-10-28T08:24:59.378Z",
+      "supersedesBatchId": null
+    },
+    {
+      "batchId": "35b52ff3-8e03-4cb1-b568-090b263c437f",
+      "sourceSha256": "ac6c2a14a36147ac5fce99b709f15ca69a6c0959ac60c9272edf0de6f0c9e306",
+      "sourceFileName": "test-date-conflict.xlsx",
+      "catalogueVersion": "4ce6652667a356b8aef0d2d15ccdcef3bc7c93a6bf2af3319f1b855d8f9ee758-s1-n1-r1",
+      "status": "staged",
+      "sheets": [
+        "Notes",
+        "PriceHistory"
+      ],
+      "rowCount": 3,
+      "counts": {
+        "matched_exact": 3,
+        "matched_unique_technical": 0,
+        "matched_reviewed_name": 0,
+        "ambiguous": 0,
+        "unmatched": 0,
+        "invalid_price": 0,
+        "invalid_date": 0,
+        "invalid_currency": 0,
+        "invalid_cell": 0,
+        "invalid_identifier": 0,
+        "duplicate": 0
+      },
+      "stagedAt": "2026-10-28T08:24:59.554Z",
+      "supersedesBatchId": null
+    },
+    {
+      "batchId": "32d6c9cb-6bad-4f5a-b95a-4de59b1e7d19",
+      "sourceSha256": "28df9d408706f299797a8406feca571b56bb9de508ad0ab7bb46107b545e358c",
+      "sourceFileName": "test-rollback-original.xlsx",
+      "catalogueVersion": "4ce6652667a356b8aef0d2d15ccdcef3bc7c93a6bf2af3319f1b855d8f9ee758-s1-n1-r1",
+      "status": "staged",
+      "sheets": [
+        "Notes",
+        "PriceHistory"
+      ],
+      "rowCount": 1,
+      "counts": {
+        "matched_exact": 1,
+        "matched_unique_technical": 0,
+        "matched_reviewed_name": 0,
+        "ambiguous": 0,
+        "unmatched": 0,
+        "invalid_price": 0,
+        "invalid_date": 0,
+        "invalid_currency": 0,
+        "invalid_cell": 0,
+        "invalid_identifier": 0,
+        "duplicate": 0
+      },
+      "stagedAt": "2026-10-28T08:24:59.689Z",
+      "supersedesBatchId": null
+    },
+    {
+      "batchId": "a06c9af2-eddf-4a4b-83a4-97e057235f6c",
+      "sourceSha256": "12ed1e70fbbd4557b1db1502251f9cf6ddc13b37e4e5c753f33adc529064f6ad",
+      "sourceFileName": "test-rollback-correction.xlsx",
+      "catalogueVersion": "4ce6652667a356b8aef0d2d15ccdcef3bc7c93a6bf2af3319f1b855d8f9ee758-s1-n1-r1",
+      "status": "staged",
+      "sheets": [
+        "Notes",
+        "PriceHistory"
+      ],
+      "rowCount": 1,
+      "counts": {
+        "matched_exact": 1,
+        "matched_unique_technical": 0,
+        "matched_reviewed_name": 0,
+        "ambiguous": 0,
+        "unmatched": 0,
+        "invalid_price": 0,
+        "invalid_date": 0,
+        "invalid_currency": 0,
+        "invalid_cell": 0,
+        "invalid_identifier": 0,
+        "duplicate": 0
+      },
+      "stagedAt": "2026-10-28T08:24:59.762Z",
+      "supersedesBatchId": "32d6c9cb-6bad-4f5a-b95a-4de59b1e7d19"
+    }
+  ]
+}

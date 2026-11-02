@@ -1,0 +1,576 @@
+[WebServer] (node:5918) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ tsx src/server.ts
+[WebServer] (node:5933) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:5939) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:5939) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:5940) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ vite preview --host 127.0.0.1 -- --port 4173
+[WebServer] (node:5955) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 27 tests using 1 worker
+
+(node:5961) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] {"requestId":"req-e","code":20}
+  ✓   1 [chromium] › tests/release/browser.spec.ts:92:1 › online catalogue, keyboard selection, details and documents preserve exact identities (2.1s)
+  ✓   2 [chromium] › tests/release/browser.spec.ts:166:1 › public routes, both themes, seven widths, keyboard and 200 percent enlargement are usable (3.7s)
+  ✓   3 [chromium] › tests/release/browser.spec.ts:216:1 › automated WCAG accessibility audit covers app workspaces, dialogs and public pages in both themes (5.6s)
+  ✓   4 [chromium] › tests/release/browser.spec.ts:276:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content (1.4s)
+  ✓   5 [chromium] › tests/release/browser.spec.ts:321:1 › full catalogue installs and offline shell relaunch preserves search parity in real IndexedDB (42.6s)
+  ✓   6 [chromium] › tests/release/cross-tab.spec.ts:67:3 › another tab activation refreshes the local version via broadcast and clears stale catalogue rows (846ms)
+  ✓   7 [chromium] › tests/release/cross-tab.spec.ts:67:3 › another tab activation refreshes the local version via focus and clears stale catalogue rows (709ms)
+  ✓   8 [chromium] › tests/release/cross-tab.spec.ts:67:3 › another tab activation refreshes the local version via visibility and clears stale catalogue rows (754ms)
+  ✓   9 [chromium] › tests/release/history-version.spec.ts:8:1 › retained document history cannot recolor a current catalogue entry with the same numeric ID (1.5s)
+(node:6092) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 [firefox] › tests/release/browser.spec.ts:92:1 › online catalogue, keyboard selection, details and documents preserve exact identities (2.7s)
+  ✓  11 [firefox] › tests/release/browser.spec.ts:166:1 › public routes, both themes, seven widths, keyboard and 200 percent enlargement are usable (6.7s)
+  ✓  12 [firefox] › tests/release/browser.spec.ts:216:1 › automated WCAG accessibility audit covers app workspaces, dialogs and public pages in both themes (6.4s)
+  ✘  13 [firefox] › tests/release/browser.spec.ts:276:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content (1.5s)
+(node:6116) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  14 [firefox] › tests/release/browser.spec.ts:321:1 › full catalogue installs and offline shell relaunch preserves search parity in real IndexedDB (48.1s)
+  ✓  15 [firefox] › tests/release/cross-tab.spec.ts:67:3 › another tab activation refreshes the local version via broadcast and clears stale catalogue rows (842ms)
+  ✓  16 [firefox] › tests/release/cross-tab.spec.ts:67:3 › another tab activation refreshes the local version via focus and clears stale catalogue rows (829ms)
+  ✓  17 [firefox] › tests/release/cross-tab.spec.ts:67:3 › another tab activation refreshes the local version via visibility and clears stale catalogue rows (846ms)
+  ✓  18 [firefox] › tests/release/history-version.spec.ts:8:1 › retained document history cannot recolor a current catalogue entry with the same numeric ID (697ms)
+(node:6164) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] {"requestId":"req-1tp","code":20}
+  ✓  19 [webkit] › tests/release/browser.spec.ts:92:1 › online catalogue, keyboard selection, details and documents preserve exact identities (1.8s)
+  ✓  20 [webkit] › tests/release/browser.spec.ts:166:1 › public routes, both themes, seven widths, keyboard and 200 percent enlargement are usable (4.6s)
+  ✓  21 [webkit] › tests/release/browser.spec.ts:216:1 › automated WCAG accessibility audit covers app workspaces, dialogs and public pages in both themes (5.4s)
+  ✓  22 [webkit] › tests/release/browser.spec.ts:276:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content (2.0s)
+  ✘  23 [webkit] › tests/release/browser.spec.ts:321:1 › full catalogue installs and offline shell relaunch preserves search parity in real IndexedDB (10.0m)
+(node:6635) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  24 [webkit] › tests/release/cross-tab.spec.ts:67:3 › another tab activation refreshes the local version via broadcast and clears stale catalogue rows (20.6s)
+(node:6653) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  25 [webkit] › tests/release/cross-tab.spec.ts:67:3 › another tab activation refreshes the local version via focus and clears stale catalogue rows (20.6s)
+(node:6667) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  26 [webkit] › tests/release/cross-tab.spec.ts:67:3 › another tab activation refreshes the local version via visibility and clears stale catalogue rows (20.5s)
+(node:6686) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  27 [webkit] › tests/release/history-version.spec.ts:8:1 › retained document history cannot recolor a current catalogue entry with the same numeric ID (20.6s)
+
+
+  1) [firefox] › tests/release/browser.spec.ts:276:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -   1
+    + Received  + 242
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "dark": false,
+    +     "detail": Array [
+    +       "۳٬۶۴۹٬۶۴۴٬۳۲۱",
+    +       "۴٬۰۱۴٬۶۰۸٬۷۵۳",
+    +       "۴٬۳۷۹٬۵۷۳٬۱۸۵",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۷٬۴۶۴٬۳۲۴٬۸۷۴",
+    +       "۸٬۲۱۰٬۷۵۷٬۳۶۱",
+    +       "۸٬۹۵۷٬۱۸۹٬۸۴۹",
+    +       "۳٬۲۳۴٬۳۹۶٬۰۰۰",
+    +       "۳٬۵۵۷٬۸۳۵٬۶۰۰",
+    +       "۳٬۸۸۱٬۲۷۵٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +     ],
+    +     "kind": "clipped price/code",
+    +     "width": 430,
+    +   },
+    +   Object {
+    +     "dark": false,
+    +     "detail": Array [
+    +       "۳٬۶۴۹٬۶۴۴٬۳۲۱",
+    +       "۴٬۰۱۴٬۶۰۸٬۷۵۳",
+    +       "۴٬۳۷۹٬۵۷۳٬۱۸۵",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۷٬۴۶۴٬۳۲۴٬۸۷۴",
+    +       "۸٬۲۱۰٬۷۵۷٬۳۶۱",
+    +       "۸٬۹۵۷٬۱۸۹٬۸۴۹",
+    +       "۳٬۲۳۴٬۳۹۶٬۰۰۰",
+    +       "۳٬۵۵۷٬۸۳۵٬۶۰۰",
+    +       "۳٬۸۸۱٬۲۷۵٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +     ],
+    +     "kind": "clipped price/code",
+    +     "width": 768,
+    +   },
+    +   Object {
+    +     "dark": false,
+    +     "detail": Array [
+    +       "۳٬۶۴۹٬۶۴۴٬۳۲۱",
+    +       "۴٬۰۱۴٬۶۰۸٬۷۵۳",
+    +       "۴٬۳۷۹٬۵۷۳٬۱۸۵",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۷٬۴۶۴٬۳۲۴٬۸۷۴",
+    +       "۸٬۲۱۰٬۷۵۷٬۳۶۱",
+    +       "۸٬۹۵۷٬۱۸۹٬۸۴۹",
+    +       "۳٬۲۳۴٬۳۹۶٬۰۰۰",
+    +       "۳٬۵۵۷٬۸۳۵٬۶۰۰",
+    +       "۳٬۸۸۱٬۲۷۵٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +     ],
+    +     "kind": "clipped price/code",
+    +     "width": 1024,
+    +   },
+    +   Object {
+    +     "dark": true,
+    +     "detail": Array [
+    +       "۳٬۶۴۹٬۶۴۴٬۳۲۱",
+    +       "۴٬۰۱۴٬۶۰۸٬۷۵۳",
+    +       "۴٬۳۷۹٬۵۷۳٬۱۸۵",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۷٬۴۶۴٬۳۲۴٬۸۷۴",
+    +       "۸٬۲۱۰٬۷۵۷٬۳۶۱",
+    +       "۸٬۹۵۷٬۱۸۹٬۸۴۹",
+    +       "۳٬۲۳۴٬۳۹۶٬۰۰۰",
+    +       "۳٬۵۵۷٬۸۳۵٬۶۰۰",
+    +       "۳٬۸۸۱٬۲۷۵٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +     ],
+    +     "kind": "clipped price/code",
+    +     "width": 430,
+    +   },
+    +   Object {
+    +     "dark": true,
+    +     "detail": Array [
+    +       "۳٬۶۴۹٬۶۴۴٬۳۲۱",
+    +       "۴٬۰۱۴٬۶۰۸٬۷۵۳",
+    +       "۴٬۳۷۹٬۵۷۳٬۱۸۵",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۷٬۴۶۴٬۳۲۴٬۸۷۴",
+    +       "۸٬۲۱۰٬۷۵۷٬۳۶۱",
+    +       "۸٬۹۵۷٬۱۸۹٬۸۴۹",
+    +       "۳٬۲۳۴٬۳۹۶٬۰۰۰",
+    +       "۳٬۵۵۷٬۸۳۵٬۶۰۰",
+    +       "۳٬۸۸۱٬۲۷۵٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +     ],
+    +     "kind": "clipped price/code",
+    +     "width": 768,
+    +   },
+    +   Object {
+    +     "dark": true,
+    +     "detail": Array [
+    +       "۳٬۶۴۹٬۶۴۴٬۳۲۱",
+    +       "۴٬۰۱۴٬۶۰۸٬۷۵۳",
+    +       "۴٬۳۷۹٬۵۷۳٬۱۸۵",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۷٬۴۶۴٬۳۲۴٬۸۷۴",
+    +       "۸٬۲۱۰٬۷۵۷٬۳۶۱",
+    +       "۸٬۹۵۷٬۱۸۹٬۸۴۹",
+    +       "۳٬۲۳۴٬۳۹۶٬۰۰۰",
+    +       "۳٬۵۵۷٬۸۳۵٬۶۰۰",
+    +       "۳٬۸۸۱٬۲۷۵٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +       "۲٬۳۸۶٬۹۵۶٬۰۰۰",
+    +       "۲٬۶۲۵٬۶۵۱٬۶۰۰",
+    +       "۲٬۸۶۴٬۳۴۷٬۲۰۰",
+    +     ],
+    +     "kind": "clipped price/code",
+    +     "width": 1024,
+    +   },
+    + ]
+
+      316 |   expect(transition).toBe('0s');
+      317 |   await evidence(testInfo, 'app-layout', { widths, themes: ['light', 'dark'], problems, clippedAtZoom, transition });
+    > 318 |   expect(problems).toEqual([]);
+          |                    ^
+      319 | });
+      320 |
+      321 | test('full catalogue installs and offline shell relaunch preserves search parity in real IndexedDB', async ({ page, context, browser }, testInfo) => {
+        at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:318:20
+
+    attachment #1: app-results-light-390 (image/png) ───────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/attachments/app-results-light-390-0a271d81f0e646b5420c06e60a1e342353a4c5ea.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: app-results-dark-390 (image/png) ────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/attachments/app-results-dark-390-fc0efd83a1cc99c690aab14094a06e9fdbea9cf4.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: app-zoom-200-percent (image/png) ────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/attachments/app-zoom-200-percent-6f60797d9a3ae00156097ced0558fbae572ea9fd.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: settings-text-200-percent (image/png) ───────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/attachments/settings-text-200-percent-b910a4e4ed9e5e124af92876377efde373fe00e8.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: app-layout (application/json) ───────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/attachments/app-layout-645b38c3bf17136d1870da2439fade85ca63dccb.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/error-context.md
+
+    attachment #8: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [webkit] › tests/release/browser.spec.ts:321:1 › full catalogue installs and offline shell relaunch preserves search parity in real IndexedDB 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  locator('#catalogueStatusText')
+    Expected: "ready"
+    Received: "online"
+    Timeout:  600000ms
+
+    Call log:
+      - Expect "toHaveAttribute" locator('#catalogueStatusText') with timeout 600000ms
+      - waiting for locator('#catalogueStatusText')
+        - locator resolved to <span role="status" aria-live="polite" id="catalogueStatusText" data-state="downloading" data-offline-ready="false">در حال دریافت کاتالوگ…</span>
+        - unexpected value "downloading"
+        1188 × locator resolved to <span role="status" aria-live="polite" data-state="online" id="catalogueStatusText" data-offline-ready="false">جست‌وجوی آنلاین آماده است · دریافت آفلاین اختیاری</span>
+             - unexpected value "online"
+
+
+      333 |   await observePerformance(page);
+      334 |   await page.locator('#catalogueInfo summary').click();
+    > 335 |   const started = Date.now();
+          |                              ^
+      336 |   await page.locator('#catalogueUpdateButton').click();
+      337 |   await expect(page.locator('#catalogueStatusText')).toHaveAttribute('data-state', 'ready', { timeout: 10 * 60 * 1000 });
+      338 |   const installMs = Date.now() - started;
+        at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:335:54
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/release-2026-10-28/browser/test-results/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace reports/release-2026-10-28/browser/test-results/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [webkit] › tests/release/cross-tab.spec.ts:67:3 › another tab activation refreshes the local version via broadcast and clears stale catalogue rows 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  locator('#catalogueStatusText')
+    Expected: "ready"
+    Received: "online"
+    Timeout:  20000ms
+
+    Call log:
+      - Expect "toHaveAttribute" locator('#catalogueStatusText') with timeout 20000ms
+      - waiting for locator('#catalogueStatusText')
+        - locator resolved to <span role="status" aria-live="polite" id="catalogueStatusText" data-state="downloading" data-offline-ready="false">در حال دریافت کاتالوگ…</span>
+        - unexpected value "downloading"
+        42 × locator resolved to <span role="status" aria-live="polite" data-state="online" id="catalogueStatusText" data-offline-ready="false">جست‌وجوی آنلاین آماده است · دریافت آفلاین اختیاری</span>
+           - unexpected value "online"
+
+
+      60 |   if (!await page.locator('#catalogueInfo').evaluate(element => (element as HTMLDetailsElement).open)) await page.locator('#catalogueInfo summary').click();
+      61 |   await page.locator('#catalogueUpdateButton').click();
+    > 62 |   await expect(page.locator('#catalogueStatusText')).toHaveAttribute('data-state', 'ready');
+         |                                                      ^
+      63 |   await expect(page.locator('#catalogueVersion')).toContainText(version);
+      64 | }
+      65 |
+        at install (/Users/barmana/Documents/E/behrad/tests/release/cross-tab.spec.ts:62:54)
+        at /Users/barmana/Documents/E/behrad/tests/release/cross-tab.spec.ts:76:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/cross-tab-another-tab-acti-34103-clears-stale-catalogue-rows-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/release-2026-10-28/browser/test-results/cross-tab-another-tab-acti-34103-clears-stale-catalogue-rows-webkit/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/cross-tab-another-tab-acti-34103-clears-stale-catalogue-rows-webkit/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace reports/release-2026-10-28/browser/test-results/cross-tab-another-tab-acti-34103-clears-stale-catalogue-rows-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [webkit] › tests/release/cross-tab.spec.ts:67:3 › another tab activation refreshes the local version via focus and clears stale catalogue rows 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  locator('#catalogueStatusText')
+    Expected: "ready"
+    Received: "online"
+    Timeout:  20000ms
+
+    Call log:
+      - Expect "toHaveAttribute" locator('#catalogueStatusText') with timeout 20000ms
+      - waiting for locator('#catalogueStatusText')
+        - locator resolved to <span role="status" aria-live="polite" id="catalogueStatusText" data-state="downloading" data-offline-ready="false">در حال دریافت کاتالوگ…</span>
+        - unexpected value "downloading"
+        43 × locator resolved to <span role="status" aria-live="polite" data-state="online" id="catalogueStatusText" data-offline-ready="false">جست‌وجوی آنلاین آماده است · دریافت آفلاین اختیاری</span>
+           - unexpected value "online"
+
+
+      60 |   if (!await page.locator('#catalogueInfo').evaluate(element => (element as HTMLDetailsElement).open)) await page.locator('#catalogueInfo summary').click();
+      61 |   await page.locator('#catalogueUpdateButton').click();
+    > 62 |   await expect(page.locator('#catalogueStatusText')).toHaveAttribute('data-state', 'ready');
+         |                                                      ^
+      63 |   await expect(page.locator('#catalogueVersion')).toContainText(version);
+      64 | }
+      65 |
+        at install (/Users/barmana/Documents/E/behrad/tests/release/cross-tab.spec.ts:62:54)
+        at /Users/barmana/Documents/E/behrad/tests/release/cross-tab.spec.ts:76:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/cross-tab-another-tab-acti-462fa-clears-stale-catalogue-rows-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/release-2026-10-28/browser/test-results/cross-tab-another-tab-acti-462fa-clears-stale-catalogue-rows-webkit/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/cross-tab-another-tab-acti-462fa-clears-stale-catalogue-rows-webkit/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace reports/release-2026-10-28/browser/test-results/cross-tab-another-tab-acti-462fa-clears-stale-catalogue-rows-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [webkit] › tests/release/cross-tab.spec.ts:67:3 › another tab activation refreshes the local version via visibility and clears stale catalogue rows 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  locator('#catalogueStatusText')
+    Expected: "ready"
+    Received: "online"
+    Timeout:  20000ms
+
+    Call log:
+      - Expect "toHaveAttribute" locator('#catalogueStatusText') with timeout 20000ms
+      - waiting for locator('#catalogueStatusText')
+        - locator resolved to <span role="status" aria-live="polite" id="catalogueStatusText" data-state="downloading" data-offline-ready="false">در حال دریافت کاتالوگ…</span>
+        - unexpected value "downloading"
+        43 × locator resolved to <span role="status" aria-live="polite" data-state="online" id="catalogueStatusText" data-offline-ready="false">جست‌وجوی آنلاین آماده است · دریافت آفلاین اختیاری</span>
+           - unexpected value "online"
+
+
+      60 |   if (!await page.locator('#catalogueInfo').evaluate(element => (element as HTMLDetailsElement).open)) await page.locator('#catalogueInfo summary').click();
+      61 |   await page.locator('#catalogueUpdateButton').click();
+    > 62 |   await expect(page.locator('#catalogueStatusText')).toHaveAttribute('data-state', 'ready');
+         |                                                      ^
+      63 |   await expect(page.locator('#catalogueVersion')).toContainText(version);
+      64 | }
+      65 |
+        at install (/Users/barmana/Documents/E/behrad/tests/release/cross-tab.spec.ts:62:54)
+        at /Users/barmana/Documents/E/behrad/tests/release/cross-tab.spec.ts:76:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/cross-tab-another-tab-acti-85c9e-clears-stale-catalogue-rows-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/release-2026-10-28/browser/test-results/cross-tab-another-tab-acti-85c9e-clears-stale-catalogue-rows-webkit/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/cross-tab-another-tab-acti-85c9e-clears-stale-catalogue-rows-webkit/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace reports/release-2026-10-28/browser/test-results/cross-tab-another-tab-acti-85c9e-clears-stale-catalogue-rows-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [webkit] › tests/release/history-version.spec.ts:8:1 › retained document history cannot recolor a current catalogue entry with the same numeric ID 
+
+    Error: expect(locator).toHaveClass(expected) failed
+
+    Locator: locator('#documentRoot .docLine .historyBadge').first()
+    Expected pattern: /\bhigh\b/
+    Received string:  "historyBadge neutral"
+    Timeout: 20000ms
+
+    Call log:
+      - Expect "toHaveClass" locator('#documentRoot .docLine .historyBadge').first() with timeout 20000ms
+      - waiting for locator('#documentRoot .docLine .historyBadge').first()
+        - locator resolved to <button type="button" data-history-entry="111" class="historyBadge neutral" data-history-version="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb-s1-n1-r1">سابقه ناکافی</button>
+        42 × unexpected value "historyBadge neutral"
+           - locator resolved to <button type="button" data-history-entry="111" class="historyBadge neutral" title="تاریخچه در دسترس نیست یا سابقه کافی نیست" aria-label="تاریخچه در دسترس نیست یا سابقه کافی نیست؛ نمایش جزئیات" data-history-version="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb-s1-n1-r1">سابقه ناکافی</button>
+        - unexpected value "historyBadge neutral"
+
+
+      67 |   await page.locator('[data-area="packages"]').click();
+      68 |   const retainedBadge = page.locator('#documentRoot .docLine .historyBadge').first();
+    > 69 |   await expect(retainedBadge).toHaveClass(/\bhigh\b/);
+         |                               ^
+      70 |   await expect(retainedBadge).toHaveAttribute('data-history-version', retainedVersion);
+      71 |   await page.locator('[data-area="search"]').click();
+      72 |   await expect(card).toBeVisible();
+        at /Users/barmana/Documents/E/behrad/tests/release/history-version.spec.ts:69:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/history-version-retained-d-da5af-ry-with-the-same-numeric-ID-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/release-2026-10-28/browser/test-results/history-version-retained-d-da5af-ry-with-the-same-numeric-ID-webkit/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/history-version-retained-d-da5af-ry-with-the-same-numeric-ID-webkit/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace reports/release-2026-10-28/browser/test-results/history-version-retained-d-da5af-ry-with-the-same-numeric-ID-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Slow test file: [webkit] › tests/release/browser.spec.ts (10.2m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  6 failed
+    [firefox] › tests/release/browser.spec.ts:276:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content 
+    [webkit] › tests/release/browser.spec.ts:321:1 › full catalogue installs and offline shell relaunch preserves search parity in real IndexedDB 
+    [webkit] › tests/release/cross-tab.spec.ts:67:3 › another tab activation refreshes the local version via broadcast and clears stale catalogue rows 
+    [webkit] › tests/release/cross-tab.spec.ts:67:3 › another tab activation refreshes the local version via focus and clears stale catalogue rows 
+    [webkit] › tests/release/cross-tab.spec.ts:67:3 › another tab activation refreshes the local version via visibility and clears stale catalogue rows 
+    [webkit] › tests/release/history-version.spec.ts:8:1 › retained document history cannot recolor a current catalogue entry with the same numeric ID 
+  21 passed (13.9m)

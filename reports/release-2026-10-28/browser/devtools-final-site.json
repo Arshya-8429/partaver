@@ -1,0 +1,35 @@
+{
+  "audit": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "## Lighthouse Audit Results\nMode: snapshot\nDevice: desktop\nURL: http://127.0.0.1:4173/\n### Category Scores\n- Accessibility: 100 (accessibility)\n- Best Practices: 100 (best-practices)\n- SEO: 83 (seo)\n- Agentic Browsing: 50 (agentic-browsing)\n### Audit Summary\nPassed: 32\nFailed: 2\nTotal Timing: 1292.06ms\n### Reports\n- /var/folders/qc/91mz59vs2qx62xr748kl1r840000gn/T/chrome-devtools-mcp-KT56WW/report.json\n- /var/folders/qc/91mz59vs2qx62xr748kl1r840000gn/T/chrome-devtools-mcp-FrvzhB/report.html"
+        }
+      ]
+    }
+  },
+  "console": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "## Console messages\n<no console messages found>"
+        }
+      ]
+    }
+  },
+  "network": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "## Network requests\nShowing 1-9 of 9 (Page 1 of 1).\nreqid=1 GET http://127.0.0.1:4173/ [200]\nreqid=2 GET http://127.0.0.1:4173/assets/index-C970vbRj.js [200]\nreqid=3 GET http://127.0.0.1:4173/assets/index-BhVhxGnm.css [200]\nreqid=4 GET http://127.0.0.1:4173/assets/website-aFGBNYFj.js [200]\nreqid=5 GET http://127.0.0.1:4173/assets/website-C_-i1UU3.css [200]\nreqid=6 GET http://127.0.0.1:4173/assets/theme-Dubfbby_.js [200]\nreqid=7 GET http://127.0.0.1:4173/assets/theme-mhmZZqUX.js [200]\nreqid=8 GET http://127.0.0.1:4173/website/app-preview.webp [200]\nreqid=9 GET http://127.0.0.1:4173/favicon.svg [200]"
+        }
+      ]
+    }
+  }
+}

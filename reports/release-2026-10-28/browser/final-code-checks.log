@@ -1,0 +1,20 @@
+
+Running 9 tests using 1 worker
+
+(node:9466) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › tests/release/browser.spec.ts:95:1 › online catalogue, keyboard selection, details and documents preserve exact identities (1.8s)
+  ✓  2 [chromium] › tests/release/browser.spec.ts:224:1 › automated WCAG accessibility audit covers app workspaces, dialogs and public pages in both themes (5.7s)
+  ✓  3 [chromium] › tests/release/browser.spec.ts:284:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content (1.5s)
+(node:9502) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  4 [firefox] › tests/release/browser.spec.ts:95:1 › online catalogue, keyboard selection, details and documents preserve exact identities (2.9s)
+  ✓  5 [firefox] › tests/release/browser.spec.ts:224:1 › automated WCAG accessibility audit covers app workspaces, dialogs and public pages in both themes (6.5s)
+  ✓  6 [firefox] › tests/release/browser.spec.ts:284:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content (1.5s)
+(node:9630) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  7 [webkit] › tests/release/browser.spec.ts:95:1 › online catalogue, keyboard selection, details and documents preserve exact identities (1.8s)
+  ✓  8 [webkit] › tests/release/browser.spec.ts:224:1 › automated WCAG accessibility audit covers app workspaces, dialogs and public pages in both themes (5.8s)
+  ✓  9 [webkit] › tests/release/browser.spec.ts:284:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content (2.0s)
+
+  9 passed (31.6s)

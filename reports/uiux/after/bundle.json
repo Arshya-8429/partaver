@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-10-27T07:40:21.588Z",
+  "sourceSha256": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480",
+  "originalSourceUnchanged": true,
+  "outputDirectory": "/Users/barmana/Documents/E/behrad/apps/web/dist",
+  "files": [
+    {
+      "path": "assets/catalogue.worker-D3YdahPL.js",
+      "bytes": 128697,
+      "gzipBytes": 40118
+    },
+    {
+      "path": "assets/index-Bgk0z1dg.css",
+      "bytes": 18277,
+      "gzipBytes": 4607
+    },
+    {
+      "path": "assets/index-XET2gxRF.js",
+      "bytes": 41834,
+      "gzipBytes": 12622
+    },
+    {
+      "path": "index.html",
+      "bytes": 7569,
+      "gzipBytes": 2572
+    },
+    {
+      "path": "sw.js",
+      "bytes": 2416,
+      "gzipBytes": 1005
+    }
+  ],
+  "initialShellFiles": [
+    {
+      "path": "assets/index-Bgk0z1dg.css",
+      "bytes": 18277,
+      "gzipBytes": 4607
+    },
+    {
+      "path": "assets/index-XET2gxRF.js",
+      "bytes": 41834,
+      "gzipBytes": 12622
+    },
+    {
+      "path": "index.html",
+      "bytes": 7569,
+      "gzipBytes": 2572
+    }
+  ],
+  "initialShellGzipBytes": 19801,
+  "appJsBytes": 172947,
+  "appJsGzipBytes": 53745,
+  "legacyLiteralFound": false,
+  "privateFilesFound": false,
+  "catalogueInServiceWorkerCache": false,
+  "result": "passed"
+}

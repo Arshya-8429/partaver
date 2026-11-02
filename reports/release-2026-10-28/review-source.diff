@@ -1,0 +1,2496 @@
+--- baseline/.gitignore
++++ current/.gitignore
+@@ -10,2 +10,5 @@
+ .DS_Store
+ PartsFinder_Android-28 (1) (1).html
++.env
++.env.*
++*.login.json
+--- baseline/apps/api/package.json
++++ current/apps/api/package.json
+@@ -10,4 +10,5 @@
+   },
+   "dependencies": {
++    "@fastify/static": "^10.1.7",
+     "@partsfinder/contracts": "workspace:*",
+     "@partsfinder/domain": "workspace:*",
+--- baseline/apps/api/src/access.ts
++++ current/apps/api/src/access.ts
+@@ -0,0 +1,90 @@
++import { createHash, timingSafeEqual } from 'node:crypto';
++import type { FastifyInstance } from 'fastify';
++
++export interface AccessConfiguration {
++  publicOrigin: string;
++  username: string;
++  tokenSha256: string;
++}
++
++export function validateAccessConfiguration(config: AccessConfiguration): AccessConfiguration {
++  if (!/^[A-Za-z0-9_.-]{1,64}$/.test(config.username) || !/^[a-f0-9]{64}$/.test(config.tokenSha256)) {
++    throw new Error('Production authentication requires an operator username and generated token SHA-256.');
++  }
++  const origin = new URL(config.publicOrigin);
++  const local = ['localhost', '127.0.0.1', '[::1]'].includes(origin.hostname);
++  if (origin.username || origin.password || origin.pathname !== '/' || origin.search || origin.hash ||
++      (origin.protocol !== 'https:' && !(origin.protocol === 'http:' && local))) {
++    throw new Error('PARTAVAR_PUBLIC_ORIGIN must be an HTTPS origin (HTTP is allowed only for loopback verification).');
++  }
++  return { ...config, publicOrigin: origin.origin };
++}
++
++export function accessFromEnvironment(env: NodeJS.ProcessEnv): AccessConfiguration | undefined {
++  if (env.NODE_ENV !== 'production') return undefined;
++  return validateAccessConfiguration({
++    publicOrigin: env.PARTAVAR_PUBLIC_ORIGIN ?? '',
++    username: env.PARTAVAR_AUTH_USERNAME ?? '',
++    tokenSha256: env.PARTAVAR_AUTH_TOKEN_SHA256 ?? '',
++  });
++}
++
++function privatePath(path: string): boolean {
++  return /^\/(?:app|api)(?:\/|$)/.test(path) || ['/health/ready', '/sw.js', '/manifest.webmanifest'].includes(path);
++}
++
++const policy = [
++  "default-src 'none'", "script-src 'self'", "style-src 'self' 'unsafe-inline'", "img-src 'self' data: blob:",
++  "font-src 'self'", "connect-src 'self'", "worker-src 'self'", "manifest-src 'self'", "frame-src 'self'",
++  "base-uri 'none'", "object-src 'none'", "form-action 'self'", "frame-ancestors 'none'",
++].join('; ');
++
++export function registerAccess(server: FastifyInstance, config?: AccessConfiguration): void {
++  const normalized = config ? validateAccessConfiguration(config) : undefined;
++  const expectedHost = normalized ? new URL(normalized.publicOrigin).host : undefined;
++  const expectedToken = normalized ? Buffer.from(normalized.tokenSha256, 'hex') : undefined;
++  server.addHook('onRequest', async (request, reply) => {
++    reply.header('x-content-type-options', 'nosniff')
++      .header('referrer-policy', 'no-referrer')
++      .header('x-frame-options', 'DENY')
++      .header('cross-origin-resource-policy', 'same-origin')
++      .header('permissions-policy', 'camera=(), microphone=(), geolocation=()');
++    // Vite development uses its own server; this CSP governs the built production shell.
++    if (normalized) reply.header('content-security-policy', policy);
++    if (!normalized) return;
++
++    const rawPath = (request.raw.url ?? '/').split('?')[0] ?? '/';
++    let path: string;
++    try { path = decodeURIComponent(rawPath); } catch {
++      return reply.code(400).header('cache-control', 'no-store').send({ error: { code: 'INVALID_PATH', message: 'Invalid request path.' } });
++    }
++    if (path.includes('\\') || path.split('/').some(segment => segment === '.' || segment === '..')) {
++      return reply.code(400).header('cache-control', 'no-store').send({ error: { code: 'INVALID_PATH', message: 'Invalid request path.' } });
++    }
++    if (path !== '/health/live' && request.headers.host?.toLowerCase() !== expectedHost?.toLowerCase()) {
++      return reply.code(403).header('cache-control', 'no-store').send({ error: { code: 'ORIGIN_REJECTED', message: 'Request origin is not allowed.' } });
++    }
++    if (!privatePath(path)) return;
++    const origin = request.headers.origin;
++    if ((origin !== undefined && origin !== normalized.publicOrigin) || request.headers['sec-fetch-site'] === 'cross-site') {
++      return reply.code(403).header('cache-control', 'no-store').send({ error: { code: 'ORIGIN_REJECTED', message: 'Request origin is not allowed.' } });
++    }
++    const authorization = request.headers.authorization;
++    let valid = false;
++    if (authorization && authorization.length <= 1024 && /^Basic [A-Za-z0-9+/]+={0,2}$/i.test(authorization)) {
++      try {
++        const decoded = new TextDecoder('utf-8', { fatal: true }).decode(Buffer.from(authorization.slice(6), 'base64'));
++        const separator = decoded.indexOf(':');
++        const username = decoded.slice(0, separator);
++        const password = decoded.slice(separator + 1);
++        const supplied = createHash('sha256').update(password).digest();
++        valid = separator >= 0 && timingSafeEqual(supplied, expectedToken!) && username === normalized.username;
++      } catch { /* Malformed credentials receive the same response as a wrong token. */ }
++    }
++    if (!valid) {
++      return reply.code(401).header('www-authenticate', 'Basic realm="PartAvar", charset="UTF-8"')
++        .header('cache-control', 'no-store').send({ error: { code: 'AUTHENTICATION_REQUIRED', message: 'Operator authentication is required.' } });
++    }
++    reply.header('cache-control', 'private, no-store').header('vary', 'Authorization');
++  });
++}
+--- baseline/apps/api/src/server.ts
++++ current/apps/api/src/server.ts
+@@ -9,4 +9,6 @@
+ import { getSnapshotChunk, getSnapshotManifest, SnapshotAccessError } from './snapshots.js';
+ import { registerPriceHistoryRoutes } from './price-history/routes.js';
++import { accessFromEnvironment, registerAccess, validateAccessConfiguration, type AccessConfiguration } from './access.js';
++import { registerWeb } from './web.js';
+ 
+ const workspaceRoot = resolve(dirname(fileURLToPath(import.meta.url)), '../../..');
+@@ -18,4 +20,6 @@
+   logger?: boolean;
+   maxSearchQueue?: number;
++  webRoot?: string;
++  access?: AccessConfiguration;
+ }
+ 
+@@ -118,4 +122,5 @@
+ 
+ export async function createServer(options: ServerOptions = {}): Promise<ReturnType<typeof Fastify>> {
++  const access = options.access ? validateAccessConfiguration(options.access) : accessFromEnvironment(process.env);
+   const databasePath = resolve(workspaceRoot, options.databasePath ?? process.env.CATALOGUE_DB_PATH ?? 'private-data/sqlite/catalogue.db');
+   const dataRoot = resolve(workspaceRoot, options.dataRoot ?? process.env.CATALOGUE_DATA_ROOT ?? 'private-data');
+@@ -130,14 +135,16 @@
+     trustProxy: false,
+     requestIdHeader: 'x-request-id',
+-  });
++    bodyLimit: 65_536,
++    requestTimeout: 30_000,
++    connectionTimeout: 30_000,
++    keepAliveTimeout: 5_000,
++    forceCloseConnections: 'idle',
++  });
++
++  registerAccess(server, access);
+ 
+   server.addHook('onResponse', async (request, reply) => {
+     if (options.logger === false) return;
+     process.stdout.write(`${JSON.stringify({ requestId: request.id, method: request.method, path: request.routeOptions.url, statusCode: reply.statusCode })}\n`);
+-  });
+-
+-  server.addHook('onRequest', async (_request, reply) => {
+-    reply.header('x-content-type-options', 'nosniff');
+-    reply.header('referrer-policy', 'no-referrer');
+   });
+ 
+@@ -302,11 +309,20 @@
+     await searchWorker.close();
+   });
++  if (options.webRoot) {
++    try { await registerWeb(server, options.webRoot); }
++    catch (error) { await server.close(); throw error; }
++  }
+   return server;
+ }
+ 
+ async function main(): Promise<void> {
+-  const server = await createServer();
+   const port = Number(process.env.PORT ?? '8787');
+   const host = process.env.HOST ?? '127.0.0.1';
++  if (!Number.isInteger(port) || port < 1 || port > 65535) throw new Error('PORT must be from 1 to 65535.');
++  if (!['127.0.0.1', 'localhost', '::1'].includes(host)) throw new Error('The backend must bind to loopback; use the HTTPS reverse proxy for network access.');
++  const server = await createServer({ webRoot: resolve(workspaceRoot, process.env.PARTAVAR_WEB_ROOT ?? 'apps/web/dist') });
++  for (const signal of ['SIGINT', 'SIGTERM'] as const) process.once(signal, () => {
++    void server.close().catch(() => { process.exitCode = 1; });
++  });
+   await server.listen({ port, host });
+ }
+--- baseline/apps/api/src/web.ts
++++ current/apps/api/src/web.ts
+@@ -0,0 +1,30 @@
++import fastifyStatic from '@fastify/static';
++import { stat } from 'node:fs/promises';
++import { resolve } from 'node:path';
++import type { FastifyInstance } from 'fastify';
++
++export async function registerWeb(server: FastifyInstance, webRoot: string): Promise<void> {
++  const root = resolve(webRoot);
++  if (!(await stat(resolve(root, 'index.html'))).isFile()) throw new Error('Build the web application before starting the release runtime.');
++  // Explicit routes keep source files, SQLite, unknown SPA paths and build metadata unservable.
++  await server.register(fastifyStatic, { root, serve: false, dotfiles: 'deny' });
++  for (const path of ['/', '/product', '/features', '/offline-data', '/support', '/contact', '/app', '/app/', '/app/*']) {
++    server.get(path, async (_request, reply) => reply.header('cache-control', 'private, no-cache').sendFile('index.html', { cacheControl: false }));
++  }
++  server.get('/assets/:asset', async (request, reply) => {
++    const name = (request.params as { asset: string }).asset;
++    if (!/^[A-Za-z0-9_-]+(?:\.[A-Za-z0-9_-]+)*\.(?:js|css|woff2?|svg|png|webp|ico)$/.test(name)) return reply.callNotFound();
++    return reply.header('cache-control', 'public, max-age=31536000, immutable').sendFile(`assets/${name}`, { cacheControl: false });
++  });
++  server.get('/website/:asset', async (request, reply) => {
++    const name = (request.params as { asset: string }).asset;
++    if (!/^[A-Za-z0-9_-]+\.(?:webp|svg|png)$/.test(name)) return reply.callNotFound();
++    return reply.header('cache-control', 'public, max-age=3600').sendFile(`website/${name}`, { cacheControl: false });
++  });
++  for (const name of ['sw.js', 'manifest.webmanifest', 'favicon.svg']) {
++    server.get(`/${name}`, async (_request, reply) => {
++      if (name === 'sw.js') reply.header('service-worker-allowed', '/');
++      return reply.header('cache-control', 'private, no-cache').sendFile(name, { cacheControl: false });
++    });
++  }
++}
+--- baseline/apps/web/index.html
++++ current/apps/web/index.html
+@@ -1,2 +1,2 @@
+ <!doctype html>
+-<html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#F5F7FA"><meta name="description" content="پارت‌آور؛ ابزار جست‌وجوی دقیق قطعات، فاکتور، بسته‌ها و بررسی روند قیمت با پشتیبانی آفلاین."><title>PartAvar | پارت‌آور</title><link rel="manifest" href="/manifest.webmanifest"></head><body><div id="app"></div><noscript>برای استفاده از پارت‌آور، جاوااسکریپت مرورگر را فعال کنید.</noscript><script type="module" src="/src/main.ts"></script></body></html>
++<html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#F5F7FA"><meta name="description" content="پارت‌آور؛ ابزار جست‌وجوی دقیق قطعات، فاکتور، بسته‌ها و بررسی روند قیمت با پشتیبانی آفلاین."><title>PartAvar | پارت‌آور</title><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="manifest" href="/manifest.webmanifest"></head><body><div id="app"></div><noscript>برای استفاده از پارت‌آور، جاوااسکریپت مرورگر را فعال کنید.</noscript><script type="module" src="/src/main.ts"></script></body></html>
+--- baseline/apps/web/src/app-shell.ts
++++ current/apps/web/src/app-shell.ts
+@@ -1,2 +1,2 @@
+ /** Static UI template only. No catalogue records. */
+-export const appMarkup = "<a class=\"skipLink\" href=\"#workspace\">رفتن به جست‌وجو</a>\n<div class=\"wrap\">\n  <header class=\"header\">\n    <div class=\"brand\"><div><h1 dir=\"ltr\">PartAvar<span class=\"brandDot\">.</span></h1><p>پارت‌آور · ابزار کار قطعات خودرو</p></div></div>\n    <div class=\"headerTools\"><span id=\"connectionStatus\" class=\"connection\">بررسی اتصال</span><button id=\"themeToggle\" type=\"button\" class=\"iconButton\" aria-label=\"تغییر حالت نمایش\"></button></div>\n  </header><nav class=\"appNav\" aria-label=\"بخش‌های پارت‌آور\"><button type=\"button\" data-area=\"search\" aria-current=\"page\">جست‌وجو</button><button type=\"button\" data-area=\"purchase\">لیست خرید</button><button type=\"button\" data-area=\"packages\">بسته‌ها</button><button type=\"button\" data-area=\"invoices\">فاکتورها</button><button type=\"button\" data-area=\"prices\">روند قیمت</button><button type=\"button\" data-area=\"settings\">تنظیمات</button><a href=\"/\">وب‌سایت ↗</a></nav>\n  <section class=\"catalogueStatus\" aria-label=\"وضعیت کاتالوگ\">\n    <details id=\"catalogueInfo\"><summary><span class=\"statusDot\" aria-hidden=\"true\"></span><span id=\"catalogueStatusText\" role=\"status\" aria-live=\"polite\" data-state=\"checking\">در حال بررسی کاتالوگ…</span><span class=\"infoLabel\">اطلاعات و دریافت <span aria-hidden=\"true\">⌄</span></span></summary>\n      <div class=\"statusBody\"><span id=\"catalogueVersion\" class=\"catalogueStatusVersion\"></span><div id=\"catalogueStatusMeta\" class=\"catalogueStatusMeta\">در حال خواندن اطلاعات…</div><progress id=\"catalogueProgress\" max=\"100\" hidden aria-label=\"پیشرفت دریافت کاتالوگ\"></progress><div class=\"catalogueStatusActions\"><button id=\"catalogueUpdateButton\" class=\"btn secondary\" type=\"button\">دریافت برای استفادهٔ آفلاین</button><button id=\"catalogueCancelButton\" class=\"btn secondary\" type=\"button\" hidden>لغو دریافت</button></div></div>\n    </details>\n  </section>\n  <main id=\"workspace\"><div id=\"searchArea\">\n    <section class=\"searchPanel\" aria-label=\"جست‌وجوی قطعات\">\n      <div class=\"workspaceTitle\"><div><span class=\"eyebrow\">کاتالوگ قطعات</span><h2>قطعهٔ موردنظرت را پیدا کن</h2></div><span class=\"workspaceHint\">کد دقیق، نتیجهٔ دقیق‌تر</span></div>\n      <div class=\"tabs\" role=\"tablist\" aria-label=\"روش جست‌وجو\">\n        <button id=\"partTab\" class=\"tab active\" data-mode=\"partMode\" role=\"tab\" aria-controls=\"partMode\" aria-selected=\"true\" type=\"button\">قطعه و خودرو</button>\n        <button id=\"codeTab\" class=\"tab\" data-mode=\"codeMode\" role=\"tab\" aria-controls=\"codeMode\" aria-selected=\"false\" tabindex=\"-1\" type=\"button\">کد یا نام قطعه</button>\n      </div>\n      <section id=\"partMode\" class=\"mode active\" role=\"tabpanel\" aria-labelledby=\"partTab\">\n        <div class=\"formGrid\"><div class=\"field vehicleField\"><label for=\"vehicle\">خودرو و تیپ</label><div class=\"vehiclePicker\"><div class=\"inputWithAction\"><input id=\"vehicle\" autocomplete=\"off\" spellcheck=\"false\" placeholder=\"نام خودرو؛ مثلاً X55\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"false\" aria-controls=\"vehicleSuggestions\" aria-haspopup=\"listbox\" aria-describedby=\"vehicleHint\" maxlength=\"128\" autocorrect=\"off\" inputmode=\"search\"><button id=\"vehicleClear\" type=\"button\" class=\"iconButton inputClear\" aria-label=\"پاک کردن خودرو\" hidden>×</button></div><div id=\"vehicleSuggestions\" class=\"vehicleSuggestions\" role=\"listbox\" aria-label=\"تیپ‌های خودرو\" hidden></div></div><span id=\"vehicleHint\" class=\"hint\">تیپ دقیق خودرو را از فهرست انتخاب کنید.</span></div>\n        <div class=\"field\"><label for=\"partQuery\">نام قطعه</label><input id=\"partQuery\" spellcheck=\"false\" autocapitalize=\"none\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"partList\" aria-expanded=\"false\" autocomplete=\"off\" placeholder=\"مثلاً رادیاتور یا واتر پمپ\" aria-describedby=\"partHint\" maxlength=\"128\" autocorrect=\"off\" inputmode=\"search\"><div id=\"partList\" class=\"nameSuggestions\" role=\"listbox\" aria-label=\"پیشنهاد نام قطعه\" hidden></div><span id=\"partHint\" class=\"hint\">بخشی از نام قطعه هم کافی است.</span></div></div>\n        <details class=\"presetBlock\" id=\"vehiclePresets\"><summary>انتخاب سریع خودرو <span class=\"hint\">خانواده و تیپ</span></summary><div class=\"presetFamilies\" id=\"quickFamilies\" aria-label=\"خانواده‌های خودرو\"></div><div class=\"presetDrawer\" id=\"presetDrawer\" hidden><div class=\"presetDrawerHead\"><strong id=\"presetDrawerTitle\">تیپ‌ها</strong><button type=\"button\" class=\"iconButton\" id=\"presetDrawerToggle\" aria-label=\"بستن تیپ‌ها\" aria-expanded=\"true\">×</button></div><div class=\"presetVariants\" id=\"quickModels\"></div></div></details>\n        <div class=\"actions\"><button type=\"button\" class=\"btn primary\" id=\"partSearchBtn\">جست‌وجوی قطعه <span aria-hidden=\"true\">←</span></button><button type=\"button\" class=\"btn subtle\" id=\"partClearBtn\">پاک کردن</button></div>\n      </section>\n      <section id=\"codeMode\" class=\"mode\" role=\"tabpanel\" aria-labelledby=\"codeTab\" hidden>\n        <div class=\"field\"><label for=\"codeQuery\">کد فنی، کد لجستیکی یا نام قطعه</label><input id=\"codeQuery\" autocomplete=\"off\" autocapitalize=\"none\" spellcheck=\"false\" placeholder=\"مثلاً 111100001AA یا واتر پمپ\" dir=\"auto\" maxlength=\"128\" aria-describedby=\"codeHint\" autocorrect=\"off\" inputmode=\"search\"><span id=\"codeHint\" class=\"hint\">جست‌وجو در همهٔ خودروها؛ بدون نیاز به انتخاب خودرو</span></div>\n        <div class=\"actions\"><button type=\"button\" class=\"btn primary\" id=\"codeSearchBtn\">جست‌وجوی قطعه <span aria-hidden=\"true\">←</span></button><button type=\"button\" class=\"btn subtle\" id=\"codeClearBtn\">پاک کردن</button></div>\n      </section>\n      <div id=\"message\" class=\"message\" role=\"status\" aria-live=\"polite\" aria-atomic=\"true\"></div>\n    </section>\n    <section id=\"results\" class=\"results\" aria-label=\"نتایج جست‌وجو\" hidden><div class=\"resultsHead\"><h2>نتایج جست‌وجو</h2><span id=\"resultCount\" class=\"count\" role=\"status\" aria-live=\"polite\"></span></div><div id=\"resultRange\" class=\"resultRange\"></div><div id=\"cards\" class=\"cards\"></div><nav id=\"pagination\" class=\"pagination\" aria-label=\"صفحه‌بندی نتایج\"></nav></section>\n    <section id=\"welcome\" class=\"welcome\"><div class=\"welcomeIcon\" aria-hidden=\"true\">⌕</div><h2>از خودرو یا کد قطعه شروع کنید</h2><p>قیمت و خودروهای مرتبط برای هر کد لجستیکی، جداگانه نمایش داده می‌شود.</p><div class=\"welcomeTags\"><span>کدهای قابل کپی</span><span>سه سطح قیمت</span><span>جزئیات دقیق هر ردیف</span></div></section>\n</div><section id=\"relatedSuggestions\" hidden aria-label=\"پیشنهادهای مرتبط\"></section><section id=\"documentRoot\" hidden aria-label=\"اسناد عملیاتی\"></section><section id=\"priceRoot\" hidden aria-label=\"روند قیمت‌ها\"></section>\n  </main>\n  <footer class=\"footer\"><span>ردیف‌های کاتالوگ: <b id=\"dbCount\">—</b></span><span>میانی ۱۰٪ و نهایی ۲۰٪ بالاتر از پایه</span><span class=\"designer\" dir=\"ltr\">design by behrad</span></footer>\n</div>\n<dialog id=\"detailDialog\" aria-labelledby=\"detailTitle\"><div class=\"dialogHead\"><div><span id=\"detailEyebrow\" class=\"eyebrow\">جزئیات ردیف</span><h2 id=\"detailTitle\" tabindex=\"-1\"></h2></div><button id=\"detailClose\" type=\"button\" class=\"iconButton\" aria-label=\"بستن جزئیات\">×</button></div><div id=\"detailBody\" class=\"dialogBody\"></div></dialog>\n<div id=\"toast\" class=\"toast\" role=\"status\" aria-live=\"polite\" aria-atomic=\"true\"></div>\n";
++export const appMarkup = "<a class=\"skipLink\" href=\"#workspace\">رفتن به جست‌وجو</a>\n<div class=\"wrap\">\n  <header class=\"header\">\n    <div class=\"brand\"><div><h1 dir=\"ltr\">PartAvar<span class=\"brandDot\">.</span></h1><p>پارت‌آور · ابزار کار قطعات خودرو</p></div></div>\n    <div class=\"headerTools\"><span id=\"connectionStatus\" class=\"connection\">بررسی اتصال</span><button id=\"themeToggle\" type=\"button\" class=\"iconButton\" aria-label=\"تغییر حالت نمایش\"></button></div>\n  </header><nav class=\"appNav\" aria-label=\"بخش‌های پارت‌آور\"><button type=\"button\" data-area=\"search\" aria-current=\"page\">جست‌وجو</button><button type=\"button\" data-area=\"purchase\">لیست خرید</button><button type=\"button\" data-area=\"packages\">بسته‌ها</button><button type=\"button\" data-area=\"invoices\">فاکتورها</button><button type=\"button\" data-area=\"prices\">روند قیمت</button><button type=\"button\" data-area=\"settings\">تنظیمات</button><a href=\"/\">وب‌سایت ↗</a></nav>\n  <section class=\"catalogueStatus\" aria-label=\"وضعیت کاتالوگ\">\n    <details id=\"catalogueInfo\"><summary><span class=\"statusDot\" aria-hidden=\"true\"></span><span id=\"catalogueStatusText\" role=\"status\" aria-live=\"polite\" data-state=\"checking\">در حال بررسی کاتالوگ…</span><span class=\"infoLabel\">اطلاعات و دریافت <span aria-hidden=\"true\">⌄</span></span></summary>\n      <div class=\"statusBody\"><span id=\"catalogueVersion\" class=\"catalogueStatusVersion\"></span><div id=\"catalogueStatusMeta\" class=\"catalogueStatusMeta\">در حال خواندن اطلاعات…</div><progress id=\"catalogueProgress\" max=\"100\" hidden aria-label=\"پیشرفت دریافت کاتالوگ\"></progress><div class=\"catalogueStatusActions\"><button id=\"catalogueUpdateButton\" class=\"btn secondary\" type=\"button\">دریافت برای استفادهٔ آفلاین</button><button id=\"catalogueCancelButton\" class=\"btn secondary\" type=\"button\" hidden>لغو دریافت</button></div></div>\n    </details>\n  </section>\n  <main id=\"workspace\" tabindex=\"-1\"><div id=\"searchArea\">\n    <section class=\"searchPanel\" aria-label=\"جست‌وجوی قطعات\">\n      <div class=\"workspaceTitle\"><div><span class=\"eyebrow\">کاتالوگ قطعات</span><h2>قطعهٔ موردنظرت را پیدا کن</h2></div><span class=\"workspaceHint\">کد دقیق، نتیجهٔ دقیق‌تر</span></div>\n      <div class=\"tabs\" role=\"tablist\" aria-label=\"روش جست‌وجو\">\n        <button id=\"partTab\" class=\"tab active\" data-mode=\"partMode\" role=\"tab\" aria-controls=\"partMode\" aria-selected=\"true\" type=\"button\">قطعه و خودرو</button>\n        <button id=\"codeTab\" class=\"tab\" data-mode=\"codeMode\" role=\"tab\" aria-controls=\"codeMode\" aria-selected=\"false\" tabindex=\"-1\" type=\"button\">کد یا نام قطعه</button>\n      </div>\n      <section id=\"partMode\" class=\"mode active\" role=\"tabpanel\" aria-labelledby=\"partTab\">\n        <div class=\"formGrid\"><div class=\"field vehicleField\"><label for=\"vehicle\">خودرو و تیپ</label><div class=\"vehiclePicker\"><div class=\"inputWithAction\"><input id=\"vehicle\" autocomplete=\"off\" spellcheck=\"false\" placeholder=\"نام خودرو؛ مثلاً X55\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"false\" aria-controls=\"vehicleSuggestions\" aria-haspopup=\"listbox\" aria-describedby=\"vehicleHint\" maxlength=\"128\" autocorrect=\"off\" inputmode=\"search\"><button id=\"vehicleClear\" type=\"button\" class=\"iconButton inputClear\" aria-label=\"پاک کردن خودرو\" hidden>×</button></div><div id=\"vehicleSuggestions\" class=\"vehicleSuggestions\" role=\"listbox\" aria-label=\"تیپ‌های خودرو\" hidden></div></div><span id=\"vehicleHint\" class=\"hint\">تیپ دقیق خودرو را از فهرست انتخاب کنید.</span></div>\n        <div class=\"field\"><label for=\"partQuery\">نام قطعه</label><input id=\"partQuery\" spellcheck=\"false\" autocapitalize=\"none\" role=\"combobox\" aria-autocomplete=\"list\" aria-controls=\"partList\" aria-expanded=\"false\" autocomplete=\"off\" placeholder=\"مثلاً رادیاتور یا واتر پمپ\" aria-describedby=\"partHint\" maxlength=\"128\" autocorrect=\"off\" inputmode=\"search\"><div id=\"partList\" class=\"nameSuggestions\" role=\"listbox\" aria-label=\"پیشنهاد نام قطعه\" hidden></div><span id=\"partHint\" class=\"hint\">بخشی از نام قطعه هم کافی است.</span></div></div>\n        <details class=\"presetBlock\" id=\"vehiclePresets\"><summary>انتخاب سریع خودرو <span class=\"hint\">خانواده و تیپ</span></summary><div class=\"presetFamilies\" id=\"quickFamilies\" aria-label=\"خانواده‌های خودرو\"></div><div class=\"presetDrawer\" id=\"presetDrawer\" hidden><div class=\"presetDrawerHead\"><strong id=\"presetDrawerTitle\">تیپ‌ها</strong><button type=\"button\" class=\"iconButton\" id=\"presetDrawerToggle\" aria-label=\"بستن تیپ‌ها\" aria-expanded=\"true\">×</button></div><div class=\"presetVariants\" id=\"quickModels\"></div></div></details>\n        <div class=\"actions\"><button type=\"button\" class=\"btn primary\" id=\"partSearchBtn\">جست‌وجوی قطعه <span aria-hidden=\"true\">←</span></button><button type=\"button\" class=\"btn subtle\" id=\"partClearBtn\">پاک کردن</button></div>\n      </section>\n      <section id=\"codeMode\" class=\"mode\" role=\"tabpanel\" aria-labelledby=\"codeTab\" hidden>\n        <div class=\"field\"><label for=\"codeQuery\">کد فنی، کد لجستیکی یا نام قطعه</label><input id=\"codeQuery\" autocomplete=\"off\" autocapitalize=\"none\" spellcheck=\"false\" placeholder=\"مثلاً 111100001AA یا واتر پمپ\" dir=\"auto\" maxlength=\"128\" aria-describedby=\"codeHint\" autocorrect=\"off\" inputmode=\"search\"><span id=\"codeHint\" class=\"hint\">جست‌وجو در همهٔ خودروها؛ بدون نیاز به انتخاب خودرو</span></div>\n        <div class=\"actions\"><button type=\"button\" class=\"btn primary\" id=\"codeSearchBtn\">جست‌وجوی قطعه <span aria-hidden=\"true\">←</span></button><button type=\"button\" class=\"btn subtle\" id=\"codeClearBtn\">پاک کردن</button></div>\n      </section>\n      <div id=\"message\" class=\"message\" role=\"status\" aria-live=\"polite\" aria-atomic=\"true\"></div>\n    </section>\n    <section id=\"results\" class=\"results\" aria-label=\"نتایج جست‌وجو\" hidden><div class=\"resultsHead\"><h2>نتایج جست‌وجو</h2><span id=\"resultCount\" class=\"count\" role=\"status\" aria-live=\"polite\"></span></div><div id=\"resultRange\" class=\"resultRange\"></div><div id=\"cards\" class=\"cards\"></div><nav id=\"pagination\" class=\"pagination\" aria-label=\"صفحه‌بندی نتایج\"></nav></section>\n    <section id=\"welcome\" class=\"welcome\"><div class=\"welcomeIcon\" aria-hidden=\"true\">⌕</div><h2>از خودرو یا کد قطعه شروع کنید</h2><p>قیمت و خودروهای مرتبط برای هر کد لجستیکی، جداگانه نمایش داده می‌شود.</p><div class=\"welcomeTags\"><span>کدهای قابل کپی</span><span>سه سطح قیمت</span><span>جزئیات دقیق هر ردیف</span></div></section>\n</div><section id=\"relatedSuggestions\" hidden aria-label=\"پیشنهادهای مرتبط\"></section><section id=\"documentRoot\" hidden aria-label=\"اسناد عملیاتی\"></section><section id=\"priceRoot\" hidden aria-label=\"روند قیمت‌ها\"></section>\n  </main>\n  <footer class=\"footer\"><span>ردیف‌های کاتالوگ: <b id=\"dbCount\">—</b></span><span>میانی ۱۰٪ و نهایی ۲۰٪ بالاتر از پایه</span><span class=\"designer\" dir=\"ltr\">design by behrad</span></footer>\n</div>\n<dialog id=\"detailDialog\" aria-labelledby=\"detailTitle\"><div class=\"dialogHead\"><div><span id=\"detailEyebrow\" class=\"eyebrow\">جزئیات ردیف</span><h2 id=\"detailTitle\" tabindex=\"-1\"></h2></div><button id=\"detailClose\" type=\"button\" class=\"iconButton\" aria-label=\"بستن جزئیات\">×</button></div><div id=\"detailBody\" class=\"dialogBody\"></div></dialog>\n<div id=\"toast\" class=\"toast\" role=\"status\" aria-live=\"polite\" aria-atomic=\"true\"></div>\n";
+--- baseline/apps/web/src/offline/installer.ts
++++ current/apps/web/src/offline/installer.ts
+@@ -71,7 +71,25 @@
+ async function renewLease(owner: string, version: string): Promise<void> {
+   await catalogueReplica.transaction('rw', catalogueReplica.installerLease, async () => {
+-    const current = await catalogueReplica.installerLease.get('catalogue-installer');
+-    if (!current || current.owner !== owner || current.expiresAt <= Date.now()) throw new Error('The catalogue update lease expired. Retry the update.');
+-    await catalogueReplica.installerLease.put({ ...current, version, expiresAt: Date.now() + LEASE_MS, updatedAt: nowIso() });
++    await requireLease(owner, version);
++  });
++}
++
++// Call only inside the SAME write transaction as the protected mutation.
++// The lease table serializes takeover with writes; a suspended owner cannot
++// resume and change rows/status after a successor activates the version.
++async function requireLease(owner: string, version: string): Promise<void> {
++  const current = await catalogueReplica.installerLease.get('catalogue-installer');
++  if (!current || current.owner !== owner || current.version !== version || current.expiresAt <= Date.now()) {
++    throw new Error('The catalogue update lease expired. Retry the update.');
++  }
++  await catalogueReplica.installerLease.put({ ...current, expiresAt: Date.now() + LEASE_MS, updatedAt: nowIso() });
++}
++
++async function updateStage(owner: string, version: string, status: CatalogueVersionRecord['status']): Promise<void> {
++  await catalogueReplica.transaction('rw', catalogueReplica.installerLease, catalogueReplica.catalogVersions, async () => {
++    await requireLease(owner, version);
++    const current = await catalogueReplica.catalogVersions.get(version);
++    if (!current || current.status === 'ready') throw new Error('The staged catalogue was already activated or is unavailable.');
++    await catalogueReplica.catalogVersions.update(version, { status });
+   });
+ }
+@@ -142,5 +160,5 @@
+ }
+ 
+-async function importChunk(version: string, descriptor: SnapshotChunkDescriptor, records: Record<string, unknown>[]): Promise<void> {
++async function importChunk(owner: string, version: string, descriptor: SnapshotChunkDescriptor, records: Record<string, unknown>[]): Promise<void> {
+   const tableName = descriptor.table as SnapshotTable;
+   const rows = records.map((record) => {
+@@ -159,7 +177,11 @@
+   };
+   // Snapshot chunks are capped to 500 records; data and completion marker commit atomically.
+-  await catalogueReplica.transaction('rw', target, catalogueReplica.installChunks, async () => {
++  await catalogueReplica.transaction('rw', [target, catalogueReplica.installChunks, catalogueReplica.installerLease, catalogueReplica.catalogVersions], async () => {
++    await requireLease(owner, version);
++    const current = await catalogueReplica.catalogVersions.get(version);
++    if (!current || current.status === 'ready') throw new Error('The staged catalogue was already activated or is unavailable.');
+     await target.bulkPut(rows);
+     await catalogueReplica.installChunks.put(chunkMarker);
++    await catalogueReplica.catalogVersions.update(version, { status: tableName === 'searchDocuments' ? 'indexing' : 'importing' });
+   });
+ }
+@@ -196,6 +218,7 @@
+ }
+ 
+-async function activateVersion(version: string, record: CatalogueVersionRecord, activeManifestEtag: string | null): Promise<void> {
+-  await catalogueReplica.transaction('rw', catalogueReplica.meta, catalogueReplica.catalogVersions, async () => {
++async function activateVersion(owner: string, version: string, record: CatalogueVersionRecord, activeManifestEtag: string | null): Promise<void> {
++  await catalogueReplica.transaction('rw', catalogueReplica.meta, catalogueReplica.catalogVersions, catalogueReplica.installerLease, async () => {
++    await requireLease(owner, version);
+     const current = await catalogueReplica.catalogVersions.get(version);
+     if (!current || current.manifestSha256 !== record.manifestSha256) throw new Error('Staged catalogue metadata changed before activation.');
+@@ -264,4 +287,9 @@
+   }
+   const localExisting = await catalogueReplica.catalogVersions.get(version);
++  const owner = randomOwner();
++  await acquireLease(owner, version);
++  let stageRecord: CatalogueVersionRecord | undefined;
++  try {
++  if (signal.aborted) throw new DOMException('Catalogue update cancelled.', 'AbortError');
+   if (localExisting?.status === 'ready') {
+     const snapshotResponse = await fetch(activeManifest.snapshotManifestPath, { cache: 'no-store', signal });
+@@ -271,13 +299,10 @@
+     const snapshotHash = [...new Uint8Array(snapshotHashBuffer)].map((value) => value.toString(16).padStart(2, '0')).join('');
+     if (snapshotHash !== localExisting.manifestSha256) throw new Error('The local ready catalogue does not match the server snapshot manifest.');
+-    await activateVersion(version, localExisting, activeManifestEtag);
++    if (signal.aborted) throw new DOMException('Catalogue update cancelled.', 'AbortError');
++    await activateVersion(owner, version, localExisting, activeManifestEtag);
+     emit(progress, 'ready', version, 0, 0, 0, 0, 'A previously installed catalogue version is ready.');
+     return { version, unchanged: true, rowCount: localExisting.rowCount, persistentStorageGranted: null, quota: { usage: null, quota: null, estimatedInstallBytes: 0 } };
+   }
+ 
+-  const owner = randomOwner();
+-  await acquireLease(owner, version);
+-  let stageRecord: CatalogueVersionRecord | undefined;
+-  try {
+     if (signal.aborted) throw new DOMException('Catalogue update cancelled.', 'AbortError');
+     const snapshotUrl = activeManifest.snapshotManifestPath;
+@@ -312,5 +337,19 @@
+       importedAt: nowIso(),
+     };
+-    await catalogueReplica.catalogVersions.put(stageRecord);
++    const alreadyReady = await catalogueReplica.transaction('rw', catalogueReplica.installerLease, catalogueReplica.catalogVersions, async () => {
++      await requireLease(owner, version);
++      const current = await catalogueReplica.catalogVersions.get(version);
++      if (current && current.manifestSha256 !== manifestSha256) throw new Error('The same immutable catalogue version has a different snapshot manifest hash.');
++      if (current?.status === 'ready') return current;
++      await catalogueReplica.catalogVersions.put(stageRecord!);
++      return null;
++    });
++    // Another owner may have completed between the initial read and acquisition.
++    if (alreadyReady) {
++      if (signal.aborted) throw new DOMException('Catalogue update cancelled.', 'AbortError');
++      await activateVersion(owner, version, alreadyReady, activeManifestEtag);
++      emit(progress, 'ready', version, 0, 0, 0, 0, 'A previously installed catalogue version is ready.');
++      return { version, unchanged: true, rowCount: alreadyReady.rowCount, persistentStorageGranted: storage.persistent, quota: { usage: storage.usage, quota: storage.quota, estimatedInstallBytes: 0 } };
++    }
+     let completedChunks = 0;
+     let downloadedBytes = 0;
+@@ -326,15 +365,17 @@
+         continue;
+       }
+-      if (completed) await catalogueReplica.installChunks.delete([version, chunk.id]);
++      if (completed) await catalogueReplica.transaction('rw', catalogueReplica.installerLease, catalogueReplica.installChunks, async () => {
++        await requireLease(owner, version);
++        await catalogueReplica.installChunks.delete([version, chunk.id]);
++      });
+       const chunkResponse = await fetch(chunk.path, { signal, cache: 'no-store' });
+       if (!chunkResponse.ok) throw new Error(`Snapshot chunk ${chunk.id} download failed (${chunkResponse.status}).`);
+       const chunkBuffer = await chunkResponse.arrayBuffer();
+       const records = await parseAndVerifyChunk(chunkBuffer, chunk);
+-      await catalogueReplica.catalogVersions.update(version, { status: 'importing' });
++      if (signal.aborted) throw new DOMException('Catalogue update cancelled.', 'AbortError');
+       emit(progress, 'importing', version, completedChunks, snapshotManifest.chunks.length, downloadedBytes, snapshotManifest.totalDecodedBytes, `Importing ${chunk.table} data.`);
+-      await importChunk(version, chunk, records);
++      await importChunk(owner, version, chunk, records);
+       completedChunks++;
+       downloadedBytes += chunk.decodedBytes;
+-      if (chunk.table === 'searchDocuments') await catalogueReplica.catalogVersions.update(version, { status: 'indexing' });
+       emit(progress, chunk.table === 'searchDocuments' ? 'indexing' : 'importing', version, completedChunks, snapshotManifest.chunks.length, downloadedBytes, snapshotManifest.totalDecodedBytes, `Checked ${completedChunks} of ${snapshotManifest.chunks.length} chunks.`);
+       await new Promise<void>((resolveTurn) => setTimeout(resolveTurn, 0));
+@@ -342,7 +383,8 @@
+ 
+     await renewLease(owner, version);
+-    await catalogueReplica.catalogVersions.update(version, { status: 'validating' });
++    await updateStage(owner, version, 'validating');
+     emit(progress, 'validating', version, completedChunks, snapshotManifest.chunks.length, downloadedBytes, snapshotManifest.totalDecodedBytes, 'Checking record counts and relationships.');
+     for (const tableName of TABLE_NAMES) {
++      await renewLease(owner, version);
+       const actual = await countVersionRows(tableName, version);
+       const expected = Number(snapshotManifest.counts[tableName] ?? 0);
+@@ -352,6 +394,7 @@
+     if (installedMarkers !== snapshotManifest.chunks.length) throw new Error('Not every snapshot chunk has a verified completion marker.');
+     await validateRelationships(version);
++    if (signal.aborted) throw new DOMException('Catalogue update cancelled.', 'AbortError');
+     stageRecord = { ...stageRecord, status: 'ready' };
+-    await activateVersion(version, stageRecord, activeManifestEtag);
++    await activateVersion(owner, version, stageRecord, activeManifestEtag);
+     emit(progress, 'ready', version, completedChunks, snapshotManifest.chunks.length, downloadedBytes, snapshotManifest.totalDecodedBytes, 'Offline catalogue is ready.');
+     return {
+@@ -364,5 +407,13 @@
+   } catch (error) {
+     if (stageRecord) {
+-      await catalogueReplica.catalogVersions.update(version, { status: 'failed', failure: error instanceof Error ? error.message.slice(0, 240) : 'Catalogue update failed.' });
++      try {
++        await catalogueReplica.transaction('rw', catalogueReplica.installerLease, catalogueReplica.catalogVersions, async () => {
++          const lease = await catalogueReplica.installerLease.get('catalogue-installer');
++          const current = await catalogueReplica.catalogVersions.get(version);
++          if (lease?.owner === owner && lease.version === version && lease.expiresAt > Date.now() && current && current.status !== 'ready') {
++            await catalogueReplica.catalogVersions.update(version, { status: 'failed', failure: error instanceof Error ? error.message.slice(0, 240) : 'Catalogue update failed.' });
++          }
++        });
++      } catch { /* Keep the original failure; quota/storage errors must not trigger unsafe cleanup. */ }
+     }
+     emit(progress, 'failed', version, 0, 0, 0, 0, error instanceof Error ? error.message : 'Catalogue update failed.');
+--- baseline/apps/web/src/price-intelligence/workspace.ts
++++ current/apps/web/src/price-intelligence/workspace.ts
+@@ -48,5 +48,5 @@
+     const preferences=await getPreferences().catch(()=>null);if(signal?.aborted)return;
+     for(const id of ids){const item=items.find(x=>x.entryId===id);const classification=item?classifyPriceHistory(item,preferences?.priceClassification):'neutral';
+-      document.querySelectorAll<HTMLButtonElement>(`[data-history-entry="${id}"]`).forEach(badge=>{if(badge.dataset.historyVersion&&badge.dataset.historyVersion!==version)return;badge.className=`historyBadge ${classification}`;badge.textContent=labels[classification];badge.title=item?`${labels[classification]} · تغییر ${percent(item.cumulativeChangeBps)} · ${item.observationCount} تاریخ${stale?' · آخرین سابقهٔ ذخیره‌شده؛ تازگی تأیید نشده':''}`:'تاریخچه در دسترس نیست یا سابقه کافی نیست';badge.setAttribute('aria-label',badge.title+'؛ نمایش جزئیات');});
++      document.querySelectorAll<HTMLButtonElement>(`[data-history-entry="${id}"]`).forEach(badge=>{if(badge.dataset.historyVersion!==version)return;badge.className=`historyBadge ${classification}`;badge.textContent=labels[classification];badge.title=item?`${labels[classification]} · تغییر ${percent(item.cumulativeChangeBps)} · ${item.observationCount} تاریخ${stale?' · آخرین سابقهٔ ذخیره‌شده؛ تازگی تأیید نشده':''}`:'تاریخچه در دسترس نیست یا سابقه کافی نیست';badge.setAttribute('aria-label',badge.title+'؛ نمایش جزئیات');});
+     }
+   }
+--- baseline/apps/web/src/styles/app.css
++++ current/apps/web/src/styles/app.css
+@@ -14,2 +14,6 @@
+ @media(max-width:359px){.codeRow{grid-template-columns:60px minmax(0,1fr) 44px}.copyButton{width:44px}}
+ .brandMark{display:flex;align-items:center;justify-content:center;padding:0;letter-spacing:-1px;gap:0}.brandMark span{position:static;font:inherit;opacity:1}
++
++/* Card layout follows its available width during browser zoom as well as viewport resize. */
++.cards,.variantEntries{container-type:inline-size}
++@container(max-width:760px){.resultCard{display:block}.resultCard .priceGroup{margin-top:12px}.resultCard .entryActions{margin-top:8px;flex-direction:row;align-items:center}.resultCard .cardButtons{justify-content:flex-start}}
+--- baseline/apps/web/src/ui/catalogue-status.ts
++++ current/apps/web/src/ui/catalogue-status.ts
+@@ -26,8 +26,17 @@
+   private notice = '';
+   private size: number | null = null;
++  private channel: BroadcastChannel | null = null;
++  private localRefresh: Promise<void> | null = null;
++  private refreshRequested = false;
+   constructor(private readonly worker: CatalogueWorkerClient, private readonly catalogue: Catalogue, private readonly onVersion: (version: string | null) => Promise<void> | void, shell: Promise<boolean>) {
+     this.update.addEventListener('click', () => void this.install());
+     this.cancel.addEventListener('click', () => this.controller?.abort());
+     window.addEventListener('online', this.connectivity); window.addEventListener('offline', this.connectivity);
++    window.addEventListener('focus', this.refreshLocal);
++    document.addEventListener('visibilitychange', this.visible);
++    try {
++      this.channel = new BroadcastChannel('partsfinder-catalogue');
++      this.channel.addEventListener('message', event => { if (event.data?.type === 'activated') this.refreshLocal(); });
++    } catch { /* Focus/visibility recheck IndexedDB when notifications are unavailable. */ }
+     this.info.addEventListener('toggle', () => { if (this.info.open) void this.loadSize(); });
+     void shell.then(ready => { this.shellReady = ready; if (!this.controller && this.local) this.render(); });
+@@ -43,5 +52,32 @@
+     if (navigator.onLine) await this.check();
+   }
+-  destroy(): void { this.destroyed = true; this.controller?.abort(); window.removeEventListener('online', this.connectivity); window.removeEventListener('offline', this.connectivity); }
++  destroy(): void { this.destroyed = true; this.controller?.abort(); this.channel?.close(); window.removeEventListener('online', this.connectivity); window.removeEventListener('offline', this.connectivity); window.removeEventListener('focus', this.refreshLocal); document.removeEventListener('visibilitychange', this.visible); }
++  private readonly refreshLocal = (): void => { void this.refreshLocalState(); };
++  private readonly visible = (): void => { if (document.visibilityState === 'visible') this.refreshLocal(); };
++  private refreshLocalState(): Promise<void> {
++    if (this.destroyed) return Promise.resolve();
++    this.refreshRequested = true;
++    if (this.localRefresh) return this.localRefresh;
++    this.localRefresh = (async () => {
++      while (this.refreshRequested && !this.destroyed) {
++        this.refreshRequested = false;
++        try {
++          // A notification is only a hint; the Worker reads the authoritative atomic pointer.
++          const local = await this.worker.status();
++          if (this.destroyed) return;
++          const previous = this.local?.ready ? this.local.activeVersion : null;
++          const current = local.ready ? local.activeVersion : null;
++          this.local = local;
++          this.catalogue.setLocalVersion(current);
++          if (current !== previous) {
++            this.notice = 'کاتالوگ محلی تغییر کرد؛ جست‌وجو را دوباره اجرا کنید.';
++            await this.onVersion(current ?? (navigator.onLine ? this.remote?.catalogVersion ?? null : null));
++          }
++          if (!this.controller) this.render();
++        } catch { /* A lifecycle refresh must preserve the last usable state on storage failure. */ }
++      }
++    })().finally(() => { this.localRefresh = null; });
++    return this.localRefresh;
++  }
+   private readonly connectivity = (): void => {
+     this.connection();
+@@ -93,4 +129,5 @@
+       try { this.local = await this.worker.status(); } catch { /* Preserve previous valid state. */ }
+       this.catalogue.setLocalVersion(this.local?.ready ? this.local.activeVersion : null);
++      await this.onVersion(this.local?.ready ? this.local.activeVersion : this.remote?.catalogVersion ?? null);
+       this.notice = cancelled ? this.local?.ready ? 'به‌روزرسانی لغو شد؛ نسخهٔ قبلی همچنان آماده است.' : 'دریافت لغو شد؛ می‌توانید آن را ادامه دهید.' : installationError(error);
+       if (!cancelled && this.local?.ready) this.notice += ' نسخهٔ قبلی همچنان قابل جست‌وجو است.';
+--- baseline/apps/web/src/ui/details.ts
++++ current/apps/web/src/ui/details.ts
+@@ -93,5 +93,5 @@
+         if (signal.aborted || sequence !== expanded || !row.isConnected) return;
+         panel.replaceChildren(node('p', 'detailMeta', `${all ? 'همهٔ ردیف‌های این کد فنی' : 'ردیف‌های منطبق با جست‌وجوی شما'} · ${page.totalMatchedEntries.toLocaleString('fa-IR')} ردیف`));
+-        for (const item of page.items) if (item.type === 'entry') panel.append(entryCard(item, trigger => void this.entry(base.catalogVersion, item.entryId, trigger, returnToFamily)));
++        for (const item of page.items) if (item.type === 'entry') panel.append(entryCard(item, page.catalogVersion, trigger => void this.entry(page.catalogVersion, item.entryId, trigger, returnToFamily)));
+         const paging = node('nav', 'pagination');
+         if (previous.length) paging.append(button('ردیف‌های قبلی', 'pageButton', () => void load(all, previous[previous.length - 1], previous.slice(0, -1))));
+--- baseline/apps/web/src/ui/entry.ts
++++ current/apps/web/src/ui/entry.ts
+@@ -33,5 +33,5 @@
+   observer.observe(group); return group;
+ }
+-export function entryCard(entry: EntryListing | EntrySummary, onDetail: (trigger: HTMLButtonElement) => void, onFamily?: (trigger: HTMLButtonElement) => void): HTMLElement {
++export function entryCard(entry: EntryListing | EntrySummary, version: string, onDetail: (trigger: HTMLButtonElement) => void, onFamily?: (trigger: HTMLButtonElement) => void): HTMLElement {
+   const card = node('article', 'resultCard'); card.dataset.entryId = String(entry.entryId);
+   const identity = node('div', 'entryIdentity'); const head = node('div', 'entryHead');
+@@ -45,5 +45,5 @@
+   if (onFamily) { const family = button('خانوادهٔ کد', 'familySearchButton', () => onFamily(family)); family.setAttribute('aria-haspopup', 'dialog'); buttons.append(family); }
+   buttons.append(detail);
+-  const history=button('سابقه ناکافی', 'historyBadge neutral',()=>window.dispatchEvent(new CustomEvent('partavar:history-entry',{detail:{entryId:entry.entryId,entry}})));history.dataset.historyEntry=String(entry.entryId);history.title='نمایش تاریخچهٔ مستند قیمت';buttons.append(history);
++  const history=button('سابقه ناکافی', 'historyBadge neutral',()=>window.dispatchEvent(new CustomEvent('partavar:history-entry',{detail:{version,entryId:entry.entryId,entry}})));history.dataset.historyEntry=String(entry.entryId);history.dataset.historyVersion=version;history.title='نمایش تاریخچهٔ مستند قیمت';buttons.append(history);
+   const operations=node('div','entryOperations');
+   for(const [action,label,css] of [['invoice','فاکتور +','invoiceAction'],['purchase','لیست خرید +','purchaseAction'],['package','پکیج +','packageAction'],['related','قطعات مرتبط','relatedAction']]) operations.append(button(label!,'operationButton '+css,()=>window.dispatchEvent(new CustomEvent('partavar:entry-action',{detail:{entry,action}}))));
+--- baseline/apps/web/src/ui/search.ts
++++ current/apps/web/src/ui/search.ts
+@@ -108,5 +108,5 @@
+       const empty = node('div', 'resultsEmpty'); empty.append(node('h3', '', 'نتیجه‌ای پیدا نشد'), node('p', '', 'بخش کوتاه‌تری از کد یا نام قطعه را جست‌وجو کنید.')); this.cards.append(empty);
+     }
+-    for (const item of page.items) if (item.type === 'entry') this.cards.append(entryCard(item, trigger => void this.details.entry(page.catalogVersion, item.entryId, trigger), trigger => void this.details.family(request, item, trigger)));
++    for (const item of page.items) if (item.type === 'entry') this.cards.append(entryCard(item, page.catalogVersion, trigger => void this.details.entry(page.catalogVersion, item.entryId, trigger), trigger => void this.details.family(request, item, trigger)));
+     window.dispatchEvent(new CustomEvent('partavar:page-rendered',{detail:{version:page.catalogVersion,entries:page.items.filter(item=>item.type==='entry')}}));
+     this.pagination.replaceChildren();
+--- baseline/apps/web/src/website/index.ts
++++ current/apps/web/src/website/index.ts
+@@ -128,9 +128,9 @@
+ 
+ function header(path: string): string {
+-  return `<a class="site-skip-link" href="#site-main">رفتن به محتوای اصلی</a><header class="site-header site-container" data-menu-open="false"><a class="site-brand" href="/" aria-label="پارت‌آور، صفحهٔ اصلی">${brand()}</a><nav id="site-navigation" class="site-nav" aria-label="ناوبری اصلی">${navigation.map(item => `<a href="${item.path}"${path === item.path ? ' aria-current="page"' : ''}>${item.label}</a>`).join('')}</nav><div class="site-header-actions"><button type="button" id="themeToggle" class="site-icon-button" aria-label="تغییر رنگ محیط">${symbol('moon')}</button><a class="site-button site-button-primary site-header-cta" href="/app">ورود به برنامه${arrow}</a><button class="site-menu-toggle site-icon-button" id="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="باز کردن فهرست ناوبری"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span>فهرست</span></button></div></header>`;
++  return `<a class="site-skip-link" href="#site-main">رفتن به محتوای اصلی</a><header class="site-header site-container" data-menu-open="false"><a class="site-brand" href="/" aria-label="PartAvar. پارت‌آور، صفحهٔ اصلی">${brand()}</a><nav id="site-navigation" class="site-nav" aria-label="ناوبری اصلی">${navigation.map(item => `<a href="${item.path}"${path === item.path ? ' aria-current="page"' : ''}>${item.label}</a>`).join('')}</nav><div class="site-header-actions"><button type="button" id="themeToggle" class="site-icon-button" aria-label="تغییر رنگ محیط">${symbol('moon')}</button><a class="site-button site-button-primary site-header-cta" href="/app">ورود به برنامه${arrow}</a><button class="site-menu-toggle site-icon-button" id="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="باز کردن فهرست ناوبری"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span>فهرست</span></button></div></header>`;
+ }
+ 
+ function footer(): string {
+-  return `<footer class="site-footer"><div class="site-container"><div class="site-footer-top"><div><a class="site-brand" href="/" aria-label="پارت‌آور، صفحهٔ اصلی">${brand()}</a><p>محیط کاری قطعات خودرو.<br>دقیق در جزئیات، روشن در مسیر کار.</p></div><nav aria-label="ناوبری پاورقی"><div><h2>محصول</h2><a href="/product">معرفی پارت‌آور</a><a href="/features">قابلیت‌ها</a><a href="/offline-data">آفلاین و دقت داده</a></div><div><h2>راهنما</h2><a href="/support">راهنمای استفاده</a><a href="/support#backup">پشتیبان و بازیابی</a><a href="/contact">تماس و راه‌اندازی</a></div></nav></div><div class="site-footer-bottom"><span>پارت‌آور <span lang="en" dir="ltr">/ PartAvar</span></span><a href="/app">ورود به محیط کاری${arrow}</a></div></div></footer>`;
++  return `<footer class="site-footer"><div class="site-container"><div class="site-footer-top"><div><a class="site-brand" href="/" aria-label="PartAvar. پارت‌آور، صفحهٔ اصلی">${brand()}</a><p>محیط کاری قطعات خودرو.<br>دقیق در جزئیات، روشن در مسیر کار.</p></div><nav aria-label="ناوبری پاورقی"><div><h2>محصول</h2><a href="/product">معرفی پارت‌آور</a><a href="/features">قابلیت‌ها</a><a href="/offline-data">آفلاین و دقت داده</a></div><div><h2>راهنما</h2><a href="/support">راهنمای استفاده</a><a href="/support#backup">پشتیبان و بازیابی</a><a href="/contact">تماس و راه‌اندازی</a></div></nav></div><div class="site-footer-bottom"><span>پارت‌آور <span lang="en" dir="ltr">/ PartAvar</span></span><a href="/app">ورود به محیط کاری${arrow}</a></div></div></footer>`;
+ }
+ 
+--- baseline/deploy/Caddyfile
++++ current/deploy/Caddyfile
+@@ -0,0 +1,12 @@
++# Replace this reserved example name with the approved real hostname.
++# Caddy must be the only publicly reachable entry point.
++partavar.example.invalid {
++    encode zstd gzip
++    header {
++        Strict-Transport-Security "max-age=31536000"
++        -Server
++    }
++    # Caddy forwards Host and Authorization and supplies X-Forwarded-Proto.
++    # Do not add a file_server for the project or private-data directory.
++    reverse_proxy 127.0.0.1:8787
++}
+--- baseline/deploy/partavar.env.example
++++ current/deploy/partavar.env.example
+@@ -0,0 +1,11 @@
++# Template only. Generate real credentials with pnpm release:credentials.
++# Save the actual file outside the release tree, readable only by its owner.
++NODE_ENV=production
++PORT=8787
++PARTAVAR_PUBLIC_ORIGIN=https://partavar.example.invalid
++PARTAVAR_AUTH_USERNAME=operator
++PARTAVAR_AUTH_TOKEN_SHA256=REPLACE_WITH_GENERATED_SHA256
++CATALOGUE_DB_PATH=/var/lib/partavar/private-data/sqlite/catalogue.db
++CATALOGUE_DATA_ROOT=/var/lib/partavar/private-data
++PARTAVAR_OPERATIONS_PATH=/var/lib/partavar/private-data/sqlite/operations.db
++PARTAVAR_WEB_ROOT=/opt/partavar/current/apps/web/dist
+--- baseline/deploy/partavar.service
++++ current/deploy/partavar.service
+@@ -0,0 +1,35 @@
++[Unit]
++Description=PartAvar private catalogue and application
++After=network.target
++
++[Service]
++Type=simple
++User=partavar
++Group=partavar
++WorkingDirectory=/opt/partavar/current
++# Install Node.js 24+ here, or replace this path with its verified absolute path.
++ExecStart=/usr/bin/node --env-file=/etc/partavar/operator.env --import tsx apps/api/src/server.ts
++Restart=on-failure
++RestartSec=5
++TimeoutStopSec=30
++KillSignal=SIGTERM
++UMask=0077
++StateDirectory=partavar
++StateDirectoryMode=0700
++ReadWritePaths=/var/lib/partavar
++NoNewPrivileges=true
++PrivateTmp=true
++ProtectSystem=strict
++ProtectHome=true
++ProtectKernelTunables=true
++ProtectKernelModules=true
++ProtectControlGroups=true
++RestrictSUIDSGID=true
++RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
++CapabilityBoundingSet=
++AmbientCapabilities=
++StandardOutput=journal
++StandardError=journal
++
++[Install]
++WantedBy=multi-user.target
+--- baseline/package.json
++++ current/package.json
+@@ -10,4 +10,9 @@
+   "scripts": {
+     "dev": "concurrently -k -n api,web -c blue,green \"pnpm --filter @partsfinder/api dev\" \"pnpm --filter @partsfinder/web dev\"",
++    "start": "pnpm --filter @partsfinder/api start",
++    "release:credentials": "tsx scripts/operator-credentials.ts",
++    "release:package": "tsx scripts/release/package.ts",
++    "release:verify": "tsx scripts/release/verify.ts",
++    "test:release:browsers": "playwright test --config playwright.release.config.ts",
+     "test:unit": "vitest run tests/unit",
+     "test:integration": "vitest run tests/integration",
+@@ -32,4 +37,5 @@
+     "@types/better-sqlite3": "9.6.0",
+     "@types/node": "^24.19.2",
++    "axe-core": "^4.14.0",
+     "better-sqlite3": "13.0.3",
+     "concurrently": "10.0.6",
+--- baseline/packages/importer/src/operations.ts
++++ current/packages/importer/src/operations.ts
+@@ -1,5 +1,5 @@
+ import Database from 'better-sqlite3';
+ import { createHash } from 'node:crypto';
+-import { copyFile, lstat, mkdir, mkdtemp, readFile, rename, rm, stat, writeFile } from 'node:fs/promises';
++import { copyFile, lstat, mkdir, mkdtemp, readFile, readdir, rename, rm, stat, writeFile } from 'node:fs/promises';
+ import { tmpdir } from 'node:os';
+ import { basename, dirname, isAbsolute, join, relative, resolve, sep } from 'node:path';
+@@ -66,4 +66,39 @@
+   const copied = await readFile(targetPath);
+   return { role, path: '', sourcePath: sourceLabel, bytes: copied.byteLength, sha256: hashFile(copied) };
++}
++
++async function resolveSourceArchive(originalPath: string, expectedSha256: string, dataRoot: string): Promise<string> {
++  const original = isAbsolute(originalPath) ? resolve(originalPath) : containedPath(dataRoot, originalPath);
++  try {
++    const info = await lstat(original);
++    if (!info.isFile() || info.isSymbolicLink()) throw new Error(`Source archive is not a regular file: ${originalPath}`);
++    if (hashFile(await readFile(original)) !== expectedSha256) throw new Error(`Source archive checksum differs from the catalogue record: ${originalPath}`);
++    return original;
++  } catch (error) {
++    // A changed existing source is an integrity failure. Relocation fallback is
++    // only for a path that is genuinely unavailable on the destination host.
++    if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
++  }
++
++  const directory = containedPath(dataRoot, 'source-archive');
++  async function find(directoryPath: string): Promise<string | undefined> {
++    let info;
++    try { info = await lstat(directoryPath); }
++    catch (error) { if ((error as NodeJS.ErrnoException).code === 'ENOENT') return undefined; throw error; }
++    if (info.isSymbolicLink() || !info.isDirectory()) throw new Error('Relocated source archive directory must be a regular directory');
++    for (const name of (await readdir(directoryPath)).sort()) {
++      const path = join(directoryPath, name);
++      const entry = await lstat(path);
++      if (entry.isSymbolicLink()) throw new Error('Relocated source archive contains a symbolic link');
++      if (entry.isDirectory()) {
++        const nested = await find(path);
++        if (nested) return nested;
++      } else if (entry.isFile() && hashFile(await readFile(path)) === expectedSha256) return path;
++    }
++    return undefined;
++  }
++  const relocated = await find(directory);
++  if (!relocated) throw new Error(`Source archive unavailable or checksum mismatch in configured data root: ${originalPath}`);
++  return relocated;
+ }
+ 
+@@ -98,9 +133,8 @@
+         artifactsToCopy.push({ role: 'snapshot', sourcePath: source, sourceLabel: dataRelativePath, targetPath: containedPath(staging, `artifacts/${dataRelativePath}`) });
+       }
+-      const archives = backup.prepare('SELECT DISTINCT archive_path FROM catalog_versions WHERE archive_path IS NOT NULL ORDER BY archive_path').all() as Array<{ archive_path: string }>;
++      const archives = backup.prepare('SELECT DISTINCT archive_path, source_sha256 FROM catalog_versions WHERE archive_path IS NOT NULL ORDER BY archive_path').all() as Array<{ archive_path: string; source_sha256: string }>;
+       for (const archive of archives) {
+-        const archivePath = isAbsolute(archive.archive_path) ? resolve(archive.archive_path) : containedPath(dataRoot, archive.archive_path);
+-        const archiveSha = hashFile(await readFile(archivePath));
+-        artifactsToCopy.push({ role: 'source-archive', sourcePath: archivePath, sourceLabel: archive.archive_path, targetPath: containedPath(staging, `artifacts/source-archive/${archiveSha}-${basename(archivePath)}`) });
++        const archivePath = await resolveSourceArchive(archive.archive_path, archive.source_sha256, dataRoot);
++        artifactsToCopy.push({ role: 'source-archive', sourcePath: archivePath, sourceLabel: archive.archive_path, targetPath: containedPath(staging, `artifacts/source-archive/${archive.source_sha256}-${basename(archive.archive_path)}`) });
+       }
+     } finally { backup.close(); }
+--- baseline/playwright.release.config.ts
++++ current/playwright.release.config.ts
+@@ -0,0 +1,50 @@
++import { defineConfig, devices } from '@playwright/test';
++import { existsSync } from 'node:fs';
++
++const localChrome = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
++
++export default defineConfig({
++  testDir: './tests/release',
++  fullyParallel: false,
++  workers: 1,
++  retries: 0,
++  timeout: 120_000,
++  expect: { timeout: 20_000 },
++  outputDir: 'reports/release-2026-10-28/browser/test-results',
++  reporter: [
++    ['list'],
++    ['json', { outputFile: 'reports/release-2026-10-28/browser/results.json' }],
++    ['html', { outputFolder: 'reports/release-2026-10-28/browser/html', open: 'never' }],
++  ],
++  use: {
++    baseURL: 'http://127.0.0.1:4173',
++    trace: 'retain-on-failure',
++    screenshot: 'only-on-failure',
++    serviceWorkers: 'allow',
++  },
++  projects: [
++    {
++      name: 'chromium',
++      use: {
++        ...devices['Desktop Chrome'],
++        launchOptions: existsSync(localChrome) ? { executablePath: localChrome } : {},
++      },
++    },
++    { name: 'firefox', use: { ...devices['Desktop Firefox'] } },
++    { name: 'webkit', use: { ...devices['Desktop Safari'] } },
++  ],
++  webServer: [
++    {
++      command: 'pnpm --filter @partsfinder/api start',
++      url: 'http://127.0.0.1:8787/health/live',
++      reuseExistingServer: !process.env.CI,
++      timeout: 120_000,
++    },
++    {
++      command: 'pnpm --filter @partsfinder/web preview -- --port 4173',
++      url: 'http://127.0.0.1:4173',
++      reuseExistingServer: !process.env.CI,
++      timeout: 120_000,
++    },
++  ],
++});
+--- baseline/pnpm-workspace.yaml
++++ current/pnpm-workspace.yaml
+@@ -5,2 +5,6 @@
+   esbuild: true
+   better-sqlite3: false
++overrides:
++  fast-uri@3: 3.1.9
++  fast-uri@4: 4.2.3
++  exceljs>uuid: 11.1.1
+--- baseline/scripts/check-bundle.ts
++++ current/scripts/check-bundle.ts
+@@ -38,5 +38,8 @@
+ const initial = assetRows.filter((row) => row.path.endsWith('.html') || row.path.endsWith('.css') || /assets\/index-.*\.js$/.test(row.path));
+ const initialGzipBytes = initial.reduce((sum, row) => sum + row.gzipBytes, 0);
+-if (initialGzipBytes > 250 * 1024) throw new Error(`Initial HTML/CSS/main-JS is ${initialGzipBytes} compressed bytes; target is 256000.`);
++// Include every emitted JS/CSS/HTML module as a conservative bound. The static
++// index subtotal alone misses dynamic app/site bootstraps and Worker modules.
++const emittedCodeGzipBytes = assetRows.reduce((sum, row) => sum + row.gzipBytes, 0);
++if (emittedCodeGzipBytes > 250 * 1024) throw new Error(`All emitted HTML/CSS/JS is ${emittedCodeGzipBytes} compressed bytes; target is 256000.`);
+ const serviceWorker = (await readFile(resolve(dist, 'sw.js'), 'utf8'));
+ if (serviceWorker.includes('__PRECACHE_ASSETS__')) throw new Error('Service worker precache list was not injected.');
+@@ -53,6 +56,8 @@
+   outputDirectory: dist,
+   files: assetRows,
+-  initialShellFiles: initial,
+-  initialShellGzipBytes: initialGzipBytes,
++  entrypointSubtotalFiles: initial,
++  entrypointSubtotalGzipBytes: initialGzipBytes,
++  emittedCodeGzipBytes,
++  sizeGate: 'All emitted JS/CSS/HTML modules including optional chunks and Workers; conservative upper bound, not a measured network startup.',
+   appJsBytes: assetRows.filter((row) => row.path.endsWith('.js')).reduce((sum, row) => sum + row.bytes, 0),
+   appJsGzipBytes: assetRows.filter((row) => row.path.endsWith('.js')).reduce((sum, row) => sum + row.gzipBytes, 0),
+--- baseline/scripts/operator-credentials.ts
++++ current/scripts/operator-credentials.ts
+@@ -0,0 +1,38 @@
++import { randomBytes, createHash } from 'node:crypto';
++import { open, unlink } from 'node:fs/promises';
++import { resolve } from 'node:path';
++import { pathToFileURL } from 'node:url';
++import { parseArgs } from 'node:util';
++import { validateAccessConfiguration } from '../apps/api/src/access.js';
++
++async function main(): Promise<void> {
++  const { values } = parseArgs({ args: process.argv.slice(2).filter(value => value !== '--'), options: {
++    output: { type: 'string' }, origin: { type: 'string' }, username: { type: 'string', default: 'operator' },
++  }, strict: true });
++  if (!values.output || !values.origin) throw new Error('Usage: release:credentials --output /private/operator.env --origin https://your-host --username operator');
++  const token = randomBytes(32).toString('base64url');
++  const config = validateAccessConfiguration({ publicOrigin: values.origin, username: values.username!, tokenSha256: createHash('sha256').update(token).digest('hex') });
++  const output = resolve(values.output);
++  const loginPath = `${output}.login.json`;
++  const created: string[] = [];
++  try {
++    const envFile = await open(output, 'wx', 0o600); created.push(output);
++    try {
++      const loginFile = await open(loginPath, 'wx', 0o600); created.push(loginPath);
++      try {
++        await loginFile.writeFile(`${JSON.stringify({ origin: config.publicOrigin, username: config.username, password: token, purpose: 'Use the generated token as the browser Basic authentication password. Keep this file private; do not include it in releases.' }, null, 2)}\n`);
++        await loginFile.sync();
++      } finally { await loginFile.close(); }
++      await envFile.writeFile(`NODE_ENV=production\nHOST=127.0.0.1\nPORT=8787\nPARTAVAR_PUBLIC_ORIGIN=${config.publicOrigin}\nPARTAVAR_AUTH_USERNAME=${config.username}\nPARTAVAR_AUTH_TOKEN_SHA256=${config.tokenSha256}\n`);
++      await envFile.sync();
++    } finally { await envFile.close(); }
++  } catch (error) {
++    for (const path of created) await unlink(path);
++    throw error;
++  }
++  process.stdout.write(`${JSON.stringify({ environmentFile: output, privateLoginFile: loginPath, message: 'Credentials generated. Store the login file in the operator password manager; load the environment file only on the server.' })}\n`);
++}
++
++if (process.argv[1] && pathToFileURL(resolve(process.argv[1])).href === import.meta.url) {
++  main().catch((error: unknown) => { process.stderr.write(`${error instanceof Error ? error.message : 'Credential generation failed.'}\n`); process.exitCode = 1; });
++}
+--- baseline/scripts/release/archive.py
++++ current/scripts/release/archive.py
+@@ -0,0 +1,65 @@
++"""Deterministic ZIP creation and bounded extraction; arguments never enter a shell."""
++import datetime
++import os
++from pathlib import Path, PurePosixPath
++import shutil
++import stat
++import sys
++import zipfile
++
++
++def create(source, output, epoch):
++    source = Path(source).resolve()
++    timestamp = datetime.datetime.fromtimestamp(max(315532800, min(epoch, 4354819198)), datetime.timezone.utc)
++    with zipfile.ZipFile(output, "x", compression=zipfile.ZIP_DEFLATED, compresslevel=6, allowZip64=True) as archive:
++        for directory, dirs, files in os.walk(source, followlinks=False):
++            dirs.sort()
++            for name in sorted(files):
++                path = Path(directory) / name
++                if path.is_symlink() or not path.is_file():
++                    raise ValueError("Release contains a non-regular file")
++                info = zipfile.ZipInfo(path.relative_to(source).as_posix(), timestamp.timetuple()[:6])
++                info.create_system = 3
++                info.external_attr = (stat.S_IFREG | 0o644) << 16
++                info.compress_type = zipfile.ZIP_DEFLATED
++                with path.open("rb") as src, archive.open(info, "w", force_zip64=True) as dst:
++                    shutil.copyfileobj(src, dst, 1024 * 1024)
++    Path(output).chmod(0o600)
++
++
++def extract(source, output):
++    output = Path(output)
++    if output.exists():
++        raise ValueError("Extraction output already exists")
++    with zipfile.ZipFile(source, "r") as archive:
++        entries = archive.infolist()
++        if len(entries) > 100000 or sum(item.file_size for item in entries) > 20 * 1024 ** 3:
++            raise ValueError("Release archive exceeds extraction limits")
++        names = set()
++        for item in entries:
++            name = item.filename
++            path = PurePosixPath(name)
++            if (not name or "\\" in name or name.startswith("/") or ":" in path.parts[0]
++                    or any(part in ("", ".", "..") for part in name.rstrip("/").split("/"))
++                    or stat.S_ISLNK(item.external_attr >> 16) or name in names):
++                raise ValueError("Unsafe or duplicate ZIP entry: " + name)
++            names.add(name)
++        output.mkdir(parents=True, mode=0o700)
++        for item in entries:
++            target = output.joinpath(*PurePosixPath(item.filename).parts)
++            if item.is_dir():
++                target.mkdir(parents=True, exist_ok=True)
++                continue
++            target.parent.mkdir(parents=True, exist_ok=True)
++            with archive.open(item) as src, target.open("xb") as dst:
++                shutil.copyfileobj(src, dst, 1024 * 1024)
++            target.chmod(0o644)
++
++
++if __name__ == "__main__":
++    if len(sys.argv) == 5 and sys.argv[1] == "create":
++        create(sys.argv[2], sys.argv[3], int(sys.argv[4]))
++    elif len(sys.argv) == 4 and sys.argv[1] == "extract":
++        extract(sys.argv[2], sys.argv[3])
++    else:
++        raise SystemExit("Usage: archive.py create ROOT NEW.zip EPOCH | extract ZIP NEW_DIRECTORY")
+--- baseline/scripts/release/common.ts
++++ current/scripts/release/common.ts
+@@ -0,0 +1,100 @@
++import { createHash } from 'node:crypto';
++import { createReadStream, existsSync } from 'node:fs';
++import { lstat, readdir, stat, writeFile } from 'node:fs/promises';
++import { execFile } from 'node:child_process';
++import { dirname, isAbsolute, join, relative, resolve, sep } from 'node:path';
++import { fileURLToPath } from 'node:url';
++import { promisify } from 'node:util';
++
++export const RELEASE_FORMAT = 'partavar-release-v1';
++export const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
++export const REQUIRED_FILES = [
++  'package.json', 'pnpm-lock.yaml', 'pnpm-workspace.yaml', 'playwright.release.config.ts', 'README.md', 'HANDOFF.md', 'REMAINING-WORK.md',
++  'PartsFinder_Android-28 (1) (1).html', 'apps/api/src/server.ts', 'apps/web/dist/index.html',
++  'apps/web/dist/sw.js', 'apps/web/dist/manifest.webmanifest', 'database/migrations/0001_catalogue.sql',
++  'database/migrations/0002_search_indexes.sql', 'database/migrations/0003_snapshots_and_publication.sql',
++  'private-data/sqlite/catalogue.db', 'private-data/reference-packs/PartAvar-Codex-Master-Pack.zip',
++  ...['PartsFinder_Android-28_original.html', 'PartsFinder_Windows_v3_0_1.html', 'PartsFinder_Android_v3_0_1.html'].map(name => `private-data/reference-packs/PartAvar-Codex-Master-Pack/source/${name}`),
++] as const;
++
++export interface ReleaseFile { path: string; bytes: number; sha256: string }
++export interface ReleaseSource { versionId: string; originalPath: string; path: string; sha256: string; status: string }
++export interface ReleaseManifest {
++  format: typeof RELEASE_FORMAT;
++  version: string;
++  epoch: number;
++  createdAt: string;
++  activeVersionId: string;
++  databases: string[];
++  sources: ReleaseSource[];
++  files: ReleaseFile[];
++  fileCount: number;
++  totalFileBytes: number;
++  packagingPolicy: string;
++}
++
++export function containedPath(root: string, name: string): string {
++  if (!name || name.includes('\\') || name.split('/').some(part => !part || part === '.' || part === '..') || isAbsolute(name) || /^[A-Za-z]:/.test(name)) throw new Error(`Unsafe release path: ${name}`);
++  const path = resolve(root, name);
++  const rel = relative(resolve(root), path);
++  if (rel === '..' || rel.startsWith(`..${sep}`) || isAbsolute(rel)) throw new Error(`Release path leaves its root: ${name}`);
++  return path;
++}
++
++export async function digestFile(path: string): Promise<{ bytes: number; sha256: string }> {
++  const hash = createHash('sha256');
++  let bytes = 0;
++  for await (const value of createReadStream(path)) {
++    const buffer = value as Buffer;
++    bytes += buffer.byteLength;
++    hash.update(buffer);
++  }
++  return { bytes, sha256: hash.digest('hex') };
++}
++
++export async function regularFiles(root: string, prefix = '', ignoredDirectories = new Set<string>()): Promise<string[]> {
++  const files: string[] = [];
++  for (const name of (await readdir(join(root, prefix))).sort()) {
++    if (ignoredDirectories.has(name)) continue;
++    const path = prefix ? `${prefix}/${name}` : name;
++    const info = await lstat(containedPath(root, path));
++    if (info.isSymbolicLink()) throw new Error(`Symbolic links are not allowed in releases: ${path}`);
++    if (info.isDirectory()) files.push(...await regularFiles(root, path, ignoredDirectories));
++    else if (info.isFile()) files.push(path);
++    else throw new Error(`Non-regular release file: ${path}`);
++  }
++  return files;
++}
++
++export async function assertAbsent(path: string): Promise<void> {
++  try { await lstat(path); }
++  catch (error) { if ((error as NodeJS.ErrnoException).code === 'ENOENT') return; throw error; }
++  throw new Error(`Output already exists: ${path}`);
++}
++
++export async function assertRequiredFiles(root: string): Promise<void> {
++  for (const name of REQUIRED_FILES) {
++    const info = await stat(containedPath(root, name));
++    if (!info.isFile()) throw new Error(`Required release file is unavailable: ${name}`);
++  }
++}
++
++export function pythonExecutable(): string {
++  if (process.env.PARTAVAR_PYTHON) return process.env.PARTAVAR_PYTHON;
++  const bundled = resolve(dirname(process.execPath), '../../python/bin/python3');
++  return existsSync(bundled) ? bundled : 'python3';
++}
++
++const run = promisify(execFile);
++export async function archiveCommand(action: 'create' | 'extract', input: string, output: string, epoch?: number): Promise<void> {
++  const helper = fileURLToPath(new URL('./archive.py', import.meta.url));
++  await run(pythonExecutable(), [helper, action, input, output, ...(epoch === undefined ? [] : [String(epoch)])], { maxBuffer: 1024 * 1024 });
++}
++
++export async function writeReport(path: string | undefined, value: unknown): Promise<void> {
++  if (path) await writeFile(resolve(path), `${JSON.stringify(value, null, 2)}\n`, { flag: 'wx', mode: 0o600 });
++}
++
++export function isMain(url: string): boolean {
++  return Boolean(process.argv[1] && resolve(process.argv[1]) === fileURLToPath(url));
++}
+--- baseline/scripts/release/package.ts
++++ current/scripts/release/package.ts
+@@ -0,0 +1,155 @@
++import Database from 'better-sqlite3';
++import { copyFile, link, lstat, mkdir, mkdtemp, readFile, readdir, rm, writeFile } from 'node:fs/promises';
++import { basename, dirname, isAbsolute, join, relative, resolve, sep } from 'node:path';
++import { parseArgs } from 'node:util';
++import { archiveCommand, assertAbsent, assertRequiredFiles, containedPath, digestFile, isMain, regularFiles, RELEASE_FORMAT, ROOT, writeReport, type ReleaseManifest, type ReleaseSource } from './common.js';
++import { verifyRelease, type ReleaseVerification } from './verify.js';
++
++const DIRECTORIES = ['apps', 'packages', 'scripts', 'tests', 'database', 'docs', 'deploy', 'reports', 'PartsFinder-Codex-Architecture', 'private-data/source-archive', 'private-data/snapshots', 'private-data/imports', 'private-data/reference-packs', 'private-data/sqlite'];
++const ROOT_FILES = ['.gitignore', 'package.json', 'pnpm-lock.yaml', 'pnpm-workspace.yaml', 'tsconfig.json', 'eslint.config.js', 'vitest.config.ts', 'playwright.config.ts', 'README.md', 'HANDOFF.md', 'REMAINING-WORK.md', 'PartsFinder_Android-28 (1) (1).html'];
++const EXCLUDED_NAMES = new Set(['node_modules', '.git', '.superpowers', '.DS_Store', 'test-results', 'playwright-report', 'coverage', 'backups', 'deliverables', 'test-temp', 'tmp', 'temp']);
++
++function excluded(name: string): boolean {
++  const parts = name.split('/');
++  const file = parts.at(-1) ?? '';
++  return parts.some(part => EXCLUDED_NAMES.has(part) || part.startsWith('.staging-')) ||
++    /(?:-wal|-shm|-journal|\.tmp|\.tsbuildinfo)$/i.test(file) ||
++    (/(?:^|\.)env(?:\.|$)/i.test(file) && !file.endsWith('.example')) || /\.login\.json$/i.test(file) ||
++    /\.(?:pem|key|p12|pfx|db|sqlite|sqlite3)$/i.test(file) || /^(?:operator-login|credentials|secrets?)(?:\.|$)/i.test(file) ||
++    (name.startsWith('reports/') && (/\.(?:zip|tar|tgz|tar\.gz)(?:\.sha256)?$/i.test(file) || /^(?:release-package|release-verification|release-manifest).*\.json$/i.test(file)));
++}
++
++async function copyTree(sourceRoot: string, targetRoot: string, name: string): Promise<void> {
++  if (excluded(name)) return;
++  const from = containedPath(sourceRoot, name);
++  let info;
++  try { info = await lstat(from); }
++  catch (error) { if ((error as NodeJS.ErrnoException).code === 'ENOENT') return; throw error; }
++  if (info.isSymbolicLink()) throw new Error(`Symbolic links are not allowed in release input: ${name}`);
++  const to = containedPath(targetRoot, name);
++  if (info.isDirectory()) {
++    for (const child of (await readdir(from)).sort()) await copyTree(sourceRoot, targetRoot, `${name}/${child}`);
++  } else if (info.isFile()) {
++    if (name.startsWith('reports/') && name.endsWith('.json')) {
++      try {
++        const report = JSON.parse(await readFile(from, 'utf8')) as { format?: string };
++        if (report && (report.format === 'partavar-release-package-report-v1' || report.format === 'partavar-release-verification-v1')) return;
++      } catch (error) { if (!(error instanceof SyntaxError)) throw error; }
++    }
++    await mkdir(dirname(to), { recursive: true });
++    await copyFile(from, to);
++  } else throw new Error(`Non-regular release input: ${name}`);
++}
++
++async function backupDatabase(source: string, target: string): Promise<void> {
++  if (!(await lstat(source)).isFile()) throw new Error('Database input must be a regular file');
++  await mkdir(dirname(target), { recursive: true });
++  const live = new Database(source, { readonly: true, fileMustExist: true });
++  try { await live.backup(target); }
++  finally { live.close(); }
++  // Only the disposable backup is checkpointed/converted. The live DB and its
++  // WAL remain under SQLite's control, including while a reader is running.
++  const copy = new Database(target, { fileMustExist: true });
++  try {
++    copy.pragma('wal_checkpoint(TRUNCATE)');
++    copy.pragma('journal_mode=DELETE');
++    const check = copy.pragma('integrity_check', { simple: true });
++    if (check !== 'ok' || (copy.pragma('foreign_key_check') as unknown[]).length) throw new Error(`Release database backup failed integrity verification: ${source}`);
++  } finally { copy.close(); }
++  await Promise.all(['-wal', '-shm', '-journal'].map(suffix => rm(`${target}${suffix}`, { force: true })));
++}
++
++async function sourceMappings(sourceRoot: string, stagedRoot: string): Promise<{ activeVersionId: string; sources: ReleaseSource[] }> {
++  const db = new Database(join(stagedRoot, 'private-data/sqlite/catalogue.db'), { readonly: true, fileMustExist: true });
++  try {
++    const activeVersionId = (db.prepare('SELECT active_version_id FROM catalog_state WHERE singleton=1').get() as { active_version_id: string | null } | undefined)?.active_version_id;
++    if (!activeVersionId) throw new Error('Release catalogue has no active published version');
++    const versions = db.prepare('SELECT id, archive_path, source_sha256, status FROM catalog_versions ORDER BY id').all() as Array<{ id: string; archive_path: string; source_sha256: string; status: string }>;
++    const sources: ReleaseSource[] = [];
++    for (const version of versions) {
++      if (!['validated', 'published'].includes(version.status)) throw new Error(`Unvalidated catalogue version cannot ship: ${version.id}`);
++      const original = isAbsolute(version.archive_path) ? version.archive_path : resolve(sourceRoot, 'private-data', version.archive_path);
++      const rel = relative(sourceRoot, original).split(sep).join('/');
++      let path: string | undefined;
++      if (rel && !rel.startsWith('../') && !isAbsolute(rel) && !excluded(rel)) {
++        try { if ((await digestFile(containedPath(stagedRoot, rel))).sha256 === version.source_sha256) path = rel; }
++        catch (error) { if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error; }
++      }
++      if (!path) {
++        await mkdir(join(stagedRoot, 'private-data/source-archive'), { recursive: true });
++        for (const candidate of await regularFiles(join(stagedRoot, 'private-data/source-archive'))) {
++          const archivedPath = `private-data/source-archive/${candidate}`;
++          if ((await digestFile(containedPath(stagedRoot, archivedPath))).sha256 === version.source_sha256) { path = archivedPath; break; }
++        }
++      }
++      if (!path) {
++        path = `private-data/source-archive/${version.source_sha256}-${basename(original)}`;
++        if ((await digestFile(original)).sha256 !== version.source_sha256) throw new Error(`Original source hash no longer matches catalogue: ${version.id}`);
++        await mkdir(dirname(containedPath(stagedRoot, path)), { recursive: true });
++        await copyFile(original, containedPath(stagedRoot, path));
++      }
++      sources.push({ versionId: version.id, originalPath: version.archive_path, path, sha256: version.source_sha256, status: version.status });
++    }
++    return { activeVersionId, sources };
++  } finally { db.close(); }
++}
++
++export interface PackageOptions { root?: string; outputPath: string; epoch?: number; version?: string; reportPath?: string }
++export interface PackageReport { format: 'partavar-release-package-report-v1'; outputPath: string; sha256: string; bytes: number; fileCount: number; verification: ReleaseVerification }
++
++export async function packageRelease(options: PackageOptions): Promise<PackageReport> {
++  const root = resolve(options.root ?? ROOT);
++  const output = resolve(options.outputPath);
++  if (!output.endsWith('.zip')) throw new Error('Release output must have a .zip extension');
++  const epoch = options.epoch ?? Number(process.env.SOURCE_DATE_EPOCH ?? 0);
++  if (!Number.isSafeInteger(epoch) || epoch < 0 || epoch > 4354819198) throw new Error('Release epoch must be a non-negative Unix timestamp no later than 2107');
++  await assertAbsent(output);
++  await assertAbsent(`${output}.sha256`);
++  if (options.reportPath) await assertAbsent(resolve(options.reportPath));
++  await assertRequiredFiles(root);
++  await mkdir(dirname(output), { recursive: true });
++  const temporary = await mkdtemp(join(dirname(output), '.staging-partavar-release-'));
++  const staged = join(temporary, 'release');
++  try {
++    await mkdir(staged);
++    const configurations = (await readdir(root)).filter(name => /^(?:playwright.*|vite|vitest)\.config\.ts$/.test(name));
++    for (const name of new Set([...ROOT_FILES, ...configurations, ...DIRECTORIES])) await copyTree(root, staged, name);
++    const databases: string[] = [];
++    for (const name of (await readdir(join(root, 'private-data/sqlite'))).filter(name => name.endsWith('.db')).sort()) {
++      const path = `private-data/sqlite/${name}`;
++      await backupDatabase(containedPath(root, path), containedPath(staged, path));
++      databases.push(path);
++    }
++    const catalogue = await sourceMappings(root, staged);
++    const files = [];
++    for (const path of await regularFiles(staged)) files.push({ path, ...await digestFile(containedPath(staged, path)) });
++    const manifest: ReleaseManifest = {
++      format: RELEASE_FORMAT, version: options.version ?? '1.0.0-rc.1', epoch, createdAt: new Date(epoch * 1000).toISOString(),
++      ...catalogue, databases, files, fileCount: files.length, totalFileBytes: files.reduce((sum, file) => sum + file.bytes, 0),
++      packagingPolicy: 'Source/build/docs/evidence and authoritative private data; SQLite online backups; excludes dependencies, secrets, transient/test files, historical deliverables, backups and generated release reports. Original archive metadata is preserved; sources[].path resolves relocated archives.',
++    };
++    await writeFile(join(staged, 'release-manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`, { flag: 'wx' });
++    const candidate = join(temporary, 'candidate.zip');
++    await archiveCommand('create', staged, candidate, epoch);
++    const checksum = await digestFile(candidate);
++    const verification = await verifyRelease({ inputPath: candidate, expectedSha256: checksum.sha256 });
++    const checksumPath = join(temporary, 'candidate.sha256');
++    await writeFile(checksumPath, `${checksum.sha256}  ${basename(output)}\n`, { flag: 'wx', mode: 0o600 });
++    // Hard-link publication is atomic and refuses existing destinations. Unlike
++    // rename(), it cannot silently overwrite a release created by another run.
++    await link(checksumPath, `${output}.sha256`);
++    try { await link(candidate, output); }
++    catch (error) { await rm(`${output}.sha256`); throw error; }
++    const report: PackageReport = { format: 'partavar-release-package-report-v1', outputPath: output, ...checksum, fileCount: files.length, verification };
++    await writeReport(options.reportPath, report);
++    return report;
++  } finally { await rm(temporary, { recursive: true, force: true }); }
++}
++
++if (isMain(import.meta.url)) {
++  const { values } = parseArgs({ args: process.argv.slice(2).filter(arg => arg !== '--'), options: { root: { type: 'string' }, output: { type: 'string' }, epoch: { type: 'string' }, version: { type: 'string' }, report: { type: 'string' } } });
++  if (!values.output) throw new Error('Usage: pnpm release:package --output NEW.zip [--root ROOT] [--epoch UNIX_SECONDS] [--version VERSION] [--report NEW.json]');
++  packageRelease({ outputPath: values.output, ...(values.root ? { root: values.root } : {}), ...(values.epoch ? { epoch: Number(values.epoch) } : {}), ...(values.version ? { version: values.version } : {}), ...(values.report ? { reportPath: values.report } : {}) })
++    .then(report => process.stdout.write(`${JSON.stringify(report, null, 2)}\n`))
++    .catch((error: unknown) => { process.stderr.write(`${error instanceof Error ? error.message : String(error)}\n`); process.exitCode = 1; });
++}
+--- baseline/scripts/release/verify-source.ts
++++ current/scripts/release/verify-source.ts
+@@ -0,0 +1,14 @@
++import { parseArgs } from 'node:util';
++import { resolve } from 'node:path';
++import { verifyCatalogue } from '../../packages/importer/src/verify.js';
++
++// The importer resolves migration files against cwd. This child process isolates
++// that legacy assumption and only opens the verifier's disposable database copy.
++const { values } = parseArgs({ options: { root: { type: 'string' }, db: { type: 'string' }, file: { type: 'string' }, version: { type: 'string' } } });
++if (!values.root || !values.db || !values.file || !values.version) throw new Error('Missing source verification arguments');
++process.chdir(resolve(values.root));
++const result = await verifyCatalogue(values.version, { dbPath: resolve(values.db), sourcePath: resolve(values.file) });
++if (!result.sourceShaMatches || !result.fullDatabaseHashMatch || !result.fullRowsHashMatch || !result.metadataHashMatch ||
++    Object.values(result.fieldHashMatches).some(value => !value) || result.rowHashMismatches || result.storedRowHashMismatches ||
++    result.foreignKeyViolations || result.integrityCheck !== 'ok' || result.priceRoundingDifferences) throw new Error(`Release source roundtrip failed: ${JSON.stringify(result)}`);
++process.stdout.write(`${JSON.stringify(result)}\n`);
+--- baseline/scripts/release/verify.ts
++++ current/scripts/release/verify.ts
+@@ -0,0 +1,231 @@
++import Database from 'better-sqlite3';
++import { execFile } from 'node:child_process';
++import { copyFile, mkdtemp, readFile, rm, stat } from 'node:fs/promises';
++import { tmpdir } from 'node:os';
++import { join, resolve } from 'node:path';
++import { fileURLToPath } from 'node:url';
++import { parseArgs, promisify } from 'node:util';
++import type { SnapshotManifest } from '../../packages/contracts/src/index.js';
++import type { LegacyRow } from '../../packages/domain/src/index.js';
++import { extractLegacyDb } from '../../packages/importer/src/extract-literal.js';
++import { hashRow } from '../../packages/importer/src/hash.js';
++import type { ReconciliationReport } from '../../packages/importer/src/verify.js';
++import { archiveCommand, assertAbsent, assertRequiredFiles, containedPath, digestFile, isMain, regularFiles, RELEASE_FORMAT, writeReport, type ReleaseManifest, type ReleaseSource } from './common.js';
++
++const run = promisify(execFile);
++const SNAPSHOT_TABLES: Record<string, string> = {
++  partNames: 'part_names', parts: 'parts', entries: 'catalog_entries', models: 'vehicle_models', entryModels: 'entry_vehicle_models',
++  friendlyLabels: 'entry_friendly_labels', aliases: 'entry_aliases', replacements: 'entry_replacements', vehicleOptions: 'vehicle_options',
++  optionModels: 'vehicle_option_models', presetFamilies: 'preset_families', presetFamilyOptions: 'preset_family_options',
++  searchDocuments: 'search_documents', entrySearchDocuments: 'entry_search_documents',
++};
++
++export interface ReleaseVerification {
++  format: 'partavar-release-verification-v1';
++  fileHashesVerified: true;
++  fileCount: number;
++  totalFileBytes: number;
++  databaseCount: number;
++  activeVersionId: string;
++  sourceVersionsVerified: number;
++  sourceRowsVerified: number;
++  snapshotChunksVerified: number;
++  snapshotRowsVerified: number;
++  historicalSourcesVerified: number;
++  integrityCheck: 'ok';
++  foreignKeyViolations: 0;
++  archiveSha256?: string;
++}
++
++function validateManifest(manifest: ReleaseManifest): void {
++  if (manifest.format !== RELEASE_FORMAT || !Array.isArray(manifest.files) || !Array.isArray(manifest.sources) || !Array.isArray(manifest.databases) ||
++    manifest.fileCount !== manifest.files.length || !manifest.activeVersionId || !manifest.sources.length) throw new Error('Release manifest is malformed or unsupported');
++  const paths = new Set<string>();
++  for (const file of manifest.files) {
++    containedPath('/release', file.path);
++    if (paths.has(file.path) || file.path === 'release-manifest.json' || !Number.isSafeInteger(file.bytes) || file.bytes < 0 || !/^[a-f0-9]{64}$/.test(file.sha256)) throw new Error(`Invalid or duplicate release file record: ${file.path}`);
++    if (file.path.split('/').includes('node_modules') || /(?:-wal|-shm|-journal)$/.test(file.path)) throw new Error(`Transient file in release inventory: ${file.path}`);
++    paths.add(file.path);
++  }
++  if (manifest.files.reduce((sum, file) => sum + file.bytes, 0) !== manifest.totalFileBytes) throw new Error('Release total byte count does not match inventory');
++  if (new Set(manifest.databases).size !== manifest.databases.length || !manifest.databases.includes('private-data/sqlite/catalogue.db') ||
++      manifest.databases.some(path => !paths.has(path) || !/^private-data\/sqlite\/[^/]+\.db$/.test(path))) throw new Error('Release database inventory is invalid');
++  if (manifest.files.filter(file => file.path.endsWith('.db')).length !== manifest.databases.length) throw new Error('Release contains an unverified database');
++  if (new Set(manifest.sources.map(source => source.versionId)).size !== manifest.sources.length) throw new Error('Duplicate release source mapping');
++  for (const source of manifest.sources) {
++    if (!paths.has(source.path) || !/^[a-f0-9]{64}$/.test(source.sha256) || !/^[a-f0-9]{64}-s\d+-n\d+-r\d+$/.test(source.versionId)) throw new Error('Release source mapping is malformed');
++  }
++}
++
++async function verifySnapshot(root: string, db: Database.Database, source: ReleaseSource): Promise<{ chunks: number; rows: number }> {
++  const snapshot = db.prepare('SELECT manifest_sha256, manifest_json, relative_path FROM catalog_snapshots WHERE version_id=?').get(source.versionId) as { manifest_sha256: string; manifest_json: string; relative_path: string } | undefined;
++  if (!snapshot) {
++    if (source.status === 'published') throw new Error(`Published catalogue has no snapshot: ${source.versionId}`);
++    return { chunks: 0, rows: 0 };
++  }
++  const manifestPath = containedPath(root, `private-data/snapshots/${snapshot.relative_path}`);
++  if ((await digestFile(manifestPath)).sha256 !== snapshot.manifest_sha256) throw new Error(`Snapshot manifest hash mismatch: ${source.versionId}`);
++  const manifest = JSON.parse(await readFile(manifestPath, 'utf8')) as SnapshotManifest;
++  if (manifest.catalogVersion !== source.versionId || JSON.stringify(manifest) !== snapshot.manifest_json || manifest.sourceSha256 !== source.sha256 || !Array.isArray(manifest.chunks)) throw new Error(`Snapshot manifest differs from the catalogue database: ${source.versionId}`);
++  const descriptors = db.prepare('SELECT chunk_id, relative_path, table_name, ordinal, record_count, decoded_bytes, sha256 FROM catalog_snapshot_chunks WHERE version_id=?').all(source.versionId) as Array<{ chunk_id: string; relative_path: string; table_name: string; ordinal: number; record_count: number; decoded_bytes: number; sha256: string }>;
++  const byId = new Map(descriptors.map(chunk => [chunk.chunk_id, chunk]));
++  if (byId.size !== manifest.chunks.length) throw new Error('Snapshot manifest chunk inventory differs from the database');
++  const counts: Record<string, number> = {};
++  const records = new Map<string, Array<Record<string, unknown>>>();
++  const seen = new Set<string>();
++  let totalBytes = 0;
++  for (const chunk of manifest.chunks) {
++    const stored = byId.get(chunk.id);
++    if (!stored || seen.has(chunk.id) || !/^[a-zA-Z0-9-]{1,96}$/.test(chunk.id) || !SNAPSHOT_TABLES[chunk.table] ||
++        stored.relative_path !== `${source.versionId}/${chunk.id}.ndjson` || stored.table_name !== chunk.table || stored.ordinal !== chunk.ordinal ||
++        stored.record_count !== chunk.recordCount || stored.decoded_bytes !== chunk.decodedBytes || stored.sha256 !== chunk.sha256 || chunk.decodedBytes > 512 * 1024 ||
++        chunk.path !== `/api/v1/catalog/${source.versionId}/snapshot/chunks/${chunk.id}`) throw new Error(`Snapshot chunk descriptor mismatch: ${chunk.id}`);
++    seen.add(chunk.id);
++    const path = containedPath(root, `private-data/snapshots/${stored.relative_path}`);
++    const actual = await digestFile(path);
++    if (actual.bytes !== chunk.decodedBytes || actual.sha256 !== chunk.sha256) throw new Error(`Snapshot chunk checksum or byte count mismatch: ${chunk.id}`);
++    const lines = (await readFile(path, 'utf8')).split('\n').filter(Boolean);
++    if (lines.length !== chunk.recordCount) throw new Error(`Snapshot chunk record count mismatch: ${chunk.id}`);
++    for (const line of lines) {
++      const record = JSON.parse(line) as Record<string, unknown>;
++      if (!record || typeof record !== 'object' || Array.isArray(record) || record.version !== source.versionId) throw new Error(`Snapshot record version mismatch: ${chunk.id}`);
++      if (['entries', 'parts', 'partNames', 'models', 'entryModels', 'friendlyLabels', 'aliases'].includes(chunk.table)) {
++        const list = records.get(chunk.table) ?? [];
++        list.push(record);
++        records.set(chunk.table, list);
++      }
++    }
++    counts[chunk.table] = (counts[chunk.table] ?? 0) + lines.length;
++    totalBytes += actual.bytes;
++  }
++  if (totalBytes !== manifest.totalDecodedBytes || Object.keys(manifest.counts).length !== Object.keys(SNAPSHOT_TABLES).length) throw new Error('Snapshot totals do not match its manifest');
++  for (const [name, table] of Object.entries(SNAPSHOT_TABLES)) {
++    const expected = (db.prepare(`SELECT COUNT(*) AS count FROM ${table} WHERE version_id=?`).get(source.versionId) as { count: number }).count;
++    if ((counts[name] ?? 0) !== expected || manifest.counts[name] !== expected) throw new Error(`Snapshot table count differs from the database: ${name}`);
++  }
++  const original = extractLegacyDb(await readFile(containedPath(root, source.path), 'utf8'));
++  const indexed = (table: string) => new Map((records.get(table) ?? []).map(record => [Number(record.id), record]));
++  const parts = indexed('parts');
++  const names = indexed('partNames');
++  const models = indexed('models');
++  const relations = (table: string) => {
++    const result = new Map<number, Array<Record<string, unknown>>>();
++    for (const item of records.get(table) ?? []) {
++      const key = Number(item.entryId);
++      const list = result.get(key) ?? [];
++      list.push(item);
++      result.set(key, list);
++    }
++    for (const list of result.values()) list.sort((a, b) => Number(a.ordinal) - Number(b.ordinal));
++    return result;
++  };
++  const entryModels = relations('entryModels');
++  const friendly = relations('friendlyLabels');
++  const aliases = relations('aliases');
++  const entries = (records.get('entries') ?? []).sort((a, b) => Number(a.sourceRowOrdinal) - Number(b.sourceRowOrdinal));
++  if (entries.length !== original.rows.length || manifest.rowCount !== original.rows.length) throw new Error('Snapshot source row count mismatch');
++  for (const [index, entry] of entries.entries()) {
++    const part = parts.get(Number(entry.partId));
++    const name = part ? names.get(Number(part.nameId)) : undefined;
++    const price = Number(entry.basePrice);
++    if (!part || !name || !Number.isSafeInteger(price) || String(price) !== entry.basePrice) throw new Error(`Snapshot source row cannot be reconstructed: ${index}`);
++    const row: LegacyRow = {
++      part: String(name.nameRaw), tech: String(part.techRaw), log: String(entry.logRaw), price, replacement: String(entry.replacementRaw),
++      models: (entryModels.get(Number(entry.id)) ?? []).map(item => { const model = models.get(Number(item.modelId)); if (!model) throw new Error('Snapshot model reference is missing'); return String(model.nameRaw); }),
++      friendly: (friendly.get(Number(entry.id)) ?? []).map(item => String(item.labelRaw)),
++      aliases: (aliases.get(Number(entry.id)) ?? []).map(item => String(item.aliasRaw)),
++    };
++    if (!original.rows[index] || hashRow(row) !== hashRow(original.rows[index]!)) throw new Error(`Snapshot source roundtrip mismatch at row ${index}`);
++  }
++  return { chunks: seen.size, rows: entries.length };
++}
++
++export async function verifyRelease(options: { inputPath: string; expectedSha256?: string; reportPath?: string }): Promise<ReleaseVerification> {
++  const input = resolve(options.inputPath);
++  if (options.reportPath) await assertAbsent(resolve(options.reportPath));
++  const temporary = await mkdtemp(join(tmpdir(), 'partavar-release-verification-'));
++  try {
++    let root = input;
++    let archiveSha256: string | undefined;
++    if ((await stat(input)).isFile()) {
++      archiveSha256 = (await digestFile(input)).sha256;
++      if (options.expectedSha256 && archiveSha256 !== options.expectedSha256.toLowerCase()) throw new Error('Release archive hash does not match the trusted expected hash');
++      root = join(temporary, 'release');
++      await archiveCommand('extract', input, root);
++    } else if (options.expectedSha256) throw new Error('--sha256 requires a ZIP input; extracted trees use their file manifest');
++    await assertRequiredFiles(root);
++    const manifest = JSON.parse(await readFile(join(root, 'release-manifest.json'), 'utf8')) as ReleaseManifest;
++    validateManifest(manifest);
++    const files = await regularFiles(root, '', new Set(['node_modules']));
++    const expectedPaths = new Set([...manifest.files.map(file => file.path), 'release-manifest.json']);
++    if (files.length !== expectedPaths.size || files.some(path => !expectedPaths.has(path))) throw new Error('Release file inventory has unexpected or missing files');
++    for (const file of manifest.files) {
++      const actual = await digestFile(containedPath(root, file.path));
++      if (actual.bytes !== file.bytes || actual.sha256 !== file.sha256) throw new Error(`Release file checksum or byte count mismatch: ${file.path}`);
++    }
++    const databasePaths = new Map<string, string>();
++    for (const [index, path] of manifest.databases.entries()) {
++      const copy = join(temporary, `database-${index}.db`);
++      await copyFile(containedPath(root, path), copy);
++      databasePaths.set(path, copy);
++      const database = new Database(copy, { readonly: true, fileMustExist: true });
++      try {
++        if (database.pragma('integrity_check', { simple: true }) !== 'ok' || (database.pragma('foreign_key_check') as unknown[]).length) throw new Error(`Release database integrity or foreign key check failed: ${path}`);
++      } finally { database.close(); }
++    }
++    const cataloguePath = databasePaths.get('private-data/sqlite/catalogue.db')!;
++    const db = new Database(cataloguePath, { readonly: true, fileMustExist: true });
++    let sourceRowsVerified = 0;
++    let snapshotChunksVerified = 0;
++    let snapshotRowsVerified = 0;
++    let historicalSourcesVerified = 0;
++    try {
++      const active = (db.prepare('SELECT active_version_id FROM catalog_state WHERE singleton=1').get() as { active_version_id: string }).active_version_id;
++      if (active !== manifest.activeVersionId) throw new Error('Release active catalogue version differs from its manifest');
++      const versions = db.prepare('SELECT id, archive_path, source_sha256, status FROM catalog_versions ORDER BY id').all() as Array<{ id: string; archive_path: string; source_sha256: string; status: string }>;
++      if (versions.length !== manifest.sources.length) throw new Error('Release source version inventory differs from its database');
++      for (const version of versions) {
++        const source = manifest.sources.find(item => item.versionId === version.id);
++        if (!source || source.originalPath !== version.archive_path || source.sha256 !== version.source_sha256 || source.status !== version.status ||
++            !['validated', 'published'].includes(version.status) || (await digestFile(containedPath(root, source.path))).sha256 !== version.source_sha256) throw new Error(`Release source archive hash or mapping mismatch: ${version.id}`);
++        const child = await run(process.execPath, ['--import', import.meta.resolve('tsx'), fileURLToPath(new URL('./verify-source.ts', import.meta.url)), '--root', root, '--db', cataloguePath, '--file', containedPath(root, source.path), '--version', version.id], { maxBuffer: 4 * 1024 * 1024 });
++        const result = JSON.parse(child.stdout) as ReconciliationReport;
++        sourceRowsVerified += result.counts.rows;
++        const snapshot = await verifySnapshot(root, db, source);
++        snapshotChunksVerified += snapshot.chunks;
++        snapshotRowsVerified += snapshot.rows;
++      }
++      const activeSource = manifest.sources.find(source => source.versionId === active);
++      if (!activeSource || activeSource.status !== 'published') throw new Error('Active catalogue must have a published immutable snapshot');
++    } finally { db.close(); }
++    const operationsPath = databasePaths.get('private-data/sqlite/operations.db');
++    if (operationsPath) {
++      const operations = new Database(operationsPath, { readonly: true, fileMustExist: true });
++      try {
++        if (operations.prepare("SELECT 1 FROM sqlite_master WHERE type='table' AND name='ph_sources'").get()) {
++          for (const source of operations.prepare('SELECT sha256, archive_name, byte_length FROM ph_sources').all() as Array<{ sha256: string; archive_name: string; byte_length: number }>) {
++            const actual = await digestFile(containedPath(root, `private-data/sqlite/price-history-sources/${source.archive_name}`));
++            if (actual.bytes !== source.byte_length || actual.sha256 !== source.sha256) throw new Error('Historical price source archive hash mismatch');
++            historicalSourcesVerified++;
++          }
++        }
++      } finally { operations.close(); }
++    }
++    const report: ReleaseVerification = {
++      format: 'partavar-release-verification-v1', fileHashesVerified: true, fileCount: manifest.fileCount, totalFileBytes: manifest.totalFileBytes,
++      databaseCount: manifest.databases.length, activeVersionId: manifest.activeVersionId, sourceVersionsVerified: manifest.sources.length,
++      sourceRowsVerified, snapshotChunksVerified, snapshotRowsVerified, historicalSourcesVerified, integrityCheck: 'ok', foreignKeyViolations: 0,
++      ...(archiveSha256 ? { archiveSha256 } : {}),
++    };
++    await writeReport(options.reportPath, report);
++    return report;
++  } finally { await rm(temporary, { recursive: true, force: true }); }
++}
++
++if (isMain(import.meta.url)) {
++  const { values } = parseArgs({ args: process.argv.slice(2).filter(arg => arg !== '--'), options: { input: { type: 'string' }, sha256: { type: 'string' }, report: { type: 'string' } } });
++  if (!values.input) throw new Error('Usage: pnpm release:verify --input ZIP_OR_DIRECTORY [--sha256 TRUSTED_SHA256] [--report NEW.json]');
++  verifyRelease({ inputPath: values.input, ...(values.sha256 ? { expectedSha256: values.sha256 } : {}), ...(values.report ? { reportPath: values.report } : {}) })
++    .then(report => process.stdout.write(`${JSON.stringify(report, null, 2)}\n`))
++    .catch((error: unknown) => { process.stderr.write(`${error instanceof Error ? error.message : String(error)}\n`); process.exitCode = 1; });
++}
+--- baseline/tests/e2e/production-runtime.spec.ts
++++ current/tests/e2e/production-runtime.spec.ts
+@@ -0,0 +1,80 @@
++import { createHash } from 'node:crypto';
++import { mkdir, writeFile } from 'node:fs/promises';
++import { resolve } from 'node:path';
++import { test, expect, type BrowserContext, type Page } from '@playwright/test';
++import { createServer } from '../../apps/api/src/server.js';
++
++const origin = 'http://127.0.0.1:8788';
++const token = 'synthetic-release-browser-token-never-use-in-production';
++const output = 'reports/release-2026-10-28/production';
++let server: Awaited<ReturnType<typeof createServer>>;
++let context: BrowserContext;
++let page: Page;
++const errors: string[] = [];
++test.describe.configure({ mode: 'serial' });
++test.setTimeout(600_000);
++
++test.beforeAll(async ({ browser }) => {
++  await mkdir(output, { recursive: true });
++  server = await createServer({ logger: false, webRoot: resolve('apps/web/dist'), access: { publicOrigin: origin, username: 'operator', tokenSha256: createHash('sha256').update(token).digest('hex') } });
++  await server.listen({ host: '127.0.0.1', port: 8788 });
++  context = await browser.newContext({ httpCredentials: { username: 'operator', password: token }, serviceWorkers: 'allow' });
++  page = await context.newPage();
++  page.on('pageerror', error => errors.push(error.message));
++});
++test.afterAll(async () => { await context?.close(); await server?.close(); });
++
++test('production serves anonymous website but denies app and catalogue without credentials', async ({ request }) => {
++  const site = await request.get(origin);
++  expect(site.status()).toBe(200);
++  const deny = await request.get(`${origin}/api/v1/catalog/manifest`);
++  expect(deny.status()).toBe(401);
++  expect(deny.headers()['cache-control']).toBe('no-store');
++  expect((await request.get(`${origin}/app/`)).status()).toBe(401);
++  expect((await request.get(`${origin}/private-data/sqlite/catalogue.db`)).status()).toBe(404);
++});
++
++test('authenticated same-origin app runs Worker search, documents and shell under production CSP', async () => {
++  const response = await page.goto(`${origin}/app/`);
++  expect(response!.headers()['content-security-policy']).toContain("script-src 'self'");
++  await expect(page.locator('#catalogueStatusText')).toHaveAttribute('data-state', 'online');
++  await page.getByRole('tab', { name: 'کد یا نام قطعه' }).click();
++  await page.locator('#codeQuery').fill('111100001AA');
++  await page.locator('#codeSearchBtn').click();
++  await expect(page.locator('#cards .resultCard')).toHaveCount(2);
++  await page.locator('#cards .resultCard').first().locator('.packageAction').click();
++  await page.locator('[data-area="packages"]').click();
++  const price = page.locator('.docLine input[data-doc-key^="price-"]').first();
++  await price.fill('12345678901234567890'); await price.dispatchEvent('change');
++  await page.getByRole('button', { name: 'نمای چاپ / PDF' }).click();
++  await expect(page.locator('#partavarPrintView')).toContainText('۱۲٬۳۴۵٬۶۷۸٬۹۰۱٬۲۳۴٬۵۶۷٬۸۹۰');
++  await page.getByRole('button', { name: 'بازگشت به سند' }).click();
++  const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'خروجی Excel (.xlsx)' }).click()]);
++  expect(await download.failure()).toBeNull();
++  expect(await download.path()).toBeTruthy();
++  await page.locator('[data-area="search"]').click();
++  await expect.poll(() => page.evaluate(() => Boolean(navigator.serviceWorker.controller))).toBe(true);
++  const resources = await page.evaluate(() => performance.getEntriesByType('resource').map(entry => ({ name: new URL(entry.name).pathname, transferBytes: (entry as PerformanceResourceTiming).transferSize, decodedBytes: (entry as PerformanceResourceTiming).decodedBodySize })));
++  await writeFile(`${output}/same-origin-resources.json`, JSON.stringify({ syntheticCredentialsOnly: true, resources, errors }, null, 2));
++  await page.screenshot({ path: `${output}/authenticated-app.png`, fullPage: true });
++  expect(errors).toEqual([]);
++});
++
++test('authenticated snapshots install completely and relaunch without network under CSP', async () => {
++  await page.locator('#catalogueInfo').evaluate((element: HTMLDetailsElement) => { element.open = true; });
++  const started = performance.now();
++  await page.locator('#catalogueUpdateButton').click();
++  await expect(page.locator('#catalogueStatusText')).toHaveAttribute('data-offline-ready', 'true', { timeout: 480_000 });
++  const installMs = performance.now() - started;
++  await context.setOffline(true);
++  try {
++    await page.reload();
++    await expect(page.locator('#catalogueStatusText')).toHaveAttribute('data-offline-ready', 'true');
++    await page.getByRole('tab', { name: 'کد یا نام قطعه' }).click();
++    await page.locator('#codeQuery').fill('111100001AA'); await page.locator('#codeSearchBtn').click();
++    await expect(page.locator('#cards .resultCard')).toHaveCount(2);
++    await page.screenshot({ path: `${output}/offline-authenticated-app.png`, fullPage: true });
++    await writeFile(`${output}/offline-authenticated.json`, JSON.stringify({ generatedAt: new Date().toISOString(), installMs, offlineRelaunch: true, resultCount: 2, errors, catalogueSource: 'actual migrated catalogue; operator credentials are synthetic test-only values' }, null, 2));
++    expect(errors).toEqual([]);
++  } finally { await context.setOffline(false); }
++});
+--- baseline/tests/e2e/release-lease-race.spec.ts
++++ current/tests/e2e/release-lease-race.spec.ts
+@@ -0,0 +1,69 @@
++import { createHash } from 'node:crypto';
++import { mkdir, writeFile } from 'node:fs/promises';
++import { expect, test } from '@playwright/test';
++
++/** A suspended but still-live installer must never downgrade a successor's activated version. */
++test('expired living installer cannot downgrade the version activated by another tab', async ({ browser }) => {
++  const context = await browser.newContext({ serviceWorkers: 'block' });
++  const a = await context.newPage(), b = await context.newPage();
++  const version = `${'7'.repeat(64)}-s1-n1-r1`, sourceSha256 = '7'.repeat(64);
++  const tables = ['partNames', 'parts', 'entries', 'models', 'entryModels', 'friendlyLabels', 'aliases', 'replacements', 'vehicleOptions', 'optionModels', 'presetFamilies', 'presetFamilyOptions', 'searchDocuments', 'entrySearchDocuments'];
++  const rows: Record<string, Array<Record<string, unknown>>> = {
++    partNames: [{ version, id: 1, nameRaw: 'Lease fixture only', nameNorm: 'lease fixture only', sortRank: 0 }],
++    parts: [{ version, id: 1, nameId: 1, techRaw: 'LEASE-TECH', techNorm: 'LEASE-TECH', sortRank: 0, familyRoot: 'LEASE', familyVariant: 'TECH' }],
++    entries: [{ version, id: 1, partId: 1, logRaw: 'LEASE-LOG-01', logNorm: 'LEASE-LOG-01', basePrice: '1001', replacementRaw: '', sourceRowOrdinal: 0, sourceRowSha256: sourceSha256, suffix01Rank: 1 }],
++  };
++  const bodies = new Map<string, Buffer>();
++  const counts = Object.fromEntries(tables.map(table => [table, rows[table]?.length ?? 0]));
++  const chunks = Object.entries(rows).map(([table, records]) => {
++    const body = Buffer.from(records.map(record => JSON.stringify(record)).join('\n') + '\n');
++    const sha256 = createHash('sha256').update(body).digest('hex'), id = `${table}-00000-${sha256.slice(0, 16)}`;
++    bodies.set(id, body);
++    return { id, path: `/api/v1/catalog/${version}/snapshot/chunks/${id}`, table, ordinal: 0, recordCount: records.length, decodedBytes: body.byteLength, sha256 };
++  });
++  const common = { catalogVersion: version, schemaVersion: 1, normalizationVersion: 1, rulesVersion: 1, indexFormatVersion: 1, sourceSha256, currencyUnit: 'UNKNOWN', priceEffectiveAt: null, createdAt: '2026-10-28T00:00:00.000Z', counts, rowCount: 1 };
++  const snapshot = { ...common, totalDecodedBytes: chunks.reduce((n, chunk) => n + chunk.decodedBytes, 0), chunks };
++  const active = { ...common, snapshotManifestPath: `/api/v1/catalog/${version}/snapshot/manifest` };
++  let release!: () => void, requested!: () => void;
++  const gate = new Promise<void>(resolve => { release = resolve; });
++  const suspended = new Promise<void>(resolve => { requested = resolve; });
++  let gated = false;
++  await context.route('**/api/v1/catalog/manifest', route => route.fulfill({ json: active }));
++  await context.route('**/api/v1/catalog/*/snapshot/manifest', route => route.fulfill({ json: snapshot }));
++  await context.route('**/api/v1/catalog/*/snapshot/chunks/*', route => route.fulfill({ contentType: 'application/x-ndjson', body: bodies.get(new URL(route.request().url()).pathname.split('/').at(-1)!)! }));
++  await a.route('**/api/v1/catalog/*/snapshot/chunks/*', async route => {
++    if (!gated) { gated = true; requested(); await gate; }
++    await route.fulfill({ contentType: 'application/x-ndjson', body: bodies.get(new URL(route.request().url()).pathname.split('/').at(-1)!)! });
++  });
++  try {
++    await Promise.all([a.goto('/app/'), b.goto('/app/')]);
++    await expect(a.locator('#catalogueStatusText')).toHaveAttribute('data-state', 'online');
++    await expect(b.locator('#catalogueStatusText')).toHaveAttribute('data-state', 'online');
++    await a.locator('#catalogueInfo').evaluate((element: HTMLDetailsElement) => { element.open = true; });
++    await a.locator('#catalogueUpdateButton').click(); await suspended;
++    // Advance only the lease state, deterministically modeling a sleeping/stalled tab past its 30s lease.
++    await b.evaluate(() => new Promise<void>((resolve, reject) => {
++      const request = indexedDB.open('PartsFinderCatalogue'); request.onerror = () => reject(request.error);
++      request.onsuccess = () => { const db = request.result, tx = db.transaction('installerLease', 'readwrite'), store = tx.objectStore('installerLease'), lease = store.get('catalogue-installer');
++        lease.onsuccess = () => { store.put({ ...lease.result, expiresAt: Date.now() - 1 }); };
++        tx.oncomplete = () => { db.close(); resolve(); }; tx.onerror = () => reject(tx.error);
++      };
++    }));
++    await b.locator('#catalogueInfo').evaluate((element: HTMLDetailsElement) => { element.open = true; });
++    await b.locator('#catalogueUpdateButton').click();
++    await expect(b.locator('#catalogueStatusText')).toHaveAttribute('data-state', 'ready');
++    release();
++    await expect(a.locator('#catalogueCancelButton')).toBeHidden();
++    const state = await b.evaluate(version => new Promise<Record<string, unknown>>((resolve, reject) => {
++      const request = indexedDB.open('PartsFinderCatalogue'); request.onerror = () => reject(request.error);
++      request.onsuccess = () => { const db = request.result, tx = db.transaction(['meta', 'catalogVersions'], 'readonly'), active = tx.objectStore('meta').get('activeCatalogVersion'), record = tx.objectStore('catalogVersions').get(version);
++        tx.oncomplete = () => { const result = { activeVersion: active.result?.value, status: record.result?.status, failure: record.result?.failure ?? null }; db.close(); resolve(result); }; tx.onerror = () => reject(tx.error);
++      };
++    }), version);
++    await mkdir('reports/release-2026-10-28', { recursive: true });
++    await writeFile('reports/release-2026-10-28/lease-race-state.json', JSON.stringify({ fixture: 'synthetic disposable browser IndexedDB; production SQLite untouched', ...state }, null, 2));
++    expect(state).toEqual({ activeVersion: version, status: 'ready', failure: null });
++    await b.reload();
++    await expect(b.locator('#catalogueStatusText')).toHaveAttribute('data-state', 'ready');
++  } finally { release(); await context.close(); }
++});
+--- baseline/tests/integration/backup-relocation.test.ts
++++ current/tests/integration/backup-relocation.test.ts
+@@ -0,0 +1,59 @@
++import Database from 'better-sqlite3';
++import { mkdir, mkdtemp, readFile, rename, rm, writeFile } from 'node:fs/promises';
++import { tmpdir } from 'node:os';
++import { dirname, join } from 'node:path';
++import { afterAll, beforeAll, describe, expect, it } from 'vitest';
++import { importCatalogue } from '../../packages/importer/src/import.js';
++import { backupCatalogue, verifyRestoreOnly } from '../../packages/importer/src/operations.js';
++import { publishCatalogue } from '../../packages/importer/src/publication.js';
++
++let temporary = '';
++let root = '';
++let originalArchivePath = '';
++let relocatedArchivePath = '';
++let versionId = '';
++
++beforeAll(async () => {
++  temporary = await mkdtemp(join(tmpdir(), 'partavar-backup-relocation-'));
++  const originalRoot = join(temporary, 'original');
++  const sourcePath = join(temporary, 'source.html');
++  await writeFile(sourcePath, `<script>const DB=${JSON.stringify({ rows: [{ part: 'Sensor', models: ['A'], tech: 'TECH-1', log: 'LOG-1', price: 1234, replacement: '', friendly: ['label'], aliases: ['alias'] }], parts: ['Sensor'], primary: [], others: [], groups: {}, primaryOptions: [{ label: 'A', models: ['A'] }] })};</script>`);
++  const imported = await importCatalogue(sourcePath, { dbPath: join(originalRoot, 'sqlite/catalogue.db'), dataRoot: originalRoot });
++  versionId = imported.versionId;
++  await publishCatalogue(versionId, { dbPath: join(originalRoot, 'sqlite/catalogue.db'), dataRoot: originalRoot });
++  const db = new Database(join(originalRoot, 'sqlite/catalogue.db'));
++  originalArchivePath = (db.prepare('SELECT archive_path FROM catalog_versions WHERE id=?').get(versionId) as { archive_path: string }).archive_path;
++  db.close();
++  root = join(temporary, 'relocated');
++  await rename(originalRoot, root);
++  relocatedArchivePath = originalArchivePath.replace(originalRoot, root);
++});
++
++afterAll(async () => { if (temporary) await rm(temporary, { recursive: true, force: true }); });
++
++describe('catalogue backup after relocation', () => {
++  it('backs up and restore-verifies a relocated data root while preserving original source metadata', async () => {
++    const destination = join(temporary, 'backup');
++    await expect(backupCatalogue(destination, join(root, 'sqlite/catalogue.db'), root)).resolves.toMatchObject({ activeVersionId: versionId, integrityCheck: 'ok' });
++    await expect(verifyRestoreOnly(destination)).resolves.toMatchObject({ activeVersionId: versionId, restoredRows: 1, queryable: true, backupManifestVerified: true });
++    const manifest = JSON.parse(await readFile(join(destination, 'backup-manifest.json'), 'utf8')) as { artifacts: Array<{ role: string; sourcePath: string }> };
++    expect(manifest.artifacts.find(item => item.role === 'source-archive')?.sourcePath).toBe(originalArchivePath);
++    const backup = new Database(join(destination, 'catalogue.db'), { readonly: true });
++    expect(backup.prepare('SELECT archive_path FROM catalog_versions WHERE id=?').pluck().get(versionId)).toBe(originalArchivePath);
++    backup.close();
++  });
++
++  it('rejects a modified relocated source when no source with the recorded SHA remains', async () => {
++    const bytes = await readFile(relocatedArchivePath);
++    await writeFile(relocatedArchivePath, 'tampered source');
++    try { await expect(backupCatalogue(join(temporary, 'invalid-backup'), join(root, 'sqlite/catalogue.db'), root)).rejects.toThrow(/source.*(?:hash|checksum|unavailable)/i); }
++    finally { await writeFile(relocatedArchivePath, bytes); }
++  });
++
++  it('rejects an existing but modified original even when a matching relocated copy exists', async () => {
++    await mkdir(dirname(originalArchivePath), { recursive: true });
++    await writeFile(originalArchivePath, 'modified original');
++    try { await expect(backupCatalogue(join(temporary, 'invalid-original'), join(root, 'sqlite/catalogue.db'), root)).rejects.toThrow(/source archive checksum/i); }
++    finally { await rm(join(temporary, 'original'), { recursive: true, force: true }); }
++  });
++});
+--- baseline/tests/integration/operator-credentials.test.ts
++++ current/tests/integration/operator-credentials.test.ts
+@@ -0,0 +1,43 @@
++import { createHash } from 'node:crypto';
++import { spawnSync } from 'node:child_process';
++import { mkdtemp, readFile, rm, stat } from 'node:fs/promises';
++import { tmpdir } from 'node:os';
++import { join, resolve } from 'node:path';
++import { afterEach, expect, it } from 'vitest';
++
++const temporary: string[] = [];
++afterEach(async () => { for (const path of temporary.splice(0)) await rm(path, { recursive: true, force: true }); });
++function run(args: string[]) {
++  return spawnSync(process.execPath, ['--import', 'tsx', resolve('scripts/operator-credentials.ts'), ...args], { encoding: 'utf8' });
++}
++
++it('generates a random operator token into private files, configures only its verifier, and never prints the token', async () => {
++  const root = await mkdtemp(join(tmpdir(), 'partavar-auth-test-')); temporary.push(root);
++  const output = join(root, 'operator.env');
++  const result = run(['--output', output, '--origin', 'https://parts.example.test', '--username', 'operator']);
++  expect(result.status, result.stderr).toBe(0);
++  const env = await readFile(output, 'utf8');
++  const login = JSON.parse(await readFile(`${output}.login.json`, 'utf8')) as { username: string; password: string; origin: string };
++  expect(login.username).toBe('operator');
++  expect(login.origin).toBe('https://parts.example.test');
++  expect(login.password).toMatch(/^[A-Za-z0-9_-]{43}$/);
++  expect(env).toContain(`PARTAVAR_AUTH_TOKEN_SHA256=${createHash('sha256').update(login.password).digest('hex')}`);
++  expect(env).not.toContain(login.password);
++  expect(result.stdout + result.stderr).not.toContain(login.password);
++  expect((await stat(output)).mode & 0o777).toBe(0o600);
++  expect((await stat(`${output}.login.json`)).mode & 0o777).toBe(0o600);
++  const repeated = run(['--output', output, '--origin', 'https://parts.example.test']);
++  expect(repeated.status).not.toBe(0);
++  expect(await readFile(output, 'utf8')).toBe(env);
++});
++
++it('rejects external HTTP and credential injection before writing either file', async () => {
++  const root = await mkdtemp(join(tmpdir(), 'partavar-auth-test-')); temporary.push(root);
++  for (const [origin, username] of [['http://parts.example.test', 'operator'], ['https://parts.example.test/path', 'operator'], ['https://parts.example.test', 'bad\nENV=value']]) {
++    const output = join(root, 'rejected.env');
++    const result = run(['--output', output, '--origin', origin!, '--username', username!]);
++    expect(result.status).not.toBe(0);
++    await expect(stat(output)).rejects.toMatchObject({ code: 'ENOENT' });
++    await expect(stat(`${output}.login.json`)).rejects.toMatchObject({ code: 'ENOENT' });
++  }
++});
+--- baseline/tests/integration/production-runtime.test.ts
++++ current/tests/integration/production-runtime.test.ts
+@@ -0,0 +1,130 @@
++import { createHash } from 'node:crypto';
++import { mkdtemp, mkdir, rm, writeFile } from 'node:fs/promises';
++import { tmpdir } from 'node:os';
++import { join } from 'node:path';
++import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest';
++import { createServer } from '../../apps/api/src/server.js';
++import { importCatalogue } from '../../packages/importer/src/import.js';
++import { publishCatalogue } from '../../packages/importer/src/publication.js';
++
++let root = '';
++let version = '';
++let server: Awaited<ReturnType<typeof createServer>>;
++const token = 'test-only-256-bit-token-not-a-production-credential';
++const auth = `Basic ${Buffer.from(`operator:${token}`).toString('base64')}`;
++
++beforeAll(async () => {
++  root = await mkdtemp(join(tmpdir(), 'partavar-production-'));
++  const source = join(root, 'source.html');
++  await writeFile(source, `<script>const DB=${JSON.stringify({ rows: [{ part: 'Brake', tech: '001-01', log: '000LOG-01', models: ['Model A'], price: 1000, aliases: [], friendly: [], replacement: '' }], parts: ['Brake'], primary: [], others: [], groups: {}, primaryOptions: [{ label: 'Model A', models: ['Model A'] }] })};</script>`);
++  const dbPath = join(root, 'catalogue.db');
++  version = (await importCatalogue(source, { dbPath, dataRoot: root })).versionId;
++  await publishCatalogue(version, { dbPath, dataRoot: root });
++  const webRoot = join(root, 'web');
++  await mkdir(join(webRoot, 'assets'), { recursive: true });
++  await mkdir(join(webRoot, '.vite'));
++  await writeFile(join(webRoot, 'index.html'), '<!doctype html><html lang="fa"><title>PartAvar fixture</title><script type="module" src="/assets/app-deadbeef.js"></script></html>');
++  await writeFile(join(webRoot, 'assets/app-deadbeef.js'), 'console.log("public shell only");');
++  await writeFile(join(webRoot, 'sw.js'), '/* fixture service worker */');
++  await writeFile(join(webRoot, 'manifest.webmanifest'), '{"name":"PartAvar"}');
++  await writeFile(join(webRoot, '.vite/manifest.json'), '{"privateBuildMetadata":true}');
++  const options = { databasePath: dbPath, dataRoot: root, webRoot, logger: false, access: {
++    publicOrigin: 'https://parts.example.test', username: 'operator', tokenSha256: createHash('sha256').update(token).digest('hex'),
++  } };
++  server = await createServer(options);
++});
++
++afterAll(async () => {
++  vi.unstubAllEnvs();
++  if (server) await server.close();
++  if (root) await rm(root, { recursive: true, force: true });
++});
++
++const inject = (url: string, extra: Record<string, string> = {}, authorized = true) => server.inject({ url, headers: { host: 'parts.example.test', ...(authorized ? { authorization: auth } : {}), ...extra } });
++
++describe('private production runtime', () => {
++  it('serves the public website and hashed assets from the built root', async () => {
++    for (const path of ['/', '/product', '/features', '/offline-data', '/support', '/contact']) {
++      const response = await inject(path, {}, false);
++      expect(response.statusCode, path).toBe(200);
++      expect(response.headers['content-type']).toContain('text/html');
++      expect(response.body).toContain('PartAvar fixture');
++      expect(response.headers['cache-control']).toContain('no-cache');
++    }
++    const script = await inject('/assets/app-deadbeef.js', {}, false);
++    expect(script.statusCode).toBe(200);
++    expect(script.headers['content-type']).toContain('javascript');
++    expect(script.headers['cache-control']).toContain('immutable');
++    expect((await inject('/health/live', {}, false)).json()).toEqual({ status: 'live' });
++  });
++
++  it('requires authentication on app, all API routes, manifests and snapshot bytes', async () => {
++    const manifest = (await inject(`/api/v1/catalog/${version}/snapshot/manifest`)).json();
++    for (const path of ['/app', '/app/', '/app/documents', '/api/v1/catalog/manifest', '/api/v1/search?q=001-01', '/api/v1/openapi.json', '/api/unknown', '/health/ready', '/sw.js', '/manifest.webmanifest', `/api/v1/catalog/${version}/snapshot/manifest`, manifest.chunks[0].path as string]) {
++      const response = await inject(path, {}, false);
++      expect(response.statusCode, path).toBe(401);
++      expect(response.headers['www-authenticate'], path).toContain('Basic');
++      expect(response.headers['cache-control'], path).toBe('no-store');
++      expect(response.body).not.toContain('000LOG-01');
++    }
++    expect((await inject('/app/', { authorization: `Basic ${Buffer.from('operator:wrong').toString('base64')}` })).statusCode).toBe(401);
++    expect((await inject('/app/', { authorization: 'Basic !!!' })).statusCode).toBe(401);
++    expect((await inject('/app/')).statusCode).toBe(200);
++  });
++
++  it('keeps authenticated indexed search, immutable snapshots and revalidation working', async () => {
++    const search = await inject(`/api/v1/search?version=${version}&mode=global&kind=code&q=001-01&limit=1`);
++    expect(search.statusCode).toBe(200);
++    expect(search.json()).toMatchObject({ items: [{ techRaw: '001-01', logRaw: '000LOG-01', basePrice: '1000', middlePrice: '1100', finalPrice: '1200' }] });
++    const manifest = await inject(`/api/v1/catalog/${version}/snapshot/manifest`);
++    const chunk = await inject(manifest.json().chunks[0].path as string);
++    expect(chunk.statusCode).toBe(200);
++    expect(chunk.headers['cache-control']).toContain('private');
++    expect(createHash('sha256').update(chunk.rawPayload).digest('hex')).toBe(manifest.json().chunks[0].sha256);
++    expect((await inject(`/api/v1/catalog/${version}/snapshot/manifest`, { 'if-none-match': String(manifest.headers.etag) })).statusCode).toBe(304);
++    expect((await inject(`/api/v1/catalog/${version}/snapshot/manifest`, { 'if-none-match': String(manifest.headers.etag) }, false)).statusCode).toBe(401);
++  });
++
++  it('rejects foreign Host, Origin and cross-site private reads even with credentials', async () => {
++    for (const headers of [{ host: 'attacker.invalid' }, { origin: 'https://attacker.invalid' }, { 'sec-fetch-site': 'cross-site' }]) {
++      const response = await inject('/api/v1/catalog/manifest', headers);
++      expect(response.statusCode).toBe(403);
++      expect(response.body).not.toContain(version);
++    }
++    expect((await inject('/api/v1/catalog/manifest', { origin: 'https://parts.example.test' })).statusCode).toBe(200);
++  });
++
++  it('never serves sources, databases, build metadata or an SPA response for missing APIs', async () => {
++    for (const path of ['/private-data/sqlite/catalogue.db', '/.env', '/.vite/manifest.json', '/src/server.ts', '/PartsFinder_Android-28%20(1)%20(1).html', '/unknown', '/api/v1/missing', '/assets/missing.js']) {
++      const response = await inject(path);
++      expect(response.statusCode, path).toBe(404);
++      expect(response.body, path).not.toContain('PartAvar fixture');
++    }
++    expect((await inject('/%2e%2e/private-data/sqlite/catalogue.db')).statusCode).not.toBe(200);
++  });
++
++  it('sends browser protections and revalidates shell/SW instead of caching a login', async () => {
++    const response = await inject('/app/');
++    expect(response.headers['x-content-type-options']).toBe('nosniff');
++    expect(response.headers['content-security-policy']).toContain("frame-ancestors 'none'");
++    expect(response.headers['content-security-policy']).toContain("worker-src 'self'");
++    expect(response.headers['cross-origin-resource-policy']).toBe('same-origin');
++    const sw = await inject('/sw.js');
++    expect(sw.statusCode).toBe(200);
++    expect(sw.headers['cache-control']).toContain('no-cache');
++    expect(sw.headers['service-worker-allowed']).toBe('/');
++  });
++
++  it('fails closed when production environment has no authentication configuration', async () => {
++    vi.stubEnv('NODE_ENV', 'production');
++    vi.stubEnv('PARTAVAR_AUTH_USERNAME', '');
++    vi.stubEnv('PARTAVAR_AUTH_TOKEN_SHA256', '');
++    vi.stubEnv('PARTAVAR_PUBLIC_ORIGIN', 'https://parts.example.test');
++    let accidental: Awaited<ReturnType<typeof createServer>> | undefined;
++    let error: unknown;
++    try { accidental = await createServer({ databasePath: join(root, 'catalogue.db'), logger: false }); } catch (cause) { error = cause; }
++    finally { await accidental?.close(); vi.unstubAllEnvs(); }
++    expect(error).toBeInstanceOf(Error);
++    expect((error as Error).message).toMatch(/auth|credential/i);
++  });
++});
+--- baseline/tests/integration/release-packaging.test.ts
++++ current/tests/integration/release-packaging.test.ts
+@@ -0,0 +1,127 @@
++import Database from 'better-sqlite3';
++import { execFile } from 'node:child_process';
++import { existsSync } from 'node:fs';
++import { cp, mkdir, mkdtemp, readFile, rename, rm, stat, writeFile } from 'node:fs/promises';
++import { tmpdir } from 'node:os';
++import { dirname, join, resolve } from 'node:path';
++import { promisify } from 'node:util';
++import { afterAll, beforeAll, describe, expect, it } from 'vitest';
++import { importCatalogue } from '../../packages/importer/src/import.js';
++import { publishCatalogue } from '../../packages/importer/src/publication.js';
++import { openPriceHistoryDatabase } from '../../packages/importer/src/price-history/database.js';
++import { packageRelease } from '../../scripts/release/package.js';
++import { verifyRelease } from '../../scripts/release/verify.js';
++
++const run = promisify(execFile);
++const bundledPython = resolve(dirname(process.execPath), '../../python/bin/python3');
++const python = process.env.PARTAVAR_PYTHON ?? (existsSync(bundledPython) ? bundledPython : 'python3');
++let temporary = '';
++let root = '';
++let archive = '';
++let version = '';
++let sourceArchive = '';
++let writer: Database.Database;
++
++async function put(path: string, content: string): Promise<void> {
++  await mkdir(dirname(path), { recursive: true });
++  await writeFile(path, content);
++}
++
++beforeAll(async () => {
++  temporary = await mkdtemp(join(tmpdir(), 'partavar release $ literal '));
++  root = join(temporary, 'source');
++  archive = join(temporary, "PartAvar ' literal $.zip");
++  const fixture = { rows: [{ part: 'Brake sensor', models: ['Model A'], tech: 'TECH-01', log: 'LOG-01', price: 1001, replacement: '', friendly: ['ABS'], aliases: ['brake switch'] }], parts: ['Brake sensor'], primary: [], others: [], groups: {}, primaryOptions: [{ label: 'Model A', models: ['Model A'] }] };
++  const html = `<script>const DB=${JSON.stringify(fixture)};</script>`;
++  const original = join(root, 'PartsFinder_Android-28 (1) (1).html');
++  await put(original, html);
++  for (const file of ['package.json', 'pnpm-lock.yaml', 'pnpm-workspace.yaml', 'README.md', 'HANDOFF.md', 'REMAINING-WORK.md', 'playwright.release.config.ts', 'apps/api/src/server.ts', 'apps/web/src/main.ts', 'apps/web/dist/index.html', 'apps/web/dist/sw.js', 'apps/web/dist/manifest.webmanifest', 'packages/domain/src/index.ts', 'scripts/example.ts', 'tests/example.ts', 'docs/operations.md', 'deploy/partavar.env.example', 'reports/real-evidence.json']) await put(join(root, file), file.endsWith('.json') ? '{}' : 'fixture\n');
++  await cp(resolve('database'), join(root, 'database'), { recursive: true });
++  await put(join(root, 'PartsFinder-Codex-Architecture/baseline/source-inventory.json'), '{}');
++  for (const name of ['PartsFinder_Android-28_original.html', 'PartsFinder_Windows_v3_0_1.html', 'PartsFinder_Android_v3_0_1.html']) await put(join(root, 'private-data/reference-packs/PartAvar-Codex-Master-Pack/source', name), html);
++  await put(join(root, 'private-data/reference-packs/PartAvar-Codex-Master-Pack.zip'), 'original source pack');
++  await put(join(root, 'private-data/reference-packs/PartAvar-Codex-Master-Pack/08-OFFLINE-UPDATES-ADMIN-OPS.md'), 'source instructions');
++  const imported = await importCatalogue(original, { dbPath: join(root, 'private-data/sqlite/catalogue.db'), dataRoot: join(root, 'private-data') });
++  version = imported.versionId;
++  await publishCatalogue(version, { dbPath: join(root, 'private-data/sqlite/catalogue.db'), dataRoot: join(root, 'private-data') });
++  const db = new Database(join(root, 'private-data/sqlite/catalogue.db'));
++  sourceArchive = (db.prepare('SELECT archive_path FROM catalog_versions WHERE id=?').get(version) as { archive_path: string }).archive_path;
++  db.close();
++  const operations = openPriceHistoryDatabase(join(root, 'private-data/sqlite/operations.db'));
++  operations.close();
++  writer = new Database(join(root, 'private-data/sqlite/catalogue.db'));
++  writer.pragma('journal_mode=WAL');
++  writer.exec('CREATE TABLE release_marker(value TEXT); INSERT INTO release_marker VALUES(\'committed in WAL\')');
++  for (const file of ['.env', 'deploy/operator.env', 'docs/operator.env.login.json', 'deploy/credentials.pem', 'node_modules/ignored.js', 'apps/web/node_modules/ignored.js', 'private-data/backups/old/catalogue.db', 'deliverables/old.zip', 'test-results/temporary.txt', 'reports/old-release.zip', 'reports/temp/fixture.db', '.DS_Store']) await put(join(root, file), 'must not ship');
++});
++
++afterAll(async () => { writer?.close(); if (temporary) await rm(temporary, { recursive: true, force: true }); });
++
++describe('verified release archives', () => {
++  it('ships committed WAL data, authoritative sources and evidence without secrets or old bundles', async () => {
++    const result = await packageRelease({ root, outputPath: archive, epoch: 1_793_145_600 });
++    expect(result.verification).toMatchObject({ fileHashesVerified: true, activeVersionId: version, sourceRowsVerified: 1, snapshotChunksVerified: 12, snapshotRowsVerified: 1, databaseCount: 2 });
++    expect(result.sha256).toMatch(/^[a-f0-9]{64}$/);
++    const extracted = join(temporary, 'extracted');
++    await run(python, [resolve('scripts/release/archive.py'), 'extract', archive, extracted]);
++    const manifest = JSON.parse(await readFile(join(extracted, 'release-manifest.json'), 'utf8')) as { files: Array<{ path: string }> };
++    const names = manifest.files.map(file => file.path);
++    expect(names).toContain('private-data/reference-packs/PartAvar-Codex-Master-Pack.zip');
++    expect(names).toContain('pnpm-lock.yaml');
++    expect(names).toContain('playwright.release.config.ts');
++    expect(names).toContain('reports/real-evidence.json');
++    expect(names).toContain('deploy/partavar.env.example');
++    expect(names.some(name => /node_modules|backups|deliverables|test-results|\.env$|\.login\.json$|\.pem$|-wal$|-shm$|old-release\.zip|fixture\.db/.test(name))).toBe(false);
++    const copy = new Database(join(extracted, 'private-data/sqlite/catalogue.db'), { readonly: true });
++    expect(copy.prepare('SELECT value FROM release_marker').pluck().get()).toBe('committed in WAL');
++    copy.close();
++    await expect(verifyRelease({ inputPath: extracted })).resolves.toMatchObject({ sourceRowsVerified: 1, activeVersionId: version });
++    await expect(stat(join(extracted, 'private-data/sqlite/catalogue.db-wal'))).rejects.toMatchObject({ code: 'ENOENT' });
++  });
++
++  it('produces the same archive bytes from unchanged inputs at a fixed epoch and refuses overwrite', async () => {
++    const second = join(temporary, 'second.zip');
++    const result = await packageRelease({ root, outputPath: second, epoch: 1_793_145_600 });
++    expect(result.sha256).toBe((await verifyRelease({ inputPath: archive })).archiveSha256);
++    await expect(packageRelease({ root, outputPath: archive, epoch: 1_793_145_600 })).rejects.toThrow(/already exists/i);
++  });
++
++  it('rejects a tampered extracted release and a wrong trusted archive hash', async () => {
++    const extracted = join(temporary, 'tampered');
++    await run(python, [resolve('scripts/release/archive.py'), 'extract', archive, extracted]);
++    await put(join(extracted, 'apps/web/dist/index.html'), 'tampered');
++    await expect(verifyRelease({ inputPath: extracted })).rejects.toThrow(/checksum|hash|byte count/i);
++    await expect(verifyRelease({ inputPath: archive, expectedSha256: '0'.repeat(64) })).rejects.toThrow(/archive.*hash|archive.*checksum/i);
++  });
++
++  it('verifies a relocated archive while its original absolute import path is unavailable', async () => {
++    const moved = join(temporary, 'source-moved-away');
++    await rename(root, moved);
++    try { await expect(verifyRelease({ inputPath: archive })).resolves.toMatchObject({ sourceRowsVerified: 1, snapshotRowsVerified: 1, activeVersionId: version }); }
++    finally { await rename(moved, root); }
++  });
++
++  it('does not publish an archive when an active immutable snapshot chunk is corrupt', async () => {
++    const db = new Database(join(root, 'private-data/sqlite/catalogue.db'), { readonly: true });
++    const chunk = (db.prepare('SELECT relative_path FROM catalog_snapshot_chunks WHERE version_id=? LIMIT 1').get(version) as { relative_path: string }).relative_path;
++    db.close();
++    const path = join(root, 'private-data/snapshots', chunk);
++    const original = await readFile(path);
++    const invalid = join(temporary, 'invalid-snapshot.zip');
++    await writeFile(path, 'corrupt chunk');
++    try {
++      await expect(packageRelease({ root, outputPath: invalid })).rejects.toThrow(/snapshot chunk.*checksum/i);
++      await expect(stat(invalid)).rejects.toMatchObject({ code: 'ENOENT' });
++    } finally { await writeFile(path, original); }
++  });
++
++  it('does not publish an archive when immutable source verification fails', async () => {
++    const bytes = await readFile(sourceArchive);
++    await writeFile(sourceArchive, `${bytes.toString('utf8')}\nchanged source`);
++    const invalid = join(temporary, 'invalid.zip');
++    try {
++      await expect(packageRelease({ root, outputPath: invalid })).rejects.toThrow(/source|hash|checksum/i);
++      await expect(stat(invalid)).rejects.toMatchObject({ code: 'ENOENT' });
++    } finally { await writeFile(sourceArchive, bytes); }
++  });
++});
+--- baseline/tests/release/browser.spec.ts
++++ current/tests/release/browser.spec.ts
+@@ -0,0 +1,404 @@
++import { expect, test, type Page, type TestInfo } from '@playwright/test';
++import type { AxeResults } from 'axe-core';
++import { createRequire } from 'node:module';
++import { mkdir, writeFile } from 'node:fs/promises';
++import { resolve } from 'node:path';
++import ExcelJS from 'exceljs';
++
++const require = createRequire(import.meta.url);
++const evidenceDir = resolve('reports/release-2026-10-28/browser');
++const widths = [320, 360, 390, 430, 768, 1024, 1440];
++const publicRoutes = ['/', '/product', '/features', '/offline-data', '/support', '/contact'];
++type SearchMeasurement = { query: string; mode: string; durationMs: number; resultCount: string | null };
++type LongTaskMeasurement = { startTime: number; duration: number };
++type BrowserMeasurements = { search: SearchMeasurement[]; longTasks: LongTaskMeasurement[]; longTaskSupported: boolean };
++
++async function observePerformance(page: Page, search = false): Promise<void> {
++  await page.evaluate(measureSearch => {
++    const measurements: BrowserMeasurements = { search: [], longTasks: [], longTaskSupported: PerformanceObserver.supportedEntryTypes.includes('longtask') };
++    (window as unknown as { releaseMeasurements: BrowserMeasurements }).releaseMeasurements = measurements;
++    if (measurements.longTaskSupported) new PerformanceObserver(list => {
++      measurements.longTasks.push(...list.getEntries().map(entry => ({ startTime: entry.startTime, duration: entry.duration })));
++    }).observe({ type: 'longtask' });
++    if (!measureSearch) return;
++    let pending: { query: string; mode: string; started: number } | null = null;
++    document.addEventListener('keydown', event => {
++      if (event.key !== 'Enter' || !(event.target instanceof HTMLInputElement) || !['codeQuery', 'partQuery'].includes(event.target.id)) return;
++      pending = { query: event.target.value, mode: event.target.id === 'codeQuery' ? 'global' : 'vehiclePart', started: performance.now() };
++    }, true);
++    const results = document.getElementById('results')!;
++    new MutationObserver(() => {
++      if (!pending || results.hasAttribute('aria-busy')) return;
++      measurements.search.push({ query: pending.query, mode: pending.mode, durationMs: performance.now() - pending.started, resultCount: document.getElementById('resultCount')?.textContent ?? null });
++      pending = null;
++    }).observe(results, { attributes: true, attributeFilter: ['aria-busy'] });
++  }, search);
++}
++
++async function performanceMeasurements(page: Page): Promise<BrowserMeasurements> {
++  return page.evaluate(() => (window as unknown as { releaseMeasurements: BrowserMeasurements }).releaseMeasurements);
++}
++
++async function evidence(testInfo: TestInfo, name: string, value: unknown): Promise<void> {
++  await mkdir(evidenceDir, { recursive: true });
++  const path = resolve(evidenceDir, `${testInfo.project.name}-${name}.json`);
++  await writeFile(path, `${JSON.stringify(value, null, 2)}\n`);
++  await testInfo.attach(name, { path, contentType: 'application/json' });
++}
++
++async function screenshot(page: Page, testInfo: TestInfo, name: string): Promise<void> {
++  await mkdir(evidenceDir, { recursive: true });
++  const path = resolve(evidenceDir, `${testInfo.project.name}-${name}.png`);
++  await page.screenshot({ path, fullPage: true, animations: 'disabled' });
++  await testInfo.attach(name, { path, contentType: 'image/png' });
++}
++
++async function settleLayout(page: Page): Promise<void> {
++  await page.evaluate(() => new Promise<void>(done => requestAnimationFrame(() => requestAnimationFrame(() => done()))));
++}
++
++async function clippedValues(page: Page): Promise<Array<string | null>> {
++  return page.locator('.priceValue, .codeValue').evaluateAll(elements => elements.filter(element => {
++    const rect = element.getBoundingClientRect();
++    const parent = element.parentElement!.getBoundingClientRect();
++    return element.scrollWidth > element.clientWidth + 1 || rect.left < parent.left - 1 || rect.right > parent.right + 1;
++  }).map(element => element.textContent));
++}
++
++async function onlineApp(page: Page): Promise<void> {
++  await page.goto('/app/');
++  await expect(page.locator('#catalogueStatusText')).toHaveAttribute('data-state', 'online');
++}
++
++async function codeSearch(page: Page, value = '111100001AA'): Promise<void> {
++  await page.locator('#codeTab').click();
++  await page.locator('#codeQuery').fill(value);
++  await page.locator('#codeQuery').press('Enter');
++  await expect(page.locator('#cards .resultCard').first()).toBeVisible();
++}
++
++async function audit(page: Page, testInfo: TestInfo, name: string): Promise<AxeResults> {
++  if (!await page.evaluate(() => 'axe' in window)) {
++    await page.addScriptTag({ path: require.resolve('axe-core/axe.min.js') });
++  }
++  const result = await page.evaluate(async () => {
++    const engine = (window as unknown as { axe: { run(options: Record<string, unknown>): Promise<AxeResults> } }).axe;
++    return engine.run({ runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'best-practice'] } });
++  });
++  await evidence(testInfo, `axe-${name}`, result);
++  return result;
++}
++
++test('online catalogue, keyboard selection, details and documents preserve exact identities', async ({ page, browser }, testInfo) => {
++  const errors: string[] = [];
++  const consoleProblems: string[] = [];
++  const chunks: string[] = [];
++  page.on('pageerror', error => errors.push(error.message));
++  page.on('console', message => { if (message.type() === 'error' || message.type() === 'warning') consoleProblems.push(message.text()); });
++  page.on('request', request => { if (request.url().includes('/snapshot/chunks/')) chunks.push(request.url()); });
++  await onlineApp(page);
++  await expect(page.locator('link[rel="icon"]')).toHaveAttribute('href', '/favicon.svg');
++  const icon = await page.request.get('/favicon.svg');
++  expect(icon.status()).toBe(200);
++  expect(icon.headers()['content-type']).toContain('image/svg+xml');
++  await page.locator('#vehicle').fill('X33 Cross CVT');
++  await expect(page.locator('.vehicleOption').first()).toBeVisible();
++  await page.locator('#vehicle').press('Enter');
++  await expect(page.locator('#vehicle')).toHaveAttribute('aria-expanded', 'false');
++  await expect(page.locator('#vehicle')).toHaveValue(/CVT/);
++  await page.locator('#partQuery').fill('سپر');
++  await expect(page.locator('#partList [role="option"]').first()).toBeVisible();
++  await page.locator('#partQuery').press('ArrowDown');
++  await page.locator('#partQuery').press('Enter');
++  await expect(page.locator('#cards .resultCard').first()).toBeVisible();
++  await codeSearch(page);
++  await expect(page.locator('#cards .resultCard')).toHaveCount(2);
++  const first = page.locator('#cards .resultCard').first();
++  const logistics = await first.locator('.codeValue').nth(1).innerText();
++  await first.locator('.detailToggle').click();
++  await expect(page.locator('#detailTitle')).toBeFocused();
++  await page.keyboard.press('Escape');
++  await expect(first.locator('.detailToggle')).toBeFocused();
++  await first.locator('.packageAction').click();
++  await page.locator('[data-area="packages"]').click();
++  const line = page.locator('.docLine').first();
++  await expect(line).toContainText(logistics);
++  const manual = line.locator('[data-doc-key^="price-"]');
++  await manual.fill('12345678901234567890');
++  await manual.press('Tab');
++  const quantity = line.locator('[data-doc-key^="quantity-"]');
++  await quantity.fill('3');
++  await quantity.press('Tab');
++  await expect(line.locator('.docLineTotal')).toContainText('۳۷٬۰۳۷٬۰۳۶٬۷۰۳٬۷۰۳٬۷۰۳٬۶۷۰');
++  await page.reload();
++  await page.locator('[data-area="packages"]').click();
++  await expect(page.locator('[data-doc-key^="price-"]').first()).toHaveValue('12345678901234567890');
++  await page.locator('.docActions .primary').first().click();
++  await expect(page.locator('.docHistoryItem')).toHaveCount(1);
++  await page.locator('.docHistoryItem').getByRole('button', { name: 'افزودن به فاکتور' }).click();
++  await expect(page.locator('.docLine')).toHaveCount(1);
++  await expect(page.locator('.docLine')).toContainText(logistics);
++  await expect(page.locator('[data-doc-key^="price-"]').first()).toHaveValue('12345678901234567890');
++  const [download] = await Promise.all([
++    page.waitForEvent('download'),
++    page.getByRole('button', { name: 'خروجی Excel (.xlsx)' }).click(),
++  ]);
++  const path = await download.path();
++  expect(path).toBeTruthy();
++  const workbook = new ExcelJS.Workbook();
++  await workbook.xlsx.readFile(path!);
++  expect(JSON.stringify(workbook.worksheets[0]!.getRow(5).values)).toContain('12345678901234567890');
++  expect(JSON.stringify(workbook.worksheets[0]!.getRow(5).values)).toContain(logistics);
++  await page.getByRole('button', { name: 'نمای چاپ / PDF' }).click();
++  await expect(page.locator('#partavarPrintView')).toContainText(logistics);
++  await screenshot(page, testInfo, 'invoice-print-preview');
++  expect(chunks).toEqual([]);
++  expect(errors).toEqual([]);
++  expect(consoleProblems).toEqual([]);
++  await evidence(testInfo, 'online-smoke', {
++    browserVersion: browser.version(), logistics, errors, consoleProblems,
++    catalogueChunksAtStartupAndOnlineSearch: chunks.length,
++    manualUnitPrice: '12345678901234567890', quantity: '3',
++    xlsxReadBack: true, printScope: 'browser HTML print preview; native OS PDF dialog is not exercised',
++  });
++});
++
++test('public routes, both themes, seven widths, keyboard and 200 percent enlargement are usable', async ({ page }, testInfo) => {
++  test.setTimeout(180_000);
++  const violations: Array<{ route: string; dark: boolean; width: number; kind: string; detail: unknown }> = [];
++  const privateRequests: string[] = [];
++  const errors: string[] = [];
++  page.on('pageerror', error => errors.push(error.message));
++  page.on('request', request => { if (/\/(api\/|snapshot|private-data)/.test(new URL(request.url()).pathname)) privateRequests.push(request.url()); });
++  await page.emulateMedia({ reducedMotion: 'reduce' });
++  await page.setViewportSize({ width: 320, height: 900 });
++  await page.goto('/');
++  await page.keyboard.press(testInfo.project.name === 'webkit' ? 'Alt+Tab' : 'Tab');
++  await expect(page.locator('.site-skip-link')).toBeFocused();
++  await page.keyboard.press('Enter');
++  await expect(page.locator('#site-main')).toBeFocused();
++  await page.locator('#site-menu-toggle').focus();
++  await page.keyboard.press('Enter');
++  await expect(page.locator('#site-menu-toggle')).toHaveAttribute('aria-expanded', 'true');
++  await page.locator('#site-navigation a').first().focus();
++  await page.keyboard.press('Escape');
++  await expect(page.locator('#site-menu-toggle')).toBeFocused();
++  await expect(page.locator('#site-menu-toggle')).toHaveAttribute('aria-expanded', 'false');
++  for (const dark of [false, true]) {
++    if (await page.locator('body').evaluate(body => body.classList.contains('dark')) !== dark) await page.locator('#themeToggle').click();
++    for (const route of publicRoutes) {
++      await page.goto(route);
++      await expect(page.locator('main h1')).toHaveCount(1);
++      await expect(page.locator('body')).toHaveClass(dark ? /dark/ : /^(?!.*dark)/);
++      for (const width of widths) {
++        await page.setViewportSize({ width, height: 900 });
++        await settleLayout(page);
++        if (!await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)) {
++          violations.push({ route, dark, width, kind: 'page horizontal overflow', detail: await page.evaluate(() => ({ scrollWidth: document.documentElement.scrollWidth, innerWidth })) });
++        }
++        const tooSmall = await page.locator('.public-website a:visible, .public-website button:visible, .public-website summary:visible').evaluateAll(elements => elements.map(element => ({ label: element.textContent?.trim() || element.getAttribute('aria-label'), width: element.getBoundingClientRect().width, height: element.getBoundingClientRect().height })).filter(item => item.width < 43.5 || item.height < 43.5));
++        if (tooSmall.length) violations.push({ route, dark, width, kind: 'touch target', detail: tooSmall });
++      }
++      if (route === '/') await screenshot(page, testInfo, `site-${dark ? 'dark' : 'light'}-1440`);
++    }
++  }
++  await page.setViewportSize({ width: 1440, height: 1000 });
++  await page.goto('/support');
++  await page.evaluate(() => { document.documentElement.style.fontSize = '200%'; });
++  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
++  await screenshot(page, testInfo, 'site-text-200-percent');
++  await evidence(testInfo, 'public-layout', { widths, routes: publicRoutes, themes: ['light', 'dark'], violations, privateRequests, errors });
++  expect(violations).toEqual([]);
++  expect(privateRequests).toEqual([]);
++  expect(errors).toEqual([]);
++});
++
++test('automated WCAG accessibility audit covers app workspaces, dialogs and public pages in both themes', async ({ page }, testInfo) => {
++  test.setTimeout(240_000);
++  await page.emulateMedia({ reducedMotion: 'reduce' });
++  const failures: Array<{ state: string; violations: AxeResults['violations'] }> = [];
++  async function check(name: string): Promise<void> {
++    const result = await audit(page, testInfo, name);
++    if (result.violations.length) failures.push({ state: name, violations: result.violations });
++  }
++  for (const dark of [false, true]) {
++    const theme = dark ? 'dark' : 'light';
++    await page.goto('/');
++    if (await page.locator('body').evaluate(body => body.classList.contains('dark')) !== dark) await page.locator('#themeToggle').click();
++    for (const route of publicRoutes) {
++      await page.goto(route);
++      await check(`site-${route.replaceAll('/', '') || 'home'}-${theme}`);
++    }
++    await onlineApp(page);
++    await check(`app-search-${theme}`);
++    await page.locator('#vehicle').fill('X33 Cross');
++    await expect(page.locator('#vehicleSuggestions')).toBeVisible();
++    await check(`vehicle-combobox-${theme}`);
++    await page.locator('#vehicle').press('Escape');
++    await page.locator('#vehicle').fill('X33 Cross CVT');
++    await expect(page.locator('.vehicleOption').first()).toBeVisible();
++    await page.locator('#vehicle').press('Enter');
++    await page.locator('#partQuery').fill('سپر');
++    await expect(page.locator('#partList [role="option"]').first()).toBeVisible();
++    await check(`part-combobox-${theme}`);
++    await page.locator('#partQuery').press('Escape');
++    await codeSearch(page);
++    await check(`app-results-${theme}`);
++    const first = page.locator('#cards .resultCard').first();
++    await first.locator('.detailToggle').click();
++    await expect(page.locator('#detailDialog')).toBeVisible();
++    await check(`entry-dialog-${theme}`);
++    await page.keyboard.press('Escape');
++    await first.locator('.invoiceAction').click();
++    await expect(page.locator('.docPricePicker')).toBeVisible();
++    await check(`invoice-price-dialog-${theme}`);
++    await page.keyboard.press('Escape');
++    for (const area of ['purchase', 'packages', 'invoices', 'prices', 'settings']) {
++      await page.locator(`[data-area="${area}"]`).click();
++      await expect(page.locator(area === 'prices' ? '#priceRoot' : '#documentRoot')).toBeVisible();
++      await check(`app-${area}-${theme}`);
++    }
++    const [backup] = await Promise.all([
++      page.waitForEvent('download'),
++      page.getByRole('button', { name: 'دریافت پشتیبان JSON' }).click(),
++    ]);
++    const backupPath = await backup.path();
++    expect(backupPath).toBeTruthy();
++    await page.locator('.docFileInput').setInputFiles(backupPath!);
++    await expect(page.locator('.docImportDialog')).toBeVisible();
++    await check(`backup-import-dialog-${theme}`);
++    await page.keyboard.press('Escape');
++  }
++  await evidence(testInfo, 'axe-summary', { automatedScope: 'axe-core WCAG 2 A/AA, WCAG 2.1 A/AA and best-practice rules; not screen-reader certification', failures });
++  expect(failures).toEqual([]);
++});
++
++test('app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content', async ({ page }, testInfo) => {
++  await page.emulateMedia({ reducedMotion: 'reduce' });
++  await onlineApp(page);
++  await page.keyboard.press(testInfo.project.name === 'webkit' ? 'Alt+Tab' : 'Tab');
++  await expect(page.locator('.skipLink')).toBeFocused();
++  await page.keyboard.press('Enter');
++  await expect(page.locator('#workspace')).toBeFocused();
++  await page.locator('#partTab').focus();
++  await page.keyboard.press('ArrowLeft');
++  await expect(page.locator('#codeTab')).toBeFocused();
++  await expect(page.locator('#codeTab')).toHaveAttribute('aria-selected', 'true');
++  await codeSearch(page, '0CF25BE-1500011BA');
++  const problems: Array<{ width: number; dark: boolean; kind: string; detail: unknown }> = [];
++  for (const dark of [false, true]) {
++    if (await page.locator('body').evaluate(body => body.classList.contains('dark')) !== dark) await page.locator('#themeToggle').click();
++    for (const width of widths) {
++      await page.setViewportSize({ width, height: 900 });
++      await settleLayout(page);
++      const overflow = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
++      if (overflow) problems.push({ width, dark, kind: 'page overflow', detail: true });
++      const clipped = await clippedValues(page);
++      if (clipped.length) problems.push({ width, dark, kind: 'clipped price/code', detail: clipped });
++      const tooSmall = await page.locator('button:visible, .appNav a:visible, summary:visible').evaluateAll(elements => elements.map(element => ({ label: element.textContent?.trim() || element.getAttribute('aria-label'), width: element.getBoundingClientRect().width, height: element.getBoundingClientRect().height })).filter(item => item.width < 43.5 || item.height < 43.5));
++      if (tooSmall.length) problems.push({ width, dark, kind: 'touch target', detail: tooSmall });
++      if (width === 390) await screenshot(page, testInfo, `app-results-${dark ? 'dark' : 'light'}-390`);
++    }
++  }
++  await page.setViewportSize({ width: 1440, height: 1000 });
++  await page.evaluate(() => { document.documentElement.style.zoom = '2'; });
++  await settleLayout(page);
++  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
++  const clippedAtZoom = await clippedValues(page);
++  await screenshot(page, testInfo, 'app-zoom-200-percent');
++  expect(clippedAtZoom).toEqual([]);
++  await page.evaluate(() => { document.documentElement.style.zoom = ''; });
++  await page.locator('[data-area="settings"]').click();
++  await page.evaluate(() => { document.documentElement.style.fontSize = '200%'; });
++  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
++  await screenshot(page, testInfo, 'settings-text-200-percent');
++  const transition = await page.locator('#themeToggle').evaluate(element => getComputedStyle(element).transitionDuration);
++  expect(transition).toBe('0s');
++  await evidence(testInfo, 'app-layout', { widths, themes: ['light', 'dark'], problems, clippedAtZoom, transition });
++  expect(problems).toEqual([]);
++});
++
++test('full catalogue installs and offline shell relaunch preserves search parity in real IndexedDB', async ({ page, context, browser }, testInfo) => {
++  test.setTimeout(12 * 60 * 1000);
++  const errors: string[] = [];
++  const consoleProblems: string[] = [];
++  let intentionalOffline = false;
++  page.on('pageerror', error => errors.push(error.message));
++  page.on('console', message => { if (!intentionalOffline && (message.type() === 'warning' || message.type() === 'error')) consoleProblems.push(message.text()); });
++  await onlineApp(page);
++  await codeSearch(page, '0CF25BE-1500011BA');
++  const onlineCards = await page.locator('#cards .resultCard').allTextContents();
++  await observePerformance(page);
++  await page.locator('#catalogueInfo summary').click();
++  const started = Date.now();
++  await page.locator('#catalogueUpdateButton').click();
++  await expect(page.locator('#catalogueStatusText')).toHaveAttribute('data-state', 'ready', { timeout: 10 * 60 * 1000 });
++  const installMs = Date.now() - started;
++  await expect(page.locator('#dbCount')).toHaveText('۳۶٬۵۶۹');
++  await page.waitForFunction(() => Boolean(navigator.serviceWorker.controller));
++  const storage = await page.evaluate(async () => ({
++    estimate: await navigator.storage.estimate(),
++    caches: await caches.keys(),
++    secureContext: isSecureContext,
++    controller: Boolean(navigator.serviceWorker.controller),
++  }));
++  const installationPerformance = await performanceMeasurements(page);
++  intentionalOffline = true;
++  await context.setOffline(true);
++  await page.close();
++  const reopened = await context.newPage();
++  reopened.on('pageerror', error => errors.push(error.message));
++  await reopened.goto('/app/', { waitUntil: 'domcontentloaded' });
++  await expect(reopened.locator('#dbCount')).toHaveText('۳۶٬۵۶۹');
++  expect(await reopened.evaluate(() => navigator.onLine)).toBe(false);
++  await codeSearch(reopened, '0CF25BE-1500011BA');
++  await expect(reopened.locator('#cards .resultCard')).toHaveCount(11);
++  expect(await reopened.locator('#cards .resultCard').allTextContents()).toEqual(onlineCards);
++  await observePerformance(reopened, true);
++  for (const query of ['111100001AA-01', 'واتر پمپ', '150']) {
++    for (let trial = 0; trial < 9; trial++) {
++      await codeSearch(reopened, query);
++      await settleLayout(reopened);
++    }
++  }
++  await reopened.locator('#partTab').click();
++  await reopened.locator('#vehicle').fill('X33 Cross CVT');
++  await expect(reopened.locator('.vehicleOption').first()).toBeVisible();
++  await reopened.locator('#vehicle').press('Enter');
++  for (let trial = 0; trial < 9; trial++) {
++    await reopened.locator('#partQuery').fill('سپر');
++    await reopened.locator('#partQuery').press('Enter');
++    await expect(reopened.locator('#cards .resultCard').first()).toBeVisible();
++    await settleLayout(reopened);
++  }
++  const searchPerformance = await performanceMeasurements(reopened);
++  const latency = [
++    { label: 'exact logistics code', query: '111100001AA-01', mode: 'global', proposedWarmP95TargetMs: 150 },
++    { label: 'part phrase', query: 'واتر پمپ', mode: 'global', proposedWarmP95TargetMs: 300 },
++    { label: 'broad three-character code', query: '150', mode: 'global', proposedWarmP95TargetMs: null },
++    { label: 'vehicle-filtered part', query: 'سپر', mode: 'vehiclePart', proposedWarmP95TargetMs: 300 },
++  ].map(({ label, query, mode, proposedWarmP95TargetMs }) => {
++    const measurements = searchPerformance.search.filter(sample => sample.query === query && sample.mode === mode);
++    expect(measurements).toHaveLength(9);
++    const warm = measurements.slice(2).map(sample => sample.durationMs).sort((a, b) => a - b);
++    const p95Ms = warm[Math.ceil(warm.length * .95) - 1]!;
++    return { label, query, mode, warmupSamples: measurements.slice(0, 2), warmSamplesMs: warm, p95Ms, proposedWarmP95TargetMs, meetsProposedTarget: proposedWarmP95TargetMs === null ? null : p95Ms <= proposedWarmP95TargetMs };
++  });
++  await evidence(testInfo, 'local-performance', {
++    measurementScope: 'actual keydown-to-result DOM update using performance.now and MutationObserver; includes local Worker work and UI rendering, excludes Playwright transport time; seven warm sequential samples after two warmups per query',
++    environment: 'single shared macOS host; no controlled mobile/low-end hardware or before/after performance claim',
++    browserVersion: browser.version(), latency, installationPerformance, searchPerformance,
++  });
++  await codeSearch(reopened, '0CF25BE-1500011BA');
++  await reopened.setViewportSize({ width: 390, height: 844 });
++  await screenshot(reopened, testInfo, 'offline-search-390');
++  await evidence(testInfo, 'offline', {
++    browserVersion: browser.version(), installMs, storage, rowCount: 36569,
++    exactCode: '0CF25BE-1500011BA', onlineOfflineResultCount: 11,
++    searchParity: true, shellReopenedWithoutNetwork: true,
++    relaunchScope: 'page closed and new page opened in the same live browser context; full browser process restart is covered separately by existing Chromium tests',
++    errors, consoleProblems,
++  });
++  expect(errors).toEqual([]);
++  expect(consoleProblems).toEqual([]);
++});
+--- baseline/tests/release/cross-tab.spec.ts
++++ current/tests/release/cross-tab.spec.ts
+@@ -0,0 +1,104 @@
++import { createHash } from 'node:crypto';
++import { expect, test, type BrowserContext, type Page } from '@playwright/test';
++import { mkdir, writeFile } from 'node:fs/promises';
++
++const oldVersion = `${'c'.repeat(64)}-s1-n1-r1`;
++const newVersion = `${'d'.repeat(64)}-s1-n1-r1`;
++const tables = ['partNames', 'parts', 'entries', 'models', 'entryModels', 'friendlyLabels', 'aliases', 'replacements', 'vehicleOptions', 'optionModels', 'presetFamilies', 'presetFamilyOptions', 'searchDocuments', 'entrySearchDocuments'] as const;
++
++function bundle(version: string, logistics: string, price: string) {
++  const sourceSha256 = 'f'.repeat(64);
++  const rows: Partial<Record<typeof tables[number], Array<Record<string, unknown>>>> = {
++    partNames: [{ version, id: 1, nameRaw: 'Release synthetic fixture', nameNorm: 'release synthetic fixture', sortRank: 0 }],
++    parts: [{ version, id: 1, nameId: 1, techRaw: 'RELEASE-CODE', techNorm: 'release-code', sortRank: 0, familyRoot: 'RELEASE-CODE', familyVariant: 'BASE' }],
++    entries: [{ version, id: 1, partId: 1, logRaw: logistics, logNorm: logistics.toLowerCase(), basePrice: price, replacementRaw: '', sourceRowOrdinal: 1, sourceRowSha256: sourceSha256, suffix01Rank: 0 }],
++    searchDocuments: [{ version, id: 1, kind: 'tech', rawValue: 'RELEASE-CODE', normalizedValue: 'release-code' }],
++    entrySearchDocuments: [{ version, entryId: 1, docId: 1 }],
++  };
++  const bodies = new Map<string, Buffer>();
++  const chunks = tables.flatMap(table => {
++    const records = rows[table] ?? [];
++    if (!records.length) return [];
++    const body = Buffer.from(`${records.map(record => JSON.stringify(record)).join('\n')}\n`);
++    const sha256 = createHash('sha256').update(body).digest('hex');
++    const id = `${table}-00000-${sha256.slice(0, 16)}`;
++    bodies.set(id, body);
++    return [{ id, path: `/api/v1/catalog/${version}/snapshot/chunks/${id}`, table, ordinal: 0, recordCount: records.length, decodedBytes: body.length, sha256 }];
++  });
++  const counts = Object.fromEntries(tables.map(table => [table, rows[table]?.length ?? 0]));
++  const base = { catalogVersion: version, schemaVersion: 1, normalizationVersion: 1, rulesVersion: 1, indexFormatVersion: 1, sourceSha256, currencyUnit: 'UNKNOWN', priceEffectiveAt: null, createdAt: '2026-10-28T00:00:00.000Z', rowCount: 1 };
++  return {
++    active: { ...base, publishedAt: base.createdAt, counts: { ...counts, rows: 1 }, snapshotManifestPath: `/api/v1/catalog/${version}/snapshot/manifest` },
++    snapshot: { ...base, counts, totalDecodedBytes: chunks.reduce((sum, chunk) => sum + chunk.decodedBytes, 0), chunks },
++    bodies,
++  };
++}
++
++async function routes(context: BrowserContext, active: () => ReturnType<typeof bundle>, bundles: ReturnType<typeof bundle>[]): Promise<void> {
++  await context.route('**/api/v1/**', async route => {
++    const url = new URL(route.request().url());
++    if (url.pathname === '/api/v1/catalog/manifest') {
++      await route.fulfill({ json: active().active, headers: { etag: `"${active().active.catalogVersion}"` } });
++      return;
++    }
++    const selected = bundles.find(item => url.pathname.includes(item.snapshot.catalogVersion));
++    if (url.pathname.endsWith('/snapshot/manifest') && selected) { await route.fulfill({ json: selected.snapshot }); return; }
++    if (url.pathname.includes('/snapshot/chunks/') && selected) {
++      const body = selected.bodies.get(url.pathname.split('/').at(-1)!);
++      if (!body) { await route.abort(); return; }
++      await route.fulfill({ body, contentType: 'application/x-ndjson' }); return;
++    }
++    if (url.pathname === '/api/v1/vehicles' || url.pathname === '/api/v1/presets') { await route.fulfill({ json: [] }); return; }
++    if (url.pathname === '/api/v1/price-history/summary') {
++      await route.fulfill({ json: { catalogVersion: url.searchParams.get('version'), revision: 0, items: [] } }); return;
++    }
++    await route.continue();
++  });
++}
++
++async function install(page: Page, version: string): Promise<void> {
++  if (!await page.locator('#catalogueInfo').evaluate(element => (element as HTMLDetailsElement).open)) await page.locator('#catalogueInfo summary').click();
++  await page.locator('#catalogueUpdateButton').click();
++  await expect(page.locator('#catalogueStatusText')).toHaveAttribute('data-state', 'ready');
++  await expect(page.locator('#catalogueVersion')).toContainText(version);
++}
++
++for (const notification of ['broadcast', 'focus', 'visibility'] as const) {
++  test(`another tab activation refreshes the local version via ${notification} and clears stale catalogue rows`, async ({ context }, testInfo) => {
++    if (notification !== 'broadcast') await context.addInitScript(() => { Object.defineProperty(window, 'BroadcastChannel', { value: undefined }); });
++    const previous = bundle(oldVersion, 'TEST-OLD-LOG', '10');
++    const next = bundle(newVersion, 'TEST-NEW-LOG', '20');
++    let active = previous;
++    await routes(context, () => active, [previous, next]);
++    const first = await context.newPage();
++    await first.goto('/app/');
++    await expect(first.locator('#catalogueStatusText')).toHaveAttribute('data-state', 'online');
++    await install(first, oldVersion);
++    await first.locator('#codeTab').click();
++    await first.locator('#codeQuery').fill('RELEASE-CODE');
++    await first.locator('#codeQuery').press('Enter');
++    await expect(first.locator('#cards .resultCard')).toContainText('TEST-OLD-LOG');
++    const second = await context.newPage();
++    await second.goto('/app/');
++    await expect(second.locator('#catalogueVersion')).toContainText(oldVersion);
++    active = next;
++    await install(second, newVersion);
++    if (notification === 'focus') await first.evaluate(() => window.dispatchEvent(new Event('focus')));
++    if (notification === 'visibility') {
++      await first.evaluate(() => { Object.defineProperty(document, 'visibilityState', { value: 'visible' }); document.dispatchEvent(new Event('visibilitychange')); });
++    }
++    await expect(first.locator('#catalogueVersion')).toContainText(newVersion);
++    await expect(first.locator('#cards .resultCard')).toHaveCount(0);
++    await expect(first.locator('#codeQuery')).toHaveValue('RELEASE-CODE');
++    await first.locator('#codeQuery').press('Enter');
++    await expect(first.locator('#cards .resultCard')).toContainText('TEST-NEW-LOG');
++    await expect(first.locator('#cards .resultCard')).not.toContainText('TEST-OLD-LOG');
++    await mkdir('reports/release-2026-10-28/browser', { recursive: true });
++    await writeFile(`reports/release-2026-10-28/browser/${testInfo.project.name}-cross-tab-${notification}.json`, `${JSON.stringify({
++      status: 'passed', notification, oldVersion, newVersion, rowsPerFixture: 1,
++      syntheticFixture: true, catalogueWritten: 'isolated browser IndexedDB only',
++      staleRowsCleared: true, queryTextPreserved: true, freshSearchUsesNewVersion: true,
++      notificationScope: notification === 'broadcast' ? 'real installer BroadcastChannel notification' : 'BroadcastChannel disabled in window; actual event handler exercised by synthetic lifecycle event',
++    }, null, 2)}\n`);
++  });
++}
+--- baseline/tests/release/history-version.spec.ts
++++ current/tests/release/history-version.spec.ts
+@@ -0,0 +1,89 @@
++import { expect, test } from '@playwright/test';
++import { mkdir, writeFile } from 'node:fs/promises';
++import type { OperationalDocument } from '../../packages/domain/src/documents.js';
++import type { PriceHistorySummaryDto } from '../../packages/contracts/src/price-history.js';
++
++const retainedVersion = `${'b'.repeat(64)}-s1-n1-r1`;
++
++test('retained document history cannot recolor a current catalogue entry with the same numeric ID', async ({ page }, testInfo) => {
++  await page.route('**/api/v1/price-history/summary?*', async route => {
++    const url = new URL(route.request().url());
++    const version = url.searchParams.get('version')!;
++    const retained = version === retainedVersion;
++    const dto: PriceHistorySummaryDto = {
++      catalogVersion: version, revision: 1,
++      settings: { strategy: 'threshold', mediumBps: 1000, highBps: 3000, mediumPercentileBps: 3333, highPercentileBps: 6667, minimumObservations: 2 },
++      items: (url.searchParams.get('ids') ?? '').split(',').map(Number).map(entryId => ({
++        entryId, earliestPrice: retained ? '100' : null, latestPrice: retained ? '200' : null,
++        absoluteChange: retained ? '100' : null, cumulativeChangeBps: retained ? '10000' : null,
++        previousChangeBps: retained ? '10000' : null, observationCount: retained ? 2 : 0,
++        evidenceCount: retained ? 2 : 0, undatedCount: 0, conflictDateCount: 0, ambiguousCount: 0,
++        minPrice: retained ? '100' : null, maxPrice: retained ? '200' : null,
++        firstDate: retained ? '2025-01-01' : null, lastDate: retained ? '2025-02-01' : null,
++        currencyUnit: 'IRR', percentileBps: null,
++        neutralReason: retained ? null : 'insufficient_history', classification: retained ? 'high' : 'neutral',
++      })),
++    };
++    await route.fulfill({ json: dto });
++  });
++  await page.goto('/app/');
++  await expect(page.locator('#catalogueStatusText')).toHaveAttribute('data-state', 'online');
++  const response = await page.request.get('/api/v1/catalog/manifest');
++  const currentVersion = (await response.json() as { catalogVersion: string }).catalogVersion;
++  await page.locator('#codeTab').click();
++  await page.locator('#codeQuery').fill('111100001AA');
++  await page.locator('#codeQuery').press('Enter');
++  const card = page.locator('#cards .resultCard').first();
++  const currentBadge = card.locator('.historyBadge');
++  await expect(currentBadge).toHaveAttribute('aria-label', /سابقه ناکافی/);
++  const entryId = Number(await card.getAttribute('data-entry-id'));
++  await card.locator('.packageAction').click();
++  await expect(page.locator('#toast')).toContainText('افزوده شد');
++
++  // A saved document keeps its historical version and can outlive a catalogue update.
++  // Only this isolated test browser's mutable draft is changed; no catalogue or company history is written.
++  await page.evaluate(oldVersion => new Promise<void>((resolve, reject) => {
++    const request = indexedDB.open('PartAvarOperations');
++    request.onerror = () => reject(request.error);
++    request.onsuccess = () => {
++      const database = request.result;
++      const transaction = database.transaction('documents', 'readwrite');
++      const store = transaction.objectStore('documents');
++      const draft = store.get('draft-package');
++      draft.onsuccess = () => {
++        const document = draft.result as OperationalDocument;
++        if (!document?.lines[0]) { transaction.abort(); return; }
++        document.lines[0].catalogueVersion = oldVersion;
++        document.lines[0].partName = 'TEST retained-version snapshot; not company history';
++        document.lines[0].logisticsCode = 'TEST-OLD-LOGISTICS';
++        document.sourceVersions = [oldVersion];
++        store.put(document);
++      };
++      transaction.oncomplete = () => { database.close(); resolve(); };
++      transaction.onerror = () => { database.close(); reject(transaction.error); };
++      transaction.onabort = () => { database.close(); reject(transaction.error ?? new Error('No package draft found')); };
++    };
++  }), retainedVersion);
++  await page.locator('[data-area="packages"]').click();
++  const retainedBadge = page.locator('#documentRoot .docLine .historyBadge').first();
++  await expect(retainedBadge).toHaveClass(/\bhigh\b/);
++  await expect(retainedBadge).toHaveAttribute('data-history-version', retainedVersion);
++  await page.locator('[data-area="search"]').click();
++  await expect(card).toBeVisible();
++  await expect(currentBadge).toHaveClass(/\bneutral\b/);
++  await expect(currentBadge).toHaveAttribute('data-history-version', currentVersion);
++
++  // Lazy family cards use the same renderer and must carry the page's exact catalogue version.
++  await card.locator('.familySearchButton').click();
++  await expect(page.locator('.variantToggle').first()).toBeVisible();
++  await page.locator('.variantToggle').first().click();
++  const familyBadge = page.locator('.variantEntries .historyBadge').first();
++  await expect(familyBadge).toBeVisible();
++  await expect(familyBadge).toHaveAttribute('data-history-version', currentVersion);
++  await mkdir('reports/release-2026-10-28/browser', { recursive: true });
++  await writeFile(`reports/release-2026-10-28/browser/${testInfo.project.name}-history-version.json`, `${JSON.stringify({
++    status: 'passed', syntheticFixture: true, companyHistoryWritten: false,
++    currentVersion, retainedVersion, reusedEntryId: entryId,
++    retainedDocumentClassification: 'high', currentCatalogueClassification: 'neutral', familyCardVersionPinned: true,
++  }, null, 2)}\n`);
++});

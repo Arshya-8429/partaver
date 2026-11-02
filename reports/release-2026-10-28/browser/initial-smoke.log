@@ -1,0 +1,198 @@
+[WebServer] (node:3215) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ tsx src/server.ts
+[WebServer] (node:3230) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:3236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:3236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:3239) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ vite preview --host 127.0.0.1 -- --port 4173
+[WebServer] (node:3254) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:3269) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] {"requestId":"req-h","code":20}
+  ✘  1 [chromium] › tests/release/browser.spec.ts:51:1 › online catalogue, keyboard selection, details and documents preserve exact identities (3.2s)
+(node:3308) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [chromium] › tests/release/browser.spec.ts:212:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content (20.3s)
+(node:3434) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] {"requestId":"req-13","code":20}
+  ✓  3 [firefox] › tests/release/browser.spec.ts:51:1 › online catalogue, keyboard selection, details and documents preserve exact identities (2.8s)
+  ✘  4 [firefox] › tests/release/browser.spec.ts:212:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content (20.3s)
+(node:3482) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] {"requestId":"req-1q","code":20}
+  ✓  5 [webkit] › tests/release/browser.spec.ts:51:1 › online catalogue, keyboard selection, details and documents preserve exact identities (3.1s)
+  ✘  6 [webkit] › tests/release/browser.spec.ts:212:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content (20.3s)
+
+
+  1) [chromium] › tests/release/browser.spec.ts:51:1 › online catalogue, keyboard selection, details and documents preserve exact identities 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    + ]
+
+      110 |   expect(chunks).toEqual([]);
+      111 |   expect(errors).toEqual([]);
+    > 112 |   expect(consoleProblems).toEqual([]);
+          |                           ^
+      113 |   await evidence(testInfo, 'online-smoke', {
+      114 |     browserVersion: browser.version(), logistics, errors, consoleProblems,
+      115 |     catalogueChunksAtStartupAndOnlineSearch: chunks.length,
+        at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:112:27
+
+    attachment #1: invoice-print-preview (image/png) ───────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-online-catalogue-k-71220-s-preserve-exact-identities-chromium/attachments/invoice-print-preview-5ca4b4126fd7d65f53d843a2c96e556859072ae4.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-online-catalogue-k-71220-s-preserve-exact-identities-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/release-2026-10-28/browser/test-results/browser-online-catalogue-k-71220-s-preserve-exact-identities-chromium/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-online-catalogue-k-71220-s-preserve-exact-identities-chromium/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace reports/release-2026-10-28/browser/test-results/browser-online-catalogue-k-71220-s-preserve-exact-identities-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests/release/browser.spec.ts:212:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content 
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator:  locator('#workspace')
+    Expected: focused
+    Received: inactive
+    Timeout:  20000ms
+
+    Call log:
+      - Expect "toBeFocused" locator('#workspace') with timeout 20000ms
+      - waiting for locator('#workspace')
+        43 × locator resolved to <main id="workspace">…</main>
+           - unexpected value "inactive"
+
+
+      216 |   await expect(page.locator('.skipLink')).toBeFocused();
+      217 |   await page.keyboard.press('Enter');
+    > 218 |   await expect(page.locator('#workspace')).toBeFocused();
+          |                                            ^
+      219 |   await page.locator('#partTab').focus();
+      220 |   await page.keyboard.press('ArrowLeft');
+      221 |   await expect(page.locator('#codeTab')).toBeFocused();
+        at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:218:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [firefox] › tests/release/browser.spec.ts:212:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content 
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator:  locator('#workspace')
+    Expected: focused
+    Received: inactive
+    Timeout:  20000ms
+
+    Call log:
+      - Expect "toBeFocused" locator('#workspace') with timeout 20000ms
+      - waiting for locator('#workspace')
+        43 × locator resolved to <main id="workspace">…</main>
+           - unexpected value "inactive"
+
+
+      216 |   await expect(page.locator('.skipLink')).toBeFocused();
+      217 |   await page.keyboard.press('Enter');
+    > 218 |   await expect(page.locator('#workspace')).toBeFocused();
+          |                                            ^
+      219 |   await page.locator('#partTab').focus();
+      220 |   await page.keyboard.press('ArrowLeft');
+      221 |   await expect(page.locator('#codeTab')).toBeFocused();
+        at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:218:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [webkit] › tests/release/browser.spec.ts:212:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content 
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator:  locator('.skipLink')
+    Expected: focused
+    Received: inactive
+    Timeout:  20000ms
+
+    Call log:
+      - Expect "toBeFocused" locator('.skipLink') with timeout 20000ms
+      - waiting for locator('.skipLink')
+        44 × locator resolved to <a class="skipLink" href="#workspace">رفتن به جست‌وجو</a>
+           - unexpected value "inactive"
+
+
+      214 |   await onlineApp(page);
+      215 |   await page.keyboard.press('Tab');
+    > 216 |   await expect(page.locator('.skipLink')).toBeFocused();
+          |                                           ^
+      217 |   await page.keyboard.press('Enter');
+      218 |   await expect(page.locator('#workspace')).toBeFocused();
+      219 |   await page.locator('#partTab').focus();
+        at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:216:43
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-webkit/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-webkit/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4 failed
+    [chromium] › tests/release/browser.spec.ts:51:1 › online catalogue, keyboard selection, details and documents preserve exact identities 
+    [chromium] › tests/release/browser.spec.ts:212:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content 
+    [firefox] › tests/release/browser.spec.ts:212:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content 
+    [webkit] › tests/release/browser.spec.ts:212:1 › app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content 
+  2 passed (1.4m)

@@ -1,0 +1,184 @@
+{
+  "format": "partavar-clean-install-verification-v1",
+  "generatedAt": "2026-10-28T08:23:58.549Z",
+  "runtime": {
+    "nodeVersion": "v24.19.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "packageVersion": "13.0.3",
+    "sqliteVersion": "3.53.4",
+    "trigramRows": 1,
+    "addonFromFreshInstall": true,
+    "addonPath": "/private/var/folders/qc/91mz59vs2qx62xr748kl1r840000gn/T/partavar-clean-install-final-dW5552/release/node_modules/.pnpm/better-sqlite3@13.0.3/node_modules/better-sqlite3/prebuilds/darwin-arm64.node",
+    "sha256": "98e0e8acd01c632fe5615243e1296af0372826f8783b18fc31c506f73c47459c",
+    "compilerUsed": false
+  },
+  "install": {
+    "exitCode": 0,
+    "pnpm": "11.25.0",
+    "frozenLockfile": true,
+    "isolatedNewStore": true,
+    "emptyUserAndGlobalNpmrc": true,
+    "packagesDownloaded": 402,
+    "packagesReused": 0,
+    "implicitNodeGypRan": false,
+    "intentionalBetterSqlite3BuildPolicy": false
+  },
+  "commands": [
+    {
+      "name": "verify",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "name": "typecheck",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "name": "build",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "name": "bundle",
+      "code": 0,
+      "signal": null
+    },
+    {
+      "name": "credentials",
+      "code": 0,
+      "signal": null
+    }
+  ],
+  "credentialFilesMode": "0600",
+  "realOperatorCredentialsUsed": false,
+  "workspaceSourceOrDistMutated": false,
+  "publicNetworkBind": false,
+  "origin": "http://127.0.0.1:8791",
+  "checks": [
+    {
+      "name": "isolated backend starts on loopback8791",
+      "passed": true
+    },
+    {
+      "name": "anonymous public homepage",
+      "passed": true,
+      "status": 200
+    },
+    {
+      "name": "production CSP enabled",
+      "passed": true
+    },
+    {
+      "name": "built static JavaScript served",
+      "passed": true,
+      "status": 200
+    },
+    {
+      "name": "authentication required: /app/",
+      "passed": true,
+      "status": 401
+    },
+    {
+      "name": "authentication required: /api/v1/catalog/manifest",
+      "passed": true,
+      "status": 401
+    },
+    {
+      "name": "authentication required: /api/v1/search",
+      "passed": true,
+      "status": 401
+    },
+    {
+      "name": "authentication required: /health/ready",
+      "passed": true,
+      "status": 401
+    },
+    {
+      "name": "authentication required: /sw.js",
+      "passed": true,
+      "status": 401
+    },
+    {
+      "name": "authentication required: /manifest.webmanifest",
+      "passed": true,
+      "status": 401
+    },
+    {
+      "name": "authorized app shell",
+      "passed": true,
+      "status": 200
+    },
+    {
+      "name": "authorized catalogue metadata",
+      "passed": true,
+      "status": 200
+    },
+    {
+      "name": "authorized real search through fresh native worker",
+      "passed": true,
+      "status": 200,
+      "boundedItems": 1
+    },
+    {
+      "name": "anonymous snapshot manifest denied",
+      "passed": true,
+      "status": 401
+    },
+    {
+      "name": "authorized snapshot manifest",
+      "passed": true,
+      "status": 200
+    },
+    {
+      "name": "anonymous snapshot chunk denied",
+      "passed": true,
+      "status": 401
+    },
+    {
+      "name": "authorized immutable chunk exact SHA256",
+      "passed": true,
+      "status": 200
+    },
+    {
+      "name": "authenticated catalogue readiness",
+      "passed": true,
+      "status": 200
+    },
+    {
+      "name": "cross-origin rejected",
+      "passed": true,
+      "status": 403
+    },
+    {
+      "name": "private file unreachable: /private-data/sqlite/catalogue.db",
+      "passed": true,
+      "status": 404
+    },
+    {
+      "name": "private file unreachable: /.env",
+      "passed": true,
+      "status": 404
+    },
+    {
+      "name": "private file unreachable: /package.json",
+      "passed": true,
+      "status": 404
+    },
+    {
+      "name": "graceful SIGTERM exits0",
+      "passed": true,
+      "code": 0,
+      "signal": null
+    }
+  ],
+  "passedChecks": 23,
+  "gracefulTermination": {
+    "code": 0,
+    "signal": null
+  },
+  "productionPlatformCoverage": "macOS arm64 only; Linux/systemd deployment still requires target-host validation",
+  "temporaryResourcesRemoved": true,
+  "sourceSnapshotNote": "Disposable candidate preceded the final UI entry.ts width-guard refinement; dependency/native/backend/worker relocatability and production HTTP checks are proven for this candidate. Final UI build/browser results are recorded separately."
+}

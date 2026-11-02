@@ -1,0 +1,638 @@
+{
+  "config": {
+    "argv": [
+      "/Users/barmana/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/Users/barmana/Documents/E/behrad/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      "playwright.release.config.ts",
+      "--grep",
+      "online catalogue|app keyboard"
+    ],
+    "configFile": "/Users/barmana/Documents/E/behrad/playwright.release.config.ts",
+    "rootDir": "/Users/barmana/Documents/E/behrad/tests/release",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "snapshotDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "serviceWorkers": "allow",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "launchOptions": {
+            "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "snapshotDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "serviceWorkers": "allow",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit",
+        "testDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "snapshotDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "serviceWorkers": "allow",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1792,
+            "height": 1120
+          },
+          "deviceScaleFactor": 2,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/release-2026-10-28/browser/results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/release-2026-10-28/browser/html",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "browser.spec.ts",
+      "file": "browser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "online catalogue, keyboard selection, details and documents preserve exact identities",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3178,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Failed to load resource: the server responded with a status of 404 (Not Found)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Failed to load resource: the server responded with a status of 404 (Not Found)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:112:27",
+                    "location": {
+                      "file": "/Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts",
+                      "column": 27,
+                      "line": 112
+                    },
+                    "snippet": "  110 |   expect(chunks).toEqual([]);\n  111 |   expect(errors).toEqual([]);\n> 112 |   expect(consoleProblems).toEqual([]);\n      |                           ^\n  113 |   await evidence(testInfo, 'online-smoke', {\n  114 |     browserVersion: browser.version(), logistics, errors, consoleProblems,\n  115 |     catalogueChunksAtStartupAndOnlineSearch: chunks.length,"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts",
+                        "column": 27,
+                        "line": 112
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Failed to load resource: the server responded with a status of 404 (Not Found)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  110 |   expect(chunks).toEqual([]);\n  111 |   expect(errors).toEqual([]);\n> 112 |   expect(consoleProblems).toEqual([]);\n      |                           ^\n  113 |   await evidence(testInfo, 'online-smoke', {\n  114 |     browserVersion: browser.version(), logistics, errors, consoleProblems,\n  115 |     catalogueChunksAtStartupAndOnlineSearch: chunks.length,\n    at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:112:27"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:15:53.548Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "invoice-print-preview",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results/browser-online-catalogue-k-71220-s-preserve-exact-identities-chromium/attachments/invoice-print-preview-5ca4b4126fd7d65f53d843a2c96e556859072ae4.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results/browser-online-catalogue-k-71220-s-preserve-exact-identities-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results/browser-online-catalogue-k-71220-s-preserve-exact-identities-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results/browser-online-catalogue-k-71220-s-preserve-exact-identities-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts",
+                    "column": 27,
+                    "line": 112
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-1532f87aa0bcba8242e8",
+          "file": "browser.spec.ts",
+          "line": 51,
+          "column": 1
+        },
+        {
+          "title": "app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 20285,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#workspace')\nExpected: focused\nReceived: inactive\nTimeout:  20000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" locator('#workspace') with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('#workspace')\u001b[22m\n\u001b[2m    43 × locator resolved to <main id=\"workspace\">…</main>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#workspace')\nExpected: focused\nReceived: inactive\nTimeout:  20000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" locator('#workspace') with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('#workspace')\u001b[22m\n\u001b[2m    43 × locator resolved to <main id=\"workspace\">…</main>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n    at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:218:44",
+                    "location": {
+                      "file": "/Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts",
+                      "column": 44,
+                      "line": 218
+                    },
+                    "snippet": "  216 |   await expect(page.locator('.skipLink')).toBeFocused();\n  217 |   await page.keyboard.press('Enter');\n> 218 |   await expect(page.locator('#workspace')).toBeFocused();\n      |                                            ^\n  219 |   await page.locator('#partTab').focus();\n  220 |   await page.keyboard.press('ArrowLeft');\n  221 |   await expect(page.locator('#codeTab')).toBeFocused();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts",
+                        "column": 44,
+                        "line": 218
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#workspace')\nExpected: focused\nReceived: inactive\nTimeout:  20000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" locator('#workspace') with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('#workspace')\u001b[22m\n\u001b[2m    43 × locator resolved to <main id=\"workspace\">…</main>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  216 |   await expect(page.locator('.skipLink')).toBeFocused();\n  217 |   await page.keyboard.press('Enter');\n> 218 |   await expect(page.locator('#workspace')).toBeFocused();\n      |                                            ^\n  219 |   await page.locator('#partTab').focus();\n  220 |   await page.keyboard.press('ArrowLeft');\n  221 |   await expect(page.locator('#codeTab')).toBeFocused();\n    at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:218:44"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:16:03.007Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts",
+                    "column": 44,
+                    "line": 218
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-04f4909f20647d7f6f57",
+          "file": "browser.spec.ts",
+          "line": 212,
+          "column": 1
+        },
+        {
+          "title": "online catalogue, keyboard selection, details and documents preserve exact identities",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2753,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:16:23.888Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "invoice-print-preview",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results/browser-online-catalogue-k-71220-s-preserve-exact-identities-firefox/attachments/invoice-print-preview-4d692b30e29992133b5461d712ce0cf45a5c4ded.png"
+                    },
+                    {
+                      "name": "online-smoke",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results/browser-online-catalogue-k-71220-s-preserve-exact-identities-firefox/attachments/online-smoke-f32870c96cdf2f6e28702d1f2bc518796e1e86b5.json"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-f0526dcb0faccbf6f5ad",
+          "file": "browser.spec.ts",
+          "line": 51,
+          "column": 1
+        },
+        {
+          "title": "app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 20340,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#workspace')\nExpected: focused\nReceived: inactive\nTimeout:  20000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" locator('#workspace') with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('#workspace')\u001b[22m\n\u001b[2m    43 × locator resolved to <main id=\"workspace\">…</main>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#workspace')\nExpected: focused\nReceived: inactive\nTimeout:  20000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" locator('#workspace') with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('#workspace')\u001b[22m\n\u001b[2m    43 × locator resolved to <main id=\"workspace\">…</main>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n    at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:218:44",
+                    "location": {
+                      "file": "/Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts",
+                      "column": 44,
+                      "line": 218
+                    },
+                    "snippet": "  216 |   await expect(page.locator('.skipLink')).toBeFocused();\n  217 |   await page.keyboard.press('Enter');\n> 218 |   await expect(page.locator('#workspace')).toBeFocused();\n      |                                            ^\n  219 |   await page.locator('#partTab').focus();\n  220 |   await page.keyboard.press('ArrowLeft');\n  221 |   await expect(page.locator('#codeTab')).toBeFocused();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts",
+                        "column": 44,
+                        "line": 218
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#workspace')\nExpected: focused\nReceived: inactive\nTimeout:  20000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" locator('#workspace') with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('#workspace')\u001b[22m\n\u001b[2m    43 × locator resolved to <main id=\"workspace\">…</main>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  216 |   await expect(page.locator('.skipLink')).toBeFocused();\n  217 |   await page.keyboard.press('Enter');\n> 218 |   await expect(page.locator('#workspace')).toBeFocused();\n      |                                            ^\n  219 |   await page.locator('#partTab').focus();\n  220 |   await page.keyboard.press('ArrowLeft');\n  221 |   await expect(page.locator('#codeTab')).toBeFocused();\n    at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:218:44"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:16:28.373Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-firefox/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts",
+                    "column": 44,
+                    "line": 218
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-5c02f36e90bf6e9a0c93",
+          "file": "browser.spec.ts",
+          "line": 212,
+          "column": 1
+        },
+        {
+          "title": "online catalogue, keyboard selection, details and documents preserve exact identities",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3107,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:16:49.211Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "invoice-print-preview",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results/browser-online-catalogue-k-71220-s-preserve-exact-identities-webkit/attachments/invoice-print-preview-9f41a29647d628db4d62299784c6becaf873f82f.png"
+                    },
+                    {
+                      "name": "online-smoke",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results/browser-online-catalogue-k-71220-s-preserve-exact-identities-webkit/attachments/online-smoke-d3c19cb98d518602b2c93b5d2ff180df99ffd9eb.json"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-c0d964f49e279ed157c4",
+          "file": "browser.spec.ts",
+          "line": 51,
+          "column": 1
+        },
+        {
+          "title": "app keyboard, touch targets, reduced motion and 200 percent layout preserve usable content",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 20288,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.skipLink')\nExpected: focused\nReceived: inactive\nTimeout:  20000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" locator('.skipLink') with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('.skipLink')\u001b[22m\n\u001b[2m    44 × locator resolved to <a class=\"skipLink\" href=\"#workspace\">رفتن به جست‌وجو</a>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.skipLink')\nExpected: focused\nReceived: inactive\nTimeout:  20000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" locator('.skipLink') with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('.skipLink')\u001b[22m\n\u001b[2m    44 × locator resolved to <a class=\"skipLink\" href=\"#workspace\">رفتن به جست‌وجو</a>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n    at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:216:43",
+                    "location": {
+                      "file": "/Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts",
+                      "column": 43,
+                      "line": 216
+                    },
+                    "snippet": "  214 |   await onlineApp(page);\n  215 |   await page.keyboard.press('Tab');\n> 216 |   await expect(page.locator('.skipLink')).toBeFocused();\n      |                                           ^\n  217 |   await page.keyboard.press('Enter');\n  218 |   await expect(page.locator('#workspace')).toBeFocused();\n  219 |   await page.locator('#partTab').focus();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts",
+                        "column": 43,
+                        "line": 216
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.skipLink')\nExpected: focused\nReceived: inactive\nTimeout:  20000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" locator('.skipLink') with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('.skipLink')\u001b[22m\n\u001b[2m    44 × locator resolved to <a class=\"skipLink\" href=\"#workspace\">رفتن به جست‌وجو</a>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  214 |   await onlineApp(page);\n  215 |   await page.keyboard.press('Tab');\n> 216 |   await expect(page.locator('.skipLink')).toBeFocused();\n      |                                           ^\n  217 |   await page.keyboard.press('Enter');\n  218 |   await expect(page.locator('#workspace')).toBeFocused();\n  219 |   await page.locator('#partTab').focus();\n    at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:216:43"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T07:16:57.763Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-webkit/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-webkit/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/test-results/browser-app-keyboard-touch-4fb3a-out-preserve-usable-content-webkit/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts",
+                    "column": 43,
+                    "line": 216
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-2b327016fbb59b27a120",
+          "file": "browser.spec.ts",
+          "line": 212,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T07:15:51.444Z",
+    "duration": 86664.16200000001,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

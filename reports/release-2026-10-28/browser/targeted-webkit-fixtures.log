@@ -1,0 +1,11 @@
+
+Running 4 tests using 1 worker
+
+(node:7914) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [webkit] › tests/release/cross-tab.spec.ts:73:3 › another tab activation refreshes the local version via broadcast and clears stale catalogue rows (1.1s)
+  ✓  2 [webkit] › tests/release/cross-tab.spec.ts:73:3 › another tab activation refreshes the local version via focus and clears stale catalogue rows (926ms)
+  ✓  3 [webkit] › tests/release/cross-tab.spec.ts:73:3 › another tab activation refreshes the local version via visibility and clears stale catalogue rows (875ms)
+  ✓  4 [webkit] › tests/release/history-version.spec.ts:9:1 › retained document history cannot recolor a current catalogue entry with the same numeric ID (700ms)
+
+  4 passed (4.1s)

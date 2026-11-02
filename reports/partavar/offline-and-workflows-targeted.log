@@ -1,0 +1,65 @@
+[WebServer] (node:4384) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ tsx src/server.ts
+[WebServer] (node:4400) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:4406) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:4406) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:4407) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ vite preview --host 127.0.0.1 -- --port 4173
+[WebServer] (node:4422) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 2 workers
+
+(node:4428) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:4429) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › tests/e2e/offline-faults.spec.ts:243:1 › a corrupt snapshot chunk fails hash verification and leaves the old catalogue active (579ms)
+  ✓  2 [chromium] › tests/e2e/partavar-workflows.spec.ts:5:1 › PartAvar application separates public site and supports custom mobile part suggestions (1.2s)
+  ✓  3 [chromium] › tests/e2e/offline-faults.spec.ts:277:1 › two tabs share one update lease while the existing version stays searchable (880ms)
+[WebServer] {"requestId":"req-n","code":20}
+  ✓  4 [chromium] › tests/e2e/partavar-workflows.spec.ts:27:1 › package edits keep exact logistics and manual price through saved history, invoice, XLSX and A4 print (1.0s)
+  ✓  5 [chromium] › tests/e2e/offline-faults.spec.ts:325:1 › browser close during staging relaunches from the same profile and recovers the update (31.5s)
+  ✘  6 [chromium] › tests/e2e/offline-faults.spec.ts:417:1 › low browser quota blocks an update before staging and keeps the old offline version (393ms)
+
+
+  1) [chromium] › tests/e2e/offline-faults.spec.ts:417:1 › low browser quota blocks an update before staging and keeps the old offline version 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 10737565696
+
+      430 |     await cdp.send('Storage.overrideQuotaForOrigin', { origin: new URL(appUrl).origin, quotaSize: 1 });
+      431 |     const quota = await page.evaluate(async () => navigator.storage.estimate());
+    > 432 |     expect(quota.quota).toBe(1);
+          |                         ^
+      433 |
+      434 |     await page.locator('#catalogueUpdateButton').click();
+      435 |     await expect(page.locator('#catalogueStatusMeta')).toContainText('فضای کافی', { timeout: 15_000 });
+        at /Users/barmana/Documents/E/behrad/tests/e2e/offline-faults.spec.ts:432:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/offline-faults-low-browser-f554c-eps-the-old-offline-version-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/offline-faults-low-browser-f554c-eps-the-old-offline-version-chromium/error-context.md
+
+    Error Context: test-results/offline-faults-low-browser-f554c-eps-the-old-offline-version-chromium/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/offline-faults-low-browser-f554c-eps-the-old-offline-version-chromium/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/offline-faults-low-browser-f554c-eps-the-old-offline-version-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › tests/e2e/offline-faults.spec.ts:417:1 › low browser quota blocks an update before staging and keeps the old offline version 
+  5 passed (35.3s)

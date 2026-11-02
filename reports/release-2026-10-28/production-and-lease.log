@@ -1,0 +1,17 @@
+
+Running 4 tests using 1 worker
+
+(node:6021) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/4] [chromium] › tests/e2e/production-runtime.spec.ts:27:1 › production serves anonymous website but denies app and catalogue without credentials
+[chromium] › tests/e2e/production-runtime.spec.ts:27:1 › production serves anonymous website but denies app and catalogue without credentials
+(node:6021) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[2/4] [chromium] › tests/e2e/production-runtime.spec.ts:37:1 › authenticated same-origin app runs Worker search, documents and shell under production CSP
+[3/4] [chromium] › tests/e2e/production-runtime.spec.ts:63:1 › authenticated snapshots install completely and relaunch without network under CSP
+[4/4] [chromium] › tests/e2e/release-lease-race.spec.ts:6:1 › expired living installer cannot downgrade the version activated by another tab
+  4 passed (27.7s)

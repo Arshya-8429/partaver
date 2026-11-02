@@ -1,0 +1,12 @@
+
+Running 5 tests using 1 worker
+
+(node:3763) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › tests/e2e/redesign.spec.ts:3:1 › compact RTL redesign uses bounded online search and explicit vehicle selection (1.1s)
+  ✓  2 [chromium] › tests/e2e/redesign.spec.ts:57:1 › discarded requests cannot restore cleared or other-mode results (866ms)
+  ✓  3 [chromium] › tests/e2e/redesign.spec.ts:81:1 › copy reports success only on actual writes; themes, keyboard and enlarged layout remain usable (487ms)
+  ✓  4 [chromium] › tests/e2e/redesign.spec.ts:113:1 › vehicle search, normalized digits, empty results and large values retain their real identities (1.0s)
+  ✓  5 [chromium] › tests/e2e/redesign.spec.ts:140:1 › simulated quota exhaustion explains recovery without activating a partial catalogue (345ms)
+
+  5 passed (4.4s)

@@ -1,0 +1,6 @@
+{
+  "fixture": "synthetic disposable browser IndexedDB; production SQLite untouched",
+  "activeVersion": "7777777777777777777777777777777777777777777777777777777777777777-s1-n1-r1",
+  "status": "ready",
+  "failure": null
+}

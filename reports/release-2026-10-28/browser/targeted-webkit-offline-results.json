@@ -1,0 +1,271 @@
+{
+  "config": {
+    "argv": [
+      "/Users/barmana/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/Users/barmana/Documents/E/behrad/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      "playwright.release.config.ts",
+      "--project",
+      "webkit",
+      "--grep",
+      "full catalogue installs",
+      "--reporter=list,json",
+      "--output",
+      "reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts"
+    ],
+    "configFile": "/Users/barmana/Documents/E/behrad/playwright.release.config.ts",
+    "rootDir": "/Users/barmana/Documents/E/behrad/tests/release",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit",
+        "testDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "snapshotDir": "/Users/barmana/Documents/E/behrad/tests/release",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "serviceWorkers": "allow",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1792,
+            "height": 1120
+          },
+          "deviceScaleFactor": 2,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "browser.spec.ts",
+      "file": "browser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "full catalogue installs and offline shell relaunch preserves search parity in real IndexedDB",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 720000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 92306,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 5\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"ResizeObserver loop completed with undelivered notifications.\",\u001b[39m\n\u001b[31m+   \"ResizeObserver loop completed with undelivered notifications.\",\u001b[39m\n\u001b[31m+   \"ResizeObserver loop completed with undelivered notifications.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 5\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"ResizeObserver loop completed with undelivered notifications.\",\u001b[39m\n\u001b[31m+   \"ResizeObserver loop completed with undelivered notifications.\",\u001b[39m\n\u001b[31m+   \"ResizeObserver loop completed with undelivered notifications.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:426:18",
+                    "location": {
+                      "file": "/Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts",
+                      "column": 18,
+                      "line": 426
+                    },
+                    "snippet": "  424 |     errors, consoleProblems,\n  425 |   });\n> 426 |   expect(errors).toEqual([]);\n      |                  ^\n  427 |   expect(consoleProblems).toEqual([]);\n  428 |   } finally {\n  429 |     await context.close();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts",
+                        "column": 18,
+                        "line": 426
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 5\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"ResizeObserver loop completed with undelivered notifications.\",\u001b[39m\n\u001b[31m+   \"ResizeObserver loop completed with undelivered notifications.\",\u001b[39m\n\u001b[31m+   \"ResizeObserver loop completed with undelivered notifications.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  424 |     errors, consoleProblems,\n  425 |   });\n> 426 |   expect(errors).toEqual([]);\n      |                  ^\n  427 |   expect(consoleProblems).toEqual([]);\n  428 |   } finally {\n  429 |     await context.close();\n    at /Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts:426:18"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T08:08:13.592Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "install-outcome",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/attachments/install-outcome-84721109671dfdd4bfe0d33be38f67aeb62d5e49.json"
+                    },
+                    {
+                      "name": "local-performance",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/attachments/local-performance-dee0a3d2f460c73e759eb42d5f7ad323167a4280.json"
+                    },
+                    {
+                      "name": "offline-search-390",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/attachments/offline-search-390-0588732d3a453614c3b6117f6aab2e5250535dbf.png"
+                    },
+                    {
+                      "name": "offline",
+                      "contentType": "application/json",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/attachments/offline-041af86ee6d06d5f41a0a8ee050c739289a783e4.json"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/test-failed-3.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/test-failed-4.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/test-failed-2.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/barmana/Documents/E/behrad/reports/release-2026-10-28/browser/targeted-webkit-offline-artifacts/browser-full-catalogue-ins-469f2-ch-parity-in-real-IndexedDB-webkit/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/barmana/Documents/E/behrad/tests/release/browser.spec.ts",
+                    "column": 18,
+                    "line": 426
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "fbeac1b2decfba2c3acd-0fc33f151a2acccb56c7",
+          "file": "browser.spec.ts",
+          "line": 329,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T08:08:13.093Z",
+    "duration": 93909.229,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

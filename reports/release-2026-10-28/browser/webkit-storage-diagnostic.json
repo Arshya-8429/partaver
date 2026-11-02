@@ -1,0 +1,23 @@
+{
+  "main": {
+    "secureContext": true,
+    "storage": {
+      "quota": 1048576000,
+      "usage": 0
+    },
+    "abortAny": "function",
+    "abortTimeout": "function",
+    "persist": "function"
+  },
+  "worker": {
+    "secureContext": true,
+    "storage": {
+      "quota": 1048576000,
+      "usage": 0
+    },
+    "abortAny": "function",
+    "abortTimeout": "function",
+    "persist": "undefined"
+  },
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15"
+}

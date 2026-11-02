@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-10-27T07:45:41.653Z",
+  "unitTests": 18,
+  "integrationTests": 23,
+  "browserTests": 8,
+  "logs": {
+    "typecheck": "$ tsc --noEmit\n",
+    "lint": "$ eslint apps packages scripts tests --ext .ts\n",
+    "unit": [
+      " Test Files  7 passed (7)",
+      "      Tests  18 passed (18)"
+    ],
+    "integration": [
+      " Test Files  6 passed (6)",
+      "      Tests  23 passed (23)"
+    ],
+    "e2e": [
+      "  8 passed (34.8s)"
+    ]
+  },
+  "sourcePreserved": true,
+  "bundleGzipBytes": 19801,
+  "viewportChecks": 14,
+  "afterScreenshots": 12,
+  "pageErrors": [],
+  "untested": [
+    "physical Android/keyboard/WebView",
+    "screen reader and full WCAG",
+    "forced mid-import crash",
+    "real disk exhaustion and exhaustive multi-tab races"
+  ],
+  "result": "passed within reported scope",
+  "localAndShellVerified": true
+}

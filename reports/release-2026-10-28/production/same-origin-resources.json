@@ -1,0 +1,116 @@
+{
+  "syntheticCredentialsOnly": true,
+  "resources": [
+    {
+      "name": "/assets/index-Cn94n4k4.js",
+      "transferBytes": 3337,
+      "decodedBytes": 3037
+    },
+    {
+      "name": "/assets/index-BhVhxGnm.css",
+      "transferBytes": 18851,
+      "decodedBytes": 18551
+    },
+    {
+      "name": "/assets/app-shell-CrojkZxx.js",
+      "transferBytes": 8467,
+      "decodedBytes": 8167
+    },
+    {
+      "name": "/favicon.svg",
+      "transferBytes": 585,
+      "decodedBytes": 285
+    },
+    {
+      "name": "/assets/theme-mhmZZqUX.js",
+      "transferBytes": 2194,
+      "decodedBytes": 1894
+    },
+    {
+      "name": "/assets/app-bootstrap-CpZm4uWq.js",
+      "transferBytes": 215149,
+      "decodedBytes": 214849
+    },
+    {
+      "name": "/assets/app-bootstrap-CCCwb77U.css",
+      "transferBytes": 17137,
+      "decodedBytes": 16837
+    },
+    {
+      "name": "/assets/catalogue.worker-Cmifh3cz.js",
+      "transferBytes": 130857,
+      "decodedBytes": 130557
+    },
+    {
+      "name": "/api/v1/catalog/manifest",
+      "transferBytes": 1222,
+      "decodedBytes": 922
+    },
+    {
+      "name": "/api/v1/vehicles",
+      "transferBytes": 11605,
+      "decodedBytes": 11305
+    },
+    {
+      "name": "/api/v1/presets",
+      "transferBytes": 7235,
+      "decodedBytes": 6935
+    },
+    {
+      "name": "/api/v1/search",
+      "transferBytes": 1298,
+      "decodedBytes": 998
+    },
+    {
+      "name": "/api/v1/price-history/summary",
+      "transferBytes": 1369,
+      "decodedBytes": 1069
+    },
+    {
+      "name": "/api/v1/search",
+      "transferBytes": 5051,
+      "decodedBytes": 4751
+    },
+    {
+      "name": "/api/v1/search",
+      "transferBytes": 5002,
+      "decodedBytes": 4702
+    },
+    {
+      "name": "/api/v1/price-history/summary",
+      "transferBytes": 965,
+      "decodedBytes": 665
+    },
+    {
+      "name": "/api/v1/search",
+      "transferBytes": 472,
+      "decodedBytes": 172
+    },
+    {
+      "name": "/api/v1/search",
+      "transferBytes": 1786,
+      "decodedBytes": 1486
+    },
+    {
+      "name": "/favicon.svg",
+      "transferBytes": 585,
+      "decodedBytes": 285
+    },
+    {
+      "name": "/api/v1/search",
+      "transferBytes": 472,
+      "decodedBytes": 172
+    },
+    {
+      "name": "/api/v1/search",
+      "transferBytes": 2185,
+      "decodedBytes": 1885
+    },
+    {
+      "name": "/favicon.svg",
+      "transferBytes": 585,
+      "decodedBytes": 285
+    }
+  ],
+  "errors": []
+}

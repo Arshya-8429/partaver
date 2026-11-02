@@ -1,0 +1,358 @@
+{
+  "measurementScope": "actual keydown-to-result DOM update using performance.now and MutationObserver; includes local Worker work and UI rendering, excludes Playwright transport time; seven warm sequential samples after two warmups per query",
+  "environment": "single shared macOS host; no controlled mobile/low-end hardware or before/after performance claim",
+  "browserVersion": "156.0.8078.48",
+  "latency": [
+    {
+      "label": "exact logistics code",
+      "query": "111100001AA-01",
+      "mode": "global",
+      "warmupSamples": [
+        {
+          "query": "111100001AA-01",
+          "mode": "global",
+          "durationMs": 826.3000000002794,
+          "resultCount": "۱ ردیف"
+        },
+        {
+          "query": "111100001AA-01",
+          "mode": "global",
+          "durationMs": 7.2999999998137355,
+          "resultCount": "۱ ردیف"
+        }
+      ],
+      "warmSamplesMs": [
+        6.5,
+        7.800000000279397,
+        8.200000000186265,
+        10.599999999627471,
+        10.900000000372529,
+        11.300000000279397,
+        11.399999999906868
+      ],
+      "p95Ms": 11.399999999906868,
+      "proposedWarmP95TargetMs": 150,
+      "meetsProposedTarget": true
+    },
+    {
+      "label": "part phrase",
+      "query": "واتر پمپ",
+      "mode": "global",
+      "warmupSamples": [
+        {
+          "query": "واتر پمپ",
+          "mode": "global",
+          "durationMs": 1059.5,
+          "resultCount": "۱۴۲ ردیف"
+        },
+        {
+          "query": "واتر پمپ",
+          "mode": "global",
+          "durationMs": 11.199999999720603,
+          "resultCount": "۱۴۲ ردیف"
+        }
+      ],
+      "warmSamplesMs": [
+        7.5,
+        7.599999999627471,
+        7.899999999906868,
+        8.400000000372529,
+        8.699999999720603,
+        9.699999999720603,
+        19.600000000093132
+      ],
+      "p95Ms": 19.600000000093132,
+      "proposedWarmP95TargetMs": 300,
+      "meetsProposedTarget": true
+    },
+    {
+      "label": "broad three-character code",
+      "query": "150",
+      "mode": "global",
+      "warmupSamples": [
+        {
+          "query": "150",
+          "mode": "global",
+          "durationMs": 9181.30000000028,
+          "resultCount": "۱٬۲۷۴ ردیف"
+        },
+        {
+          "query": "150",
+          "mode": "global",
+          "durationMs": 19,
+          "resultCount": "۱٬۲۷۴ ردیف"
+        }
+      ],
+      "warmSamplesMs": [
+        6.900000000372529,
+        7.399999999906868,
+        7.5,
+        7.800000000279397,
+        7.899999999906868,
+        8.299999999813735,
+        9.100000000093132
+      ],
+      "p95Ms": 9.100000000093132,
+      "proposedWarmP95TargetMs": null,
+      "meetsProposedTarget": null
+    },
+    {
+      "label": "vehicle-filtered part",
+      "query": "سپر",
+      "mode": "vehiclePart",
+      "warmupSamples": [
+        {
+          "query": "سپر",
+          "mode": "vehiclePart",
+          "durationMs": 1197.6000000000931,
+          "resultCount": "۶۸ ردیف"
+        },
+        {
+          "query": "سپر",
+          "mode": "vehiclePart",
+          "durationMs": 9.299999999813735,
+          "resultCount": "۶۸ ردیف"
+        }
+      ],
+      "warmSamplesMs": [
+        9,
+        9.400000000372529,
+        10.600000000093132,
+        10.699999999720603,
+        11.299999999813735,
+        12.600000000093132,
+        12.899999999906868
+      ],
+      "p95Ms": 12.899999999906868,
+      "proposedWarmP95TargetMs": 300,
+      "meetsProposedTarget": true
+    }
+  ],
+  "installationPerformance": {
+    "search": [],
+    "longTasks": [],
+    "longTaskSupported": true
+  },
+  "searchPerformance": {
+    "search": [
+      {
+        "query": "111100001AA-01",
+        "mode": "global",
+        "durationMs": 826.3000000002794,
+        "resultCount": "۱ ردیف"
+      },
+      {
+        "query": "111100001AA-01",
+        "mode": "global",
+        "durationMs": 7.2999999998137355,
+        "resultCount": "۱ ردیف"
+      },
+      {
+        "query": "111100001AA-01",
+        "mode": "global",
+        "durationMs": 10.599999999627471,
+        "resultCount": "۱ ردیف"
+      },
+      {
+        "query": "111100001AA-01",
+        "mode": "global",
+        "durationMs": 7.800000000279397,
+        "resultCount": "۱ ردیف"
+      },
+      {
+        "query": "111100001AA-01",
+        "mode": "global",
+        "durationMs": 10.900000000372529,
+        "resultCount": "۱ ردیف"
+      },
+      {
+        "query": "111100001AA-01",
+        "mode": "global",
+        "durationMs": 8.200000000186265,
+        "resultCount": "۱ ردیف"
+      },
+      {
+        "query": "111100001AA-01",
+        "mode": "global",
+        "durationMs": 11.399999999906868,
+        "resultCount": "۱ ردیف"
+      },
+      {
+        "query": "111100001AA-01",
+        "mode": "global",
+        "durationMs": 11.300000000279397,
+        "resultCount": "۱ ردیف"
+      },
+      {
+        "query": "111100001AA-01",
+        "mode": "global",
+        "durationMs": 6.5,
+        "resultCount": "۱ ردیف"
+      },
+      {
+        "query": "واتر پمپ",
+        "mode": "global",
+        "durationMs": 1059.5,
+        "resultCount": "۱۴۲ ردیف"
+      },
+      {
+        "query": "واتر پمپ",
+        "mode": "global",
+        "durationMs": 11.199999999720603,
+        "resultCount": "۱۴۲ ردیف"
+      },
+      {
+        "query": "واتر پمپ",
+        "mode": "global",
+        "durationMs": 19.600000000093132,
+        "resultCount": "۱۴۲ ردیف"
+      },
+      {
+        "query": "واتر پمپ",
+        "mode": "global",
+        "durationMs": 7.899999999906868,
+        "resultCount": "۱۴۲ ردیف"
+      },
+      {
+        "query": "واتر پمپ",
+        "mode": "global",
+        "durationMs": 7.599999999627471,
+        "resultCount": "۱۴۲ ردیف"
+      },
+      {
+        "query": "واتر پمپ",
+        "mode": "global",
+        "durationMs": 8.699999999720603,
+        "resultCount": "۱۴۲ ردیف"
+      },
+      {
+        "query": "واتر پمپ",
+        "mode": "global",
+        "durationMs": 7.5,
+        "resultCount": "۱۴۲ ردیف"
+      },
+      {
+        "query": "واتر پمپ",
+        "mode": "global",
+        "durationMs": 8.400000000372529,
+        "resultCount": "۱۴۲ ردیف"
+      },
+      {
+        "query": "واتر پمپ",
+        "mode": "global",
+        "durationMs": 9.699999999720603,
+        "resultCount": "۱۴۲ ردیف"
+      },
+      {
+        "query": "150",
+        "mode": "global",
+        "durationMs": 9181.30000000028,
+        "resultCount": "۱٬۲۷۴ ردیف"
+      },
+      {
+        "query": "150",
+        "mode": "global",
+        "durationMs": 19,
+        "resultCount": "۱٬۲۷۴ ردیف"
+      },
+      {
+        "query": "150",
+        "mode": "global",
+        "durationMs": 6.900000000372529,
+        "resultCount": "۱٬۲۷۴ ردیف"
+      },
+      {
+        "query": "150",
+        "mode": "global",
+        "durationMs": 7.899999999906868,
+        "resultCount": "۱٬۲۷۴ ردیف"
+      },
+      {
+        "query": "150",
+        "mode": "global",
+        "durationMs": 9.100000000093132,
+        "resultCount": "۱٬۲۷۴ ردیف"
+      },
+      {
+        "query": "150",
+        "mode": "global",
+        "durationMs": 7.800000000279397,
+        "resultCount": "۱٬۲۷۴ ردیف"
+      },
+      {
+        "query": "150",
+        "mode": "global",
+        "durationMs": 7.399999999906868,
+        "resultCount": "۱٬۲۷۴ ردیف"
+      },
+      {
+        "query": "150",
+        "mode": "global",
+        "durationMs": 8.299999999813735,
+        "resultCount": "۱٬۲۷۴ ردیف"
+      },
+      {
+        "query": "150",
+        "mode": "global",
+        "durationMs": 7.5,
+        "resultCount": "۱٬۲۷۴ ردیف"
+      },
+      {
+        "query": "سپر",
+        "mode": "vehiclePart",
+        "durationMs": 1197.6000000000931,
+        "resultCount": "۶۸ ردیف"
+      },
+      {
+        "query": "سپر",
+        "mode": "vehiclePart",
+        "durationMs": 9.299999999813735,
+        "resultCount": "۶۸ ردیف"
+      },
+      {
+        "query": "سپر",
+        "mode": "vehiclePart",
+        "durationMs": 10.600000000093132,
+        "resultCount": "۶۸ ردیف"
+      },
+      {
+        "query": "سپر",
+        "mode": "vehiclePart",
+        "durationMs": 10.699999999720603,
+        "resultCount": "۶۸ ردیف"
+      },
+      {
+        "query": "سپر",
+        "mode": "vehiclePart",
+        "durationMs": 9.400000000372529,
+        "resultCount": "۶۸ ردیف"
+      },
+      {
+        "query": "سپر",
+        "mode": "vehiclePart",
+        "durationMs": 12.600000000093132,
+        "resultCount": "۶۸ ردیف"
+      },
+      {
+        "query": "سپر",
+        "mode": "vehiclePart",
+        "durationMs": 12.899999999906868,
+        "resultCount": "۶۸ ردیف"
+      },
+      {
+        "query": "سپر",
+        "mode": "vehiclePart",
+        "durationMs": 9,
+        "resultCount": "۶۸ ردیف"
+      },
+      {
+        "query": "سپر",
+        "mode": "vehiclePart",
+        "durationMs": 11.299999999813735,
+        "resultCount": "۶۸ ردیف"
+      }
+    ],
+    "longTasks": [],
+    "longTaskSupported": true
+  }
+}

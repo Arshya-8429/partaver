@@ -1,0 +1,10 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ✓ tests/integration/backup-restore.test.ts (3 tests) 35ms
+
+ Test Files  1 passed (1)
+      Tests  3 passed (3)
+   Start at  15:34:50
+   Duration  117ms (tests 49%, import 25%, transform 24%, worker 2%)
+

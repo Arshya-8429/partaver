@@ -1,0 +1,44 @@
+
+ RUN  v5.0.5 /Users/barmana/Documents/E/behrad
+
+ ❯ tests/integration/price-history.test.ts (7 tests | 1 failed) 267ms
+   ❯ historical XLSX import and bounded reads (7)
+     ✓ stages immutable XLSX evidence, reports ambiguity, commits explicitly and never writes catalogue 93ms
+     ✓ audits supersede and rollback, ranks growth and restores a verified backup to a new target 50ms
+     ✓ rejects legacy XLS, formula cells, unsafe numeric prices, invalid dates and unbounded reads 25ms
+     ✓ refuses to activate source archives changed after staging and canonicalizes equivalent column mappings 18ms
+     ✓ keeps retained catalogue versions isolated and invalidates timeline cursors after audited transitions 30ms
+     ✓ preserves conflicting same-day evidence, rejects database aliases and verifies backup tampering 25ms
+     × verifies predecessor evidence before rollback reinstates a superseded batch 25ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/price-history.test.ts > historical XLSX import and bounded reads > verifies predecessor evidence before rollback reinstates a superseded batch
+AssertionError: promise resolved "{ …(2) }" instead of rejecting
+
+- Expected
++ Received
+
+- Error {
+-   "message": "rejected promise",
++ {
++   "batchId": "d7866efb-936b-4ba0-ba1f-ce0445c6018e",
++   "status": "rolled_back",
+  }
+
+ ❯ tests/integration/price-history.test.ts:211:160
+    209|     await commitPriceHistory({ cataloguePath, operationsPath, batchId:…
+    210|     await writeFile(join(root, 'price-history-sources', `${first.sourc…
+    211|     await expect(rollbackPriceHistory({ cataloguePath, operationsPath,…
+       |                                                                                                                                                                ^
+    212|     expect(previewPriceHistory(operationsPath, next.batchId).status).t…
+    213|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 6 passed (7)
+   Start at  11:59:52
+   Duration  464ms (tests 65%, import 28%, transform 7%)
+

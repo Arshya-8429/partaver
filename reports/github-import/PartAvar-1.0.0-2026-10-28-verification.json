@@ -1,0 +1,16 @@
+{
+  "format": "partavar-release-verification-v1",
+  "fileHashesVerified": true,
+  "fileCount": 2196,
+  "totalFileBytes": 550478430,
+  "databaseCount": 1,
+  "activeVersionId": "5223b7729f85e7657129cfbad7db83910c827e4ec4e6668e1919be9bebd05480-s1-n1-r1",
+  "sourceVersionsVerified": 1,
+  "sourceRowsVerified": 36569,
+  "snapshotChunksVerified": 1103,
+  "snapshotRowsVerified": 36569,
+  "historicalSourcesVerified": 0,
+  "integrityCheck": "ok",
+  "foreignKeyViolations": 0,
+  "archiveSha256": "39e8d3e111d2d173574b0a8f11c62f0cab79b3638eb5c079ce4e3f85dafe9714"
+}

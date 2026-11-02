@@ -1,0 +1,23 @@
+{
+  "browserVersion": "157.0",
+  "installMs": 39088,
+  "storage": {
+    "estimate": {
+      "quota": 10737418240,
+      "usage": 1160020562
+    },
+    "caches": [
+      "partavar-shell-6d2197c6287f7cf7"
+    ],
+    "secureContext": true,
+    "controller": true
+  },
+  "rowCount": 36569,
+  "exactCode": "0CF25BE-1500011BA",
+  "onlineOfflineResultCount": 11,
+  "searchParity": true,
+  "shellReopenedWithoutNetwork": true,
+  "relaunchScope": "page closed and new page opened in the same live browser context; full browser process restart is covered separately by existing Chromium tests",
+  "errors": [],
+  "consoleProblems": []
+}
